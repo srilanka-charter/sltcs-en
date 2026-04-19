@@ -285,11 +285,11 @@ function ContactForm() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="startDate">START DATE *</label>
-                  <input type="date" id="startDate" name="startDate" defaultValue={today} required />
+                  <input type="date" id="startDate" name="startDate" defaultValue={today} lang="en-GB" required />
                 </div>
                 <div className="form-group">
                   <label htmlFor="endDate">END DATE *</label>
-                  <input type="date" id="endDate" name="endDate" defaultValue={today} required />
+                  <input type="date" id="endDate" name="endDate" defaultValue={today} lang="en-GB" required />
                 </div>
                 <div className="form-group full">
                   <label htmlFor="pickup">CHARTER START LOCATION *</label>
