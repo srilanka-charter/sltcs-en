@@ -269,6 +269,7 @@
   overflow: hidden;
   margin-top: -72px;
   padding-top: 0;
+  top: 0;
 }
 .hero-slider {
   position: absolute;

@@ -910,7 +910,7 @@ function FloatingCTA() {
 // ─── Main Page ────────────────────────────────────────────────────────────────
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div style={{ margin: 0, padding: 0 }}>
       <Navbar />
       <Hero />
       <Stats />
