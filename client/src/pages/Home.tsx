@@ -56,7 +56,7 @@ function Navbar() {
         <ul className="nav-links">
           <li><a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>PLANS</a></li>
           <li className="nav-dropdown" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
-            <button>MODEL ITINERARY ▾</button>
+            <button>MODEL ITINERARY</button>
             {dropdownOpen && (
               <div className="nav-dropdown-menu">
                 <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nights / 5 Days</a>
@@ -70,7 +70,6 @@ function Navbar() {
           <li><a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>VEHICLES</a></li>
           <li><a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>CONTACT</a></li>
-          <li><a href="#contact" className="btn-nav" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>ENQUIRY</a></li>
         </ul>
         <button className="hamburger" aria-label="Menu" onClick={() => setMobileOpen(!mobileOpen)}>
           <span /><span /><span />
