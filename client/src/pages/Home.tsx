@@ -284,11 +284,63 @@ function ContactForm() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="startDate">START DATE *</label>
-                  <input type="date" id="startDate" name="startDate" required />
+                  <select id="startDate" name="startDate" required>
+                    <option value="">— Select month —</option>
+                    <option value="January 2025">January 2025</option>
+                    <option value="February 2025">February 2025</option>
+                    <option value="March 2025">March 2025</option>
+                    <option value="April 2025">April 2025</option>
+                    <option value="May 2025">May 2025</option>
+                    <option value="June 2025">June 2025</option>
+                    <option value="July 2025">July 2025</option>
+                    <option value="August 2025">August 2025</option>
+                    <option value="September 2025">September 2025</option>
+                    <option value="October 2025">October 2025</option>
+                    <option value="November 2025">November 2025</option>
+                    <option value="December 2025">December 2025</option>
+                    <option value="January 2026">January 2026</option>
+                    <option value="February 2026">February 2026</option>
+                    <option value="March 2026">March 2026</option>
+                    <option value="April 2026">April 2026</option>
+                    <option value="May 2026">May 2026</option>
+                    <option value="June 2026">June 2026</option>
+                    <option value="July 2026">July 2026</option>
+                    <option value="August 2026">August 2026</option>
+                    <option value="September 2026">September 2026</option>
+                    <option value="October 2026">October 2026</option>
+                    <option value="November 2026">November 2026</option>
+                    <option value="December 2026">December 2026</option>
+                  </select>
                 </div>
                 <div className="form-group">
                   <label htmlFor="endDate">END DATE *</label>
-                  <input type="date" id="endDate" name="endDate" required />
+                  <select id="endDate" name="endDate" required>
+                    <option value="">— Select month —</option>
+                    <option value="January 2025">January 2025</option>
+                    <option value="February 2025">February 2025</option>
+                    <option value="March 2025">March 2025</option>
+                    <option value="April 2025">April 2025</option>
+                    <option value="May 2025">May 2025</option>
+                    <option value="June 2025">June 2025</option>
+                    <option value="July 2025">July 2025</option>
+                    <option value="August 2025">August 2025</option>
+                    <option value="September 2025">September 2025</option>
+                    <option value="October 2025">October 2025</option>
+                    <option value="November 2025">November 2025</option>
+                    <option value="December 2025">December 2025</option>
+                    <option value="January 2026">January 2026</option>
+                    <option value="February 2026">February 2026</option>
+                    <option value="March 2026">March 2026</option>
+                    <option value="April 2026">April 2026</option>
+                    <option value="May 2026">May 2026</option>
+                    <option value="June 2026">June 2026</option>
+                    <option value="July 2026">July 2026</option>
+                    <option value="August 2026">August 2026</option>
+                    <option value="September 2026">September 2026</option>
+                    <option value="October 2026">October 2026</option>
+                    <option value="November 2026">November 2026</option>
+                    <option value="December 2026">December 2026</option>
+                  </select>
                 </div>
                 <div className="form-group full">
                   <label htmlFor="pickup">CHARTER START LOCATION *</label>
