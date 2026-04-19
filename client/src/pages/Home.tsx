@@ -9,6 +9,85 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 
+// ─── Custom Date Picker (English locale, OS-independent) ──────────────────────
+const MONTHS_EN = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const DAYS_EN = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+
+function DatePicker({ id, name, value, onChange, required }: {
+  id: string; name: string; value: string;
+  onChange: (v: string) => void; required?: boolean;
+}) {
+  const [open, setOpen] = useState(false);
+  const [viewYear, setViewYear] = useState(() => value ? parseInt(value.split("-")[0]) : new Date().getFullYear());
+  const [viewMonth, setViewMonth] = useState(() => value ? parseInt(value.split("-")[1]) - 1 : new Date().getMonth());
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  const displayValue = value
+    ? (() => { const [y,m,d] = value.split("-"); return `${d} ${MONTHS_EN[parseInt(m)-1]} ${y}`; })()
+    : "DD / MMM / YYYY";
+
+  const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+  const firstDay = new Date(viewYear, viewMonth, 1).getDay();
+
+  const selectDate = (day: number) => {
+    const m = String(viewMonth + 1).padStart(2, "0");
+    const d = String(day).padStart(2, "0");
+    onChange(`${viewYear}-${m}-${d}`);
+    setOpen(false);
+  };
+
+  const prevMonth = () => { if (viewMonth === 0) { setViewMonth(11); setViewYear(y => y-1); } else setViewMonth(m => m-1); };
+  const nextMonth = () => { if (viewMonth === 11) { setViewMonth(0); setViewYear(y => y+1); } else setViewMonth(m => m+1); };
+
+  const selectedDay = value ? parseInt(value.split("-")[2]) : null;
+  const selectedMonth = value ? parseInt(value.split("-")[1]) - 1 : null;
+  const selectedYear = value ? parseInt(value.split("-")[0]) : null;
+
+  return (
+    <div className="datepicker-wrap" ref={ref}>
+      <input type="hidden" id={id} name={name} value={value} required={required} />
+      <button type="button" className="datepicker-trigger" onClick={() => setOpen(o => !o)}>
+        <span className="datepicker-icon">📅</span>
+        <span className={value ? "datepicker-val" : "datepicker-placeholder"}>{displayValue}</span>
+      </button>
+      {open && (
+        <div className="datepicker-popup">
+          <div className="datepicker-header">
+            <button type="button" className="datepicker-nav" onClick={prevMonth}>‹</button>
+            <span className="datepicker-month-year">{MONTHS_EN[viewMonth]} {viewYear}</span>
+            <button type="button" className="datepicker-nav" onClick={nextMonth}>›</button>
+          </div>
+          <div className="datepicker-grid">
+            {DAYS_EN.map(d => <div key={d} className="datepicker-dayname">{d}</div>)}
+            {Array.from({length: firstDay}).map((_,i) => <div key={`e${i}`} />)}
+            {Array.from({length: daysInMonth}).map((_,i) => {
+              const day = i + 1;
+              const isSelected = day === selectedDay && viewMonth === selectedMonth && viewYear === selectedYear;
+              const isToday = day === new Date().getDate() && viewMonth === new Date().getMonth() && viewYear === new Date().getFullYear();
+              return (
+                <button
+                  key={day}
+                  type="button"
+                  className={`datepicker-day${isSelected ? " selected" : ""}${isToday && !isSelected ? " today" : ""}`}
+                  onClick={() => selectDate(day)}
+                >{day}</button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ─── Image URLs (uploaded to manus-storage) ───────────────────────────────────
 const IMAGES = {
   hero1: "/manus-storage/hero_van_srilanka_706f8966.jpg",
@@ -211,6 +290,8 @@ function ContactForm() {
   const [country, setCountry] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const today = new Date().toISOString().split("T")[0];
+  const [startDate, setStartDate] = useState(today);
+  const [endDate, setEndDate] = useState(today);
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -285,11 +366,11 @@ function ContactForm() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="startDate">START DATE *</label>
-                  <input type="date" id="startDate" name="startDate" defaultValue={today} lang="en-GB" required />
+                  <DatePicker id="startDate" name="startDate" value={startDate} onChange={setStartDate} required />
                 </div>
                 <div className="form-group">
                   <label htmlFor="endDate">END DATE *</label>
-                  <input type="date" id="endDate" name="endDate" defaultValue={today} lang="en-GB" required />
+                  <DatePicker id="endDate" name="endDate" value={endDate} onChange={setEndDate} required />
                 </div>
                 <div className="form-group full">
                   <label htmlFor="pickup">CHARTER START LOCATION *</label>
