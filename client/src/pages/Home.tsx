@@ -70,7 +70,7 @@ function Navbar() {
           <li><a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>VEHICLES</a></li>
           <li><a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>CONTACT</a></li>
-          <li><a href="#contact" className="btn-nav" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>FREE ENQUIRY</a></li>
+          <li><a href="#contact" className="btn-nav" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>ENQUIRY</a></li>
         </ul>
         <button className="hamburger" aria-label="Menu" onClick={() => setMobileOpen(!mobileOpen)}>
           <span /><span /><span />
