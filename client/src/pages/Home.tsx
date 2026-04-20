@@ -795,53 +795,113 @@ function Destinations() {
 
 // ─── Reviews ──────────────────────────────────────────────────────────────────
 function Reviews() {
+  const [slide, setSlide] = useState(0);
   const reviews = [
     {
-      stars: "★★★★★",
-      quote: "Every day was a new highlight. We fell completely in love with Sri Lanka!",
-      body: "We started in Colombo and spent 6 incredible days visiting Sigiriya, Kandy, the tea country, and Galle. Our driver was knowledgeable, punctual, and genuinely passionate about showing us the best of his country. Absolutely worth every penny.",
-      initials: "SC",
-      name: "Sarah & Chris",
-      meta: "UK · 6-Day Tour",
+      photo: "/manus-storage/review1_r_family_eranga_aebafcf3.png",
+      name: "The R Family",
+      pax: "4 passengers",
+      period: "August 2025",
+      driver: "Eranga",
+      quote: "Professional service from first enquiry to final drop-off — we felt completely at ease throughout.",
+      body: "From pre-booking through the day of travel, the team responded promptly and clearly. Pricing and itinerary planning were explained in a way that left no room for uncertainty. On the day, Eranga drove with care and composure, seamlessly rerouting around congestion to keep us on schedule. His deep knowledge of Anuradhapura, Dambulla, Sigiriya, and Polonnaruwa gave us a rich historical foundation for understanding this remarkable country. We consider ourselves fortunate to have had him as both driver and guide.",
     },
     {
-      stars: "★★★★★",
-      quote: "The best way to explore Sri Lanka — completely stress-free.",
-      body: "Travelling with two young children, we were nervous about logistics. SLTCS made everything seamless. Our driver was patient, flexible, and brilliant with the kids. The itinerary was perfectly paced and we never felt rushed.",
-      initials: "TF",
-      name: "Thomas F.",
-      meta: "Germany · 10-Day Family Tour",
+      photo: "/manus-storage/review2_r_family_aruna_0b4071b3.png",
+      name: "The R Family",
+      pax: "4 passengers",
+      period: "March 2026",
+      driver: "Aruna",
+      quote: "Aruna was endlessly patient with our children and made every moment of the trip feel effortless.",
+      body: "Having Aruna with us was a genuine stroke of luck. His warm manner with the kids put us all at ease, and his clear English meant nothing was ever lost in translation. Punctual, full of thoughtful suggestions for sights and local restaurants, and consistently calm behind the wheel — he was everything we could have asked for. (We'll probably skip that road between Passikudah and Sigiriya next time, though!) We recommend him without hesitation: attentive, knowledgeable, and completely trustworthy. If you're ever in Europe, Aruna — the first round is on us.",
     },
     {
-      stars: "★★★★★",
-      quote: "Our driver was more like a friend and guide than just a driver.",
-      body: "From the moment we landed to our final drop-off, everything was handled with professionalism and warmth. Our Chauffeur Guide knew every hidden gem and local restaurant. An unforgettable two weeks.",
-      initials: "ML",
-      name: "Marie & Laurent",
-      meta: "France · 14-Day Tour",
+      photo: "/manus-storage/review3_h_couple_ranjana_b0949311.png",
+      name: "The H Couple",
+      pax: "2 passengers",
+      period: "November 2025",
+      driver: "Ranjana",
+      quote: "Ranjana turned our Sri Lanka trip into something far beyond ordinary sightseeing.",
+      body: "We booked a private charter for two and were paired with Ranjana — a decision we couldn't be happier about. He brought a quiet confidence to every drive, navigating mountain roads and busy town centres with equal ease. What stood out most was his genuine enthusiasm: he suggested a white-water rafting experience we hadn't planned, and it became one of the highlights of the trip. His local knowledge of hidden viewpoints, authentic eateries, and cultural customs enriched every day. Ranjana is the kind of guide who makes you feel like a guest of the country, not just a tourist passing through.",
+    },
+    {
+      photo: "/manus-storage/review4_as_priyanth_9582488e.png",
+      name: "The A&S",
+      pax: "2 passengers",
+      period: "August 2025",
+      driver: "Priyanth",
+      quote: "Priyanth made six days feel like a journey with a trusted friend rather than a hired driver.",
+      body: "Starting from Colombo Airport, Priyanth guided us through Sigiriya, Kandy, Nuwara Eliya, and Galle over six days. He was punctual and drove with care throughout, always checking in on how we were feeling — something we genuinely appreciated on longer stretches. His cheerful company made every transfer enjoyable, and his insights into Sri Lankan history and culture added real depth to what we saw. He also took us to a breathtaking viewpoint that wasn't in our original plan, and introduced us to local restaurants that were simply outstanding. We'd love to travel with him again on our next visit to Sri Lanka.",
+    },
+    {
+      photo: "/manus-storage/review5_t_couple_indika_42480193.png",
+      name: "The T Couple",
+      pax: "2 passengers",
+      period: "October 2025",
+      driver: "Indika",
+      quote: "Thanks to Indika, our trip became not just sightseeing — it became a richly colourful, unforgettable journey.",
+      body: "We travelled as a couple from Negombo through Sigiriya, Kandy, Nuwara Eliya, and Mirissa over five days. On the very first morning — which happened to be a birthday — a cake appeared at breakfast, arranged quietly by Indika through the hotel. He also gave us a small elephant figurine as a gift. We were genuinely moved. Throughout the trip he was a steady, reassuring presence: briefing us before each site, handling early starts without complaint, recommending restaurants he personally frequents (every one was excellent), and even riding the train with us to keep us safe in the crowds. When something seemed overpriced, he'd simply say, 'Let's skip it' — that honesty made us trust him completely. Meeting Indika was, without question, part of what made this trip perfect.",
     },
   ];
+
+  // Group reviews into pairs for 2-per-slide display
+  const totalSlides = Math.ceil(reviews.length / 2);
+  const prevSlide = () => setSlide((s) => (s - 1 + totalSlides) % totalSlides);
+  const nextSlide = () => setSlide((s) => (s + 1) % totalSlides);
+
+  // Auto-advance every 7 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setSlide((s) => (s + 1) % totalSlides);
+    }, 7000);
+    return () => clearInterval(timer);
+  }, [totalSlides]);
+
+  const visibleReviews = reviews.slice(slide * 2, slide * 2 + 2);
+
   return (
     <section id="reviews" style={{ background: "var(--dark2)" }}>
       <div className="container">
         <div className="section-eyebrow">CUSTOMER VOICES</div>
         <h2 className="section-title">What Our Guests Say</h2>
-        <p className="section-sub">Real reviews from travellers who have experienced Sri Lanka with SLTCS.</p>
-        <div className="reviews-grid">
-          {reviews.map((r, i) => (
-            <div key={i} className="review-card">
-              <div className="review-stars">{r.stars}</div>
-              <div className="review-quote">"{r.quote}"</div>
-              <div className="review-body">{r.body}</div>
-              <div className="review-author">
-                <div className="review-avatar">{r.initials}</div>
-                <div>
-                  <div className="review-name">{r.name}</div>
-                  <div className="review-meta">{r.meta}</div>
+        <p className="section-sub">Real reviews from travellers who have explored Sri Lanka with SLTCS.</p>
+        <div className="reviews-slider">
+          <div className="reviews-slide-row">
+            {visibleReviews.map((r, i) => (
+              <div key={slide * 2 + i} className="review-card-v2">
+                <div className="review-photo-wrap">
+                  <img src={r.photo} alt={r.name} className="review-photo" />
+                </div>
+                <div className="review-card-body">
+                  <div className="review-stars">★★★★★</div>
+                  <div className="review-quote-v2">"{r.quote}"</div>
+                  <div className="review-body-v2">{r.body}</div>
+                  <div className="review-meta-row">
+                    <div className="review-name-v2">{r.name}</div>
+                    <div className="review-tags">
+                      <span className="review-tag-item">{r.pax}</span>
+                      <span className="review-tag-item">{r.period}</span>
+                      <span className="review-tag-item">Driver: {r.driver}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
+            ))}
+          </div>
+          <div className="reviews-controls">
+            <button className="reviews-nav" onClick={prevSlide} aria-label="Previous">‹</button>
+            <div className="reviews-dots">
+              {Array.from({ length: totalSlides }).map((_, i) => (
+                <button
+                  key={i}
+                  className={`reviews-dot${i === slide ? " active" : ""}`}
+                  onClick={() => setSlide(i)}
+                  aria-label={`Slide ${i + 1}`}
+                />
+              ))}
             </div>
-          ))}
+            <button className="reviews-nav" onClick={nextSlide} aria-label="Next">›</button>
+          </div>
         </div>
       </div>
     </section>
