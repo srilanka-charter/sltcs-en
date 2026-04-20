@@ -1,0 +1,33 @@
+# SLTCS Project TODO
+
+- [x] Basic homepage layout (dark luxury travel theme)
+- [x] Navigation bar (PLANS, MODEL ITINERARY, VEHICLES, FAQ, CONTACT)
+- [x] Hero slideshow (5 slides, manus-storage images)
+- [x] Stats counter (1200+, 4.9, 50+)
+- [x] Contact form (country selector, Other text input, currency selector, custom DatePicker)
+- [x] Custom English DatePicker (OS-independent, Sun/Mon/Tue/Wed/Thu/Fri/Sat)
+- [x] Why SLTCS section (6 reasons)
+- [x] Concerns section
+- [x] Plans section (Bronze / Silver / Gold)
+- [x] Model Itineraries (5 plans: 4N5D, 5N6D, 6N7D, 5-7Days Cultural, 10Days-2Weeks)
+- [x] Destinations section (6 destinations with images)
+- [x] Reviews section (3 customer reviews)
+- [x] How It Works section (5 steps)
+- [x] Vehicles section (Sedan / Van / Large Van)
+- [x] FAQ section (6 questions)
+- [x] Company info table
+- [x] Footer with navigation links
+- [x] Floating CTA button
+- [x] Remove ENQUIRY button from navbar
+- [x] Remove ▾ from MODEL ITINERARY
+- [x] Fix hero slideshow gap (margin-top: -72px)
+- [x] Full-stack upgrade (tRPC + Express + DB)
+- [x] server/routers.ts: enquiry.submit endpoint (nodemailer + notifyOwner)
+- [x] ContactForm: tRPC mutation (trpc.enquiry.submit.useMutation)
+- [x] ContactForm: redirect to /thanks on success
+- [x] Thanks page (/thanks route)
+- [x] App.tsx: /thanks route added
+- [x] GMAIL_USER environment variable set
+- [x] GMAIL_APP_PASSWORD environment variable set
+- [x] Vitest tests passing (enquiry.test.ts + auth.logout.test.ts)
+- [ ] Publish to en.srilanka-charter.com

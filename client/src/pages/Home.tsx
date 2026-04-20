@@ -8,6 +8,8 @@
  */
 
 import { useState, useEffect, useRef, useCallback } from "react";
+import { trpc } from "@/lib/trpc";
+import { useLocation } from "wouter";
 
 // ─── Custom Date Picker (English locale, OS-independent) ──────────────────────
 const MONTHS_EN = ["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -288,18 +290,49 @@ function Stats() {
 // ─── Contact Form ─────────────────────────────────────────────────────────────
 function ContactForm() {
   const [country, setCountry] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const today = new Date().toISOString().split("T")[0];
   const [startDate, setStartDate] = useState(today);
   const [endDate, setEndDate] = useState(today);
+  const [, setLocation] = useLocation();
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const submitMutation = trpc.enquiry.submit.useMutation({
+    onSuccess: () => {
+      setLocation("/thanks");
+    },
+    onError: (err) => {
+      setSubmitError(err.message || "Failed to send enquiry. Please try again.");
+      setIsSubmitting(false);
+    },
+  });
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitError(null);
+    setIsSubmitting(true);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    submitMutation.mutate({
+      name: (data.get("name") as string) || "",
+      country: (data.get("country") as string) || "",
+      countryOther: (data.get("countryOther") as string) || undefined,
+      email: (data.get("email") as string) || "",
+      phone: (data.get("phone") as string) || undefined,
+      startDate: startDate,
+      endDate: endDate,
+      pickup: (data.get("pickup") as string) || "",
+      adults: (data.get("adults") as string) || "",
+      children: (data.get("children") as string) || "0",
+      vehicle: (data.get("vehicle") as string) || "",
+      currency: (data.get("currency") as string) || undefined,
+      notes: (data.get("notes") as string) || undefined,
+    });
   };
 
   return (
@@ -427,12 +460,17 @@ function ContactForm() {
                   <textarea id="notes" name="notes" placeholder="Please list any destinations, attractions, or special requests you have in mind." />
                 </div>
               </div>
+              {submitError && (
+                <div className="form-error" style={{ color: "#e55", marginBottom: "12px", padding: "10px 14px", background: "rgba(220,50,50,0.1)", borderRadius: "6px", border: "1px solid rgba(220,50,50,0.3)" }}>
+                  {submitError}
+                </div>
+              )}
               <button
                 type="submit"
-                className={`form-submit-btn${submitted ? " success" : ""}`}
-                disabled={submitted}
+                className={`form-submit-btn${isSubmitting ? " loading" : ""}`}
+                disabled={isSubmitting}
               >
-                {submitted ? "✓ Enquiry Sent! We'll reply within 24 hours." : "Send Enquiry"}
+                {isSubmitting ? "Sending…" : "Send Enquiry"}
               </button>
               <p className="form-note">
                 By submitting this form, you agree to our{" "}
