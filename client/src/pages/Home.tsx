@@ -915,7 +915,7 @@ function HowItWorks() {
   const steps = [
     { icon: "💬", title: "1. Send Enquiry", desc: "Fill in the contact form with your travel dates, group size, and preferences." },
     { icon: "📋", title: "2. Receive Proposal", desc: "We'll send a tailored itinerary and quote within 24 hours." },
-    { icon: "💳", title: "3. Confirm & Pay", desc: "Happy with the plan? Confirm your booking and arrange payment." },
+    { icon: "💳", title: "3. Confirm", desc: "Happy with the plan? Simply confirm your booking. No upfront payment is required — you pay only upon arrival in Sri Lanka." },
     { icon: "🕐", title: "4. Pre-Trip Briefing", desc: "Before departure, we confirm your driver details, meeting point, and final itinerary." },
     { icon: "🏝️", title: "5. Enjoy Sri Lanka!", desc: "Your private driver is with you every step of the way. Relax and explore." },
   ];
