@@ -799,6 +799,7 @@ function Reviews() {
   const reviews = [
     {
       photo: "/manus-storage/review1_r_family_eranga_a3545b4c.png",
+      photoPosition: "center center",
       name: "The R Family",
       pax: "4 passengers",
       period: "August 2025",
@@ -871,7 +872,7 @@ function Reviews() {
             {visibleReviews.map((r, i) => (
               <div key={slide * 2 + i} className="review-card-v2">
                 <div className="review-photo-wrap">
-                  <img src={r.photo} alt={r.name} className="review-photo" />
+                  <img src={r.photo} alt={r.name} className="review-photo" style={r.photoPosition ? { objectPosition: r.photoPosition } : undefined} />
                 </div>
                 <div className="review-card-body">
                   <div className="review-stars">★★★★★</div>
