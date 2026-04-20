@@ -816,7 +816,7 @@ function Reviews() {
       body: "Having Aruna with us was a genuine stroke of luck. His warm manner with the kids put us all at ease, and his clear English meant nothing was ever lost in translation. Punctual, full of thoughtful suggestions for sights and local restaurants, and consistently calm behind the wheel — he was everything we could have asked for. (We'll probably skip that road between Passikudah and Sigiriya next time, though!) We recommend him without hesitation: attentive, knowledgeable, and completely trustworthy. If you're ever in Europe, Aruna — the first round is on us.",
     },
     {
-      photo: "/manus-storage/review3_h_couple_ranjana_8d8b5ed9.png",
+      photo: "/manus-storage/review_ranjana_new_2b654dea.png",
       name: "The H Couple",
       pax: "2 passengers",
       period: "November 2025",
@@ -841,6 +841,15 @@ function Reviews() {
       driver: "Indika",
       quote: "Thanks to Indika, our trip became not just sightseeing — it became a richly colourful, unforgettable journey.",
       body: "We travelled as a couple from Negombo through Sigiriya, Kandy, Nuwara Eliya, and Mirissa over five days. On the very first morning — which happened to be a birthday — a cake appeared at breakfast, arranged quietly by Indika through the hotel. He also gave us a small elephant figurine as a gift. We were genuinely moved. Throughout the trip he was a steady, reassuring presence: briefing us before each site, handling early starts without complaint, recommending restaurants he personally frequents (every one was excellent), and even riding the train with us to keep us safe in the crowds. When something seemed overpriced, he'd simply say, 'Let's skip it' — that honesty made us trust him completely. Meeting Indika was, without question, part of what made this trip perfect.",
+    },
+    {
+      photo: "/manus-storage/review_dfamily_chamil_9214e24c.png",
+      name: "The D Family",
+      pax: "5 passengers",
+      period: "December 2025",
+      driver: "Chamil",
+      quote: "Despite having to completely rearrange our itinerary after a cyclone, Chamil made it the trip of a lifetime.",
+      body: "We travelled as three generations — grandparents, parents, and a child — just after a cyclone had disrupted the island. Chamil constantly gathered the latest information on road conditions and safety, and always proposed the best available routes with our preferences in mind. When we needed to cancel hotels and train bookings and arrange new ones at short notice, he was right there helping us every step of the way. He joined us for the Sigiriya Rock climb and the safari, which gave us enormous reassurance. His attentiveness to our child was especially touching — when tiredness struck at an inconvenient moment, we felt completely comfortable leaving our child in his care. He also took us to local restaurants that only residents would know, and every single meal was a revelation. Chamil's warmth, quick thinking, and natural thoughtfulness won over every member of our family — children and adults alike. We are already looking forward to our next trip to Sri Lanka, and we will absolutely be asking for Chamil again.",
     },
   ];
 

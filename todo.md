@@ -35,4 +35,6 @@
 - [x] storageProxy.ts TypeScript error fixed (req: any cast)
 - [x] nodemailer installed and working
 - [x] Review photo height increased to 380px with object-position: top (all faces visible)
+- [x] Replace Ranjana review photo with new rafting photo
+- [x] Add 6th review: The D Family (Chamil, December 2025, 5 passengers)
 - [ ] Publish to en.srilanka-charter.com
