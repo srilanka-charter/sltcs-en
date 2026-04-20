@@ -886,19 +886,25 @@ function Vehicles() {
         <p className="section-sub">All vehicles are air-conditioned, clean, and regularly maintained for your comfort and safety.</p>
         <div className="vehicles-grid">
           <div className="vehicle-card">
-            <div className="vehicle-icon">🚗</div>
+            <div className="vehicle-img-wrap">
+              <img src="/manus-storage/vehicle_sedan_b6b21042.png" alt="Sedan" className="vehicle-img" />
+            </div>
             <h3>Sedan</h3>
             <div className="vehicle-capacity">Up to 3 passengers</div>
             <p>Ideal for solo travellers and couples. Comfortable and economical for touring Sri Lanka.</p>
           </div>
           <div className="vehicle-card featured">
-            <div className="vehicle-icon">🚐</div>
+            <div className="vehicle-img-wrap">
+              <img src="/manus-storage/vehicle_van_70a807f8.png" alt="Van" className="vehicle-img" />
+            </div>
             <h3>Van</h3>
             <div className="vehicle-capacity">Up to 6 passengers</div>
             <p>Our most popular choice. Spacious and comfortable for families and small groups.</p>
           </div>
           <div className="vehicle-card">
-            <div className="vehicle-icon">🚌</div>
+            <div className="vehicle-img-wrap">
+              <img src="/manus-storage/vehicle_large_van_61632670.png" alt="Large Van" className="vehicle-img" />
+            </div>
             <h3>Large Van</h3>
             <div className="vehicle-capacity">Up to 10 passengers</div>
             <p>Perfect for large groups and families. Maximum comfort for long-distance journeys across the island.</p>
