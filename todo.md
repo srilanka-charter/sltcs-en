@@ -30,4 +30,9 @@
 - [x] GMAIL_USER environment variable set
 - [x] GMAIL_APP_PASSWORD environment variable set
 - [x] Vitest tests passing (enquiry.test.ts + auth.logout.test.ts)
+- [x] Our Fleet: replace icons with real vehicle photos (Sedan / Van / Large Van)
+- [x] Customer Voices: 5 real reviews with photos, 2-per-slide carousel format
+- [x] storageProxy.ts TypeScript error fixed (req: any cast)
+- [x] nodemailer installed and working
+- [x] Review photo height increased to 380px with object-position: top (all faces visible)
 - [ ] Publish to en.srilanka-charter.com

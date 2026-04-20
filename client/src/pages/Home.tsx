@@ -798,7 +798,7 @@ function Reviews() {
   const [slide, setSlide] = useState(0);
   const reviews = [
     {
-      photo: "/manus-storage/review1_r_family_eranga_aebafcf3.png",
+      photo: "/manus-storage/review1_r_family_eranga_a3545b4c.png",
       name: "The R Family",
       pax: "4 passengers",
       period: "August 2025",
@@ -807,7 +807,7 @@ function Reviews() {
       body: "From pre-booking through the day of travel, the team responded promptly and clearly. Pricing and itinerary planning were explained in a way that left no room for uncertainty. On the day, Eranga drove with care and composure, seamlessly rerouting around congestion to keep us on schedule. His deep knowledge of Anuradhapura, Dambulla, Sigiriya, and Polonnaruwa gave us a rich historical foundation for understanding this remarkable country. We consider ourselves fortunate to have had him as both driver and guide.",
     },
     {
-      photo: "/manus-storage/review2_r_family_aruna_0b4071b3.png",
+      photo: "/manus-storage/review2_r_family_aruna_3473eef8.png",
       name: "The R Family",
       pax: "4 passengers",
       period: "March 2026",
@@ -816,7 +816,7 @@ function Reviews() {
       body: "Having Aruna with us was a genuine stroke of luck. His warm manner with the kids put us all at ease, and his clear English meant nothing was ever lost in translation. Punctual, full of thoughtful suggestions for sights and local restaurants, and consistently calm behind the wheel — he was everything we could have asked for. (We'll probably skip that road between Passikudah and Sigiriya next time, though!) We recommend him without hesitation: attentive, knowledgeable, and completely trustworthy. If you're ever in Europe, Aruna — the first round is on us.",
     },
     {
-      photo: "/manus-storage/review3_h_couple_ranjana_b0949311.png",
+      photo: "/manus-storage/review3_h_couple_ranjana_8d8b5ed9.png",
       name: "The H Couple",
       pax: "2 passengers",
       period: "November 2025",
@@ -825,7 +825,7 @@ function Reviews() {
       body: "We booked a private charter for two and were paired with Ranjana — a decision we couldn't be happier about. He brought a quiet confidence to every drive, navigating mountain roads and busy town centres with equal ease. What stood out most was his genuine enthusiasm: he suggested a white-water rafting experience we hadn't planned, and it became one of the highlights of the trip. His local knowledge of hidden viewpoints, authentic eateries, and cultural customs enriched every day. Ranjana is the kind of guide who makes you feel like a guest of the country, not just a tourist passing through.",
     },
     {
-      photo: "/manus-storage/review4_as_priyanth_9582488e.png",
+      photo: "/manus-storage/review4_as_priyanth_2aeb5d81.png",
       name: "The A&S",
       pax: "2 passengers",
       period: "August 2025",
@@ -834,7 +834,7 @@ function Reviews() {
       body: "Starting from Colombo Airport, Priyanth guided us through Sigiriya, Kandy, Nuwara Eliya, and Galle over six days. He was punctual and drove with care throughout, always checking in on how we were feeling — something we genuinely appreciated on longer stretches. His cheerful company made every transfer enjoyable, and his insights into Sri Lankan history and culture added real depth to what we saw. He also took us to a breathtaking viewpoint that wasn't in our original plan, and introduced us to local restaurants that were simply outstanding. We'd love to travel with him again on our next visit to Sri Lanka.",
     },
     {
-      photo: "/manus-storage/review5_t_couple_indika_42480193.png",
+      photo: "/manus-storage/review5_t_couple_indika_519f1510.png",
       name: "The T Couple",
       pax: "2 passengers",
       period: "October 2025",
