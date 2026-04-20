@@ -858,14 +858,6 @@ function Reviews() {
   const prevSlide = () => setSlide((s) => (s - 1 + totalSlides) % totalSlides);
   const nextSlide = () => setSlide((s) => (s + 1) % totalSlides);
 
-  // Auto-advance every 7 seconds
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setSlide((s) => (s + 1) % totalSlides);
-    }, 7000);
-    return () => clearInterval(timer);
-  }, [totalSlides]);
-
   const visibleReviews = reviews.slice(slide * 2, slide * 2 + 2);
 
   return (
