@@ -191,6 +191,7 @@
   z-index: 100;
 }
 .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-lang-dropdown .nav-dropdown-menu { left: auto; right: 0; }
 .nav-dropdown-menu a {
   display: block;
   padding: 10px 20px;
