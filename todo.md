@@ -37,4 +37,6 @@
 - [x] Review photo height increased to 380px with object-position: top (all faces visible)
 - [x] Replace Ranjana review photo with new rafting photo
 - [x] Add 6th review: The D Family (Chamil, December 2025, 5 passengers)
+- [x] Add language switcher dropdown in navbar (after CONTACT, English labels)
+- [x] Fix Git conflict markers in index.html (ja hreflang)
 - [ ] Publish to en.srilanka-charter.com

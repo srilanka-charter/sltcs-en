@@ -116,6 +116,16 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+
+  const LANGUAGES = [
+    { label: "French", url: "https://fr.srilanka-charter.com/" },
+    { label: "Spanish", url: "https://es.srilanka-charter.com/" },
+    { label: "German", url: "https://de.srilanka-charter.com/" },
+    { label: "Dutch", url: "https://nl.srilanka-charter.com/" },
+    { label: "Russian", url: "https://ru.srilanka-charter.com/" },
+    { label: "Japanese", url: "https://sltcs.srilanka-charter.com/" },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -151,6 +161,19 @@ function Navbar() {
           <li><a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>VEHICLES</a></li>
           <li><a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>CONTACT</a></li>
+          <li className="nav-dropdown" onMouseEnter={() => setLangOpen(true)} onMouseLeave={() => setLangOpen(false)}>
+            <button style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              EN
+            </button>
+            {langOpen && (
+              <div className="nav-dropdown-menu">
+                {LANGUAGES.map((lang) => (
+                  <a key={lang.label} href={lang.url}>{lang.label}</a>
+                ))}
+              </div>
+            )}
+          </li>
         </ul>
         <button className="hamburger" aria-label="Menu" onClick={() => setMobileOpen(!mobileOpen)}>
           <span /><span /><span />
@@ -164,6 +187,12 @@ function Navbar() {
           <a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Contact</a>
           <a href="#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Free Enquiry</a>
+          <div style={{ borderTop: "1px solid rgba(201,168,76,0.3)", paddingTop: "8px", marginTop: "4px" }}>
+            <div style={{ color: "#c9a84c", fontSize: "11px", letterSpacing: "0.1em", marginBottom: "6px", paddingLeft: "4px" }}>OTHER LANGUAGES</div>
+            {[{label:"French",url:"https://fr.srilanka-charter.com/"},{label:"Spanish",url:"https://es.srilanka-charter.com/"},{label:"German",url:"https://de.srilanka-charter.com/"},{label:"Dutch",url:"https://nl.srilanka-charter.com/"},{label:"Russian",url:"https://ru.srilanka-charter.com/"},{label:"Japanese",url:"https://sltcs.srilanka-charter.com/"}].map((lang) => (
+              <a key={lang.label} href={lang.url}>{lang.label}</a>
+            ))}
+          </div>
         </div>
       )}
     </>
