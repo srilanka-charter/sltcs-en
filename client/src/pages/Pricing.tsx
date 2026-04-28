@@ -78,6 +78,7 @@ const TIERS: { key: TierKey; label: string; badge?: string; color: string; featu
       "Transfer & transportation service",
       "English-speaking local coordinator",
       "Clean air-conditioned vehicle",
+      " ",
     ],
   },
   {
@@ -102,6 +103,7 @@ const TIERS: { key: TierKey; label: string; badge?: string; color: string; featu
       "Full-itinerary accompaniment & commentary",
       "English-speaking local coordinator",
       "Dual support system",
+      " ",
     ],
   },
 ];
@@ -446,7 +448,7 @@ export default function Pricing() {
         </section>
 
         {/* Transparent pricing */}
-        <section style={{ marginBottom: "40px" }}>
+        <section style={{ marginBottom: "28px" }}>
           <h2
             style={{
               fontFamily: "'Playfair Display', serif",
@@ -466,13 +468,14 @@ export default function Pricing() {
         </section>
 
         {/* Plan Overview */}
-        <section style={{ marginBottom: "56px" }}>
+        <section style={{ marginBottom: "32px" }}>
           <h2
             style={{
               fontFamily: "'Playfair Display', serif",
               fontSize: "1.4rem",
               color: "#fff",
               marginBottom: "24px",
+              marginTop: "0",
               textAlign: "center",
             }}
           >
@@ -555,7 +558,7 @@ export default function Pricing() {
         </section>
 
         {/* Currency Tabs */}
-        <section>
+        <section style={{ marginTop: "0" }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "16px", marginBottom: "12px" }}>
             <h2
               style={{
