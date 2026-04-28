@@ -238,7 +238,7 @@ function PlanCard({
       </div>
 
       {/* Price Table */}
-      <div style={{ flex: 1, overflowY: "auto", maxHeight: "420px" }}>
+      <div style={{ flex: 1 }}>
         <table style={{ width: "100%", borderCollapse: "collapse" }}>
           <thead>
             <tr style={{ background: "rgba(0,0,0,0.3)" }}>
@@ -385,7 +385,7 @@ export default function Pricing() {
         </p>
       </section>
 
-      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 24px 80px" }}>
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 24px 32px" }}>
 
         {/* Intro */}
         <section style={{ padding: "56px 0 0" }}>
@@ -635,7 +635,7 @@ export default function Pricing() {
         </section>
 
         {/* CTA */}
-        <section style={{ textAlign: "center", marginTop: "20px" }}>
+        <section style={{ textAlign: "center", marginTop: "8px" }}>
           <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.95rem", marginBottom: "24px" }}>
             Not sure which plan suits you? Feel free to contact us for a free, personalised estimate.
           </p>
