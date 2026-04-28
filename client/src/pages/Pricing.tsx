@@ -145,6 +145,7 @@ function PlanCard({
           background: `linear-gradient(135deg, ${tier.color}22, ${tier.color}08)`,
           borderBottom: `1px solid ${tier.color}30`,
           padding: "24px 28px 20px",
+          minHeight: "200px",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
@@ -196,7 +197,7 @@ function PlanCard({
                 gap: "8px",
               }}
             >
-              <span style={{ color: tier.color, flexShrink: 0, marginTop: "1px" }}>✓</span>
+              {f.trim() && <span style={{ color: tier.color, flexShrink: 0, marginTop: "1px" }}>✓</span>}
               {f}
             </li>
           ))}
@@ -468,7 +469,7 @@ export default function Pricing() {
         </section>
 
         {/* Plan Overview */}
-        <section style={{ marginBottom: "32px" }}>
+        <section style={{ marginBottom: "20px" }}>
           <h2
             style={{
               fontFamily: "'Playfair Display', serif",
@@ -558,7 +559,7 @@ export default function Pricing() {
         </section>
 
         {/* Currency Tabs */}
-        <section style={{ marginTop: "0" }}>
+        <section style={{ marginTop: "0", paddingTop: "0" }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "16px", marginBottom: "12px" }}>
             <h2
               style={{
