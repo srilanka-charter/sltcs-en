@@ -100,10 +100,10 @@ const TIERS: { key: TierKey; label: string; badge?: string; color: string; featu
     color: "#d4af37",
     features: [
       "Highly-rated Chauffeur Guide Driver guaranteed",
-      "Full-itinerary accompaniment & guiding",
+      "Full-itinerary accompaniment & guiding at sightseeing spots",
       "English-speaking local coordinator",
       "Dual support system",
-      " ",
+      "Safari & activity arrangements",
     ],
   },
 ];
