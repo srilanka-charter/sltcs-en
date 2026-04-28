@@ -75,7 +75,7 @@ const TIERS: { key: TierKey; label: string; badge?: string; color: string; featu
     color: "#cd7f32",
     features: [
       "Trainee driver assigned",
-      "Transfer & transportation service",
+      "Transfer service, including hotel and restaurant pick-up/drop-off",
       "English-speaking local coordinator",
       "Clean air-conditioned vehicle",
       "Recommended plan for those who want to enjoy traveling economically",
