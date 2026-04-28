@@ -635,7 +635,7 @@ export default function Pricing() {
         </section>
 
         {/* CTA */}
-        <section style={{ textAlign: "center", marginTop: "64px" }}>
+        <section style={{ textAlign: "center", marginTop: "20px" }}>
           <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.95rem", marginBottom: "24px" }}>
             Not sure which plan suits you? Feel free to contact us for a free, personalised estimate.
           </p>
