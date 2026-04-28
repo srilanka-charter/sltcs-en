@@ -449,7 +449,7 @@ export default function Pricing() {
         </section>
 
         {/* Transparent pricing */}
-        <section style={{ marginBottom: "28px" }}>
+        <section style={{ marginBottom: "8px" }}>
           <h2
             style={{
               fontFamily: "'Playfair Display', serif",
@@ -469,7 +469,7 @@ export default function Pricing() {
         </section>
 
         {/* Plan Overview */}
-        <section style={{ marginBottom: "20px" }}>
+        <section style={{ marginBottom: "20px", paddingTop: "0" }}>
           <h2
             style={{
               fontFamily: "'Playfair Display', serif",
