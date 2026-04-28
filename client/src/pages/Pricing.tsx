@@ -78,7 +78,7 @@ const TIERS: { key: TierKey; label: string; badge?: string; color: string; featu
       "Transfer & transportation service",
       "English-speaking local coordinator",
       "Clean air-conditioned vehicle",
-      " ",
+      "Recommended plan for those who want to enjoy traveling economically",
     ],
   },
   {
@@ -88,7 +88,7 @@ const TIERS: { key: TierKey; label: string; badge?: string; color: string; featu
     color: "#c9a84c",
     features: [
       "Government-certified Tourist Driver or above",
-      "Accompaniment & commentary at sightseeing spots",
+      "Accompaniment & guiding at sightseeing spots",
       "English-speaking local coordinator",
       "Safari & activity arrangements",
       "Guide service at no extra charge",
@@ -100,7 +100,7 @@ const TIERS: { key: TierKey; label: string; badge?: string; color: string; featu
     color: "#d4af37",
     features: [
       "Highly-rated Chauffeur Guide Driver guaranteed",
-      "Full-itinerary accompaniment & commentary",
+      "Full-itinerary accompaniment & guiding",
       "English-speaking local coordinator",
       "Dual support system",
       " ",
