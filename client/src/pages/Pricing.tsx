@@ -145,7 +145,7 @@ function PlanCard({
           background: `linear-gradient(135deg, ${tier.color}22, ${tier.color}08)`,
           borderBottom: `1px solid ${tier.color}30`,
           padding: "24px 28px 20px",
-          minHeight: "200px",
+          minHeight: "240px",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
