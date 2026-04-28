@@ -487,6 +487,7 @@ export default function Pricing() {
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
               gap: "20px",
+              alignItems: "stretch",
             }}
           >
             {TIERS.map((tier) => (
@@ -497,6 +498,8 @@ export default function Pricing() {
                   border: `1px solid ${tier.color}30`,
                   borderRadius: "12px",
                   padding: "24px",
+                  display: "flex",
+                  flexDirection: "column",
                 }}
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "10px" }}>
@@ -535,7 +538,7 @@ export default function Pricing() {
                 <h3 style={{ color: "#fff", fontSize: "1.05rem", fontWeight: 700, margin: "0 0 12px" }}>
                   {tier.label}
                 </h3>
-                <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                <ul style={{ listStyle: "none", padding: 0, margin: 0, flexGrow: 1 }}>
                   {tier.features.map((f) => (
                     <li
                       key={f}
