@@ -39,4 +39,6 @@
 - [x] Add 6th review: The D Family (Chamil, December 2025, 5 passengers)
 - [x] Add language switcher dropdown in navbar (after CONTACT, English labels)
 - [x] Fix Git conflict markers in index.html (ja hreflang)
+- [x] Create /price page with USD/GBP/EUR tabs and Bronze/Silver/Gold vehicle tabs
+- [x] Add PRICE link to navbar and register route in App.tsx
 - [ ] Publish to en.srilanka-charter.com
