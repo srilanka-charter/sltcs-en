@@ -10,11 +10,13 @@ const PAGE_DESC =
 interface FaqItem {
   q: string;
   a: React.ReactNode;
+  plainText: string; // plain text version for JSON-LD
 }
 
 const FAQ_ITEMS: FaqItem[] = [
   {
     q: "What kind of service is SLTCS (Sri Lanka Car Hire with Private Driver)?",
+    plainText: "SLTCS (Sri Lanka Car Hire with Private Driver) is an online ground transportation matching service operated by Sri Lanka Taxi Charter Service International Limited, a Hong Kong-registered company. It connects travellers with tourism drivers registered with the Sri Lanka Tourism Development Authority (SLTDA). The transportation contract is formed directly between the customer and the driver. SLTCS acts as an introduction and communication intermediary and does not itself provide transportation.",
     a: (
       <>
         <p>
@@ -41,6 +43,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "How much tip should I give, and when?",
+    plainText: "A guideline tip is LKR 2,000–4,000 per day (approx. USD 6–12). It is customary to hand it over at the end of each day's itinerary. Adding a word of thanks helps ensure even better service on subsequent days. Tipping is entirely optional.",
     a: (
       <>
         <p>
@@ -57,6 +60,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "Can I consult in English about my itinerary or get route suggestions?",
+    plainText: "Yes. If you share your desired itinerary and destinations with us, we can provide suggested travel routes and estimated travel times based on local knowledge (for reference purposes). The final itinerary decisions rest with you.",
     a: (
       <p>
         Yes. If you share your desired itinerary and destinations with us, we
@@ -69,6 +73,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "Can you arrange activities such as safaris or whale watching?",
+    plainText: "If you are on the Silver Plan or above, you can request safari (jeep tours) and whale-watching arrangements through your driver (costs payable locally). For other activities such as Ayurveda, you are welcome to consult your driver after arrival, but SLTCS does not handle booking or sales on your behalf.",
     a: (
       <>
         <p>
@@ -88,6 +93,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "Can I trust the driver's driving skills and punctuality?",
+    plainText: "We select drivers based on qualifications and track record, and we share in advance the points that our guests value most—punctuality, safe driving, and cleanliness. Transportation is provided by the driver; SLTCS does not guarantee transport quality.",
     a: (
       <>
         <p>
@@ -104,6 +110,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "Can a baby seat or child seat be provided?",
+    plainText: "We can assist within available capacity (subject to stock and region). If you require one, please contact us in advance so we can make the necessary arrangements.",
     a: (
       <p>
         We can assist within available capacity (subject to stock and region).
@@ -115,6 +122,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "Will meeting up with the driver go smoothly?",
+    plainText: "We will provide the driver's contact details before your departure so you can get in touch beforehand. Should any issue arise, we also support you via email and our contact channels. We cannot guarantee the outcome of the meeting point arrangement.",
     a: (
       <>
         <p>
@@ -130,6 +138,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "Can the driver provide commentary and guidance at tourist sites?",
+    plainText: "In Sri Lanka there are two driver categories: a Tourist Driver who handles passenger transport, and a higher-qualified Chauffeur Guide Driver who can also provide site commentary and guidance. The Silver Plan and above are attended by a Tourist Driver or higher; the Gold Plan is attended by a Chauffeur Guide Driver. During peak season on the Silver Plan, a local guide will be arranged at certain sites at no additional charge.",
     a: (
       <>
         <p>
@@ -158,6 +167,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "What payment methods are accepted?",
+    plainText: "Payment to SLTCS (service fee / booking arrangement fee) is made online by credit card. The driver's transportation fee is paid in full directly to the driver on-site.",
     a: (
       <>
         <p>
@@ -173,6 +183,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "What is included in the price, and what is not?",
+    plainText: "Included: Vehicle cost (Japanese-made vehicle), driver's wages, meals, and accommodation, vehicle insurance, expressway tolls and parking fees. Not included: Tips (optional), entrance fees to tourist attractions, safari, whale watching, and other activity fees.",
     a: (
       <>
         <p className="font-semibold">Included:</p>
@@ -198,6 +209,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "What if I cannot book the tea train — can you arrange it?",
+    plainText: "We ask that you arrange railway bookings yourself online. We recommend using 12Go.Asia for reservations. If you are unable to secure a reservation, we can still provide reference information from a transport perspective. SLTCS does not handle railway or other transport bookings or sales.",
     a: (
       <>
         <p>
@@ -217,6 +229,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "What happens if my itinerary or plans change at the last minute?",
+    plainText: "Up to 7 days before travel starts: No cancellation fee. Any service fee already paid will be refunded (minus actual costs). 2–6 days before travel starts: The service fee will not be refunded (treated as a cancellation fee). The day before or on the day of travel: No refund for any reason.",
     a: (
       <>
         <ul className="text-sm text-gray-700 space-y-2">
@@ -243,6 +256,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "Can I travel even if I arrive late at night on the first day?",
+    plainText: "In principle, yes — but depending on the driver's availability, safety considerations, and road conditions, it may not always be possible. If you require a late-night transfer, please consult us in advance. We will do our best to accommodate your needs flexibly.",
     a: (
       <p>
         In principle, yes — but depending on the driver's availability, safety
@@ -255,6 +269,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "Please tell me about the driver introduction.",
+    plainText: "For the Silver Plan and above, we introduce SLTDA (Sri Lanka Tourism Development Authority)-registered tourism drivers. We will do our best to accommodate requests for English-speaking drivers, but we cannot guarantee availability due to supply conditions.",
     a: (
       <p>
         For the <strong>Silver Plan and above</strong>, we introduce SLTDA
@@ -266,6 +281,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "Is travel insurance necessary?",
+    plainText: "We strongly recommend purchasing travel insurance. While Sri Lankan law requires all vehicles to carry insurance, the coverage levels are low — even in a fatal accident, compensation amounts to roughly USD 1,000. Taking out your own travel insurance is the most reliable option.",
     a: (
       <>
         <p>
@@ -331,6 +347,31 @@ export default function FAQ() {
       document.head.appendChild(meta);
     }
     (meta as HTMLMetaElement).content = PAGE_DESC;
+
+    // JSON-LD: FAQPage schema for Google rich results
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": FAQ_ITEMS.map((item) => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.plainText,
+        },
+      })),
+    };
+    const existingScript = document.querySelector('script[data-id="faq-jsonld"]');
+    if (existingScript) existingScript.remove();
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.setAttribute("data-id", "faq-jsonld");
+    script.textContent = JSON.stringify(jsonLd);
+    document.head.appendChild(script);
+
+    return () => {
+      document.querySelector('script[data-id="faq-jsonld"]')?.remove();
+    };
   }, []);
 
   const scrollTo = (id: string) => {
