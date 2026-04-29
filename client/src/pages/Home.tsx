@@ -158,7 +158,7 @@ function Navbar() {
               </div>
             )}
           </li>
-          <li><a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>VEHICLES</a></li>
+          <li><a href="/vehicles">VEHICLES</a></li>
           <li><a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a></li>
           <li><a href="/price">PRICE</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>CONTACT</a></li>
@@ -184,7 +184,7 @@ function Navbar() {
         <div className="mobile-menu open">
           <a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Plans</a>
           <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Model Itinerary</a>
-          <a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>Vehicles</a>
+          <a href="/vehicles">Vehicles</a>
           <a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a>
           <a href="/price">Price</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Contact</a>
