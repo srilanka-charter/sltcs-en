@@ -159,9 +159,9 @@ function Navbar() {
             )}
           </li>
           <li><a href="/vehicles">VEHICLES</a></li>
-          <li><a href="/faq">FAQ</a></li>
           <li><a href="/price">PRICE</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>CONTACT</a></li>
+          <li><a href="/faq">FAQ</a></li>
           <li className="nav-dropdown nav-lang-dropdown" onMouseEnter={() => setLangOpen(true)} onMouseLeave={() => setLangOpen(false)}>
             <button style={{ display: "flex", alignItems: "center", gap: "4px" }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
@@ -185,9 +185,9 @@ function Navbar() {
           <a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Plans</a>
           <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Model Itinerary</a>
           <a href="/vehicles">Vehicles</a>
-          <a href="/faq">FAQ</a>
           <a href="/price">Price</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Contact</a>
+          <a href="/faq">FAQ</a>
           <a href="#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Free Enquiry</a>
           <div style={{ borderTop: "1px solid rgba(201,168,76,0.3)", paddingTop: "8px", marginTop: "4px" }}>
             <div style={{ color: "#c9a84c", fontSize: "11px", letterSpacing: "0.1em", marginBottom: "6px", paddingLeft: "4px" }}>OTHER LANGUAGES</div>
@@ -1132,36 +1132,6 @@ function Vehicles() {
   );
 }
 
-// ─── FAQ ──────────────────────────────────────────────────────────────────────
-function FAQ() {
-  const [openIdx, setOpenIdx] = useState<number | null>(null);
-  const faqs = [
-    { q: "Do your drivers speak English?", a: "Yes. All SLTCS drivers are proficient in English and communicate clearly throughout the trip. Our Silver and Gold plan drivers hold official government guiding licences and are experienced in hosting international guests. Our coordination team also provides full English support before and during your journey." },
-    { q: "How much does a private driver in Sri Lanka cost?", a: "Pricing depends on the duration of your trip, the number of passengers, the vehicle type, and the plan you choose (Bronze, Silver, or Gold). We provide transparent, all-inclusive quotes with no hidden fees. Contact us for a personalised quote — it's completely free and there's no obligation to book." },
-    { q: "Can we change the itinerary during the trip?", a: "Absolutely. One of the great advantages of a private charter is complete flexibility. You can adjust your itinerary, extend time at a particular site, add new destinations, or change the pace entirely — simply discuss it with your driver. We plan everything in advance but always accommodate your wishes on the day." },
-    { q: "Is this service suitable for families with children or elderly travellers?", a: "Yes, absolutely. Our private charter service is ideal for families with young children and groups travelling with elderly members. Your driver will adapt the pace and schedule to suit everyone's needs. Child seats can be arranged on request. We have extensive experience hosting multi-generational family groups from across Europe." },
-    { q: "What is your cancellation policy?", a: "We understand that travel plans can change. Our cancellation policy is designed to be fair and transparent. Full details are provided at the time of booking. In general, cancellations made well in advance incur no charge. Please contact us directly for the specific terms applicable to your booking." },
-    { q: "What currencies do you accept for payment?", a: "We accept payments in GBP (£), EUR (€), USD ($), and AUD (A$). You can indicate your preferred currency in the contact form, and we will provide your quote in that currency. Payment methods will be confirmed at the time of booking." },
-  ];
-  return (
-    <section id="faq">
-      <div className="container">
-        <div className="section-eyebrow">FAQ</div>
-        <h2 className="section-title">Frequently Asked Questions</h2>
-        <div className="faq-list">
-          {faqs.map((f, i) => (
-            <div key={i} className={`faq-item${openIdx === i ? " open" : ""}`}>
-              <button className="faq-question" onClick={() => setOpenIdx(openIdx === i ? null : i)}>
-                {f.q} <span className="faq-icon">+</span>
-              </button>
-              <div className="faq-answer"><p>{f.a}</p></div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 // ─── Company ──────────────────────────────────────────────────────────────────
 function Company() {
@@ -1266,7 +1236,6 @@ export default function Home() {
       <Reviews />
       <HowItWorks />
       <Vehicles />
-      <FAQ />
       <Company />
       <Footer />
       <FloatingCTA />
