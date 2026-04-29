@@ -159,7 +159,7 @@ function Navbar() {
             )}
           </li>
           <li><a href="/vehicles">VEHICLES</a></li>
-          <li><a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a></li>
+          <li><a href="/faq">FAQ</a></li>
           <li><a href="/price">PRICE</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>CONTACT</a></li>
           <li className="nav-dropdown nav-lang-dropdown" onMouseEnter={() => setLangOpen(true)} onMouseLeave={() => setLangOpen(false)}>
@@ -185,7 +185,7 @@ function Navbar() {
           <a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Plans</a>
           <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Model Itinerary</a>
           <a href="/vehicles">Vehicles</a>
-          <a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a>
+          <a href="/faq">FAQ</a>
           <a href="/price">Price</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Contact</a>
           <a href="#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Free Enquiry</a>

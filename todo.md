@@ -41,4 +41,7 @@
 - [x] Fix Git conflict markers in index.html (ja hreflang)
 - [x] Create /price page with USD/GBP/EUR tabs and Bronze/Silver/Gold vehicle tabs
 - [x] Add PRICE link to navbar and register route in App.tsx
+- [x] Create /vehicles page (English translation of Japanese version)
+- [x] Add /vehicles route to App.tsx
+- [x] Update VEHICLES link in navbar to /vehicles
 - [ ] Publish to en.srilanka-charter.com
