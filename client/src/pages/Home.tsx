@@ -234,7 +234,7 @@ function Hero() {
       <div className="hero-content">
         <div className="hero-eyebrow">SRI LANKA PRIVATE CHARTER SERVICE</div>
         <div className="hero-badge">CAR HIRE WITH DRIVER</div>
-        <h1>Sri Lanka <em>Car Hire</em><br />with a Private Driver</h1>
+        <h1>Sri Lanka <em>Car Hire</em> with a Private Driver</h1>
         <p className="hero-sub">
           Explore Sri Lanka at your own pace with a dedicated private driver.
           Fully flexible, fully private — the finest way to discover the Pearl of the Indian Ocean.
