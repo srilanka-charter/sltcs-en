@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SiteNavbar from "@/components/SiteNavbar";
 
 // ─── Price Data ───────────────────────────────────────────────────────────────
 type VehicleKey = "sedan" | "van" | "bigvan";
@@ -350,6 +351,7 @@ export default function Pricing() {
         fontFamily: "'Inter', sans-serif",
       }}
     >
+      <SiteNavbar mode="page" />
       {/* Hero */}
       <section
         style={{
