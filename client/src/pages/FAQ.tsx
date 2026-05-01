@@ -232,22 +232,25 @@ const FAQ_ITEMS: FaqItem[] = [
     plainText: "Up to 7 days before travel starts: No cancellation fee. Any service fee already paid will be refunded (minus actual costs). 2–6 days before travel starts: The service fee will not be refunded (treated as a cancellation fee). The day before or on the day of travel: No refund for any reason.",
     a: (
       <>
-        <ul className="text-sm text-gray-700 space-y-2">
+        <ul className="text-sm text-white space-y-2">
           <li>
             <strong>Up to 7 days before travel starts:</strong> No cancellation
             fee. Any service fee already paid will be refunded (minus actual
             costs such as payment processing fees).
           </li>
           <li>
-            <strong>2–6 days before travel starts:</strong> The service fee
-            will not be refunded (treated as a cancellation fee).
+            <strong>2–6 days before travel starts:</strong> No advance payment
+            is required before your arrival in Sri Lanka. Cancellation is
+            accepted up to 7 days before your trip. Even after that, if your
+            flight is cancelled due to war, weather, or other circumstances
+            beyond your control, we will also accept your cancellation.
           </li>
           <li>
             <strong>The day before or on the day of travel:</strong> No refund
             for any reason.
           </li>
         </ul>
-        <p className="mt-2 text-xs text-gray-500">
+        <p className="mt-2 text-xs text-white/60">
           ※ Driver transportation fees are settled directly on-site and are
           therefore outside the scope of SLTCS refunds.
         </p>
