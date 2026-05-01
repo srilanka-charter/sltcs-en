@@ -502,7 +502,7 @@ export default function FAQ() {
                     }, 50);
                   }}
                 >
-                  {i + 1}. {item.q}
+                  {item.q}
                 </button>
               </li>
             ))}
