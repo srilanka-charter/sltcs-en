@@ -167,13 +167,16 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "What payment methods are accepted?",
-    plainText: "Payment to SLTCS (service fee / booking arrangement fee) is made online by credit card. The driver's transportation fee is paid in full directly to the driver on-site.",
+    plainText: "No advance payment is required. When you meet your driver in Sri Lanka, you pay the service fee by credit card. The driver's transportation fee is paid directly to the driver in your chosen currency — half on the first day and the remaining half on the last day.",
     a: (
       <>
         <p>
-          Payment to SLTCS (service fee / booking arrangement fee) is made
-          online by credit card. The driver's transportation fee is paid{" "}
-          <strong>in full directly to the driver on-site</strong>.
+          <strong>No advance payment is required.</strong> When you meet your
+          driver in Sri Lanka, you pay the service fee by{" "}
+          <strong>credit card</strong>. The driver's transportation fee is paid
+          directly to the driver in your chosen currency —{" "}
+          <strong>half on the first day</strong> and the{" "}
+          <strong>remaining half on the last day</strong>.
         </p>
         <p className="mt-2 text-sm text-gray-500">
           ※ Please feel free to contact us regarding payment methods.
