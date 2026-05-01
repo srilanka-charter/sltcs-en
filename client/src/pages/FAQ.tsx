@@ -232,7 +232,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
   {
     q: "What happens if my itinerary or plans change at the last minute?",
-    plainText: "Up to 7 days before travel starts: No cancellation fee. Any service fee already paid will be refunded (minus actual costs). 2–6 days before travel starts: The service fee will not be refunded (treated as a cancellation fee). The day before or on the day of travel: No refund for any reason.",
+    plainText: "No advance payment is required before your arrival in Sri Lanka. Up to 7 days before travel starts: No cancellation fee. Any service fee already paid will be refunded (minus actual costs such as payment processing fees). 2–6 days before travel starts: No advance payment is required before your arrival in Sri Lanka. Cancellation is accepted up to 7 days before your trip. Even after that, if your flight is cancelled due to war, weather, or other circumstances beyond your control, we will also accept your cancellation. The day before or on the day of travel: No refund for any reason.",
     a: (
       <>
         <ul className="text-sm text-white space-y-2">
