@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SiteNavbar from "@/components/SiteNavbar";
 
 // ─── Price Data ───────────────────────────────────────────────────────────────
@@ -337,6 +337,94 @@ function PlanCard({
 // ─── Main Page ────────────────────────────────────────────────────────────────
 export default function Pricing() {
   const [currency, setCurrency] = useState<CurrencyKey>("USD");
+
+  // ─── SEO: title, meta description, JSON-LD ──────────────────────────────────
+  useEffect(() => {
+    // Title
+    document.title = "Sri Lanka Car Hire Prices | Flat-Rate Plans | SLTCS";
+
+    // Meta description
+    let metaDesc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+    if (!metaDesc) {
+      metaDesc = document.createElement("meta");
+      metaDesc.name = "description";
+      document.head.appendChild(metaDesc);
+    }
+    const prevDesc = metaDesc.content;
+    metaDesc.content =
+      "View flat-rate prices for Sri Lanka private car hire with driver. Bronze, Silver & Gold plans from $270. Sedan, Van & Big Van. USD, GBP, EUR, AUD.";
+
+    // JSON-LD: PriceSpecification (USD, Bronze/Silver/Gold, Sedan 2-day as representative)
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: "Sri Lanka Car Hire with Private Driver",
+      description:
+        "Fully private car hire service in Sri Lanka with an English-speaking driver. Three plans: Bronze, Silver, Gold.",
+      url: "https://en.srilanka-charter.com/price",
+      brand: {
+        "@type": "Brand",
+        name: "SLTCS – Sri Lanka Car Hire with Private Driver",
+      },
+      offers: [
+        // Bronze
+        {
+          "@type": "Offer",
+          name: "Bronze Plan – Sedan (2 days)",
+          price: "270",
+          priceCurrency: "USD",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "270",
+            priceCurrency: "USD",
+            unitText: "2 days",
+          },
+          availability: "https://schema.org/InStock",
+          url: "https://en.srilanka-charter.com/price",
+        },
+        {
+          "@type": "Offer",
+          name: "Silver Plan – Sedan (2 days)",
+          price: "310",
+          priceCurrency: "USD",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "310",
+            priceCurrency: "USD",
+            unitText: "2 days",
+          },
+          availability: "https://schema.org/InStock",
+          url: "https://en.srilanka-charter.com/price",
+        },
+        {
+          "@type": "Offer",
+          name: "Gold Plan – Sedan (2 days)",
+          price: "350",
+          priceCurrency: "USD",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "350",
+            priceCurrency: "USD",
+            unitText: "2 days",
+          },
+          availability: "https://schema.org/InStock",
+          url: "https://en.srilanka-charter.com/price",
+        },
+      ],
+    };
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "price-jsonld";
+    script.textContent = JSON.stringify(jsonLd);
+    document.head.appendChild(script);
+
+    return () => {
+      document.title = "SLTCS｜Sri Lanka Car Hire with Private Driver";
+      metaDesc!.content = prevDesc;
+      document.getElementById("price-jsonld")?.remove();
+    };
+  }, []);
 
   const scrollToContact = () => {
     window.location.href = "/#contact";
