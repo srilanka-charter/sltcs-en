@@ -283,9 +283,9 @@ function Stats() {
             const progress = Math.min(elapsed / duration, 1);
             const eased = 1 - Math.pow(1 - progress, 3);
             setCounts({
-              charters: Math.floor(1200 * eased),
+              charters: Math.floor(400 * eased),
               satisfaction: parseFloat((4.9 * eased).toFixed(1)),
-              drivers: Math.floor(50 * eased),
+              drivers: Math.floor(30 * eased),
             });
             if (progress < 1) requestAnimationFrame(animate);
           };
@@ -524,7 +524,7 @@ function WhySLTCS() {
     { icon: "🚗", title: "Completely Private Charter", desc: "Unlike group tours, your vehicle and driver are exclusively yours. Set your own schedule, choose your stops, and travel entirely on your own terms." },
     { icon: "🗺️", title: "Expert Local Knowledge", desc: "Our Chauffeur Guide Drivers are passionate about Sri Lanka's history, culture, and cuisine. They'll take you beyond the guidebook to hidden gems and authentic experiences." },
     { icon: "🚌", title: "Right Vehicle for Every Group", desc: "From couples to large family groups of 10, we match the perfect vehicle to your party size — ensuring comfort even on long-distance journeys across the island." },
-    { icon: "🌍", title: "Trusted by European Travellers", desc: "With over 1,200 completed charters and a 4.9 average satisfaction rating, SLTCS is the preferred choice for UK and European visitors exploring Sri Lanka." },
+    { icon: "🌍", title: "Trusted by European Travellers", desc: "With over 400 completed charters and a 4.9 average satisfaction rating, SLTCS is the preferred choice for UK and European visitors exploring Sri Lanka." },
   ];
   return (
     <section id="why">
