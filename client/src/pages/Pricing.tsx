@@ -554,6 +554,21 @@ export default function Pricing() {
           <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.85rem", lineHeight: 1.7, marginTop: "16px" }}>
             In particular, some seemingly low-cost services impose mileage limits and charge for overages. There have been cases where drivers reported inflated distances, resulting in bills far exceeding expectations.
           </p>
+          <p style={{ marginTop: "10px" }}>
+            <a
+              href="/low-price-risk"
+              style={{
+                color: "#c9a84c",
+                fontSize: "0.82rem",
+                textDecoration: "none",
+                borderBottom: "1px solid rgba(201,168,76,0.4)",
+                paddingBottom: "1px",
+                letterSpacing: "0.02em",
+              }}
+            >
+              → detail
+            </a>
+          </p>
         </section>
 
         {/* Transparent pricing */}

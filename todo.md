@@ -45,3 +45,6 @@
 - [x] Add /vehicles route to App.tsx
 - [x] Update VEHICLES link in navbar to /vehicles
 - [ ] Publish to en.srilanka-charter.com
+- [x] Create /low-price-risk page (LowPriceRisk.tsx) with rewritten content from reference article
+- [x] Add /low-price-risk route to App.tsx
+- [x] Add →detail link below mileage-limit warning text in Pricing.tsx
