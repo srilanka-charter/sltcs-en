@@ -625,8 +625,8 @@ function WhySLTCS() {
           style={{
             position: "relative",
             zIndex: 2,
-            padding: "60px 48px 64px",
-            maxWidth: "560px",
+            padding: "60px 2rem 64px",
+            maxWidth: "calc(560px + 2rem)",
           }}
         >
           {/* Eyebrow */}
@@ -965,7 +965,7 @@ function Concerns() {
         }}
       />
 
-      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 40px 0" }}>
+      <div className="container">
         {/* Eyebrow */}
         <div
           style={{
