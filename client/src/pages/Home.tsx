@@ -7,7 +7,7 @@
  * - Full-bleed hero slideshow, tabbed itineraries, contact form
  */
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { trpc } from "@/lib/trpc";
 import { useLocation } from "wouter";
 
@@ -519,27 +519,381 @@ function ContactForm() {
 // ─── Why SLTCS ────────────────────────────────────────────────────────────────
 function WhySLTCS() {
   const reasons = [
-    { icon: "🛡️", title: "Government-Certified Drivers", desc: "All our drivers hold official Sri Lanka Tourist Driver or Chauffeur Guide Driver licences. Professionally trained, safety-focused, and highly rated by past clients." },
-    { icon: "💬", title: "Full English Support", desc: "From first enquiry to the final drop-off, our English-speaking team is on hand to assist. No language barriers — just seamless communication throughout your trip." },
-    { icon: "🚗", title: "Completely Private Charter", desc: "Unlike group tours, your vehicle and driver are exclusively yours. Set your own schedule, choose your stops, and travel entirely on your own terms." },
-    { icon: "🗺️", title: "Expert Local Knowledge", desc: "Our Chauffeur Guide Drivers are passionate about Sri Lanka's history, culture, and cuisine. They'll take you beyond the guidebook to hidden gems and authentic experiences." },
-    { icon: "🚌", title: "Right Vehicle for Every Group", desc: "From couples to large family groups of 10, we match the perfect vehicle to your party size — ensuring comfort even on long-distance journeys across the island." },
-    { icon: "🌍", title: "Trusted by European Travellers", desc: "With over 400 completed charters and a 4.9 average satisfaction rating, SLTCS is the preferred choice for UK and European visitors exploring Sri Lanka." },
+    {
+      tag: "SAFETY",
+      num: "01",
+      svgPath: "M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm0 4l6 3.27V12c0 3.79-2.58 7.33-6 8.93-3.42-1.6-6-5.14-6-8.93V9.27L12 6z",
+      title: "Government-Certified Drivers",
+      desc: "All our drivers hold official Sri Lanka Tourist Driver or Chauffeur Guide Driver licences. Professionally trained, safety-focused, and highly rated by past clients.",
+    },
+    {
+      tag: "SUPPORT",
+      num: "02",
+      svgPath: "M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z",
+      title: "Full English Support",
+      desc: "From first enquiry to the final drop-off, our English-speaking team is on hand to assist. No language barriers — just seamless communication throughout your trip.",
+    },
+    {
+      tag: "PRIVACY",
+      num: "03",
+      svgPath: "M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z",
+      title: "Completely Private Charter",
+      desc: "Unlike group tours, your vehicle and driver are exclusively yours. Set your own schedule, choose your stops, and travel entirely on your own terms.",
+    },
+    {
+      tag: "LOCAL INSIGHT",
+      num: "04",
+      svgPath: "M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z",
+      title: "Expert Local Knowledge",
+      desc: "Our Chauffeur Guide Drivers are passionate about Sri Lanka's history, culture, and cuisine. They'll take you beyond the guidebook to hidden gems and authentic experiences.",
+    },
+    {
+      tag: "FLEET MATCH",
+      num: "05",
+      svgPath: "M17 5H3c-1.1 0-2 .9-2 2v9h2c0 1.65 1.34 3 3 3s3-1.35 3-3h5.5c0 1.65 1.34 3 3 3s3-1.35 3-3H23v-5l-6-6zM3 11V7h4v4H3zm3 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7-6.5H9V7h4v4zm4.5 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM15 11V7h1l4 4h-5z",
+      title: "Right Vehicle for Every Group",
+      desc: "From couples to large family groups of 10, we match the perfect vehicle to your party size — ensuring comfort even on long-distance journeys across the island.",
+    },
+    {
+      tag: "TRUSTED",
+      num: "06",
+      svgPath: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z",
+      title: "Trusted by European Travellers",
+      desc: "With over 400 completed charters and a 4.9 average satisfaction rating, SLTCS is the preferred choice for UK and European visitors exploring Sri Lanka.",
+    },
   ];
+
+  const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+
   return (
-    <section id="why">
-      <div className="container">
-        <div className="section-eyebrow">WHY SLTCS</div>
-        <h2 className="section-title">5 Reasons Why Travellers<br />Choose SLTCS</h2>
-        <div className="why-grid">
-          {reasons.map((r, i) => (
-            <div key={i} className="why-card">
-              <div className="why-icon">{r.icon}</div>
-              <h3>{r.title}</h3>
-              <p>{r.desc}</p>
-            </div>
-          ))}
+    <section
+      id="why"
+      style={{
+        background: "#0a0c0f",
+        padding: "0 0 0",
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
+      {/* ── Hero banner with van image ── */}
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          minHeight: "420px",
+          display: "flex",
+          alignItems: "flex-end",
+          overflow: "hidden",
+        }}
+      >
+        {/* Background image */}
+        <img
+          src="/manus-storage/hero_van_srilanka_706f8966.jpg"
+          alt="SLTCS private van on Sri Lanka coastal road at sunset"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center 40%",
+          }}
+        />
+        {/* Dark gradient overlay — stronger on left for text legibility */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(90deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.15) 100%)",
+          }}
+        />
+        {/* Bottom fade to card section */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: "120px",
+            background: "linear-gradient(to bottom, transparent, #0a0c0f)",
+          }}
+        />
+
+        {/* Text content */}
+        <div
+          style={{
+            position: "relative",
+            zIndex: 2,
+            padding: "60px 48px 64px",
+            maxWidth: "560px",
+          }}
+        >
+          {/* Eyebrow */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "12px",
+              marginBottom: "20px",
+            }}
+          >
+            <span
+              style={{
+                color: "#c9a84c",
+                fontSize: "0.72rem",
+                fontWeight: 700,
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+              }}
+            >
+              WHY SLTCS
+            </span>
+            <div style={{ flex: 1, height: "1px", background: "rgba(201,168,76,0.4)", maxWidth: "60px" }} />
+          </div>
+
+          <h2
+            style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "clamp(2rem, 4.5vw, 3rem)",
+              fontWeight: 700,
+              lineHeight: 1.15,
+              color: "#fff",
+              margin: "0 0 8px",
+            }}
+          >
+            5 Reasons Why<br />Travellers Choose<br />
+            <span style={{ color: "#c9a84c" }}>SLTCS</span>
+          </h2>
+          <p
+            style={{
+              color: "rgba(255,255,255,0.7)",
+              fontSize: "0.95rem",
+              lineHeight: 1.7,
+              margin: "16px 0 28px",
+              maxWidth: "420px",
+            }}
+          >
+            Private charters across Sri Lanka with certified drivers,
+            personalised service, and local expertise you can trust.
+          </p>
+          <button
+            onClick={() => scrollTo("contact")}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "10px",
+              background: "transparent",
+              border: "1px solid #c9a84c",
+              color: "#c9a84c",
+              fontFamily: "'Inter', sans-serif",
+              fontSize: "0.78rem",
+              fontWeight: 700,
+              letterSpacing: "0.12em",
+              textTransform: "uppercase",
+              padding: "13px 28px",
+              borderRadius: "4px",
+              cursor: "pointer",
+            }}
+          >
+            Plan My Journey
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" strokeWidth="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
+
+        {/* Promise badge */}
+        <div
+          style={{
+            position: "absolute",
+            right: "48px",
+            top: "50%",
+            transform: "translateY(-50%)",
+            zIndex: 2,
+            width: "110px",
+            height: "110px",
+            borderRadius: "50%",
+            border: "2px solid rgba(201,168,76,0.6)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            background: "rgba(0,0,0,0.55)",
+            backdropFilter: "blur(4px)",
+          }}
+        >
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#c9a84c">
+            <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm0 4l6 3.27V12c0 3.79-2.58 7.33-6 8.93-3.42-1.6-6-5.14-6-8.93V9.27L12 6z" />
+          </svg>
+          <div
+            style={{
+              color: "#c9a84c",
+              fontSize: "0.55rem",
+              fontWeight: 700,
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              textAlign: "center",
+              lineHeight: 1.6,
+              marginTop: "4px",
+            }}
+          >
+            YOUR JOURNEY<br />SLTCS<br />OUR PROMISE
+          </div>
+        </div>
+      </div>
+
+      {/* ── Cards grid ── */}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: "1px",
+          background: "rgba(201,168,76,0.12)",
+          borderTop: "1px solid rgba(201,168,76,0.12)",
+        }}
+      >
+        {reasons.map((r, i) => (
+          <div
+            key={i}
+            style={{
+              background: "#0d1117",
+              padding: "32px 28px",
+              position: "relative",
+              overflow: "hidden",
+              transition: "background 0.25s",
+            }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.background = "#111620"; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.background = "#0d1117"; }}
+          >
+            {/* Large faint number */}
+            <div
+              style={{
+                position: "absolute",
+                bottom: "12px",
+                right: "20px",
+                fontFamily: "'Playfair Display', serif",
+                fontSize: "4rem",
+                fontWeight: 700,
+                color: "rgba(201,168,76,0.07)",
+                lineHeight: 1,
+                userSelect: "none",
+              }}
+            >
+              {r.num}
+            </div>
+
+            {/* Icon circle */}
+            <div
+              style={{
+                width: "52px",
+                height: "52px",
+                borderRadius: "50%",
+                border: "1.5px solid rgba(201,168,76,0.5)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginBottom: "16px",
+                background: "rgba(201,168,76,0.06)",
+              }}
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#c9a84c">
+                <path d={r.svgPath} />
+              </svg>
+            </div>
+
+            {/* Tag pill */}
+            <div
+              style={{
+                display: "inline-block",
+                background: "rgba(201,168,76,0.1)",
+                border: "1px solid rgba(201,168,76,0.25)",
+                color: "#c9a84c",
+                fontSize: "0.62rem",
+                fontWeight: 700,
+                letterSpacing: "0.12em",
+                padding: "3px 10px",
+                borderRadius: "20px",
+                textTransform: "uppercase",
+                marginBottom: "10px",
+              }}
+            >
+              {r.tag}
+            </div>
+
+            <h3
+              style={{
+                fontFamily: "'Playfair Display', serif",
+                fontSize: "1.05rem",
+                color: "#fff",
+                margin: "0 0 10px",
+                lineHeight: 1.35,
+              }}
+            >
+              {r.title}
+            </h3>
+            <p
+              style={{
+                color: "rgba(255,255,255,0.6)",
+                fontSize: "0.85rem",
+                lineHeight: 1.7,
+                margin: 0,
+              }}
+            >
+              {r.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* ── Trust bar ── */}
+      <div
+        style={{
+          borderTop: "1px solid rgba(201,168,76,0.15)",
+          background: "#0a0c0f",
+          padding: "18px 48px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "0",
+          flexWrap: "wrap",
+        }}
+      >
+        {[
+          { icon: "M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z", label: "CERTIFIED & INSURED" },
+          { icon: "M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z", label: "400+ HAPPY TRAVELLERS" },
+          { icon: "M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z", label: "4.9★ AVERAGE RATING" },
+          { icon: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z", label: "ISLAND-WIDE SERVICE" },
+        ].map((item, i, arr) => (
+          <React.Fragment key={item.label}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+                padding: "0 28px",
+              }}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#c9a84c">
+                <path d={item.icon} />
+              </svg>
+              <span
+                style={{
+                  color: "rgba(255,255,255,0.55)",
+                  fontSize: "0.68rem",
+                  fontWeight: 600,
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase",
+                }}
+              >
+                {item.label}
+              </span>
+            </div>
+            {i < arr.length - 1 && (
+              <div style={{ width: "4px", height: "4px", borderRadius: "50%", background: "rgba(201,168,76,0.4)" }} />
+            )}
+          </React.Fragment>
+        ))}
       </div>
     </section>
   );
@@ -548,30 +902,264 @@ function WhySLTCS() {
 // ─── Concerns ─────────────────────────────────────────────────────────────────
 function Concerns() {
   const concerns = [
-    "🗣️ Language barriers", "🚌 Getting around independently",
-    "💸 Being overcharged", "🚕 Taxi safety concerns",
-    "📍 Finding the right places", "⏰ Keeping to a schedule",
-    "👨‍👩‍👧 Travelling with children or elderly", "🗺️ Understanding local culture",
+    {
+      label: "Language barriers",
+      svgPath: "M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z",
+    },
+    {
+      label: "Getting around independently",
+      svgPath: "M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z",
+    },
+    {
+      label: "Being overcharged",
+      svgPath: "M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z",
+    },
+    {
+      label: "Taxi safety concerns",
+      svgPath: "M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm0 4l6 3.27V12c0 3.79-2.58 7.33-6 8.93-3.42-1.6-6-5.14-6-8.93V9.27L12 6z",
+    },
+    {
+      label: "Finding the right places",
+      svgPath: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z",
+    },
+    {
+      label: "Keeping to a schedule",
+      svgPath: "M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z",
+    },
+    {
+      label: "Travelling with children or elderly",
+      svgPath: "M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z",
+    },
+    {
+      label: "Understanding local culture",
+      svgPath: "M12 3L1 9l4 2.18V17h2v-4.82l2 1.09V17c0 2.76 2.24 5 5 5s5-2.24 5-5v-3.73l2-1.09L23 9l-11-6zm4 14c0 2.21-1.79 4-4 4s-4-1.79-4-4v-2.73l4 2.18 4-2.18V17z",
+    },
   ];
   const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+
   return (
-    <section id="concerns" className="concerns-section">
-      <div className="container">
-        <div className="section-eyebrow">YOUR CONCERNS</div>
-        <h2 className="section-title">Worried About<br />Travelling in Sri Lanka?</h2>
-        <div className="concerns-grid">
-          {concerns.map((c, i) => <div key={i} className="concern-tag">{c}</div>)}
+    <section
+      id="concerns"
+      style={{
+        background: "#080a0d",
+        padding: "72px 0 0",
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
+      {/* Faint map/dot pattern background */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage:
+            "radial-gradient(circle, rgba(201,168,76,0.06) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+          pointerEvents: "none",
+        }}
+      />
+
+      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 40px 0" }}>
+        {/* Eyebrow */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "12px",
+            marginBottom: "20px",
+          }}
+        >
+          <span
+            style={{
+              color: "#c9a84c",
+              fontSize: "0.7rem",
+              fontWeight: 700,
+              letterSpacing: "0.22em",
+              textTransform: "uppercase",
+            }}
+          >
+            YOUR CONCERNS
+          </span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="3" fill="#c9a84c" opacity="0.6" />
+            <path d="M12 2v4M12 18v4M2 12h4M18 12h4" stroke="#c9a84c" strokeWidth="1.5" opacity="0.4" />
+          </svg>
         </div>
-        <div className="concerns-cta">
-          <div>
-            <h3>SLTCS Solves Every One of These Concerns</h3>
-            <p>Your dedicated private driver handles everything — navigation, communication, scheduling, and local expertise. All you need to do is sit back and enjoy the journey.</p>
+
+        {/* Heading */}
+        <h2
+          style={{
+            fontFamily: "'Playfair Display', serif",
+            fontSize: "clamp(2rem, 4.5vw, 3rem)",
+            fontWeight: 700,
+            color: "#fff",
+            lineHeight: 1.2,
+            margin: "0 0 40px",
+          }}
+        >
+          Worried About<br />
+          Travelling in{" "}
+          <span style={{ color: "#c9a84c" }}>Sri Lanka?</span>
+        </h2>
+
+        {/* Concern cards grid — 4 columns */}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(4, 1fr)",
+            gap: "12px",
+            marginBottom: "16px",
+          }}
+        >
+          {concerns.map((c, i) => (
+            <div
+              key={i}
+              style={{
+                background: "rgba(255,255,255,0.04)",
+                border: "1px solid rgba(201,168,76,0.18)",
+                borderRadius: "10px",
+                padding: "18px 20px",
+                display: "flex",
+                alignItems: "center",
+                gap: "14px",
+                transition: "background 0.2s, border-color 0.2s",
+                cursor: "default",
+              }}
+              onMouseEnter={(e) => {
+                const el = e.currentTarget as HTMLDivElement;
+                el.style.background = "rgba(201,168,76,0.08)";
+                el.style.borderColor = "rgba(201,168,76,0.45)";
+              }}
+              onMouseLeave={(e) => {
+                const el = e.currentTarget as HTMLDivElement;
+                el.style.background = "rgba(255,255,255,0.04)";
+                el.style.borderColor = "rgba(201,168,76,0.18)";
+              }}
+            >
+              {/* Icon in rounded square */}
+              <div
+                style={{
+                  width: "38px",
+                  height: "38px",
+                  borderRadius: "8px",
+                  background: "rgba(201,168,76,0.1)",
+                  border: "1px solid rgba(201,168,76,0.25)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
+                }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#c9a84c">
+                  <path d={c.svgPath} />
+                </svg>
+              </div>
+              <span
+                style={{
+                  color: "rgba(255,255,255,0.82)",
+                  fontSize: "0.88rem",
+                  fontWeight: 500,
+                  lineHeight: 1.35,
+                }}
+              >
+                {c.label}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA banner */}
+        <div
+          style={{
+            background: "rgba(201,168,76,0.07)",
+            border: "1px solid rgba(201,168,76,0.25)",
+            borderRadius: "12px",
+            padding: "28px 32px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: "24px",
+            flexWrap: "wrap",
+            marginBottom: "0",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+            {/* Shield icon */}
+            <div
+              style={{
+                width: "52px",
+                height: "52px",
+                borderRadius: "50%",
+                background: "rgba(201,168,76,0.12)",
+                border: "1.5px solid rgba(201,168,76,0.4)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexShrink: 0,
+              }}
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#c9a84c">
+                <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm-2 13l-3-3 1.41-1.41L10 12.17l5.59-5.59L17 8l-7 7z" />
+              </svg>
+            </div>
+            <div>
+              <h3
+                style={{
+                  fontFamily: "'Playfair Display', serif",
+                  fontSize: "1.1rem",
+                  color: "#fff",
+                  margin: "0 0 6px",
+                  fontWeight: 600,
+                }}
+              >
+                SLTCS Solves Every One of These Concerns
+              </h3>
+              <p
+                style={{
+                  color: "rgba(255,255,255,0.62)",
+                  fontSize: "0.88rem",
+                  lineHeight: 1.65,
+                  margin: 0,
+                  maxWidth: "560px",
+                }}
+              >
+                Your dedicated private driver handles everything — navigation, communication,
+                scheduling, and local expertise. All you need to do is sit back and enjoy the journey.
+              </p>
+            </div>
           </div>
-          <a href="#contact" className="btn-primary" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>
+
+          {/* CTA button */}
+          <button
+            onClick={() => scrollTo("contact")}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "10px",
+              background: "linear-gradient(135deg, #c9a84c 0%, #a8832a 100%)",
+              color: "#000",
+              fontFamily: "'Inter', sans-serif",
+              fontSize: "0.88rem",
+              fontWeight: 700,
+              letterSpacing: "0.04em",
+              padding: "15px 32px",
+              borderRadius: "6px",
+              border: "none",
+              cursor: "pointer",
+              whiteSpace: "nowrap",
+              flexShrink: 0,
+            }}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
             Enquire Now — It's Free
-          </a>
+          </button>
         </div>
       </div>
+
+      {/* Bottom spacing */}
+      <div style={{ height: "72px" }} />
     </section>
   );
 }
