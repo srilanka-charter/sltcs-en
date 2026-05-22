@@ -744,13 +744,16 @@ function WhySLTCS() {
       </div>
 
       {/* ── Cards grid ── */}
+      <div className="container" style={{ paddingTop: "40px", paddingBottom: "0" }}>
       <div
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(3, 1fr)",
           gap: "1px",
           background: "rgba(201,168,76,0.12)",
-          borderTop: "1px solid rgba(201,168,76,0.12)",
+          border: "1px solid rgba(201,168,76,0.12)",
+          borderRadius: "12px",
+          overflow: "hidden",
         }}
       >
         {reasons.map((r, i) => (
@@ -845,13 +848,15 @@ function WhySLTCS() {
           </div>
         ))}
       </div>
+      </div>
 
       {/* ── Trust bar ── */}
+      <div className="container">
       <div
         style={{
           borderTop: "1px solid rgba(201,168,76,0.15)",
           background: "#0a0c0f",
-          padding: "18px 48px",
+          padding: "18px 0",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -894,6 +899,7 @@ function WhySLTCS() {
             )}
           </React.Fragment>
         ))}
+      </div>
       </div>
     </section>
   );
