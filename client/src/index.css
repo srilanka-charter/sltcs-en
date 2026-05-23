@@ -1309,6 +1309,24 @@ footer {
   .floating-cta { bottom: 20px; right: 16px; }
   .hero-content { left: 0; right: 0; }
   .hero-location { display: none; }
+  /* WhySLTCS cards: 2 per row, horizontal scroll */
+  .why-cards-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(240px, 1fr)) !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+  }
+  .why-cards-grid > div {
+    scroll-snap-align: start;
+  }
+  /* Concerns tiles: 2 columns, scrollable */
+  .concerns-inline-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 /* ─── Custom Date Picker ──────────────────────────────────────────────────── */

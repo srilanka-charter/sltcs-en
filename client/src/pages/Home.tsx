@@ -595,7 +595,7 @@ function WhySLTCS() {
         </div>
 
         {/* Cards grid */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.1)", borderRadius: "2px", overflow: "hidden" }}>
+        <div className="why-cards-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.1)", borderRadius: "2px", overflow: "hidden" }}>
           {reasons.map((r) => (
             <div
               key={r.num}
@@ -669,7 +669,7 @@ function Concerns() {
         </div>
 
         {/* Concern tiles */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "12px", marginBottom: "40px" }}>
+        <div className="concerns-inline-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "12px", marginBottom: "40px" }}>
           {concerns.map((c) => (
             <div
               key={c.label}
