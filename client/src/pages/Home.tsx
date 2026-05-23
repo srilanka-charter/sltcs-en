@@ -444,12 +444,7 @@ function ContactAndWhy() {
     <section id="contact" style={{ background: "#faf7f2", padding: "100px 0" }}>
       <div className="container">
         {/* 2-column grid: left = form, right = why cards */}
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "64px",
-          alignItems: "start",
-        }} className="contact-why-grid">
+        <div className="contact-why-grid">
 
           {/* ── LEFT: Contact Form ─────────────────────────────────────────── */}
           <div>
