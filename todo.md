@@ -48,6 +48,7 @@
 - [x] Fix JSX closing tag error in Home.tsx (scroll wrapper div for WhySLTCS cards grid)
 - [x] Mobile: WhySLTCS cards 2-column horizontal scroll (remove overflow:hidden from inline style, add scroll wrapper)
 - [x] Mobile: Hamburger menu with dropdown accordion (Model Itinerary sub-items, Language switcher) — logo shows SLTCS only on mobile
+- [x] WhySLTCS section: redesigned to vertical card stack (icon circle + number + title + desc) matching Japanese version style
 - [x] Create /low-price-risk page (LowPriceRisk.tsx) with rewritten content from reference article
 - [x] Add /low-price-risk route to App.tsx
 - [x] Add →detail link below mileage-limit warning text in Pricing.tsx

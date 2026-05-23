@@ -608,59 +608,59 @@ function WhySLTCS() {
   const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section id="why" style={{ background: "#0a0c0f", padding: "100px 0 0" }}>
+    <section id="why" style={{ background: "#faf7f2", padding: "100px 0 0" }}>
       <div className="container">
-        {/* Header */}
-        <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", marginBottom: "64px", gap: "24px", flexWrap: "wrap" }}>
-          <div>
-            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "20px" }}>
-              <div style={{ width: "32px", height: "1px", background: "#c9a84c" }} />
-              <span style={{ color: "#c9a84c", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}>WHY SLTCS</span>
-            </div>
-            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 700, color: "#fff", lineHeight: 1.15, margin: 0 }}>
-              6 Reasons Why Travellers<br />Choose <span style={{ color: "#c9a84c" }}>SLTCS</span>
-            </h2>
+        {/* Header — centred like Japanese version */}
+        <div style={{ textAlign: "center", marginBottom: "56px" }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", marginBottom: "12px" }}>
+            <div style={{ width: "40px", height: "1px", background: "#c9a84c" }} />
+            <span style={{ color: "#c9a84c", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}>WHY SLTCS</span>
+            <div style={{ width: "40px", height: "1px", background: "#c9a84c" }} />
           </div>
-          <button
-            onClick={() => scrollTo("contact")}
-            style={{ flexShrink: 0, display: "inline-flex", alignItems: "center", gap: "10px", background: "transparent", border: "1px solid rgba(201,168,76,0.5)", color: "#c9a84c", fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "12px 28px", borderRadius: "3px", cursor: "pointer", transition: "background 0.2s, border-color 0.2s" }}
-            onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.background = "rgba(201,168,76,0.08)"; (e.currentTarget as HTMLButtonElement).style.borderColor = "#c9a84c"; }}
-            onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.background = "transparent"; (e.currentTarget as HTMLButtonElement).style.borderColor = "rgba(201,168,76,0.5)"; }}
-          >
-            Plan My Journey
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-          </button>
+          {/* Star icon */}
+          <div style={{ marginBottom: "16px" }}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#c9a84c"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+          </div>
+          <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 700, color: "#1a1a1a", lineHeight: 1.15, margin: 0 }}>
+            6 Reasons Why Travellers Choose <span style={{ color: "#c9a84c" }}>SLTCS</span>
+          </h2>
         </div>
 
-        {/* Cards grid */}
-        <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch" as React.CSSProperties["WebkitOverflowScrolling"] }}>
-        <div className="why-cards-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.1)", borderRadius: "2px" }}>
+        {/* Cards list — vertical stack like Japanese version */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px", maxWidth: "720px", margin: "0 auto" }}>
           {reasons.map((r) => (
             <div
               key={r.num}
-              style={{ background: "#111318", padding: "40px 32px", position: "relative", transition: "background 0.2s" }}
-              onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.background = "#161a20"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.background = "#111318"; }}
+              style={{
+                display: "flex",
+                alignItems: "stretch",
+                background: "#f9f5ee",
+                border: "1px solid rgba(201,168,76,0.25)",
+                borderRadius: "12px",
+                overflow: "hidden",
+                transition: "box-shadow 0.2s, border-color 0.2s",
+              }}
+              onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "0 4px 24px rgba(201,168,76,0.15)"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(201,168,76,0.5)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(201,168,76,0.25)"; }}
             >
-              {/* Number watermark */}
-              <div style={{ position: "absolute", bottom: "20px", right: "24px", fontFamily: "'Playfair Display', serif", fontSize: "4.5rem", fontWeight: 700, color: "rgba(201,168,76,0.06)", lineHeight: 1, userSelect: "none", pointerEvents: "none" }}>{r.num}</div>
-              {/* Icon */}
-              <div style={{ width: "44px", height: "44px", borderRadius: "50%", border: "1px solid rgba(201,168,76,0.35)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "20px" }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="#c9a84c"><path d={r.svgPath} /></svg>
+              {/* Left: icon + number */}
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "10px", padding: "28px 24px", minWidth: "96px", borderRight: "1px solid rgba(201,168,76,0.15)" }}>
+                <div style={{ width: "52px", height: "52px", borderRadius: "50%", background: "#f0e8d0", border: "1px solid rgba(201,168,76,0.4)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="#1a3a1a"><path d={r.svgPath} /></svg>
+                </div>
+                <span style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.4rem", fontWeight: 700, color: "#c9a84c", lineHeight: 1 }}>{r.num}</span>
               </div>
-              {/* Tag */}
-              <div style={{ display: "inline-block", background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "2px", padding: "3px 10px", fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.14em", color: "#c9a84c", textTransform: "uppercase", marginBottom: "14px" }}>{r.tag}</div>
-              {/* Title */}
-              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.05rem", fontWeight: 700, color: "#fff", margin: "0 0 12px", lineHeight: 1.3 }}>{r.title}</h3>
-              {/* Desc */}
-              <p style={{ fontSize: "0.83rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.75, margin: 0 }}>{r.desc}</p>
+              {/* Right: title + desc */}
+              <div style={{ padding: "28px 28px", flex: 1 }}>
+                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem", fontWeight: 700, color: "#1a1a1a", margin: "0 0 10px", lineHeight: 1.35 }}>{r.title}</h3>
+                <p style={{ fontSize: "0.88rem", color: "#4a4a4a", lineHeight: 1.75, margin: 0 }}>{r.desc}</p>
+              </div>
             </div>
           ))}
         </div>
-        </div>
 
         {/* Trust bar */}
-        <div style={{ borderTop: "1px solid rgba(201,168,76,0.12)", marginTop: "0", padding: "20px 0", display: "flex", alignItems: "center", justifyContent: "center", gap: "0", flexWrap: "wrap" }}>
+        <div style={{ borderTop: "1px solid rgba(201,168,76,0.2)", marginTop: "48px", padding: "20px 0", display: "flex", alignItems: "center", justifyContent: "center", gap: "0", flexWrap: "wrap" }}>
           {[
             { svgPath: "M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z", label: "CERTIFIED & INSURED" },
             { svgPath: "M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z", label: "400+ HAPPY TRAVELLERS" },
@@ -670,7 +670,7 @@ function WhySLTCS() {
             <React.Fragment key={item.label}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px", padding: "0 32px" }}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="#c9a84c"><path d={item.svgPath} /></svg>
-                <span style={{ color: "rgba(255,255,255,0.45)", fontSize: "0.66rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase" }}>{item.label}</span>
+                <span style={{ color: "rgba(0,0,0,0.45)", fontSize: "0.66rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase" }}>{item.label}</span>
               </div>
               {i < arr.length - 1 && <div style={{ width: "1px", height: "16px", background: "rgba(201,168,76,0.2)" }} />}
             </React.Fragment>
