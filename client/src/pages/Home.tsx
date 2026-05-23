@@ -232,7 +232,7 @@ function Hero() {
       </div>
       <div className="hero-overlay" />
       <div className="hero-content">
-        <div className="container">
+        <div className="container" style={{ paddingLeft: "1rem" }}>
           <div style={{ maxWidth: "680px" }}>
           <div className="hero-eyebrow">SRI LANKA PRIVATE CHARTER SERVICE</div>
           <div className="hero-badge">CAR HIRE WITH DRIVER</div>
