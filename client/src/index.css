@@ -294,7 +294,7 @@
 .hero-content {
   position: absolute;
   bottom: 15%;
-  left: 7%;
+  left: max(1rem, calc((100% - 1280px) / 2 + 2rem));
   max-width: 680px;
   z-index: 10;
 }

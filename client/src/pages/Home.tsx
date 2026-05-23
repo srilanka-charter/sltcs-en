@@ -576,7 +576,7 @@ function WhySLTCS() {
               <span style={{ color: "#c9a84c", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}>WHY SLTCS</span>
             </div>
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 700, color: "#fff", lineHeight: 1.15, margin: 0 }}>
-              5 Reasons Why Travellers<br />Choose <span style={{ color: "#c9a84c" }}>SLTCS</span>
+              6 Reasons Why Travellers<br />Choose <span style={{ color: "#c9a84c" }}>SLTCS</span>
             </h2>
           </div>
           <button
