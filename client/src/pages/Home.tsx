@@ -595,7 +595,8 @@ function WhySLTCS() {
         </div>
 
         {/* Cards grid */}
-        <div className="why-cards-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.1)", borderRadius: "2px", overflow: "hidden" }}>
+        <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch" as React.CSSProperties["WebkitOverflowScrolling"] }}>
+        <div className="why-cards-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.1)", borderRadius: "2px" }}>
           {reasons.map((r) => (
             <div
               key={r.num}
@@ -617,6 +618,7 @@ function WhySLTCS() {
               <p style={{ fontSize: "0.83rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.75, margin: 0 }}>{r.desc}</p>
             </div>
           ))}
+        </div>
         </div>
 
         {/* Trust bar */}
