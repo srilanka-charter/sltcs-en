@@ -294,9 +294,15 @@
 .hero-content {
   position: absolute;
   bottom: 15%;
-  left: max(1rem, calc((100% - 1280px) / 2 + 2rem));
+  left: 1rem;
   max-width: 680px;
   z-index: 10;
+}
+@media (min-width: 640px) {
+  .hero-content { left: 1.5rem; }
+}
+@media (min-width: 1024px) {
+  .hero-content { left: max(2rem, calc((100% - 1280px) / 2 + 2rem)); }
 }
 .hero-badge {
   display: inline-block;
