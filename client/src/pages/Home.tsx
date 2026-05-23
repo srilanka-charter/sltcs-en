@@ -117,6 +117,8 @@ function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [mobileItineraryOpen, setMobileItineraryOpen] = useState(false);
+  const [mobileLangOpen, setMobileLangOpen] = useState(false);
 
   const LANGUAGES = [
     { label: "French", url: "https://fr.srilanka-charter.com/" },
@@ -142,7 +144,8 @@ function Navbar() {
     <>
       <nav className={`sltcs-nav${scrolled ? " scrolled" : ""}`}>
         <a href="#hero" className="nav-logo" onClick={(e) => { e.preventDefault(); scrollTo("hero"); }}>
-          SLTCS｜Sri Lanka Car Hire with Private Driver
+          <span className="nav-logo-full">SLTCS｜Sri Lanka Car Hire with Private Driver</span>
+          <span className="nav-logo-short">SLTCS</span>
         </a>
         <ul className="nav-links">
           <li><a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>PLANS</a></li>
@@ -183,18 +186,53 @@ function Navbar() {
       {mobileOpen && (
         <div className="mobile-menu open">
           <a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Plans</a>
-          <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Model Itinerary</a>
+          {/* Model Itinerary accordion */}
+          <div className="mobile-accordion">
+            <button
+              className="mobile-accordion-btn"
+              onClick={() => setMobileItineraryOpen(o => !o)}
+            >
+              <span>Model Itinerary</span>
+              <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                style={{ transform: mobileItineraryOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
+              ><path d="M6 9l6 6 6-6" /></svg>
+            </button>
+            {mobileItineraryOpen && (
+              <div className="mobile-accordion-body">
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nights / 5 Days</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nights / 6 Days</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nights / 7 Days</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5–7 Days – Cultural Triangle</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Days to 2 Weeks – Classic</a>
+              </div>
+            )}
+          </div>
           <a href="/vehicles">Vehicles</a>
           <a href="/price">Price</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Contact</a>
           <a href="/faq">FAQ</a>
-          <a href="#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Free Enquiry</a>
-          <div style={{ borderTop: "1px solid rgba(201,168,76,0.3)", paddingTop: "8px", marginTop: "4px" }}>
-            <div style={{ color: "#c9a84c", fontSize: "11px", letterSpacing: "0.1em", marginBottom: "6px", paddingLeft: "4px" }}>OTHER LANGUAGES</div>
-            {[{label:"French",url:"https://fr.srilanka-charter.com/"},{label:"Spanish",url:"https://es.srilanka-charter.com/"},{label:"German",url:"https://de.srilanka-charter.com/"},{label:"Dutch",url:"https://nl.srilanka-charter.com/"},{label:"Russian",url:"https://ru.srilanka-charter.com/"},{label:"Japanese",url:"https://sltcs.srilanka-charter.com/"}].map((lang) => (
-              <a key={lang.label} href={lang.url}>{lang.label}</a>
-            ))}
+          {/* Language accordion */}
+          <div className="mobile-accordion">
+            <button
+              className="mobile-accordion-btn"
+              onClick={() => setMobileLangOpen(o => !o)}
+            >
+              <span>Other Languages</span>
+              <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                style={{ transform: mobileLangOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
+              ><path d="M6 9l6 6 6-6" /></svg>
+            </button>
+            {mobileLangOpen && (
+              <div className="mobile-accordion-body">
+                {[{label:"French",url:"https://fr.srilanka-charter.com/"},{label:"Spanish",url:"https://es.srilanka-charter.com/"},{label:"German",url:"https://de.srilanka-charter.com/"},{label:"Dutch",url:"https://nl.srilanka-charter.com/"},{label:"Russian",url:"https://ru.srilanka-charter.com/"},{label:"Japanese",url:"https://sltcs.srilanka-charter.com/"}].map((lang) => (
+                  <a key={lang.label} href={lang.url}>{lang.label}</a>
+                ))}
+              </div>
+            )}
           </div>
+          <a href="#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Free Enquiry</a>
         </div>
       )}
     </>
