@@ -812,19 +812,19 @@ function PriceCard({ tier, currency }: { tier: (typeof TIERS_HP)[number]; curren
   const sym = CURRENCY_SYMBOLS_HP[currency];
   const prices = PRICES_HP[currency][tier.key][vehicle];
   return (
-    <div style={{ background: "var(--dark2, #1a1a1a)", border: `1px solid ${tier.color}40`, borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column" }}>
+    <div style={{ background: "#ffffff", border: `1.5px solid ${tier.color}50`, borderRadius: "12px", overflow: "hidden", display: "flex", flexDirection: "column", boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
       {/* Header */}
       <div style={{ background: `linear-gradient(135deg, ${tier.color}22, ${tier.color}08)`, borderBottom: `1px solid ${tier.color}30`, padding: "16px 20px" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "6px" }}>
           <span style={{ background: tier.color, color: "#000", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.1em", padding: "2px 8px", borderRadius: "20px", textTransform: "uppercase" }}>{tier.key.toUpperCase()}</span>
           {tier.badge && <span style={{ background: "rgba(201,168,76,0.15)", border: "1px solid rgba(201,168,76,0.4)", color: "#c9a84c", fontSize: "0.6rem", fontWeight: 600, padding: "2px 7px", borderRadius: "20px", textTransform: "uppercase" }}>{tier.badge}</span>}
         </div>
-        <h3 style={{ color: "#fff", fontSize: "1rem", fontWeight: 700, margin: 0 }}>{tier.label}</h3>
+        <h3 style={{ color: "#1a1a1a", fontSize: "1rem", fontWeight: 700, margin: 0 }}>{tier.label}</h3>
       </div>
       {/* Vehicle Tabs */}
-      <div style={{ display: "flex", borderBottom: "1px solid rgba(255,255,255,0.08)", background: "rgba(0,0,0,0.2)" }}>
+      <div style={{ display: "flex", borderBottom: "1px solid #e8e2d8", background: "#f9f5ee" }}>
         {VEHICLES_HP.map((v) => (
-          <button key={v.key} onClick={() => setVehicle(v.key)} style={{ flex: 1, padding: "8px 4px", background: "none", border: "none", borderBottom: vehicle === v.key ? `2px solid ${tier.color}` : "2px solid transparent", color: vehicle === v.key ? tier.color : "rgba(255,255,255,0.5)", fontSize: "0.7rem", fontWeight: vehicle === v.key ? 600 : 400, cursor: "pointer", transition: "all 0.2s", textAlign: "center", lineHeight: 1.3 }}>
+          <button key={v.key} onClick={() => setVehicle(v.key)} style={{ flex: 1, padding: "8px 4px", background: "none", border: "none", borderBottom: vehicle === v.key ? `2px solid ${tier.color}` : "2px solid transparent", color: vehicle === v.key ? tier.color : "#888", fontSize: "0.7rem", fontWeight: vehicle === v.key ? 600 : 400, cursor: "pointer", transition: "all 0.2s", textAlign: "center", lineHeight: 1.3 }}>
             <div>{v.label}</div>
             <div style={{ fontSize: "0.6rem", opacity: 0.7 }}>{v.capacity}</div>
           </button>
@@ -835,15 +835,15 @@ function PriceCard({ tier, currency }: { tier: (typeof TIERS_HP)[number]; curren
         <table style={{ width: "100%", borderCollapse: "collapse" }}>
           <thead>
             <tr>
-              <th style={{ padding: "8px 14px", textAlign: "left", color: "rgba(255,255,255,0.5)", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", background: "rgba(20,20,20,0.95)" }}>Days</th>
-              <th style={{ padding: "8px 14px", textAlign: "right", color: "rgba(255,255,255,0.5)", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", background: "rgba(20,20,20,0.95)" }}>Price (incl. tax)</th>
+              <th style={{ padding: "8px 14px", textAlign: "left", color: "#888", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", background: "#f4f0e8" }}>Days</th>
+              <th style={{ padding: "8px 14px", textAlign: "right", color: "#888", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", background: "#f4f0e8" }}>Price (incl. tax)</th>
             </tr>
           </thead>
           <tbody>
             {DAYS_HP.map((day, idx) => (
-              <tr key={day} style={{ borderBottom: "1px solid rgba(255,255,255,0.04)", background: idx % 2 === 0 ? "transparent" : "rgba(255,255,255,0.02)" }}>
-                <td style={{ padding: "8px 14px", color: "rgba(255,255,255,0.7)", fontSize: "0.82rem" }}>{day} days</td>
-                <td style={{ padding: "8px 14px", textAlign: "right", color: "#fff", fontSize: "0.9rem", fontWeight: 600 }}>{sym}{prices[idx].toLocaleString()}</td>
+              <tr key={day} style={{ borderBottom: "1px solid #ede8e0", background: idx % 2 === 0 ? "transparent" : "#faf7f2" }}>
+                <td style={{ padding: "8px 14px", color: "#4a4a4a", fontSize: "0.82rem" }}>{day} days</td>
+                <td style={{ padding: "8px 14px", textAlign: "right", color: "#1a1a1a", fontSize: "0.9rem", fontWeight: 600 }}>{sym}{prices[idx].toLocaleString()}</td>
               </tr>
             ))}
           </tbody>
@@ -856,7 +856,7 @@ function PriceCard({ tier, currency }: { tier: (typeof TIERS_HP)[number]; curren
 function PricingPreview() {
   const [currency, setCurrency] = useState<CurrencyKeyHP>("USD");
   return (
-    <section id="pricing" style={{ background: "var(--dark, #0d0d0d)", padding: "80px 0" }}>
+    <section id="pricing" style={{ background: "#faf7f2", padding: "80px 0" }}>
       <div className="container">
         <div className="section-eyebrow">TRANSPARENT PRICING</div>
         <h2 className="section-title">Flat-Rate Price List</h2>
@@ -865,7 +865,7 @@ function PricingPreview() {
         {/* Currency Tabs */}
         <div style={{ display: "flex", gap: "8px", marginBottom: "28px", flexWrap: "wrap" }}>
           {(["USD", "GBP", "EUR", "AUD"] as CurrencyKeyHP[]).map((c) => (
-            <button key={c} onClick={() => setCurrency(c)} style={{ padding: "8px 20px", background: currency === c ? "rgba(201,168,76,0.2)" : "rgba(255,255,255,0.05)", border: currency === c ? "1px solid rgba(201,168,76,0.5)" : "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", color: currency === c ? "#c9a84c" : "rgba(255,255,255,0.55)", fontSize: "0.85rem", fontWeight: currency === c ? 700 : 400, cursor: "pointer", transition: "all 0.2s" }}>
+            <button key={c} onClick={() => setCurrency(c)} style={{ padding: "8px 20px", background: currency === c ? "rgba(201,168,76,0.15)" : "#ffffff", border: currency === c ? "1.5px solid rgba(201,168,76,0.6)" : "1.5px solid #d1ccc4", borderRadius: "6px", color: currency === c ? "#c9a84c" : "#4a4a4a", fontSize: "0.85rem", fontWeight: currency === c ? 700 : 400, cursor: "pointer", transition: "all 0.2s" }}>
               {CURRENCY_SYMBOLS_HP[c]} {c}
             </button>
           ))}
@@ -873,7 +873,7 @@ function PricingPreview() {
 
         {/* Note */}
         <div style={{ background: "rgba(201,168,76,0.06)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "8px", padding: "12px 18px", marginBottom: "28px" }}>
-          <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.85rem", lineHeight: 1.7, margin: 0 }}>
+          <p style={{ color: "#4a4a4a", fontSize: "0.85rem", lineHeight: 1.7, margin: 0 }}>
             <strong style={{ color: "#c9a84c" }}>Note:</strong> Additional charges may apply if the total distance exceeds the standard estimate, or if the pick-up/drop-off point is outside the airport area.
           </p>
         </div>

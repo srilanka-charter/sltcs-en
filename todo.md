@@ -53,3 +53,5 @@
 - [x] Create /low-price-risk page (LowPriceRisk.tsx) with rewritten content from reference article
 - [x] Add /low-price-risk route to App.tsx
 - [x] Add →detail link below mileage-limit warning text in Pricing.tsx
+- [x] Flat-Rate Price List section: light cream background (#faf7f2), white cards with dark text, grey borders
+- [x] Suggested Itineraries section: light cream background (#faf7f2), dark text for all elements via CSS overrides

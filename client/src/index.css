@@ -1704,3 +1704,76 @@ footer {
   .faq-accordion-btn { padding: 14px 14px; }
   .faq-accordion-body { padding: 0 14px 14px; }
 }
+
+/* ─── LIGHT THEME OVERRIDES for Pricing & Itineraries sections ─── */
+#pricing .section-title,
+#courses .section-title {
+  color: #1a1a1a;
+}
+#pricing .section-sub,
+#courses .section-sub {
+  color: #5a5a5a;
+}
+#pricing .section-eyebrow,
+#courses .section-eyebrow {
+  color: var(--gold);
+}
+
+/* Itineraries section background */
+#courses {
+  background: #faf7f2;
+  padding: 80px 0;
+}
+
+/* Course tabs on light background */
+#courses .course-tabs {
+  border-bottom-color: #d1ccc4;
+}
+#courses .course-tab {
+  color: #6a6a6a;
+}
+#courses .course-tab:hover { color: #1a1a1a; }
+#courses .course-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+/* Course meta card on light background */
+#courses .course-meta {
+  background: #ffffff;
+  border-color: rgba(201,168,76,0.25);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+#courses .course-meta h3 {
+  color: #1a1a1a;
+}
+#courses .course-meta-item {
+  border-bottom-color: #ede8e0;
+}
+#courses .course-meta-label {
+  color: #888;
+}
+#courses .course-meta-value {
+  color: #2a2a2a;
+}
+
+/* Timeline on light background */
+#courses .course-timeline h4 {
+  color: #1a1a1a;
+}
+#courses .timeline-content h5 {
+  color: #1a1a1a;
+}
+#courses .timeline-content p {
+  color: #5a5a5a;
+}
+#courses .timeline-line {
+  background: rgba(201,168,76,0.3);
+}
+
+/* btn-outline on light background */
+#courses .btn-outline {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+#courses .btn-outline:hover {
+  background: var(--gold);
+  color: #1a1a1a;
+}
