@@ -294,15 +294,12 @@
 .hero-content {
   position: absolute;
   bottom: 15%;
-  left: 1rem;
-  max-width: 680px;
+  left: 0;
+  right: 0;
   z-index: 10;
 }
-@media (min-width: 640px) {
-  .hero-content { left: 1.5rem; }
-}
-@media (min-width: 1024px) {
-  .hero-content { left: max(2rem, calc((100% - 1280px) / 2 + 2rem)); }
+.hero-content .container {
+  max-width: 1280px;
 }
 .hero-badge {
   display: inline-block;
@@ -1310,7 +1307,7 @@ footer {
   .footer-top { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .floating-cta { bottom: 20px; right: 16px; }
-  .hero-content { left: 5%; right: 5%; max-width: 100%; }
+  .hero-content { left: 0; right: 0; }
   .hero-location { display: none; }
 }
 

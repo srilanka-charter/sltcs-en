@@ -232,21 +232,25 @@ function Hero() {
       </div>
       <div className="hero-overlay" />
       <div className="hero-content">
-        <div className="hero-eyebrow">SRI LANKA PRIVATE CHARTER SERVICE</div>
-        <div className="hero-badge">CAR HIRE WITH DRIVER</div>
-        <h1>Sri Lanka <em>Car Hire</em> with a Private Driver</h1>
-        <p className="hero-sub">
-          Explore Sri Lanka at your own pace with a dedicated private driver.
-          Fully flexible, fully private — the finest way to discover the Pearl of the Indian Ocean.
-        </p>
-        <div className="hero-tags">
-          <span className="hero-tag">English Support</span>
-          <span className="hero-tag">Fully Private Charter</span>
-          <span className="hero-tag">Government-Certified Driver</span>
+        <div className="container">
+          <div style={{ maxWidth: "680px" }}>
+          <div className="hero-eyebrow">SRI LANKA PRIVATE CHARTER SERVICE</div>
+          <div className="hero-badge">CAR HIRE WITH DRIVER</div>
+          <h1>Sri Lanka <em>Car Hire</em> with a Private Driver</h1>
+          <p className="hero-sub">
+            Explore Sri Lanka at your own pace with a dedicated private driver.
+            Fully flexible, fully private — the finest way to discover the Pearl of the Indian Ocean.
+          </p>
+          <div className="hero-tags">
+            <span className="hero-tag">English Support</span>
+            <span className="hero-tag">Fully Private Charter</span>
+            <span className="hero-tag">Government-Certified Driver</span>
+          </div>
+          <a href="#contact" className="btn-primary" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>
+            Free Enquiry
+          </a>
+          </div>
         </div>
-        <a href="#contact" className="btn-primary" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>
-          <span>💬</span> Free Enquiry
-        </a>
       </div>
       <div className="hero-location">
         <div className="hero-location-label">Location</div>
