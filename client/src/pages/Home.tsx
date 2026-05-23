@@ -360,8 +360,8 @@ function Stats() {
   );
 }
 
-// ─── Contact Form ─────────────────────────────────────────────────────────────
-function ContactForm() {
+// ─── Contact + Why SLTCS (2-column layout) ──────────────────────────────────
+function ContactAndWhy() {
   const [country, setCountry] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -369,21 +369,14 @@ function ContactForm() {
   const [startDate, setStartDate] = useState(today);
   const [endDate, setEndDate] = useState(today);
   const [, setLocation] = useLocation();
-  const formRef = useRef<HTMLFormElement>(null);
 
   const submitMutation = trpc.enquiry.submit.useMutation({
-    onSuccess: () => {
-      setLocation("/thanks");
-    },
+    onSuccess: () => { setLocation("/thanks"); },
     onError: (err) => {
       setSubmitError(err.message || "Failed to send enquiry. Please try again.");
       setIsSubmitting(false);
     },
   });
-
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -408,32 +401,70 @@ function ContactForm() {
     });
   };
 
+  const reasons = [
+    {
+      num: "01",
+      title: "Government-Certified Drivers",
+      desc: "All our drivers hold official Sri Lanka Tourist Driver or Chauffeur Guide Driver licences. Professionally trained, safety-focused, and highly rated by past clients.",
+      svgPath: "M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm0 4l6 3.27V12c0 3.79-2.58 7.33-6 8.93-3.42-1.6-6-5.14-6-8.93V9.27L12 6z",
+    },
+    {
+      num: "02",
+      title: "Full English Support",
+      desc: "From first enquiry to the final drop-off, our English-speaking team is on hand to assist. No language barriers — just seamless communication throughout your trip.",
+      svgPath: "M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z",
+    },
+    {
+      num: "03",
+      title: "Completely Private Charter",
+      desc: "Unlike group tours, your vehicle and driver are exclusively yours. Set your own schedule, choose your stops, and travel entirely on your own terms.",
+      svgPath: "M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z",
+    },
+    {
+      num: "04",
+      title: "Expert Local Knowledge",
+      desc: "Our Chauffeur Guide Drivers are passionate about Sri Lanka's history, culture, and cuisine. They'll take you beyond the guidebook to hidden gems and authentic experiences.",
+      svgPath: "M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z",
+    },
+    {
+      num: "05",
+      title: "Right Vehicle for Every Group",
+      desc: "From couples to large family groups of 10, we match the perfect vehicle to your party size — ensuring comfort even on long-distance journeys across the island.",
+      svgPath: "M17 5H3c-1.1 0-2 .9-2 2v9h2c0 1.65 1.34 3 3 3s3-1.35 3-3h5.5c0 1.65 1.34 3 3 3s3-1.35 3-3H23v-5l-6-6zM3 11V7h4v4H3zm3 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7-6.5H9V7h4v4zm4.5 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM15 11V7h1l4 4h-5z",
+    },
+    {
+      num: "06",
+      title: "Trusted by European Travellers",
+      desc: "With over 400 completed charters and a 4.9 average satisfaction rating, SLTCS is the preferred choice for UK and European visitors exploring Sri Lanka.",
+      svgPath: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z",
+    },
+  ];
+
   return (
-    <section id="contact">
+    <section id="contact" style={{ background: "#faf7f2", padding: "100px 0" }}>
       <div className="container">
-        <div className="contact-inner">
-          <div className="contact-info">
+        {/* 2-column grid: left = form, right = why cards */}
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: "64px",
+          alignItems: "start",
+        }} className="contact-why-grid">
+
+          {/* ── LEFT: Contact Form ─────────────────────────────────────────── */}
+          <div>
             <div className="section-eyebrow">CONTACT</div>
-            <h2>Start Planning<br />Your Sri Lanka<br />Adventure</h2>
-            <p>Tell us your travel dates, group size, and preferences — we'll respond with a tailored itinerary and quote within 24 hours.</p>
-            <p>Whether you're planning a 5-day cultural tour or a 2-week island-wide journey, our team is here to help.</p>
-            <div className="contact-detail">
-              <div className="contact-detail-icon">⏱️</div>
-              <div className="contact-detail-text">
-                <strong>Response within 24 hours</strong>
-                Enquiries accepted 24/7 — we'll get back to you promptly.
-              </div>
-            </div>
-            <div className="contact-detail" style={{ marginTop: "12px" }}>
-              <div className="contact-detail-icon">🔒</div>
-              <div className="contact-detail-text">
-                <strong>No commitment required</strong>
-                This is a free, no-obligation enquiry.
-              </div>
-            </div>
-          </div>
-          <div className="contact-form-wrap">
-            <form onSubmit={handleSubmit}>
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(1.8rem, 3vw, 2.6rem)", fontWeight: 700, color: "#1a1a1a", lineHeight: 1.2, margin: "0 0 16px" }}>
+              Start Planning<br />Your Sri Lanka<br />Adventure
+            </h2>
+            <p style={{ color: "#4a4a4a", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "8px" }}>
+              Tell us your travel dates, group size, and preferences — we'll respond with a tailored itinerary and quote within 24 hours.
+            </p>
+            <p style={{ color: "#4a4a4a", fontSize: "0.88rem", lineHeight: 1.7, marginBottom: "24px" }}>
+              Fill in the form and submit. We usually reply within 24 hours.
+            </p>
+
+            <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
               <div className="form-grid">
                 <div className="form-group full">
                   <label htmlFor="name">FULL NAME *</label>
@@ -552,129 +583,57 @@ function ContactForm() {
               </p>
             </form>
           </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
-// ─── Why SLTCS ────────────────────────────────────────────────────────────────
-function WhySLTCS() {
-  const reasons = [
-    {
-      num: "01",
-      tag: "SAFETY",
-      title: "Government-Certified Drivers",
-      desc: "All our drivers hold official Sri Lanka Tourist Driver or Chauffeur Guide Driver licences. Professionally trained, safety-focused, and highly rated by past clients.",
-      svgPath: "M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm0 4l6 3.27V12c0 3.79-2.58 7.33-6 8.93-3.42-1.6-6-5.14-6-8.93V9.27L12 6z",
-    },
-    {
-      num: "02",
-      tag: "SUPPORT",
-      title: "Full English Support",
-      desc: "From first enquiry to the final drop-off, our English-speaking team is on hand to assist. No language barriers — just seamless communication throughout your trip.",
-      svgPath: "M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z",
-    },
-    {
-      num: "03",
-      tag: "PRIVACY",
-      title: "Completely Private Charter",
-      desc: "Unlike group tours, your vehicle and driver are exclusively yours. Set your own schedule, choose your stops, and travel entirely on your own terms.",
-      svgPath: "M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z",
-    },
-    {
-      num: "04",
-      tag: "LOCAL INSIGHT",
-      title: "Expert Local Knowledge",
-      desc: "Our Chauffeur Guide Drivers are passionate about Sri Lanka's history, culture, and cuisine. They'll take you beyond the guidebook to hidden gems and authentic experiences.",
-      svgPath: "M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z",
-    },
-    {
-      num: "05",
-      tag: "FLEET MATCH",
-      title: "Right Vehicle for Every Group",
-      desc: "From couples to large family groups of 10, we match the perfect vehicle to your party size — ensuring comfort even on long-distance journeys across the island.",
-      svgPath: "M17 5H3c-1.1 0-2 .9-2 2v9h2c0 1.65 1.34 3 3 3s3-1.35 3-3h5.5c0 1.65 1.34 3 3 3s3-1.35 3-3H23v-5l-6-6zM3 11V7h4v4H3zm3 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7-6.5H9V7h4v4zm4.5 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM15 11V7h1l4 4h-5z",
-    },
-    {
-      num: "06",
-      tag: "TRUSTED",
-      title: "Trusted by European Travellers",
-      desc: "With over 400 completed charters and a 4.9 average satisfaction rating, SLTCS is the preferred choice for UK and European visitors exploring Sri Lanka.",
-      svgPath: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z",
-    },
-  ];
-
-  const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-
-  return (
-    <section id="why" style={{ background: "#faf7f2", padding: "100px 0 0" }}>
-      <div className="container">
-        {/* Header — centred like Japanese version */}
-        <div style={{ textAlign: "center", marginBottom: "56px" }}>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", marginBottom: "12px" }}>
-            <div style={{ width: "40px", height: "1px", background: "#c9a84c" }} />
-            <span style={{ color: "#c9a84c", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}>WHY SLTCS</span>
-            <div style={{ width: "40px", height: "1px", background: "#c9a84c" }} />
-          </div>
-          {/* Star icon */}
-          <div style={{ marginBottom: "16px" }}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="#c9a84c"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-          </div>
-          <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 700, color: "#1a1a1a", lineHeight: 1.15, margin: 0 }}>
-            6 Reasons Why Travellers Choose <span style={{ color: "#c9a84c" }}>SLTCS</span>
-          </h2>
-        </div>
-
-        {/* Cards list — vertical stack like Japanese version */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "16px", maxWidth: "720px", margin: "0 auto" }}>
-          {reasons.map((r) => (
-            <div
-              key={r.num}
-              style={{
-                display: "flex",
-                alignItems: "stretch",
-                background: "#f9f5ee",
-                border: "1px solid rgba(201,168,76,0.25)",
-                borderRadius: "12px",
-                overflow: "hidden",
-                transition: "box-shadow 0.2s, border-color 0.2s",
-              }}
-              onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "0 4px 24px rgba(201,168,76,0.15)"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(201,168,76,0.5)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(201,168,76,0.25)"; }}
-            >
-              {/* Left: icon + number */}
-              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "10px", padding: "28px 24px", minWidth: "96px", borderRight: "1px solid rgba(201,168,76,0.15)" }}>
-                <div style={{ width: "52px", height: "52px", borderRadius: "50%", background: "#f0e8d0", border: "1px solid rgba(201,168,76,0.4)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="#1a3a1a"><path d={r.svgPath} /></svg>
-                </div>
-                <span style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.4rem", fontWeight: 700, color: "#c9a84c", lineHeight: 1 }}>{r.num}</span>
+          {/* ── RIGHT: Why SLTCS ──────────────────────────────────────────── */}
+          <div id="why">
+            {/* Header */}
+            <div style={{ textAlign: "center", marginBottom: "40px" }}>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", marginBottom: "12px" }}>
+                <div style={{ width: "40px", height: "1px", background: "#c9a84c" }} />
+                <span style={{ color: "#c9a84c", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}>WHY SLTCS</span>
+                <div style={{ width: "40px", height: "1px", background: "#c9a84c" }} />
               </div>
-              {/* Right: title + desc */}
-              <div style={{ padding: "28px 28px", flex: 1 }}>
-                <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem", fontWeight: 700, color: "#1a1a1a", margin: "0 0 10px", lineHeight: 1.35 }}>{r.title}</h3>
-                <p style={{ fontSize: "0.88rem", color: "#4a4a4a", lineHeight: 1.75, margin: 0 }}>{r.desc}</p>
+              <div style={{ marginBottom: "12px" }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#c9a84c"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
               </div>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(1.6rem, 2.5vw, 2.4rem)", fontWeight: 700, color: "#1a1a1a", lineHeight: 1.2, margin: 0 }}>
+                6 Reasons Why Travellers<br />Choose <span style={{ color: "#c9a84c" }}>SLTCS</span>
+              </h2>
             </div>
-          ))}
-        </div>
+            {/* Cards */}
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+              {reasons.map((r) => (
+                <div
+                  key={r.num}
+                  style={{
+                    display: "flex",
+                    alignItems: "stretch",
+                    background: "#f9f5ee",
+                    border: "1px solid rgba(201,168,76,0.25)",
+                    borderRadius: "10px",
+                    overflow: "hidden",
+                    transition: "box-shadow 0.2s, border-color 0.2s",
+                  }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "0 4px 20px rgba(201,168,76,0.15)"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(201,168,76,0.5)"; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "none"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(201,168,76,0.25)"; }}
+                >
+                  {/* Icon + number */}
+                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "6px", padding: "18px 16px", minWidth: "76px", borderRight: "1px solid rgba(201,168,76,0.15)" }}>
+                    <div style={{ width: "40px", height: "40px", borderRadius: "50%", background: "#f0e8d0", border: "1px solid rgba(201,168,76,0.4)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="#1a3a1a"><path d={r.svgPath} /></svg>
+                    </div>
+                    <span style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem", fontWeight: 700, color: "#c9a84c", lineHeight: 1 }}>{r.num}</span>
+                  </div>
+                  {/* Title + desc */}
+                  <div style={{ padding: "18px 20px", flex: 1 }}>
+                    <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "0.95rem", fontWeight: 700, color: "#1a1a1a", margin: "0 0 6px", lineHeight: 1.3 }}>{r.title}</h3>
+                    <p style={{ fontSize: "0.8rem", color: "#4a4a4a", lineHeight: 1.65, margin: 0 }}>{r.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
-        {/* Trust bar */}
-        <div style={{ borderTop: "1px solid rgba(201,168,76,0.2)", marginTop: "48px", padding: "20px 0", display: "flex", alignItems: "center", justifyContent: "center", gap: "0", flexWrap: "wrap" }}>
-          {[
-            { svgPath: "M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z", label: "CERTIFIED & INSURED" },
-            { svgPath: "M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z", label: "400+ HAPPY TRAVELLERS" },
-            { svgPath: "M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z", label: "4.9 AVERAGE RATING" },
-            { svgPath: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z", label: "ISLAND-WIDE SERVICE" },
-          ].map((item, i, arr) => (
-            <React.Fragment key={item.label}>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px", padding: "0 32px" }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#c9a84c"><path d={item.svgPath} /></svg>
-                <span style={{ color: "rgba(0,0,0,0.45)", fontSize: "0.66rem", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase" }}>{item.label}</span>
-              </div>
-              {i < arr.length - 1 && <div style={{ width: "1px", height: "16px", background: "rgba(201,168,76,0.2)" }} />}
-            </React.Fragment>
-          ))}
         </div>
       </div>
     </section>
@@ -1404,8 +1363,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Stats />
-      <ContactForm />
-      <WhySLTCS />
+      <ContactAndWhy />
       <Concerns />
       <Plans />
       <PricingPreview />

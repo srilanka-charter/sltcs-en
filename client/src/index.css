@@ -529,6 +529,14 @@ section:not([aria-live]) {
   margin-bottom: 48px;
 }
 
+/* CONTACT + WHY 2-COLUMN GRID */
+.contact-why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
 /* CONTACT FORM */
 .contact-inner {
   display: grid;
@@ -1329,6 +1337,7 @@ footer {
   .nav-logo-short { display: inline; }
   .nav-logo { flex-shrink: 0; font-size: 1rem; }
   .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+  .contact-why-grid { grid-template-columns: 1fr; gap: 48px; }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
   .concerns-grid { grid-template-columns: repeat(2, 1fr); }
   .plans-grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
