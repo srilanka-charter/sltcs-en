@@ -1113,7 +1113,7 @@ function Reviews() {
       body: "We booked a private charter for two and were paired with Ranjana — a decision we couldn't be happier about. He brought a quiet confidence to every drive, navigating mountain roads and busy town centres with equal ease. What stood out most was his genuine enthusiasm: he suggested a white-water rafting experience we hadn't planned, and it became one of the highlights of the trip. His local knowledge of hidden viewpoints, authentic eateries, and cultural customs enriched every day. Ranjana is the kind of guide who makes you feel like a guest of the country, not just a tourist passing through.",
     },
     {
-      photo: "/manus-storage/review4_as_priyanth_2aeb5d81.png",
+      photo: "/manus-storage/review_priyantha_couple_e0a47aaf.png",
       name: "The A&S",
       pax: "2 passengers",
       period: "August 2025",
