@@ -165,6 +165,7 @@ function Navbar() {
           <li><a href="/price">PRICE</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>CONTACT</a></li>
           <li><a href="/faq">FAQ</a></li>
+          <li><a href="/voice">VOICE</a></li>
           <li className="nav-dropdown nav-lang-dropdown" onMouseEnter={() => setLangOpen(true)} onMouseLeave={() => setLangOpen(false)}>
             <button style={{ display: "flex", alignItems: "center", gap: "4px" }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
@@ -212,6 +213,7 @@ function Navbar() {
           <a href="/price">Price</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Contact</a>
           <a href="/faq">FAQ</a>
+          <a href="/voice">Voice</a>
           {/* Language accordion */}
           <div className="mobile-accordion">
             <button
@@ -1190,6 +1192,29 @@ function Reviews() {
               ))}
             </div>
             <button className="reviews-nav" onClick={nextSlide} aria-label="Next">›</button>
+          </div>
+          {/* More Voice button */}
+          <div style={{ textAlign: "center", marginTop: "32px" }}>
+            <a
+              href="/voice"
+              style={{
+                display: "inline-block",
+                border: "1.5px solid rgba(201,168,76,0.6)",
+                color: "#c9a84c",
+                padding: "12px 36px",
+                borderRadius: "4px",
+                fontSize: "0.85rem",
+                fontWeight: 600,
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                textDecoration: "none",
+                transition: "background 0.2s, color 0.2s",
+              }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "rgba(201,168,76,0.1)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "transparent"; }}
+            >
+              More Voice
+            </a>
           </div>
         </div>
       </div>

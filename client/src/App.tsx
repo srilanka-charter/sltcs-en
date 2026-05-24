@@ -10,6 +10,7 @@ import Vehicles from "./pages/Vehicles";
 import FAQ from "./pages/FAQ";
 import Thanks from "./pages/Thanks";
 import LowPriceRisk from "./pages/LowPriceRisk";
+import Voice from "./pages/Voice";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -21,6 +22,7 @@ function Router() {
       <Route path={"/vehicles"} component={Vehicles} />
       <Route path={"/faq"} component={FAQ} />
       <Route path={"/low-price-risk"} component={LowPriceRisk} />
+      <Route path={"/voice"} component={Voice} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

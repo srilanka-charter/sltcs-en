@@ -55,3 +55,8 @@
 - [x] Add →detail link below mileage-limit warning text in Pricing.tsx
 - [x] Flat-Rate Price List section: light cream background (#faf7f2), white cards with dark text, grey borders
 - [x] Suggested Itineraries section: light cream background (#faf7f2), dark text for all elements via CSS overrides
+- [x] Voice page (/voice): 8 review cards with Driver/Vehicle/Operator ratings, photos from manus-storage
+- [x] App.tsx: /voice route added
+- [x] index.css: Voice page CSS styles added (.voice-page, .voice-card, .voice-ratings, .voice-breakdown, etc.)
+- [x] Navbar: VOICE link added (desktop + mobile)
+- [x] Home Reviews section: "More Voice" button added linking to /voice
