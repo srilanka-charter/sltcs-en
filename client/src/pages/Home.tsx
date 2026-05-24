@@ -1095,13 +1095,13 @@ function Reviews() {
       body: "From pre-booking through the day of travel, the team responded promptly and clearly. Pricing and itinerary planning were explained in a way that left no room for uncertainty. On the day, Eranga drove with care and composure, seamlessly rerouting around congestion to keep us on schedule. His deep knowledge of Anuradhapura, Dambulla, Sigiriya, and Polonnaruwa gave us a rich historical foundation for understanding this remarkable country. We consider ourselves fortunate to have had him as both driver and guide.",
     },
     {
-      photo: "/manus-storage/review2_r_family_aruna_3473eef8.png",
+      photo: "/manus-storage/review_lasith_family_ae2d2464.jpeg",
       name: "The R Family",
-      pax: "4 passengers",
+      pax: "3 passengers",
       period: "March 2026",
-      driver: "Aruna",
-      quote: "Aruna was endlessly patient with our children and made every moment of the trip feel effortless.",
-      body: "Having Aruna with us was a genuine stroke of luck. His warm manner with the kids put us all at ease, and his clear English meant nothing was ever lost in translation. Punctual, full of thoughtful suggestions for sights and local restaurants, and consistently calm behind the wheel — he was everything we could have asked for. (We'll probably skip that road between Passikudah and Sigiriya next time, though!) We recommend him without hesitation: attentive, knowledgeable, and completely trustworthy. If you're ever in Europe, Aruna — the first round is on us.",
+      driver: "Lasith",
+      quote: "Lasith was endlessly patient with our children and made every moment of the trip feel effortless.",
+      body: "Having Lasith with us was a genuine stroke of luck. His warm manner with the kids put us all at ease, and his clear English meant nothing was ever lost in translation. Punctual, full of thoughtful suggestions for sights and local restaurants, and consistently calm behind the wheel — he was everything we could have asked for. (We'll probably skip that road between Passikudah and Sigiriya next time, though!) We recommend him without hesitation: attentive, knowledgeable, and completely trustworthy. If you're ever in Europe, Lasith — the first round is on us.",
     },
     {
       photo: "/manus-storage/review_ranjana_new_2b654dea.png",
