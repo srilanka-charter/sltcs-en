@@ -1902,8 +1902,8 @@ footer {
   border: 1px solid #e8e2d9;
   border-radius: 16px;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 380px 1fr;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 4px 24px rgba(0,0,0,0.06);
   transition: box-shadow 0.3s;
 }
@@ -1912,7 +1912,9 @@ footer {
   position: relative;
   overflow: hidden;
   background: #1a1a1a;
-  min-height: 320px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  flex-shrink: 0;
 }
 .voice-card-photo {
   width: 100%;

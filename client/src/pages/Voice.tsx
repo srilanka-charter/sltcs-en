@@ -95,7 +95,7 @@ const HOME_REVIEWS = [
   {
     id: "priyanth",
     photo: "/manus-storage/review_priyantha_couple_e0a47aaf.png",
-    photoPosition: "15% 35%",
+    photoPosition: "center 40%",
     driver: "Priyanth",
     name: "The A&S",
     pax: "2 passengers",
@@ -108,7 +108,7 @@ const HOME_REVIEWS = [
   {
     id: "indika",
     photo: "/manus-storage/review5_t_couple_indika_519f1510.png",
-    photoPosition: "15% 25%",
+    photoPosition: "center 35%",
     driver: "Indika",
     name: "The T Couple",
     pax: "2 passengers",
@@ -148,7 +148,7 @@ const VOICE_REVIEWS = [
   {
     id: "dhammika",
     photo: "/manus-storage/review_dhammika_f371cfdd.jpeg",
-    photoPosition: "15% 30%",
+    photoPosition: "center 40%",
     driver: "Dhammika",
     name: "The R Couple",
     pax: "2 passengers",
