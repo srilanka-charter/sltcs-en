@@ -1082,7 +1082,33 @@ function Destinations() {
   );
 }
 
-// ─── Reviews ──────────────────────────────────────────────────────────────────
+// ─── Reviews ────────────────────────────────────────────────────────────────────────────────
+function HomeRatingsMini({ driver, vehicle, operator }: { driver: number; vehicle: number; operator: number }) {
+  const overall = Math.round(((driver + vehicle + operator) / 3) * 10) / 10;
+  return (
+    <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "8px", padding: "12px 16px", marginTop: "12px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
+        <span style={{ fontSize: "0.72rem", color: "#888", letterSpacing: "0.06em", textTransform: "uppercase", fontWeight: 600 }}>Overall</span>
+        <span style={{ fontSize: "1.2rem", fontWeight: 700, color: "#c9a84c", fontFamily: "'Playfair Display', serif" }}>{overall.toFixed(1)}</span>
+        <span style={{ color: "#c9a84c", fontSize: "0.85rem", letterSpacing: "1px" }}>
+          {[1,2,3,4,5].map(i => <span key={i} style={{ opacity: i <= Math.round(overall) ? 1 : 0.25 }}>&#9733;</span>)}
+        </span>
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
+        {([{ label: "Driver", score: driver }, { label: "Vehicle", score: vehicle }, { label: "Operator", score: operator }] as { label: string; score: number }[]).map(({ label, score }) => (
+          <div key={label} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <span style={{ fontSize: "0.72rem", color: "#888", width: "56px", flexShrink: 0 }}>{label}</span>
+            <div style={{ flex: 1, height: "5px", background: "rgba(255,255,255,0.1)", borderRadius: "3px", overflow: "hidden" }}>
+              <div style={{ height: "100%", width: `${(score / 5) * 100}%`, background: "linear-gradient(90deg, #c9a84c, #e8c96a)", borderRadius: "3px" }} />
+            </div>
+            <span style={{ fontSize: "0.72rem", fontWeight: 600, color: "#c9a84c", width: "24px", textAlign: "right" }}>{score.toFixed(1)}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function Reviews() {
   const [slide, setSlide] = useState(0);
   const reviews = [
@@ -1093,6 +1119,7 @@ function Reviews() {
       pax: "4 passengers",
       period: "August 2025",
       driver: "Eranga",
+      ratings: { driver: 5.0, vehicle: 4.8, operator: 4.9 },
       quote: "Professional service from first enquiry to final drop-off — we felt completely at ease throughout.",
       body: "From pre-booking through the day of travel, the team responded promptly and clearly. Pricing and itinerary planning were explained in a way that left no room for uncertainty. On the day, Eranga drove with care and composure, seamlessly rerouting around congestion to keep us on schedule. His deep knowledge of Anuradhapura, Dambulla, Sigiriya, and Polonnaruwa gave us a rich historical foundation for understanding this remarkable country. We consider ourselves fortunate to have had him as both driver and guide.",
     },
@@ -1102,6 +1129,7 @@ function Reviews() {
       pax: "3 passengers",
       period: "March 2026",
       driver: "Lasith",
+      ratings: { driver: 5.0, vehicle: 4.8, operator: 4.9 },
       quote: "Lasith was endlessly patient with our children and made every moment of the trip feel effortless.",
       body: "Having Lasith with us was a genuine stroke of luck. His warm manner with the kids put us all at ease, and his clear English meant nothing was ever lost in translation. Punctual, full of thoughtful suggestions for sights and local restaurants, and consistently calm behind the wheel — he was everything we could have asked for. (We'll probably skip that road between Passikudah and Sigiriya next time, though!) We recommend him without hesitation: attentive, knowledgeable, and completely trustworthy. If you're ever in Europe, Lasith — the first round is on us.",
     },
@@ -1111,6 +1139,7 @@ function Reviews() {
       pax: "2 passengers",
       period: "November 2025",
       driver: "Ranjana",
+      ratings: { driver: 4.9, vehicle: 4.8, operator: 4.8 },
       quote: "Ranjana turned our Sri Lanka trip into something far beyond ordinary sightseeing.",
       body: "We booked a private charter for two and were paired with Ranjana — a decision we couldn't be happier about. He brought a quiet confidence to every drive, navigating mountain roads and busy town centres with equal ease. What stood out most was his genuine enthusiasm: he suggested a white-water rafting experience we hadn't planned, and it became one of the highlights of the trip. His local knowledge of hidden viewpoints, authentic eateries, and cultural customs enriched every day. Ranjana is the kind of guide who makes you feel like a guest of the country, not just a tourist passing through.",
     },
@@ -1120,6 +1149,7 @@ function Reviews() {
       pax: "2 passengers",
       period: "August 2025",
       driver: "Priyanth",
+      ratings: { driver: 5.0, vehicle: 4.7, operator: 4.8 },
       quote: "Priyanth made six days feel like a journey with a trusted friend rather than a hired driver.",
       body: "Starting from Colombo Airport, Priyanth guided us through Sigiriya, Kandy, Nuwara Eliya, and Galle over six days. He was punctual and drove with care throughout, always checking in on how we were feeling — something we genuinely appreciated on longer stretches. His cheerful company made every transfer enjoyable, and his insights into Sri Lankan history and culture added real depth to what we saw. He also took us to a breathtaking viewpoint that wasn't in our original plan, and introduced us to local restaurants that were simply outstanding. We'd love to travel with him again on our next visit to Sri Lanka.",
     },
@@ -1129,6 +1159,7 @@ function Reviews() {
       pax: "2 passengers",
       period: "October 2025",
       driver: "Indika",
+      ratings: { driver: 5.0, vehicle: 4.9, operator: 5.0 },
       quote: "Thanks to Indika, our trip became not just sightseeing — it became a richly colourful, unforgettable journey.",
       body: "We travelled as a couple from Negombo through Sigiriya, Kandy, Nuwara Eliya, and Mirissa over five days. On the very first morning — which happened to be a birthday — a cake appeared at breakfast, arranged quietly by Indika through the hotel. He also gave us a small elephant figurine as a gift. We were genuinely moved. Throughout the trip he was a steady, reassuring presence: briefing us before each site, handling early starts without complaint, recommending restaurants he personally frequents (every one was excellent), and even riding the train with us to keep us safe in the crowds. When something seemed overpriced, he'd simply say, 'Let's skip it' — that honesty made us trust him completely. Meeting Indika was, without question, part of what made this trip perfect.",
     },
@@ -1138,6 +1169,7 @@ function Reviews() {
       pax: "5 passengers",
       period: "December 2025",
       driver: "Chamil",
+      ratings: { driver: 5.0, vehicle: 4.8, operator: 4.9 },
       quote: "Despite having to completely rearrange our itinerary after a cyclone, Chamil made it the trip of a lifetime.",
       body: "We travelled as three generations — grandparents, parents, and a child — just after a cyclone had disrupted the island. Chamil constantly gathered the latest information on road conditions and safety, and always proposed the best available routes with our preferences in mind. When we needed to cancel hotels and train bookings and arrange new ones at short notice, he was right there helping us every step of the way. He joined us for the Sigiriya Rock climb and the safari, which gave us enormous reassurance. His attentiveness to our child was especially touching — when tiredness struck at an inconvenient moment, we felt completely comfortable leaving our child in his care. He also took us to local restaurants that only residents would know, and every single meal was a revelation. Chamil's warmth, quick thinking, and natural thoughtfulness won over every member of our family — children and adults alike. We are already looking forward to our next trip to Sri Lanka, and we will absolutely be asking for Chamil again.",
     },
@@ -1164,10 +1196,10 @@ function Reviews() {
                   <img src={r.photo} alt={r.name} className="review-photo" style={r.photoPosition ? { objectPosition: r.photoPosition } : undefined} />
                 </div>
                 <div className="review-card-body">
-                  <div className="review-stars">★★★★★</div>
                   <div className="review-quote-v2">"{r.quote}"</div>
                   <div className="review-body-v2">{r.body}</div>
-                  <div className="review-meta-row">
+                  {r.ratings && <HomeRatingsMini driver={r.ratings.driver} vehicle={r.ratings.vehicle} operator={r.ratings.operator} />}
+                  <div className="review-meta-row" style={{ marginTop: "12px" }}>
                     <div className="review-name-v2">{r.name}</div>
                     <div className="review-tags">
                       <span className="review-tag-item">{r.pax}</span>

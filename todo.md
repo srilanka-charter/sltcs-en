@@ -56,6 +56,10 @@
 - [x] Flat-Rate Price List section: light cream background (#faf7f2), white cards with dark text, grey borders
 - [x] Suggested Itineraries section: light cream background (#faf7f2), dark text for all elements via CSS overrides
 - [x] Voice page (/voice): 8 review cards with Driver/Vehicle/Operator ratings, photos from manus-storage
+- [x] Home Reviews: HomeRatingsMini component added (Driver/Vehicle/Operator bars + Overall score)
+- [x] Home Reviews: ratings data added to all 6 reviews (4.7-5.0 range)
+- [x] Voice page: HOME_REVIEWS (6 reviews from home) added and merged with VOICE_REVIEWS
+- [x] Voice page: photo width increased from 280px to 380px, min-height 280px to 320px
 - [x] App.tsx: /voice route added
 - [x] index.css: Voice page CSS styles added (.voice-page, .voice-card, .voice-ratings, .voice-breakdown, etc.)
 - [x] Navbar: VOICE link added (desktop + mobile)

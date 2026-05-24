@@ -53,7 +53,83 @@ function RatingsBreakdown({ driver, vehicle, operator }: { driver: number; vehic
   );
 }
 
-// ─── Review Data ───────────────────────────────────────────────────────────────
+// ─── Review Data ────────────────────────────────────────────────────────────────────────────────
+// Reviews from the home page (What Our Guests Say section)
+const HOME_REVIEWS = [
+  {
+    id: "eranga",
+    photo: "/manus-storage/review1_r_family_eranga_a3545b4c.png",
+    driver: "Eranga",
+    name: "The R Family",
+    pax: "4 passengers",
+    period: "August 2025",
+    route: "Anuradhapura – Dambulla – Sigiriya – Polonnaruwa",
+    ratings: { driver: 5.0, vehicle: 4.8, operator: 4.9 },
+    quote: "Professional service from first enquiry to final drop-off — we felt completely at ease throughout.",
+    body: "From pre-booking through the day of travel, the team responded promptly and clearly. Pricing and itinerary planning were explained in a way that left no room for uncertainty. On the day, Eranga drove with care and composure, seamlessly rerouting around congestion to keep us on schedule. His deep knowledge of Anuradhapura, Dambulla, Sigiriya, and Polonnaruwa gave us a rich historical foundation for understanding this remarkable country. We consider ourselves fortunate to have had him as both driver and guide.",
+  },
+  {
+    id: "lasith-home",
+    photo: "/manus-storage/review_lasith_family_ae2d2464.jpeg",
+    driver: "Lasith",
+    name: "The W Family",
+    pax: "3 passengers",
+    period: "March 2026",
+    route: "Passikudah – Sigiriya – Colombo",
+    ratings: { driver: 5.0, vehicle: 4.8, operator: 4.9 },
+    quote: "Lasith was endlessly patient with our children and made every moment of the trip feel effortless.",
+    body: "Having Lasith with us was a genuine stroke of luck. His warm manner with the kids put us all at ease, and his clear English meant nothing was ever lost in translation. Punctual, full of thoughtful suggestions for sights and local restaurants, and consistently calm behind the wheel — he was everything we could have asked for. (We'll probably skip that road between Passikudah and Sigiriya next time, though!) We recommend him without hesitation: attentive, knowledgeable, and completely trustworthy. If you're ever in Europe, Lasith — the first round is on us.",
+  },
+  {
+    id: "ranjana-home",
+    photo: "/manus-storage/review_ranjana_new_2b654dea.png",
+    driver: "Ranjana",
+    name: "The H Couple",
+    pax: "2 passengers",
+    period: "November 2025",
+    route: "Colombo – Kandy – Nuwara Eliya – Galle",
+    ratings: { driver: 4.9, vehicle: 4.8, operator: 4.8 },
+    quote: "Ranjana turned our Sri Lanka trip into something far beyond ordinary sightseeing.",
+    body: "We booked a private charter for two and were paired with Ranjana — a decision we couldn't be happier about. He brought a quiet confidence to every drive, navigating mountain roads and busy town centres with equal ease. What stood out most was his genuine enthusiasm: he suggested a white-water rafting experience we hadn't planned, and it became one of the highlights of the trip. His local knowledge of hidden viewpoints, authentic eateries, and cultural customs enriched every day. Ranjana is the kind of guide who makes you feel like a guest of the country, not just a tourist passing through.",
+  },
+  {
+    id: "priyanth",
+    photo: "/manus-storage/review_priyantha_couple_e0a47aaf.png",
+    driver: "Priyanth",
+    name: "The A&S",
+    pax: "2 passengers",
+    period: "August 2025",
+    route: "Colombo – Sigiriya – Kandy – Nuwara Eliya – Galle",
+    ratings: { driver: 5.0, vehicle: 4.7, operator: 4.8 },
+    quote: "Priyanth made six days feel like a journey with a trusted friend rather than a hired driver.",
+    body: "Starting from Colombo Airport, Priyanth guided us through Sigiriya, Kandy, Nuwara Eliya, and Galle over six days. He was punctual and drove with care throughout, always checking in on how we were feeling — something we genuinely appreciated on longer stretches. His cheerful company made every transfer enjoyable, and his insights into Sri Lankan history and culture added real depth to what we saw. He also took us to a breathtaking viewpoint that wasn't in our original plan, and introduced us to local restaurants that were simply outstanding. We'd love to travel with him again on our next visit to Sri Lanka.",
+  },
+  {
+    id: "indika",
+    photo: "/manus-storage/review5_t_couple_indika_519f1510.png",
+    driver: "Indika",
+    name: "The T Couple",
+    pax: "2 passengers",
+    period: "October 2025",
+    route: "Negombo – Sigiriya – Kandy – Nuwara Eliya – Mirissa",
+    ratings: { driver: 5.0, vehicle: 4.9, operator: 5.0 },
+    quote: "Thanks to Indika, our trip became not just sightseeing — it became a richly colourful, unforgettable journey.",
+    body: "We travelled as a couple from Negombo through Sigiriya, Kandy, Nuwara Eliya, and Mirissa over five days. On the very first morning — which happened to be a birthday — a cake appeared at breakfast, arranged quietly by Indika through the hotel. He also gave us a small elephant figurine as a gift. We were genuinely moved. Throughout the trip he was a steady, reassuring presence: briefing us before each site, handling early starts without complaint, recommending restaurants he personally frequents (every one was excellent), and even riding the train with us to keep us safe in the crowds. When something seemed overpriced, he'd simply say, 'Let's skip it' — that honesty made us trust him completely.",
+  },
+  {
+    id: "chamil",
+    photo: "/manus-storage/review_dfamily_chamil_9214e24c.png",
+    driver: "Chamil",
+    name: "The D Family",
+    pax: "5 passengers",
+    period: "December 2025",
+    route: "Colombo – Sigiriya – Kandy – Yala – Galle",
+    ratings: { driver: 5.0, vehicle: 4.8, operator: 4.9 },
+    quote: "Despite having to completely rearrange our itinerary after a cyclone, Chamil made it the trip of a lifetime.",
+    body: "We travelled as three generations — grandparents, parents, and a child — just after a cyclone had disrupted the island. Chamil constantly gathered the latest information on road conditions and safety, and always proposed the best available routes with our preferences in mind. When we needed to cancel hotels and train bookings and arrange new ones at short notice, he was right there helping us every step of the way. He joined us for the Sigiriya Rock climb and the safari, which gave us enormous reassurance. His attentiveness to our child was especially touching. Chamil's warmth, quick thinking, and natural thoughtfulness won over every member of our family. We are already looking forward to our next trip to Sri Lanka, and we will absolutely be asking for Chamil again.",
+  },
+];
+
 const VOICE_REVIEWS = [
   {
     id: "aruna",
@@ -187,9 +263,10 @@ function VoiceCard({ review }: { review: typeof VOICE_REVIEWS[0] }) {
 
 // ─── Voice Page ────────────────────────────────────────────────────────────────
 export default function Voice() {
+  const ALL_REVIEWS = [...VOICE_REVIEWS, ...HOME_REVIEWS];
   const avgOverall = (
-    VOICE_REVIEWS.reduce((sum, r) => sum + (r.ratings.driver + r.ratings.vehicle + r.ratings.operator) / 3, 0) /
-    VOICE_REVIEWS.length
+    ALL_REVIEWS.reduce((sum, r) => sum + (r.ratings.driver + r.ratings.vehicle + r.ratings.operator) / 3, 0) /
+    ALL_REVIEWS.length
   ).toFixed(1);
 
   return (
@@ -212,7 +289,7 @@ export default function Voice() {
           </p>
           <div className="voice-summary-bar">
             <div className="voice-summary-item">
-              <span className="voice-summary-num">{VOICE_REVIEWS.length}</span>
+              <span className="voice-summary-num">{ALL_REVIEWS.length}</span>
               <span className="voice-summary-label">Reviews</span>
             </div>
             <div className="voice-summary-divider" />
@@ -222,7 +299,7 @@ export default function Voice() {
             </div>
             <div className="voice-summary-divider" />
             <div className="voice-summary-item">
-              <span className="voice-summary-num">8</span>
+              <span className="voice-summary-num">14</span>
               <span className="voice-summary-label">Drivers</span>
             </div>
           </div>
@@ -231,7 +308,7 @@ export default function Voice() {
         {/* Reviews Grid */}
         <section className="voice-reviews-section">
           <div className="voice-reviews-grid">
-            {VOICE_REVIEWS.map((r) => (
+            {ALL_REVIEWS.map((r) => (
               <VoiceCard key={r.id} review={r} />
             ))}
           </div>
