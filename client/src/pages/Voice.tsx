@@ -95,6 +95,7 @@ const HOME_REVIEWS = [
   {
     id: "priyanth",
     photo: "/manus-storage/review_priyantha_couple_e0a47aaf.png",
+    photoPosition: "center 35%",
     driver: "Priyanth",
     name: "The A&S",
     pax: "2 passengers",
@@ -107,6 +108,7 @@ const HOME_REVIEWS = [
   {
     id: "indika",
     photo: "/manus-storage/review5_t_couple_indika_519f1510.png",
+    photoPosition: "center 25%",
     driver: "Indika",
     name: "The T Couple",
     pax: "2 passengers",
@@ -146,6 +148,7 @@ const VOICE_REVIEWS = [
   {
     id: "dhammika",
     photo: "/manus-storage/review_dhammika_f371cfdd.jpeg",
+    photoPosition: "center 30%",
     driver: "Dhammika",
     name: "The R Couple",
     pax: "2 passengers",
@@ -229,13 +232,14 @@ const VOICE_REVIEWS = [
   },
 ];
 
-// ─── Voice Review Card ─────────────────────────────────────────────────────────
-function VoiceCard({ review }: { review: typeof VOICE_REVIEWS[0] }) {
+// ─── Voice Review Card ────────────────────────────────────────────────────────────────────────────────
+type ReviewItem = (typeof VOICE_REVIEWS[0] | typeof HOME_REVIEWS[0]) & { photoPosition?: string };
+function VoiceCard({ review }: { review: ReviewItem }) {
   const overall = Math.round(((review.ratings.driver + review.ratings.vehicle + review.ratings.operator) / 3) * 10) / 10;
   return (
     <article className="voice-card">
       <div className="voice-card-photo-wrap">
-        <img src={review.photo} alt={`${review.driver} with guests`} className="voice-card-photo" />
+        <img src={review.photo} alt={`${review.driver} with guests`} className="voice-card-photo" style={(review as ReviewItem).photoPosition ? { objectPosition: (review as ReviewItem).photoPosition } : undefined} />
         <div className="voice-card-overall-badge">
           <span className="voice-badge-star">★</span>
           <span className="voice-badge-num">{overall.toFixed(1)}</span>
