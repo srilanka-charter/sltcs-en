@@ -381,12 +381,40 @@ function ContactAndWhy() {
     },
   });
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitError(null);
     setIsSubmitting(true);
     const form = e.currentTarget;
     const data = new FormData(form);
+
+    const staticFormEndpoint = import.meta.env.VITE_STATIC_FORM_ENDPOINT as string | undefined;
+    if (staticFormEndpoint) {
+      try {
+        data.set("startDate", startDate);
+        data.set("endDate", endDate);
+        data.set("_subject", `[SLTCS Malay] New enquiry from ${data.get("name") || "website visitor"}`);
+        data.set("_template", "table");
+
+        const response = await fetch(staticFormEndpoint, {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: data,
+        });
+
+        if (!response.ok) {
+          throw new Error("Gagal menghantar pertanyaan. Sila cuba semula.");
+        }
+
+        setLocation("/thanks");
+      } catch (err) {
+        const message = err instanceof Error ? err.message : "Gagal menghantar pertanyaan. Sila cuba semula.";
+        setSubmitError(message);
+        setIsSubmitting(false);
+      }
+      return;
+    }
+
     submitMutation.mutate({
       name: (data.get("name") as string) || "",
       country: (data.get("country") as string) || "",
