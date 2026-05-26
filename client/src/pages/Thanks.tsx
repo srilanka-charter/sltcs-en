@@ -71,7 +71,7 @@ export default function Thanks() {
           lineHeight: 1.25,
         }}
       >
-        Thank You for Your Enquiry!
+        Terima Kasih atas Pertanyaan Anda!
       </h1>
 
       {/* Subtext */}
@@ -85,9 +85,9 @@ export default function Thanks() {
           marginBottom: "12px",
         }}
       >
-        Our team will review your request and get back to you within{" "}
-        <strong style={{ color: "#c9a84c" }}>24 hours</strong> with a tailored
-        itinerary and quote.
+        Pasukan kami akan menilai permintaan anda dan akan menghubungi anda dalam{" "}
+        <strong style={{ color: "#c9a84c" }}>24 jam</strong> dengan contoh
+        itinerari dan harga yang disesuaikan.
       </p>
 
       <p
@@ -100,8 +100,8 @@ export default function Thanks() {
           marginBottom: "40px",
         }}
       >
-        Please check your inbox (and spam folder) for a confirmation. If you
-        have any urgent questions, feel free to send us another message.
+        Sila semak peti masuk dan folder spam anda untuk pengesahan. Jika anda mempunyai
+        sebarang soalan yang mendesak, jangan ragu untuk menghantar mesej lain kepada kami.
       </p>
 
       {/* Divider */}
@@ -134,7 +134,7 @@ export default function Thanks() {
         onMouseOver={(e) => (e.currentTarget.style.opacity = "0.85")}
         onMouseOut={(e) => (e.currentTarget.style.opacity = "1")}
       >
-        ← Back to Home
+        ← Kembali ke Laman Utama
       </button>
 
       {/* Footer note */}
@@ -146,7 +146,7 @@ export default function Thanks() {
           textAlign: "center",
         }}
       >
-        © SLTCS｜Sri Lanka Car Hire with Private Driver. All Rights Reserved.
+        © SLTCS｜Sri Lanka Car Hire with Private Driver. Semua Hakcipta Terpelihara.
       </p>
     </div>
   );

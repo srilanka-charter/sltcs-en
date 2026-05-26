@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 
 // ─── SEO ─────────────────────────────────────────────────────────────────────
-const PAGE_TITLE = "FAQ – Frequently Asked Questions | SLTCS Sri Lanka Car Hire with Private Driver";
+const PAGE_TITLE = "Soalan Lazim – Soalan Lazim | SLTCS Sri Lanka Sewa Kereta dengan Pemandu Peribadi";
 const PAGE_DESC =
-  "Answers to common questions about SLTCS (Sri Lanka Car Hire with Private Driver): tips, activities, payment, cancellation policy, driver introduction, and more.";
+  "Answers to common questions about SLTCS (Sri Lanka Sewa Kereta dengan Pemandu Peribadi): tips, activities, payment, cancellation policy, driver introduction, and more.";
 
-// ─── FAQ Data ─────────────────────────────────────────────────────────────────
+// ─── Soalan Lazim Data ─────────────────────────────────────────────────────────────────
 interface FaqItem {
   q: string;
   a: React.ReactNode;
@@ -15,12 +15,12 @@ interface FaqItem {
 
 const FAQ_ITEMS: FaqItem[] = [
   {
-    q: "What kind of service is SLTCS (Sri Lanka Car Hire with Private Driver)?",
-    plainText: "SLTCS (Sri Lanka Car Hire with Private Driver) is an online ground transportation matching service operated by Sri Lanka Taxi Charter Service International Limited, a Hong Kong-registered company. It connects travellers with tourism drivers registered with the Sri Lanka Tourism Development Authority (SLTDA). The transportation contract is formed directly between the customer and the driver. SLTCS acts as an introduction and communication intermediary and does not itself provide transportation.",
+    q: "What kind of service is SLTCS (Sri Lanka Sewa Kereta dengan Pemandu Peribadi)?",
+    plainText: "SLTCS (Sri Lanka Sewa Kereta dengan Pemandu Peribadi) is an online ground transportation matching service operated by Sri Lanka Taxi Charter Service International Limited, a Hong Kong-registered company. It connects travellers with tourism drivers registered with the Sri Lanka Tourism Development Authority (SLTDA). The transportation contract is formed directly between the customer and the driver. SLTCS acts as an introduction and communication intermediary and does not itself provide transportation.",
     a: (
       <>
         <p>
-          SLTCS (Sri Lanka Car Hire with Private Driver) is an online ground
+          SLTCS (Sri Lanka Sewa Kereta dengan Pemandu Peribadi) is an online ground
           transportation matching service operated by Sri Lanka Taxi Charter
           Service International Limited, a Hong Kong-registered company. It
           connects travellers with tourism drivers registered with the Sri Lanka
@@ -34,7 +34,7 @@ const FAQ_ITEMS: FaqItem[] = [
         <p className="mt-2 text-amber-700 bg-amber-50 rounded-lg px-3 py-2 text-xs">
           ※ Important: We do not handle bookings, sales, or arrangements for
           accommodation, tourist attractions, activities, railways, etc. Any
-          information provided in this FAQ is for reference only. All contracts
+          information provided in this Soalan Lazim is for reference only. All contracts
           for such services are formed directly between the customer and the
           respective provider.
         </p>
@@ -399,18 +399,18 @@ export default function FAQ() {
       {/* ── Navbar ── */}
       <nav className={`sltcs-nav${scrolled ? " scrolled" : ""}`}>
         <Link href="/" className="nav-logo">
-          SLTCS｜Sri Lanka Car Hire with Private Driver
+          SLTCS｜Sri Lanka Sewa Kereta dengan Pemandu Peribadi
         </Link>
         <ul className="nav-links">
           <li>
-            <Link href="/#plans" onClick={(e) => { e.preventDefault(); window.location.href = "/#plans"; }}>PLANS</Link>
+            <Link href="/#plans" onClick={(e) => { e.preventDefault(); window.location.href = "/#plans"; }}>PELAN</Link>
           </li>
           <li
             className="nav-dropdown"
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
-            <button>MODEL ITINERARY</button>
+            <button>CONTOH ITINERARI</button>
             {dropdownOpen && (
               <div className="nav-dropdown-menu">
                 <Link href="/#courses" onClick={(e) => { e.preventDefault(); window.location.href = "/#courses"; }}>4 Nights / 5 Days</Link>
@@ -422,16 +422,16 @@ export default function FAQ() {
             )}
           </li>
           <li>
-            <Link href="/vehicles">VEHICLES</Link>
+            <Link href="/vehicles">KENDERAAN</Link>
           </li>
           <li>
-            <Link href="/price">PRICE</Link>
+            <Link href="/price">HARGA</Link>
           </li>
           <li>
-            <Link href="/#contact" onClick={(e) => { e.preventDefault(); window.location.href = "/#contact"; }}>CONTACT</Link>
+            <Link href="/#contact" onClick={(e) => { e.preventDefault(); window.location.href = "/#contact"; }}>HUBUNGI</Link>
           </li>
           <li>
-            <Link href="/faq" className="active">FAQ</Link>
+            <Link href="/faq" className="active">Soalan Lazim</Link>
           </li>
         </ul>
         <button
@@ -446,14 +446,14 @@ export default function FAQ() {
       </nav>
       {mobileOpen && (
         <div className="mobile-menu open">
-          <Link href="/#plans" onClick={() => setMobileOpen(false)}>Plans</Link>
-          <Link href="/#courses" onClick={() => setMobileOpen(false)}>Model Itinerary</Link>
-          <Link href="/vehicles" onClick={() => setMobileOpen(false)}>Vehicles</Link>
-          <Link href="/price" onClick={() => setMobileOpen(false)}>Price</Link>
-          <Link href="/#contact" onClick={() => setMobileOpen(false)}>Contact</Link>
-          <Link href="/faq" onClick={() => setMobileOpen(false)}>FAQ</Link>
+          <Link href="/#plans" onClick={() => setMobileOpen(false)}>Pelan</Link>
+          <Link href="/#courses" onClick={() => setMobileOpen(false)}>Contoh Itinerari</Link>
+          <Link href="/vehicles" onClick={() => setMobileOpen(false)}>Kenderaan</Link>
+          <Link href="/price" onClick={() => setMobileOpen(false)}>Harga</Link>
+          <Link href="/#contact" onClick={() => setMobileOpen(false)}>Hubungi</Link>
+          <Link href="/faq" onClick={() => setMobileOpen(false)}>Soalan Lazim</Link>
           <Link href="/#contact" className="btn-nav-mobile" onClick={() => setMobileOpen(false)}>
-            Free Enquiry
+            Pertanyaan Percuma
           </Link>
         </div>
       )}
@@ -462,14 +462,14 @@ export default function FAQ() {
       <section className="faq-hero">
         <div className="faq-hero-content">
           <div className="section-eyebrow">SLTCS – SRI LANKA CAR HIRE WITH PRIVATE DRIVER</div>
-          <h1>FAQ</h1>
+          <h1>Soalan Lazim</h1>
           <p className="faq-hero-sub">
-            Frequently Asked Questions about SLTCS (Sri Lanka Car Hire with Private Driver)
+            Soalan Lazim about SLTCS (Sri Lanka Sewa Kereta dengan Pemandu Peribadi)
           </p>
           <nav className="breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link>
             <span> / </span>
-            <span>FAQ</span>
+            <span>Soalan Lazim</span>
           </nav>
         </div>
       </section>
@@ -479,7 +479,7 @@ export default function FAQ() {
         <div className="faq-intro-inner">
           <p>
             Below are answers to frequently asked questions from customers
-            considering or using SLTCS (Sri Lanka Car Hire with Private Driver).
+            considering or using SLTCS (Sri Lanka Sewa Kereta dengan Pemandu Peribadi).
             If you have any further questions, please feel free to contact us.
           </p>
         </div>
@@ -532,7 +532,7 @@ export default function FAQ() {
           <p className="faq-cta-sub">If your question is not answered here</p>
           <h2 className="faq-cta-title">Feel free to contact us</h2>
           <a href="/#contact" className="btn-primary" onClick={(e) => { e.preventDefault(); window.location.href = "/#contact"; }}>
-            <span>💬</span> Free Enquiry
+            <span>💬</span> Pertanyaan Percuma
           </a>
         </div>
       </section>
@@ -542,7 +542,7 @@ export default function FAQ() {
         <div className="footer-inner">
           <div className="footer-brand">
             <div className="footer-logo">
-              Sri Lanka Car Hire with Private Driver
+              Sri Lanka Sewa Kereta dengan Pemandu Peribadi
               <span className="footer-logo-sub">SLTCS</span>
             </div>
             <p className="footer-tagline">
@@ -552,28 +552,28 @@ export default function FAQ() {
           </div>
           <div className="footer-nav">
             <div className="footer-nav-col">
-              <div className="footer-nav-title">Navigation</div>
-              <Link href="/#plans">Plans</Link>
+              <div className="footer-nav-title">Navigasi</div>
+              <Link href="/#plans">Pelan</Link>
               <Link href="/#courses">4 Nights / 5 Days</Link>
               <Link href="/#courses">5 Nights / 6 Days</Link>
               <Link href="/#courses">6 Nights / 7 Days</Link>
-              <Link href="/#courses">Model Itinerary</Link>
+              <Link href="/#courses">Contoh Itinerari</Link>
             </div>
             <div className="footer-nav-col">
-              <Link href="/vehicles">Vehicles</Link>
-              <Link href="/faq">FAQ</Link>
-              <Link href="/#contact">Contact</Link>
+              <Link href="/vehicles">Kenderaan</Link>
+              <Link href="/faq">Soalan Lazim</Link>
+              <Link href="/#contact">Hubungi</Link>
             </div>
           </div>
           <div className="footer-contact">
-            <div className="footer-nav-title">Contact</div>
+            <div className="footer-nav-title">Hubungi</div>
             <a href="/#contact" className="btn-footer-cta">
-              Free Enquiry
+              Pertanyaan Percuma
             </a>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>Copyright © Sri Lanka Car Hire with Private Driver All Rights Reserved.</p>
+          <p>Copyright © Sri Lanka Sewa Kereta dengan Pemandu Peribadi Hak Cipta Terpelihara.</p>
         </div>
       </footer>
     </div>

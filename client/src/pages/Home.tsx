@@ -1,10 +1,10 @@
 /**
  * SLTCS – Sri Lanka Car Hire with Private Driver
- * Design: Dark luxury travel aesthetic
- * - Playfair Display (serif) for headings
- * - Inter for body text
- * - Gold (#c9a84c) accent on deep dark background
- * - Full-bleed hero slideshow, tabbed itineraries, contact form
+ * Design: Estetik perjalanan mewah gelap
+ * - Playfair Display (serif) untuk tajuk
+ * - Inter untuk teks badan
+ * - Emas (#c9a84c) aksen pada latar gelap pekat
+ * - Tayangan slaid hero penuh-lebar, itinerari bertab, borang hubungi
  */
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
@@ -103,13 +103,13 @@ const IMAGES = {
 };
 
 const SLIDES = [
-  { src: IMAGES.hero1, alt: "White van driving along Sri Lanka road at sunset" },
-  { src: IMAGES.hero2, alt: "Sigiriya Rock Fortress aerial view" },
-  { src: IMAGES.hero3, alt: "Sri Lanka tea plantation scenic train" },
-  { src: IMAGES.hero4, alt: "Kandy Temple of the Tooth Sri Lanka" },
-  { src: IMAGES.hero5, alt: "Galle Fort Dutch colonial ramparts" },
+  { src: IMAGES.hero1, alt: "Van putih memandu di jalan Sri Lanka pada waktu matahari terbenam" },
+  { src: IMAGES.hero2, alt: "Pemandangan udara Benteng Batu Sigiriya" },
+  { src: IMAGES.hero3, alt: "Kereta api ladang teh Sri Lanka yang indah" },
+  { src: IMAGES.hero4, alt: "Kuil Gigi Kandy Sri Lanka" },
+  { src: IMAGES.hero5, alt: "Parapet kolonial Belanda Benteng Galle" },
 ];
-// Note: hero1 = van image (first slide), hero2 = Sigiriya (second slide)
+// Nota: hero1 = imej van (slaid pertama), hero2 = Sigiriya (slaid kedua)
 
 // ─── Navbar ───────────────────────────────────────────────────────────────────
 function Navbar() {
@@ -121,6 +121,7 @@ function Navbar() {
   const [mobileLangOpen, setMobileLangOpen] = useState(false);
 
   const LANGUAGES = [
+    { label: "English", url: "https://en.srilanka-charter.com/" },
     { label: "French", url: "https://fr.srilanka-charter.com/" },
     { label: "Spanish", url: "https://es.srilanka-charter.com/" },
     { label: "German", url: "https://de.srilanka-charter.com/" },
@@ -148,28 +149,28 @@ function Navbar() {
           <span className="nav-logo-short">SLTCS</span>
         </a>
         <ul className="nav-links">
-          <li><a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>PLANS</a></li>
+          <li><a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>PELAN</a></li>
           <li className="nav-dropdown" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
-            <button>MODEL ITINERARY</button>
+            <button>CONTOH ITINERARI</button>
             {dropdownOpen && (
               <div className="nav-dropdown-menu">
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nights / 5 Days</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nights / 6 Days</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nights / 7 Days</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 to 7 Days – Cultural Triangle</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Days to 2 Weeks – Classic Plan</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Malam / 5 Hari</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Malam / 6 Hari</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Malam / 7 Hari</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 hingga 7 Hari – Segitiga Budaya</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Hari hingga 2 Minggu – Pelan Klasik</a>
               </div>
             )}
           </li>
-          <li><a href="/vehicles">VEHICLES</a></li>
-          <li><a href="/voice">VOICE</a></li>
-          <li><a href="/price">PRICE</a></li>
-          <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>CONTACT</a></li>
-          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/vehicles">KENDERAAN</a></li>
+          <li><a href="/voice">ULASAN</a></li>
+          <li><a href="/price">HARGA</a></li>
+          <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>HUBUNGI</a></li>
+          <li><a href="/faq">SOALAN LAZIM</a></li>
           <li className="nav-dropdown nav-lang-dropdown" onMouseEnter={() => setLangOpen(true)} onMouseLeave={() => setLangOpen(false)}>
             <button style={{ display: "flex", alignItems: "center", gap: "4px" }}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              EN
+              MS
             </button>
             {langOpen && (
               <div className="nav-dropdown-menu">
@@ -186,14 +187,14 @@ function Navbar() {
       </nav>
       {mobileOpen && (
         <div className="mobile-menu open">
-          <a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Plans</a>
+          <a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Pelan</a>
           {/* Model Itinerary accordion */}
           <div className="mobile-accordion">
             <button
               className="mobile-accordion-btn"
               onClick={() => setMobileItineraryOpen(o => !o)}
             >
-              <span>Model Itinerary</span>
+              <span>Contoh Itinerari</span>
               <svg
                 width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
                 style={{ transform: mobileItineraryOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
@@ -201,26 +202,26 @@ function Navbar() {
             </button>
             {mobileItineraryOpen && (
               <div className="mobile-accordion-body">
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nights / 5 Days</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nights / 6 Days</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nights / 7 Days</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5–7 Days – Cultural Triangle</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Days to 2 Weeks – Classic</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Malam / 5 Hari</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Malam / 6 Hari</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Malam / 7 Hari</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5–7 Hari – Segitiga Budaya</a>
+                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Hari hingga 2 Minggu – Klasik</a>
               </div>
             )}
           </div>
-          <a href="/vehicles">Vehicles</a>
-          <a href="/price">Price</a>
-          <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Contact</a>
-          <a href="/faq">FAQ</a>
-          <a href="/voice">Voice</a>
+          <a href="/vehicles">Kenderaan</a>
+          <a href="/price">Harga</a>
+          <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Hubungi</a>
+          <a href="/faq">Soalan Lazim</a>
+          <a href="/voice">Ulasan</a>
           {/* Language accordion */}
           <div className="mobile-accordion">
             <button
               className="mobile-accordion-btn"
               onClick={() => setMobileLangOpen(o => !o)}
             >
-              <span>Other Languages</span>
+              <span>Bahasa Lain</span>
               <svg
                 width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
                 style={{ transform: mobileLangOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
@@ -228,13 +229,13 @@ function Navbar() {
             </button>
             {mobileLangOpen && (
               <div className="mobile-accordion-body">
-                {[{label:"French",url:"https://fr.srilanka-charter.com/"},{label:"Spanish",url:"https://es.srilanka-charter.com/"},{label:"German",url:"https://de.srilanka-charter.com/"},{label:"Dutch",url:"https://nl.srilanka-charter.com/"},{label:"Russian",url:"https://ru.srilanka-charter.com/"},{label:"Japanese",url:"https://sltcs.srilanka-charter.com/"}].map((lang) => (
+                {[{label:"English",url:"https://en.srilanka-charter.com/"},{label:"French",url:"https://fr.srilanka-charter.com/"},{label:"Spanish",url:"https://es.srilanka-charter.com/"},{label:"German",url:"https://de.srilanka-charter.com/"},{label:"Dutch",url:"https://nl.srilanka-charter.com/"},{label:"Russian",url:"https://ru.srilanka-charter.com/"},{label:"Japanese",url:"https://sltcs.srilanka-charter.com/"}].map((lang) => (
                   <a key={lang.label} href={lang.url}>{lang.label}</a>
                 ))}
               </div>
             )}
           </div>
-          <a href="#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Free Enquiry</a>
+          <a href="#contact" className="btn-nav-mobile" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Pertanyaan Percuma</a>
         </div>
       )}
     </>
@@ -274,27 +275,27 @@ function Hero() {
       <div className="hero-content">
         <div className="container" style={{ paddingLeft: "0" }}>
           <div style={{ maxWidth: "680px" }}>
-          <div className="hero-eyebrow">SRI LANKA PRIVATE CHARTER SERVICE</div>
-          <div className="hero-badge">CAR HIRE WITH DRIVER</div>
-          <h1>Sri Lanka <em>Car Hire</em> with a Private Driver</h1>
+          <div className="hero-eyebrow">PERKHIDMATAN SRI LANKA CHARTER PERIBADI</div>
+          <div className="hero-badge">SEWA KERETA DENGAN PEMANDU</div>
+          <h1>Sri Lanka <em>Sewa Kereta</em> dengan Pemandu Peribadi</h1>
           <p className="hero-sub">
-            Explore Sri Lanka at your own pace with a dedicated private driver.
-            Fully flexible, fully private — the finest way to discover the Pearl of the Indian Ocean.
+            Terokai Sri Lanka mengikut rentak anda sendiri dengan pemandu peribadi yang berdedikasi.
+            Sepenuhnya fleksibel, sepenuhnya peribadi — cara terbaik untuk menemui Mutiara Lautan Hindi.
           </p>
           <div className="hero-tags">
-            <span className="hero-tag">English Support</span>
-            <span className="hero-tag">Fully Private Charter</span>
-            <span className="hero-tag">Government-Certified Driver</span>
+            <span className="hero-tag">Sokongan Bahasa Inggeris</span>
+            <span className="hero-tag">Perkhidmatan Charter Sepenuhnya Peribadi</span>
+            <span className="hero-tag">Pemandu Bertauliah Kerajaan</span>
           </div>
           <a href="#contact" className="btn-primary" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>
-            Free Enquiry
+            Pertanyaan Percuma
           </a>
           </div>
         </div>
       </div>
       <div className="hero-location">
-        <div className="hero-location-label">Location</div>
-        <div className="hero-location-value">All Sri Lanka</div>
+        <div className="hero-location-label">Lokasi</div>
+        <div className="hero-location-value">Seluruh Sri Lanka</div>
       </div>
       <div className="hero-dots">
         {SLIDES.map((_, i) => (
@@ -302,7 +303,7 @@ function Hero() {
         ))}
       </div>
       <div className="hero-scroll">
-        <span>Scroll</span>
+        <span>Leret</span>
         <div className="scroll-line" />
       </div>
     </section>
@@ -347,15 +348,15 @@ function Stats() {
       <div className="stats-grid">
         <div className="stat-item">
           <div className="stat-number">{counts.charters}+</div>
-          <div className="stat-label">Total Charter Trips</div>
+          <div className="stat-label">Jumlah Perjalanan Charter</div>
         </div>
         <div className="stat-item">
           <div className="stat-number">{counts.satisfaction.toFixed(1)}</div>
-          <div className="stat-label">Average Satisfaction</div>
+          <div className="stat-label">Kepuasan Purata</div>
         </div>
         <div className="stat-item">
           <div className="stat-number">{counts.drivers}+</div>
-          <div className="stat-label">Certified Drivers</div>
+          <div className="stat-label">Pemandu Bertauliah</div>
         </div>
       </div>
     </div>
@@ -375,7 +376,7 @@ function ContactAndWhy() {
   const submitMutation = trpc.enquiry.submit.useMutation({
     onSuccess: () => { setLocation("/thanks"); },
     onError: (err) => {
-      setSubmitError(err.message || "Failed to send enquiry. Please try again.");
+      setSubmitError(err.message || "Gagal menghantar pertanyaan. Sila cuba semula.");
       setIsSubmitting(false);
     },
   });
@@ -406,38 +407,38 @@ function ContactAndWhy() {
   const reasons = [
     {
       num: "01",
-      title: "Government-Certified Drivers",
-      desc: "All our drivers hold official Sri Lanka Tourist Driver or Chauffeur Guide Driver licences. Professionally trained, safety-focused, and highly rated by past clients.",
+      title: "Pemandu Bertauliah Kerajaan",
+      desc: "Semua pemandu kami memegang lesen Pemandu Pelancong atau Pemandu Chauffeur rasmi Sri Lanka. Dilatih secara profesional, fokus keselamatan, dan sangat dihargai oleh pelanggan sebelum ini.",
       svgPath: "M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm0 4l6 3.27V12c0 3.79-2.58 7.33-6 8.93-3.42-1.6-6-5.14-6-8.93V9.27L12 6z",
     },
     {
       num: "02",
-      title: "Full English Support",
-      desc: "From first enquiry to the final drop-off, our English-speaking team is on hand to assist. No language barriers — just seamless communication throughout your trip.",
+      title: "Sokongan Bahasa Inggeris Sepenuhnya",
+      desc: "Dari pertanyaan pertama hingga penghantaran akhir, pasukan berbahasa Inggeris kami sentiasa bersedia membantu. Tiada halangan bahasa — hanya komunikasi lancar sepanjang perjalanan anda.",
       svgPath: "M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z",
     },
     {
       num: "03",
-      title: "Completely Private Charter",
-      desc: "Unlike group tours, your vehicle and driver are exclusively yours. Set your own schedule, choose your stops, and travel entirely on your own terms.",
+      title: "Charter Sepenuhnya Peribadi",
+      desc: "Berbeza dengan lawatan berkumpulan, kenderaan dan pemandu anda adalah eksklusif milik anda. Tetapkan jadual sendiri, pilih hentian anda, dan perjalanan mengikut kehendak sendiri sepenuhnya.",
       svgPath: "M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z",
     },
     {
       num: "04",
-      title: "Expert Local Knowledge",
-      desc: "Our Chauffeur Guide Drivers are passionate about Sri Lanka's history, culture, and cuisine. They'll take you beyond the guidebook to hidden gems and authentic experiences.",
+      title: "Pengetahuan Tempatan Pakar",
+      desc: "Pemandu Chauffeur Guide kami sangat berminat dengan sejarah, budaya, dan masakan Sri Lanka. Mereka akan membawa anda melangkaui buku panduan ke tempat tersembunyi dan pengalaman asli.",
       svgPath: "M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z",
     },
     {
       num: "05",
-      title: "Right Vehicle for Every Group",
-      desc: "From couples to large family groups of 10, we match the perfect vehicle to your party size — ensuring comfort even on long-distance journeys across the island.",
+      title: "Kenderaan Sesuai untuk Setiap Kumpulan",
+      desc: "Dari pasangan hingga kumpulan keluarga besar 10 orang, kami padankan kenderaan sempurna dengan saiz kumpulan anda — memastikan keselesaan walaupun perjalanan jarak jauh di seluruh pulau.",
       svgPath: "M17 5H3c-1.1 0-2 .9-2 2v9h2c0 1.65 1.34 3 3 3s3-1.35 3-3h5.5c0 1.65 1.34 3 3 3s3-1.35 3-3H23v-5l-6-6zM3 11V7h4v4H3zm3 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm7-6.5H9V7h4v4zm4.5 6.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM15 11V7h1l4 4h-5z",
     },
     {
       num: "06",
-      title: "Trusted by European Travellers",
-      desc: "With over 400 completed charters and a 4.9 average satisfaction rating, SLTCS is the preferred choice for UK and European visitors exploring Sri Lanka.",
+      title: "Dipercayai oleh Pelancong Eropah",
+      desc: "Dengan lebih 400 charter selesai dan penarafan kepuasan purata 4.9, SLTCS adalah pilihan utama pelawat UK dan Eropah yang menjelajah Sri Lanka.",
       svgPath: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z",
     },
   ];
@@ -450,27 +451,27 @@ function ContactAndWhy() {
 
           {/* ── LEFT: Contact Form ─────────────────────────────────────────── */}
           <div>
-            <div className="section-eyebrow">CONTACT</div>
+            <div className="section-eyebrow">HUBUNGI</div>
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(1.8rem, 3vw, 2.6rem)", fontWeight: 700, color: "#1a1a1a", lineHeight: 1.2, margin: "0 0 16px" }}>
-              Start Planning<br />Your Sri Lanka<br />Adventure
+              Mula Merancang<br />Pengembaraan Sri Lanka<br />Anda
             </h2>
             <p style={{ color: "#4a4a4a", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "8px" }}>
-              Tell us your travel dates, group size, and preferences — we'll respond with a tailored itinerary and quote within 24 hours.
+              Beritahu kami tarikh perjalanan, saiz kumpulan, dan keutamaan anda — kami akan balas dengan contoh itinerari dan harga dalam masa 24 jam.
             </p>
             <p style={{ color: "#4a4a4a", fontSize: "0.88rem", lineHeight: 1.7, marginBottom: "24px" }}>
-              Fill in the form and submit. We usually reply within 24 hours.
+              Isikan borang dan hantar. Kami biasanya membalas dalam masa 24 jam. (Komunikasi susulan akan dalam Bahasa Inggeris.)
             </p>
 
             <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
               <div className="form-grid">
                 <div className="form-group full">
-                  <label htmlFor="name">FULL NAME *</label>
-                  <input type="text" id="name" name="name" placeholder="e.g. James Smith" required />
+                  <label htmlFor="name">NAMA PENUH *</label>
+                  <input type="text" id="name" name="name" placeholder="contoh: James Smith" required />
                 </div>
                 <div className="form-group full">
-                  <label htmlFor="country">COUNTRY *</label>
+                  <label htmlFor="country">NEGARA *</label>
                   <select id="country" name="country" required value={country} onChange={(e) => setCountry(e.target.value)}>
-                    <option value="">— Select your country —</option>
+                    <option value="">— Pilih negara anda —</option>
                     <option value="United Kingdom">United Kingdom</option>
                     <option value="United States">United States</option>
                     <option value="France">France</option>
@@ -481,35 +482,35 @@ function ContactAndWhy() {
                     <option value="Australia">Australia</option>
                     <option value="China">China</option>
                     <option value="India">India</option>
-                    <option value="Other">Other</option>
+                    <option value="Other">Lain-lain</option>
                   </select>
                 </div>
                 {country === "Other" && (
                   <div className="form-group full">
-                    <label htmlFor="countryOther">PLEASE SPECIFY YOUR COUNTRY *</label>
-                    <input type="text" id="countryOther" name="countryOther" placeholder="Enter your country" required />
+                    <label htmlFor="countryOther">SILA NYATAKAN NEGARA ANDA *</label>
+                    <input type="text" id="countryOther" name="countryOther" placeholder="Masukkan negara anda" required />
                   </div>
                 )}
                 <div className="form-group full">
-                  <label htmlFor="email">EMAIL ADDRESS *</label>
+                  <label htmlFor="email">ALAMAT EMEL *</label>
                   <input type="email" id="email" name="email" placeholder="your@email.com" required />
                 </div>
                 <div className="form-group full">
-                  <label htmlFor="phone">PHONE NUMBER</label>
+                  <label htmlFor="phone">NOMBOR TELEFON</label>
                   <input type="tel" id="phone" name="phone" placeholder="+44 7700 000000" />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="startDate">START DATE *</label>
+                  <label htmlFor="startDate">TARIKH MULA *</label>
                   <DatePicker id="startDate" name="startDate" value={startDate} onChange={setStartDate} required />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="endDate">END DATE *</label>
+                  <label htmlFor="endDate">TARIKH TAMAT *</label>
                   <DatePicker id="endDate" name="endDate" value={endDate} onChange={setEndDate} required />
                 </div>
                 <div className="form-group full">
-                  <label htmlFor="pickup">CHARTER START LOCATION *</label>
+                  <label htmlFor="pickup">LOKASI MULA SEWAAN *</label>
                   <select id="pickup" name="pickup" required>
-                    <option value="">— Select location —</option>
+                    <option value="">— Pilih lokasi —</option>
                     <option value="Colombo Airport (BIA)">Colombo Airport (BIA)</option>
                     <option value="Colombo City">Colombo City</option>
                     <option value="Negombo">Negombo</option>
@@ -517,48 +518,49 @@ function ContactAndWhy() {
                     <option value="Sigiriya">Sigiriya</option>
                     <option value="Nuwara Eliya">Nuwara Eliya</option>
                     <option value="Galle">Galle</option>
-                    <option value="Other (please specify in notes)">Other (please specify in notes)</option>
+                    <option value="Other (please specify in notes)">Lain-lain (sila nyatakan dalam nota)</option>
                   </select>
                 </div>
                 <div className="form-group">
-                  <label htmlFor="adults">NUMBER OF ADULTS *</label>
+                  <label htmlFor="adults">BILANGAN DEWASA *</label>
                   <select id="adults" name="adults" required>
-                    <option value="">Select</option>
+                    <option value="">Pilih</option>
                     {[1,2,3,4,5,6].map(n => <option key={n} value={n}>{n}</option>)}
-                    <option value="7+">7 or more</option>
+                    <option value="7+">7 atau lebih</option>
                   </select>
                 </div>
                 <div className="form-group">
-                  <label htmlFor="children">NUMBER OF CHILDREN</label>
+                  <label htmlFor="children">BILANGAN KANAK-KANAK</label>
                   <select id="children" name="children">
                     <option value="0">0</option>
                     {[1,2,3].map(n => <option key={n} value={n}>{n}</option>)}
-                    <option value="4+">4 or more</option>
+                    <option value="4+">4 atau lebih</option>
                   </select>
                 </div>
                 <div className="form-group full">
-                  <label htmlFor="vehicle">VEHICLE TYPE *</label>
+                  <label htmlFor="vehicle">JENIS KENDERAAN *</label>
                   <select id="vehicle" name="vehicle" required>
-                    <option value="">— Select vehicle —</option>
-                    <option value="Sedan (up to 3 pax)">Sedan (up to 3 passengers)</option>
-                    <option value="Van (up to 6 pax)">Van (up to 6 passengers)</option>
-                    <option value="Large Van (up to 10 pax)">Large Van (up to 10 passengers)</option>
-                    <option value="Let us recommend">Let us recommend</option>
+                    <option value="">— Pilih kenderaan —</option>
+                    <option value="Sedan (up to 3 pax)">Sedan (hingga 3 penumpang)</option>
+                    <option value="Van (up to 6 pax)">Van (hingga 6 penumpang)</option>
+                    <option value="Large Van (up to 10 pax)">Van Besar (hingga 10 penumpang)</option>
+                    <option value="Let us recommend">Biarkan kami mencadangkan</option>
                   </select>
                 </div>
                 <div className="form-group full">
-                  <label htmlFor="currency">PREFERRED CURRENCY</label>
+                  <label htmlFor="currency">MATA WANG PILIHAN</label>
                   <select id="currency" name="currency">
-                    <option value="">— Select currency —</option>
+                    <option value="">— Pilih mata wang —</option>
                     <option value="GBP">GBP (£ British Pound)</option>
                     <option value="EUR">EUR (€ Euro)</option>
                     <option value="USD">USD ($ US Dollar)</option>
                     <option value="AUD">AUD (A$ Australian Dollar)</option>
+                    <option value="MYR">MYR (RM Malaysian Ringgit)</option>
                   </select>
                 </div>
                 <div className="form-group full">
-                  <label htmlFor="notes">DESTINATIONS / ITINERARY NOTES</label>
-                  <textarea id="notes" name="notes" placeholder="Please list any destinations, attractions, or special requests you have in mind." />
+                  <label htmlFor="notes">DESTINASI / NOTA ITINERARI</label>
+                  <textarea id="notes" name="notes" placeholder="Sila senaraikan mana-mana destinasi, tarikan, atau permintaan khas yang anda fikirkan." />
                 </div>
               </div>
               {submitError && (
@@ -566,17 +568,18 @@ function ContactAndWhy() {
                   {submitError}
                 </div>
               )}
+              <p className="form-note" style={{ fontSize: "0.86rem", color: "#8a7b63", marginBottom: "14px" }}>Susulan pertanyaan akan dibuat dalam Bahasa Inggeris oleh kakitangan kami. Pembayaran tunai di Sri Lanka memerlukan pertukaran wang tempatan terlebih dahulu jika diperlukan.</p>
               <button
                 type="submit"
                 className={`form-submit-btn${isSubmitting ? " loading" : ""}`}
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending…" : "Send Enquiry"}
+                {isSubmitting ? "Menghantar…" : "Hantar Pertanyaan"}
               </button>
               <p className="form-note">
-                By submitting this form, you agree to our{" "}
-                <a href="#" onClick={(e) => e.preventDefault()}>Privacy Policy</a>.
-                No commitment required.
+                Dengan menghantar borang ini, anda bersetuju dengan{" "}
+                <a href="#" onClick={(e) => e.preventDefault()}>Polisi Privasi</a>.
+                Tiada komitmen diperlukan.
               </p>
             </form>
           </div>
@@ -587,14 +590,14 @@ function ContactAndWhy() {
             <div style={{ textAlign: "center", marginBottom: "40px" }}>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", marginBottom: "12px" }}>
                 <div style={{ width: "40px", height: "1px", background: "#c9a84c" }} />
-                <span style={{ color: "#c9a84c", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}>WHY SLTCS</span>
+                <span style={{ color: "#c9a84c", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}>KENAPA SLTCS</span>
                 <div style={{ width: "40px", height: "1px", background: "#c9a84c" }} />
               </div>
               <div style={{ marginBottom: "12px" }}>
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="#c9a84c"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
               </div>
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(1.6rem, 2.5vw, 2.4rem)", fontWeight: 700, color: "#1a1a1a", lineHeight: 1.2, margin: 0 }}>
-                6 Reasons Why Travellers<br />Choose <span style={{ color: "#c9a84c" }}>SLTCS</span>
+                6 Sebab Kenapa Pelancong<br />Memilih <span style={{ color: "#c9a84c" }}>SLTCS</span>
               </h2>
             </div>
             {/* Cards */}
@@ -637,17 +640,17 @@ function ContactAndWhy() {
   );
 }
 
-// ─── Concerns ────────// ─── Concerns ─────────────────────────────────────────────
+// ─── Concerns ─────────────────────────────────────────────
 function Concerns() {
   const concerns = [
-    { label: "Language barriers", svgPath: "M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" },
-    { label: "Getting around independently", svgPath: "M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z" },
-    { label: "Being overcharged", svgPath: "M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" },
-    { label: "Taxi safety concerns", svgPath: "M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm0 4l6 3.27V12c0 3.79-2.58 7.33-6 8.93-3.42-1.6-6-5.14-6-8.93V9.27L12 6z" },
-    { label: "Finding the right places", svgPath: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" },
-    { label: "Keeping to a schedule", svgPath: "M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z" },
-    { label: "Travelling with children or elderly", svgPath: "M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" },
-    { label: "Understanding local culture", svgPath: "M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" },
+    { label: "Halangan bahasa", svgPath: "M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" },
+    { label: "Bergerak sendiri", svgPath: "M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z" },
+    { label: "Dikenakan caj berlebihan", svgPath: "M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" },
+    { label: "Kebimbangan keselamatan teksi", svgPath: "M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm0 4l6 3.27V12c0 3.79-2.58 7.33-6 8.93-3.42-1.6-6-5.14-6-8.93V9.27L12 6z" },
+    { label: "Mencari lokasi yang sesuai", svgPath: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" },
+    { label: "Menepati jadual", svgPath: "M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z" },
+    { label: "Melancong dengan kanak-kanak atau warga emas", svgPath: "M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" },
+    { label: "Memahami budaya tempatan", svgPath: "M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" },
   ];
   const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   return (
@@ -657,10 +660,10 @@ function Concerns() {
         <div style={{ marginBottom: "56px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "20px" }}>
             <div style={{ width: "32px", height: "1px", background: "#c9a84c" }} />
-            <span style={{ color: "#c9a84c", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}>YOUR CONCERNS</span>
+            <span style={{ color: "#c9a84c", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase" }}>KEPRIHATINAN ANDA</span>
           </div>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 700, color: "#fff", lineHeight: 1.15, margin: 0 }}>
-            Worried About Travelling<br />in <span style={{ color: "#c9a84c" }}>Sri Lanka?</span>
+            Risau Tentang Perjalanan<br />di <span style={{ color: "#c9a84c" }}>Sri Lanka?</span>
           </h2>
         </div>
 
@@ -686,8 +689,8 @@ function Concerns() {
               <svg width="22" height="22" viewBox="0 0 24 24" fill="#c9a84c"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2zm0 4l6 3.27V12c0 3.79-2.58 7.33-6 8.93-3.42-1.6-6-5.14-6-8.93V9.27L12 6z" /></svg>
             </div>
             <div>
-              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.25rem", fontWeight: 700, color: "#fff", margin: "0 0 8px" }}>SLTCS Solves Every One of These Concerns</h3>
-              <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.7, margin: 0, maxWidth: "560px" }}>Your dedicated private driver handles everything — navigation, communication, scheduling, and local expertise. All you need to do is sit back and enjoy the journey.</p>
+              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.25rem", fontWeight: 700, color: "#fff", margin: "0 0 8px" }}>SLTCS Menyelesaikan Setiap Keprihatinan Ini</h3>
+              <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.7, margin: 0, maxWidth: "560px" }}>Pemandu peribadi anda yang berdedikasi menguruskan segalanya — navigasi, komunikasi, penjadualan, dan kepakaran tempatan. Anda cuma perlu duduk dan nikmati perjalanan.</p>
             </div>
           </div>
           <button
@@ -697,7 +700,7 @@ function Concerns() {
             onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.opacity = "1"; }}
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-            Enquire Now — It's Free
+            Pertanyaan Percuma — Ia Percuma
           </button>
         </div>
       </div>
@@ -711,48 +714,48 @@ function Plans() {
   return (
     <section id="plans">
       <div className="container">
-        <div className="section-eyebrow">OUR PLANS</div>
-        <h2 className="section-title">Choose the Plan<br />That Suits You Best</h2>
-        <p className="section-sub">Whether you're travelling on a budget or seeking a premium experience, we have a plan tailored to your needs.</p>
+        <div className="section-eyebrow">PELAN KAMI</div>
+        <h2 className="section-title">Pilih Pelan<br />Yang Paling Sesuai Untuk Anda</h2>
+        <p className="section-sub">Sama ada anda melancong dengan bajet yang terhad atau mencari pengalaman premium, kami mempunyai pelan yang disesuaikan untuk keperluan anda.</p>
         <div className="plans-grid">
           <div className="plan-card">
             <div className="plan-tier">BRONZE</div>
-            <h3>Bronze Plan</h3>
-            <p>For budget-conscious travellers who need reliable transport.</p>
+            <h3>Pelan Bronze</h3>
+            <p>Untuk pengembara yang berjimat cermat dan memerlukan pengangkutan yang boleh dipercayai.</p>
             <ul className="plan-features">
-              <li>Trainee driver arrangement</li>
-              <li>Airport transfers &amp; point-to-point transfers</li>
-              <li>English-speaking local coordinator</li>
-              <li>Clean, air-conditioned vehicle</li>
+              <li>Susunan pemandu latihan</li>
+              <li>Pemindahan lapangan terbang & pemindahan titik ke titik</li>
+              <li>Penyelaras tempatan yang bertutur bahasa Inggeris</li>
+              <li>Kenderaan bersih dan berhawa dingin</li>
             </ul>
-            <a href="#contact" className="plan-cta" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>View Details</a>
+            <a href="#contact" className="plan-cta" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Lihat Butiran</a>
           </div>
           <div className="plan-card featured">
-            <div className="plan-badge-popular">Most Popular</div>
+            <div className="plan-badge-popular">Paling Popular</div>
             <div className="plan-tier">SILVER</div>
-            <h3>Silver Plan</h3>
-            <p>The best balance of value and quality — our most popular choice.</p>
+            <h3>Pelan Silver</h3>
+            <p>Gabungan terbaik nilai dan kualiti — pilihan paling popular kami.</p>
             <ul className="plan-features">
-              <li>Government-certified Tourist Driver or above</li>
-              <li>Accompaniment &amp; commentary at attractions</li>
-              <li>English-speaking local coordinator</li>
-              <li>Safari &amp; activity bookings arranged</li>
-              <li>Guide services included at no extra charge</li>
+              <li>Pemandu Pelancong bertauliah Kerajaan atau lebih tinggi</li>
+              <li>Teman dan ulasan di tempat tarikan</li>
+              <li>Penyelaras tempatan yang bertutur bahasa Inggeris</li>
+              <li>Tempahan safari & aktiviti diuruskan</li>
+              <li>Perkhidmatan panduan disertakan tanpa caj tambahan</li>
             </ul>
-            <a href="#contact" className="plan-cta" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>View Details</a>
+            <a href="#contact" className="plan-cta" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Lihat Butiran</a>
           </div>
           <div className="plan-card">
             <div className="plan-tier">GOLD</div>
-            <h3>Gold Plan</h3>
-            <p>For travellers who demand the very best Sri Lanka experience.</p>
+            <h3>Pelan Gold</h3>
+            <p>Untuk pengembara yang mahukan pengalaman Sri Lanka terbaik.</p>
             <ul className="plan-features">
-              <li>Top-rated Chauffeur Guide Driver guaranteed</li>
-              <li>Full-day accompaniment &amp; expert commentary</li>
-              <li>English-speaking local coordinator</li>
-              <li>Dual support structure for complete peace of mind</li>
-              <li>Premium concierge-level service</li>
+              <li>Pemandu Chauffeur Guide bertaraf tinggi dijamin</li>
+              <li>Teman sepanjang hari & ulasan pakar</li>
+              <li>Penyelaras tempatan yang bertutur bahasa Inggeris</li>
+              <li>Struktur sokongan berganda untuk ketenangan fikiran</li>
+              <li>Perkhidmatan tahap concierge premium</li>
             </ul>
-            <a href="#contact" className="plan-cta" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>View Details</a>
+            <a href="#contact" className="plan-cta" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Lihat Butiran</a>
           </div>
         </div>
       </div>
@@ -763,9 +766,9 @@ function Plans() {
 // ─── Pricing Preview ─────────────────────────────────────────────────────────
 type VehicleKeyHP = "sedan" | "van" | "bigvan";
 type TierKeyHP = "bronze" | "silver" | "gold";
-type CurrencyKeyHP = "USD" | "GBP" | "EUR" | "AUD";
+type CurrencyKeyHP = "USD" | "GBP" | "EUR" | "AUD" | "MYR";
 
-const CURRENCY_SYMBOLS_HP: Record<CurrencyKeyHP, string> = { USD: "$", GBP: "£", EUR: "€", AUD: "A$" };
+const CURRENCY_SYMBOLS_HP: Record<CurrencyKeyHP, string> = { USD: "$", GBP: "£", EUR: "€", AUD: "A$", MYR: "RM" };
 
 const PRICES_HP: Record<CurrencyKeyHP, Record<TierKeyHP, Record<VehicleKeyHP, number[]>>> = {
   USD: {
@@ -793,15 +796,15 @@ const PRICES_HP: Record<CurrencyKeyHP, Record<TierKeyHP, Record<VehicleKeyHP, nu
 const DAYS_HP = Array.from({ length: 19 }, (_, i) => i + 2);
 
 const TIERS_HP: { key: TierKeyHP; label: string; badge?: string; color: string }[] = [
-  { key: "bronze", label: "Bronze Plan", color: "#cd7f32" },
-  { key: "silver", label: "Silver Plan", badge: "Most Popular", color: "#c9a84c" },
-  { key: "gold",   label: "Gold Plan",   color: "#d4af37" },
+  { key: "bronze", label: "Pelan Bronze", color: "#cd7f32" },
+  { key: "silver", label: "Pelan Silver", badge: "Paling Popular", color: "#c9a84c" },
+  { key: "gold",   label: "Pelan Gold",   color: "#d4af37" },
 ];
 
 const VEHICLES_HP: { key: VehicleKeyHP; label: string; capacity: string }[] = [
-  { key: "sedan",  label: "Sedan",   capacity: "1–3 people" },
-  { key: "van",    label: "Van",     capacity: "3–6 people" },
-  { key: "bigvan", label: "Big Van", capacity: "6–9 people" },
+  { key: "sedan",  label: "Sedan",   capacity: "1–3 orang" },
+  { key: "van",    label: "Van",     capacity: "3–6 orang" },
+  { key: "bigvan", label: "Big Van", capacity: "6–9 orang" },
 ];
 
 function PriceCard({ tier, currency }: { tier: (typeof TIERS_HP)[number]; currency: CurrencyKeyHP }) {
@@ -832,14 +835,14 @@ function PriceCard({ tier, currency }: { tier: (typeof TIERS_HP)[number]; curren
         <table style={{ width: "100%", borderCollapse: "collapse" }}>
           <thead>
             <tr>
-              <th style={{ padding: "8px 14px", textAlign: "left", color: "#888", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", background: "#f4f0e8" }}>Days</th>
-              <th style={{ padding: "8px 14px", textAlign: "right", color: "#888", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", background: "#f4f0e8" }}>Price (incl. tax)</th>
+              <th style={{ padding: "8px 14px", textAlign: "left", color: "#888", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", background: "#f4f0e8" }}>Hari</th>
+              <th style={{ padding: "8px 14px", textAlign: "right", color: "#888", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.05em", textTransform: "uppercase", background: "#f4f0e8" }}>Harga (termasuk cukai)</th>
             </tr>
           </thead>
           <tbody>
             {DAYS_HP.map((day, idx) => (
               <tr key={day} style={{ borderBottom: "1px solid #ede8e0", background: idx % 2 === 0 ? "transparent" : "#faf7f2" }}>
-                <td style={{ padding: "8px 14px", color: "#4a4a4a", fontSize: "0.82rem" }}>{day} days</td>
+                <td style={{ padding: "8px 14px", color: "#4a4a4a", fontSize: "0.82rem" }}>{day} hari</td>
                 <td style={{ padding: "8px 14px", textAlign: "right", color: "#1a1a1a", fontSize: "0.9rem", fontWeight: 600 }}>{sym}{prices[idx].toLocaleString()}</td>
               </tr>
             ))}
@@ -855,13 +858,13 @@ function PricingPreview() {
   return (
     <section id="pricing" style={{ background: "#faf7f2", padding: "80px 0" }}>
       <div className="container">
-        <div className="section-eyebrow">TRANSPARENT PRICING</div>
-        <h2 className="section-title">Flat-Rate Price List</h2>
-        <p className="section-sub" style={{ marginBottom: "32px" }}>All prices are tax-inclusive and apply to English-speaking drivers. Select your preferred currency and vehicle type.</p>
+        <div className="section-eyebrow">HARGA TELUS</div>
+        <h2 className="section-title">Senarai Harga Tetap</h2>
+        <p className="section-sub" style={{ marginBottom: "32px" }}>Semua harga termasuk cukai dan untuk pemandu yang bertutur dalam Bahasa Inggeris. Pilih mata wang dan jenis kenderaan pilihan anda.</p>
 
         {/* Currency Tabs */}
         <div style={{ display: "flex", gap: "8px", marginBottom: "28px", flexWrap: "wrap" }}>
-          {(["USD", "GBP", "EUR", "AUD"] as CurrencyKeyHP[]).map((c) => (
+          {(["USD", "GBP", "EUR", "AUD", "MYR"] as CurrencyKeyHP[]).map((c) => (
             <button key={c} onClick={() => setCurrency(c)} style={{ padding: "8px 20px", background: currency === c ? "rgba(201,168,76,0.15)" : "#ffffff", border: currency === c ? "1.5px solid rgba(201,168,76,0.6)" : "1.5px solid #d1ccc4", borderRadius: "6px", color: currency === c ? "#c9a84c" : "#4a4a4a", fontSize: "0.85rem", fontWeight: currency === c ? 700 : 400, cursor: "pointer", transition: "all 0.2s" }}>
               {CURRENCY_SYMBOLS_HP[c]} {c}
             </button>
@@ -871,7 +874,7 @@ function PricingPreview() {
         {/* Note */}
         <div style={{ background: "rgba(201,168,76,0.06)", border: "1px solid rgba(201,168,76,0.2)", borderRadius: "8px", padding: "12px 18px", marginBottom: "28px" }}>
           <p style={{ color: "#4a4a4a", fontSize: "0.85rem", lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: "#c9a84c" }}>Note:</strong> Additional charges may apply if the total distance exceeds the standard estimate, or if the pick-up/drop-off point is outside the airport area.
+            <strong style={{ color: "#c9a84c" }}>Nota:</strong> Caj tambahan mungkin dikenakan jika jarak perjalanan melebihi anggaran biasa, atau jika titik ambil/hantar berada di luar kawasan lapangan terbang.
           </p>
         </div>
 
@@ -882,7 +885,7 @@ function PricingPreview() {
 
         {/* Link to full price page */}
         <div style={{ textAlign: "center", marginTop: "32px" }}>
-          <a href="/price" className="btn-outline" style={{ display: "inline-block" }}>View Full Price Page →</a>
+          <a href="/price" className="btn-outline" style={{ display: "inline-block" }}>Lihat Halaman Harga Penuh →</a>
         </div>
       </div>
     </section>
@@ -906,91 +909,91 @@ const ITINERARIES: Itinerary[] = [
   {
     id: "4n5d",
     label: "4N/5D",
-    title: "4 Nights / 5 Days",
-    duration: "5 Days",
-    focus: "Cultural Highlights",
+    title: "4 Malam / 5 Hari",
+    duration: "5 Hari",
+    focus: "Sorotan Budaya",
     highlights: "Sigiriya, Kandy, Nuwara Eliya, Galle",
-    idealFor: "First-time visitors on a tight schedule",
+    idealFor: "Pelawat pertama yang ada jadual ketat",
     days: [
-      { day: "Day 1", title: "Arrival → Sigiriya", desc: "Arrive at Colombo Airport. Drive to Sigiriya via Dambulla Cave Temple (UNESCO). Check in to your hotel in the Sigiriya area." },
-      { day: "Day 2", title: "Sigiriya Rock Fortress", desc: "Early morning climb of Sigiriya Rock (UNESCO). Afternoon at leisure or optional jeep safari at Minneriya National Park." },
-      { day: "Day 3", title: "Kandy — Temple of the Tooth", desc: "Drive to Kandy via a spice garden in Matale. Visit the Temple of the Sacred Tooth Relic (UNESCO). Evening Kandyan dance performance." },
-      { day: "Day 4", title: "Nuwara Eliya → Galle", desc: "Scenic drive through rolling tea estates. Tea plucking experience. Continue to Galle Fort (UNESCO) on the southern coast." },
-      { day: "Day 5", title: "Galle Fort → Departure", desc: "Morning exploration of Galle Fort's Dutch colonial ramparts, boutique shops, and ocean views. Transfer to Colombo Airport." },
+      { day: "Hari 1", title: "Ketibaan → Sigiriya", desc: "Tiba di Lapangan Terbang Colombo. Pandu ke Sigiriya melalui Kuil Gua Dambulla (UNESCO). Daftar masuk ke hotel anda di kawasan Sigiriya." },
+      { day: "Hari 2", title: "Benteng Batu Sigiriya", desc: "Mendaki awal pagi ke Batu Sigiriya (UNESCO). Petang untuk masa lapang atau safari jeep pilihan di Taman Negara Minneriya." },
+      { day: "Hari 3", title: "Kandy — Kuil Gigi", desc: "Pandu ke Kandy melalui kebun rempah di Matale. Lawati Kuil Relik Gigi Suci (UNESCO). Persembahan tarian Kandyan pada waktu malam." },
+      { day: "Hari 4", title: "Nuwara Eliya → Galle", desc: "Pemanduan indah melalui ladang teh bergulung. Pengalaman memetik teh. Teruskan ke Kota Galle (UNESCO) di pantai selatan." },
+      { day: "Hari 5", title: "Kota Galle → Berlepas", desc: "Eksplorasi pagi Kota Galle dengan benteng kolonial Belanda, kedai butik, dan pemandangan laut. Pemindahan ke Lapangan Terbang Colombo." },
     ],
   },
   {
     id: "5n6d",
     label: "5N/6D",
-    title: "5 Nights / 6 Days",
-    duration: "6 Days",
-    focus: "Culture + Nature",
+    title: "5 Malam / 6 Hari",
+    duration: "6 Hari",
+    focus: "Budaya + Alam",
     highlights: "Sigiriya, Kandy, Ella, Galle",
-    idealFor: "Couples & small groups",
+    idealFor: "Pasangan & kumpulan kecil",
     days: [
-      { day: "Day 1", title: "Arrival → Sigiriya", desc: "Arrive at Colombo Airport. Drive to Sigiriya via Dambulla Cave Temple. Overnight in Sigiriya area." },
-      { day: "Day 2", title: "Sigiriya Rock & Safari", desc: "Climb Sigiriya Rock in the morning. Afternoon wildlife safari at Minneriya or Kaudulla National Park." },
-      { day: "Day 3", title: "Kandy Sightseeing", desc: "Travel to Kandy via Matale Spice Garden. Visit Temple of the Tooth Relic and Peradeniya Botanical Gardens." },
-      { day: "Day 4", title: "Nuwara Eliya & Ella", desc: "Drive through stunning tea highlands. Tea factory visit, then continue to Ella for the famous Nine Arches Bridge." },
-      { day: "Day 5", title: "Yala National Park Safari", desc: "Full-day jeep safari at Yala National Park — home to leopards, elephants, and exotic birdlife." },
-      { day: "Day 6", title: "Galle Fort → Departure", desc: "Morning visit to Galle Fort (UNESCO). Transfer to Colombo Airport for departure." },
+      { day: "Hari 1", title: "Ketibaan → Sigiriya", desc: "Tiba di Lapangan Terbang Colombo. Pandu ke Sigiriya melalui Kuil Gua Dambulla. Bermalam di kawasan Sigiriya." },
+      { day: "Hari 2", title: "Batu Sigiriya & Safari", desc: "Mendaki Batu Sigiriya pada pagi hari. Safari hidupan liar petang di Taman Negara Minneriya atau Kaudulla." },
+      { day: "Hari 3", title: "Lawatan Kandy", desc: "Perjalanan ke Kandy melalui Kebun Rempah Matale. Lawati Kuil Relik Gigi dan Taman Botani Peradeniya." },
+      { day: "Hari 4", title: "Nuwara Eliya & Ella", desc: "Pandu melalui dataran tinggi teh yang menakjubkan. Lawatan kilang teh, kemudian ke Ella untuk Jambatan Sembilan Lengkungan yang terkenal." },
+      { day: "Hari 5", title: "Safari Taman Negara Yala", desc: "Safari jeep sehari penuh di Taman Negara Yala — rumah kepada harimau bintang, gajah, dan burung eksotik." },
+      { day: "Hari 6", title: "Kota Galle → Berlepas", desc: "Lawatan pagi ke Kota Galle (UNESCO). Pemindahan ke Lapangan Terbang Colombo untuk berlepas." },
     ],
   },
   {
     id: "6n7d",
     label: "6N/7D",
-    title: "6 Nights / 7 Days",
-    duration: "7 Days",
-    focus: "Full Island Experience",
-    highlights: "Sigiriya, Kandy, Tea Train, Yala, Galle",
-    idealFor: "Families & thorough explorers",
+    title: "6 Malam / 7 Hari",
+    duration: "7 Hari",
+    focus: "Pengalaman Pulau Penuh",
+    highlights: "Sigiriya, Kandy, Kereta Api Teh, Yala, Galle",
+    idealFor: "Keluarga & penjelajah mendalam",
     days: [
-      { day: "Day 1", title: "Arrival → Cultural Triangle", desc: "Arrive at BIA. Drive north via Dambulla Cave Temple to the Sigiriya / Kandalama area." },
-      { day: "Day 2", title: "Sigiriya & Polonnaruwa", desc: "Climb Sigiriya Rock. Afternoon visit to the ancient city of Polonnaruwa (UNESCO World Heritage)." },
-      { day: "Day 3", title: "Kandy", desc: "Drive to Kandy via a spice garden. Visit Temple of the Tooth Relic and enjoy a traditional Kandyan dance show." },
-      { day: "Day 4", title: "Nuwara Eliya — Tea Highlands", desc: "Scenic drive through tea country. Tea plucking experience and high tea at a colonial-era plantation hotel." },
-      { day: "Day 5", title: "Ella & Nine Arches Bridge", desc: "Ride the iconic tea train. Visit the Nine Arches Bridge and Little Adam's Peak in Ella." },
-      { day: "Day 6", title: "Yala National Park", desc: "Full-day jeep safari at Yala — Sri Lanka's premier wildlife reserve. Leopards, elephants, crocodiles and more." },
-      { day: "Day 7", title: "Galle Fort → Departure", desc: "Morning at Galle Fort (UNESCO). Transfer to Colombo Airport via Mirissa beach (optional stop)." },
+      { day: "Hari 1", title: "Ketibaan → Segitiga Budaya", desc: "Tiba di BIA. Pandu ke utara melalui Kuil Gua Dambulla ke kawasan Sigiriya / Kandalama." },
+      { day: "Hari 2", title: "Sigiriya & Polonnaruwa", desc: "Mendaki Batu Sigiriya. Lawatan petang ke bandar kuno Polonnaruwa (Warisan Dunia UNESCO)." },
+      { day: "Hari 3", title: "Kandy", desc: "Pandu ke Kandy melalui kebun rempah. Lawati Kuil Relik Gigi dan nikmati persembahan tarian tradisional Kandyan." },
+      { day: "Hari 4", title: "Nuwara Eliya — Dataran Teh", desc: "Pemanduan indah melalui kawasan teh. Pengalaman memetik teh dan minum teh tinggi di hotel ladang era kolonial." },
+      { day: "Hari 5", title: "Ella & Jambatan Sembilan Lengkungan", desc: "Naik kereta api teh ikonik. Lawat Jambatan Sembilan Lengkungan dan Puncak Adam Kecil di Ella." },
+      { day: "Hari 6", title: "Taman Negara Yala", desc: "Safari jeep sehari penuh di Yala — rizab hidupan liar utama Sri Lanka. Harimau bintang, gajah, buaya dan banyak lagi." },
+      { day: "Hari 7", title: "Kota Galle → Berlepas", desc: "Pagi di Kota Galle (UNESCO). Pemindahan ke Lapangan Terbang Colombo melalui pantai Mirissa (henti pilihan)." },
     ],
   },
   {
     id: "5to7d",
-    label: "5–7 Days Cultural",
-    title: "5 to 7 Days\nCultural Triangle Focus",
-    duration: "5–7 Days",
-    focus: "UNESCO Heritage Sites & Safari",
+    label: "5–7 Hari Budaya",
+    title: "5 hingga 7 Hari\nFokus Segitiga Budaya",
+    duration: "5–7 Hari",
+    focus: "Tapak Warisan UNESCO & Safari",
     highlights: "Sigiriya, Anuradhapura, Polonnaruwa, Kandy",
-    idealFor: "History & culture enthusiasts",
+    idealFor: "Penggemar sejarah & budaya",
     days: [
-      { day: "Day 1", title: "Airport → Dambulla Cave Temple → Sigiriya Area", desc: "Depart from Colombo Airport (approx. 3–4 hrs drive). En route, visit the Dambulla Cave Temple — a stunning UNESCO World Heritage site carved into a rock face. Check in at Heritance Kandalama, a Geoffrey Bawa–designed architectural masterpiece." },
-      { day: "Day 2", title: "Sigiriya Rock Fortress & Minneriya Safari", desc: "Early morning climb of Sigiriya Rock (UNESCO) — allow 2.5–3 hours for the round trip. Afternoon jeep safari at Minneriya National Park, famous for its elephant gatherings. Return to hotel." },
-      { day: "Day 3", title: "Ancient Capital of Anuradhapura", desc: "Explore the vast UNESCO-listed ruins of Anuradhapura — Sri Lanka's first ancient capital. Visit the sacred Bodhi Tree, Ruwanwelisaya Stupa, and other remarkable monuments. Allow a full day for this sprawling site." },
-      { day: "Day 4", title: "Polonnaruwa & Pidurangala Rock", desc: "Optional morning climb of Pidurangala Rock for spectacular views of Sigiriya. Then explore the medieval city of Polonnaruwa (UNESCO) — well-preserved temples, palaces, and colossal Buddha statues." },
-      { day: "Day 5", title: "Kandy via Spice Garden", desc: "Drive to Kandy via a traditional spice garden in Matale. Visit the Temple of the Sacred Tooth Relic (UNESCO). Enjoy a Kandyan cultural dance performance in the evening." },
-      { day: "Day 6", title: "Colombo Sightseeing & Ayurveda (Optional)", desc: "Explore Colombo's colonial architecture, vibrant markets, and waterfront. Optional: check into an Ayurveda hotel in Negombo to unwind before departure." },
-      { day: "Day 7", title: "Transfer to Airport", desc: "Final morning at leisure. Transfer to Colombo Airport (BIA) for your homeward flight." },
+      { day: "Hari 1", title: "Lapangan Terbang → Kuil Gua Dambulla → Kawasan Sigiriya", desc: "Berlepas dari Lapangan Terbang Colombo (kira-kira 3–4 jam memandu). Dalam perjalanan, lawati Kuil Gua Dambulla — tapak Warisan Dunia UNESCO yang mengagumkan terukir pada muka batu. Daftar masuk di Heritance Kandalama, karya seni reka bentuk Geoffrey Bawa." },
+      { day: "Hari 2", title: "Benteng Batu Sigiriya & Safari Minneriya", desc: "Pendakian awal pagi ke Batu Sigiriya (UNESCO) — ambil masa 2.5–3 jam untuk perjalanan pergi balik. Safari jeep petang di Taman Negara Minneriya, terkenal dengan pertemuan gajahnya. Kembali ke hotel." },
+      { day: "Hari 3", title: "Ibu Kota Purba Anuradhapura", desc: "Terokai runtuhan Anuradhapura yang luas dan disenaraikan UNESCO — ibu kota purba pertama Sri Lanka. Lawati Pokok Bodhi suci, Stupa Ruwanwelisaya, dan monumen mengagumkan lain. Luangkan sehari penuh untuk tapak besar ini." },
+      { day: "Hari 4", title: "Polonnaruwa & Batu Pidurangala", desc: "Pendakian pilihan pagi ke Batu Pidurangala untuk pemandangan menakjubkan Sigiriya. Kemudian terokai bandar zaman pertengahan Polonnaruwa (UNESCO) — kuil, istana, dan patung Buddha gergasi yang terpelihara dengan baik." },
+      { day: "Hari 5", title: "Kandy melalui Kebun Rempah", desc: "Pandu ke Kandy melalui kebun rempah tradisional di Matale. Lawati Kuil Relik Gigi Suci (UNESCO). Nikmati persembahan tarian budaya Kandyan pada waktu malam." },
+      { day: "Hari 6", title: "Lawatan Colombo & Ayurveda (Pilihan)", desc: "Terokai seni bina kolonial Colombo, pasar meriah, dan tepi laut. Pilihan: daftar masuk hotel Ayurveda di Negombo untuk berehat sebelum berlepas." },
+      { day: "Hari 7", title: "Pemindahan ke Lapangan Terbang", desc: "Pagi terakhir bersantai. Pemindahan ke Lapangan Terbang Colombo (BIA) untuk penerbangan pulang anda." },
     ],
   },
   {
     id: "10to14d",
-    label: "10 Days–2 Weeks",
-    title: "10 Days to 2 Weeks\nClassic First-Timer Plan",
-    duration: "10–14 Days",
-    focus: "Complete Island Experience",
-    highlights: "Sigiriya, Kandy, Tea Train, Yala, Galle, Beach",
-    idealFor: "First-timers wanting the full Sri Lanka experience",
+    label: "10 Hari–2 Minggu",
+    title: "10 Hari ke 2 Minggu\nRancangan Klasik Pertama Kali",
+    duration: "10–14 Hari",
+    focus: "Pengalaman Pulau Lengkap",
+    highlights: "Sigiriya, Kandy, Kereta Api Teh, Yala, Galle, Pantai",
+    idealFor: "Pelawat pertama yang mahu pengalaman penuh Sri Lanka",
     days: [
-      { day: "Day 1", title: "Airport → Dambulla Cave Temple → Sigiriya", desc: "Depart from Colombo Airport or Negombo. Drive to the Cultural Triangle (approx. 3 hrs). Stop at Dambulla Cave Temple for lunch and sightseeing. Check in at Heritance Kandalama — a celebrated Geoffrey Bawa hotel set amid forest and lake." },
-      { day: "Day 2", title: "Sigiriya Rock & Anuradhapura", desc: "Morning climb of Sigiriya Rock Fortress (UNESCO). Transfer to the ancient capital of Anuradhapura (1.5–2 hrs). Explore the sacred Bodhi Tree, stupas, and ancient ruins. Return to hotel." },
-      { day: "Day 3", title: "Kandy — Spice Garden & Temple", desc: "Drive to Kandy via a spice garden in Matale (approx. 3 hrs). Visit the Geragama Tea Factory and the Temple of the Sacred Tooth Relic (UNESCO). Evening Kandyan dance performance." },
-      { day: "Day 4", title: "Nuwara Eliya — Tea Highlands", desc: "Scenic mountain drive to Nuwara Eliya through rolling tea estates. Tea-plucking experience and high tea at a colonial plantation hotel. Explore the charming 'Little England' town." },
-      { day: "Day 5", title: "Scenic Tea Train — Nine Arches Bridge", desc: "Board the iconic tea-country train for a breathtaking journey through misty mountains. Photograph the famous Nine Arches Bridge. Arrive in Ella." },
-      { day: "Day 6", title: "Ella Sightseeing → Yala", desc: "Morning hike to Little Adam's Peak and Ella Rock for panoramic views. Afternoon transfer to Yala area (approx. 2 hrs). Check in to a safari lodge." },
-      { day: "Day 7", title: "Yala National Park Safari → Mirissa Beach", desc: "Early morning jeep safari at Yala — Sri Lanka's most famous wildlife park, home to the world's highest density of leopards. Afternoon transfer to the beach resort of Mirissa." },
-      { day: "Day 8", title: "Galle Fort & Beach Day", desc: "Morning visit to the UNESCO-listed Galle Fort — Dutch colonial ramparts, boutique shops, and ocean views. Afternoon at leisure on Mirissa beach. Optional whale watching (seasonal)." },
-      { day: "Day 9", title: "Negombo — Ayurveda & Rest", desc: "Transfer to Negombo on the west coast (approx. 3–4 hrs). Check into an Ayurveda hotel for traditional treatments and relaxation before your departure." },
-      { day: "Day 10", title: "Colombo Sightseeing → Airport", desc: "Morning exploration of Colombo — Gangaramaya Temple, Pettah Market, and the vibrant Galle Face Green. Transfer to Colombo Airport (BIA) for your departure flight." },
+      { day: "Hari 1", title: "Lapangan Terbang → Kuil Gua Dambulla → Sigiriya", desc: "Bertolak dari Lapangan Terbang Colombo atau Negombo. Memandu ke Segitiga Budaya (kira-kira 3 jam). Berhenti di Kuil Gua Dambulla untuk makan tengah hari dan bersiar-siar. Daftar masuk di Heritance Kandalama — sebuah hotel terkenal Geoffrey Bawa yang terletak di tengah hutan dan tasik." },
+      { day: "Hari 2", title: "Batu Sigiriya & Anuradhapura", desc: "Memanjat Benteng Batu Sigiriya (UNESCO) pada waktu pagi. Pemindahan ke ibu kota kuno Anuradhapura (1.5–2 jam). Terokai Pokok Bodhi yang suci, stupa, dan runtuhan purba. Kembali ke hotel." },
+      { day: "Hari 3", title: "Kandy — Kebun Rempah & Kuil", desc: "Memandu ke Kandy melalui kebun rempah di Matale (kira-kira 3 jam). Lawati Kilang Teh Geragama dan Kuil Relik Gigi Buddha (UNESCO). Persembahan tarian Kandyan pada waktu malam." },
+      { day: "Hari 4", title: "Nuwara Eliya — Tanah Tinggi Teh", desc: "Pemanduan gunung yang indah ke Nuwara Eliya melalui ladang teh yang bergulung. Pengalaman memetik teh dan minum teh petang di hotel ladang kolonial. Terokai bandar 'Little England' yang menawan." },
+      { day: "Hari 5", title: "Kereta Api Teh yang Indah — Jambatan Sembilan Lengkungan", desc: "Naik kereta api negara teh yang ikonik untuk perjalanan yang menakjubkan melalui gunung berkabus. Bergambar di Jambatan Sembilan Lengkungan yang terkenal. Tiba di Ella." },
+      { day: "Hari 6", title: "Lawatan Ella → Yala", desc: "Pendakian pagi ke Little Adam's Peak dan Ella Rock untuk pemandangan panoramik. Pemindahan petang ke kawasan Yala (kira-kira 2 jam). Daftar masuk ke pondok safari." },
+      { day: "Hari 7", title: "Safari Taman Negara Yala → Pantai Mirissa", desc: "Safari jeep awal pagi di Yala — taman hidupan liar paling terkenal di Sri Lanka, rumah kepada kepadatan harimau kumbang tertinggi di dunia. Pemindahan petang ke resort pantai Mirissa." },
+      { day: "Hari 8", title: "Benteng Galle & Hari di Pantai", desc: "Lawatan pagi ke Benteng Galle yang disenaraikan UNESCO — kubu kolonial Belanda, kedai butik, dan pemandangan laut. Petang santai di pantai Mirissa. Pilihan menonton ikan paus (musiman)." },
+      { day: "Hari 9", title: "Negombo — Ayurveda & Rehat", desc: "Pemindahan ke Negombo di pantai barat (kira-kira 3–4 jam). Daftar masuk ke hotel Ayurveda untuk rawatan tradisional dan relaksasi sebelum berlepas." },
+      { day: "Hari 10", title: "Lawatan Colombo → Lapangan Terbang", desc: "Penjelajahan pagi di Colombo — Kuil Gangaramaya, Pasar Pettah, dan Galle Face Green yang meriah. Pemindahan ke Lapangan Terbang Colombo (BIA) untuk penerbangan pulang." },
     ],
   },
 ];
@@ -1003,9 +1006,9 @@ function Itineraries() {
   return (
     <section id="courses">
       <div className="container">
-        <div className="section-eyebrow">MODEL ITINERARIES</div>
-        <h2 className="section-title">Suggested Itineraries</h2>
-        <p className="section-sub">Not sure where to start? Browse our curated sample itineraries and use them as inspiration for your perfect Sri Lanka journey.</p>
+        <div className="section-eyebrow">CONTOH ITINERARI</div>
+        <h2 className="section-title">Itinerari Cadangan</h2>
+        <p className="section-sub">Tidak pasti dari mana hendak mula? Semak contoh itinerari terpilih kami dan gunakan sebagai inspirasi untuk perjalanan sempurna anda ke Sri Lanka.</p>
         <div className="course-tabs">
           {ITINERARIES.map((it) => (
             <button key={it.id} className={`course-tab${activeTab === it.id ? " active" : ""}`} onClick={() => setActiveTab(it.id)}>
@@ -1017,13 +1020,13 @@ function Itineraries() {
           <div className="course-overview">
             <div className="course-meta">
               <h3 style={{ whiteSpace: "pre-line" }}>{active.title}</h3>
-              <div className="course-meta-item"><span className="course-meta-label">Duration</span><span className="course-meta-value">{active.duration}</span></div>
-              <div className="course-meta-item"><span className="course-meta-label">Focus</span><span className="course-meta-value">{active.focus}</span></div>
-              <div className="course-meta-item"><span className="course-meta-label">Highlights</span><span className="course-meta-value">{active.highlights}</span></div>
-              <div className="course-meta-item"><span className="course-meta-label">Ideal For</span><span className="course-meta-value">{active.idealFor}</span></div>
+              <div className="course-meta-item"><span className="course-meta-label">Tempoh</span><span className="course-meta-value">{active.duration}</span></div>
+              <div className="course-meta-item"><span className="course-meta-label">Tumpuan</span><span className="course-meta-value">{active.focus}</span></div>
+              <div className="course-meta-item"><span className="course-meta-label">Sorotan</span><span className="course-meta-value">{active.highlights}</span></div>
+              <div className="course-meta-item"><span className="course-meta-label">Sesuai Untuk</span><span className="course-meta-value">{active.idealFor}</span></div>
             </div>
             <div className="course-timeline">
-              <h4>Day-by-Day Overview</h4>
+              <h4>Gambaran Hari demi Hari</h4>
               {active.days.map((d, i) => (
                 <div key={i} className="timeline-item">
                   <div className="timeline-left">
@@ -1041,7 +1044,7 @@ function Itineraries() {
         </div>
         <div className="courses-cta">
           <a href="#contact" className="btn-outline" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>
-            View All Plans &amp; Get a Quote
+            Lihat Semua Pelan &amp; Dapatkan Sebutharga
           </a>
         </div>
       </div>
@@ -1052,19 +1055,19 @@ function Itineraries() {
 // ─── Destinations ─────────────────────────────────────────────────────────────
 function Destinations() {
   const dests = [
-    { img: IMAGES.hero2, badge: "UNESCO World Heritage Site", title: "Sigiriya Rock Fortress", desc: "An ancient sky palace perched atop a 200m volcanic rock — Sri Lanka's most iconic landmark." },
-    { img: IMAGES.hero4, badge: "UNESCO World Heritage Site", title: "Kandy — Temple of the Tooth", desc: "The sacred temple housing the relic of the Buddha's tooth, set beside a tranquil lake." },
-    { img: IMAGES.destNuwara, badge: "Tea Country", title: "Nuwara Eliya — Tea Highlands", desc: "Rolling emerald tea estates at altitude. Experience tea plucking, factory tours, and colonial-era plantation hotels." },
-    { img: IMAGES.hero5, badge: "UNESCO World Heritage Site", title: "Galle Fort", desc: "A perfectly preserved Dutch colonial fortified city on the southern coast, full of boutiques and cafés." },
-    { img: IMAGES.destYala, badge: "Wildlife Safari", title: "Yala National Park", desc: "Home to the world's highest density of leopards. Also spot elephants, crocodiles, and hundreds of bird species." },
-    { img: IMAGES.destElla, badge: "Scenic Railway", title: "Ella — Nine Arches Bridge", desc: "The iconic colonial-era railway viaduct surrounded by lush jungle and tea estates. A must-photograph moment." },
+    { img: IMAGES.hero2, badge: "Tapak Warisan Dunia UNESCO", title: "Benteng Batu Sigiriya", desc: "Istana langit purba yang bertenggek di atas batu gunung berapi setinggi 200m — mercu tanda paling ikonik di Sri Lanka." },
+    { img: IMAGES.hero4, badge: "Tapak Warisan Dunia UNESCO", title: "Kandy — Kuil Gigi", desc: "Kuil suci yang menyimpan relik gigi Buddha, terletak di sebelah tasik yang tenang." },
+    { img: IMAGES.destNuwara, badge: "Negeri Teh", title: "Nuwara Eliya — Tanah Tinggi Teh", desc: "Ladang teh zamrud yang bergulung di kawasan tinggi. Alami memetik teh, lawatan kilang, dan hotel ladang era kolonial." },
+    { img: IMAGES.hero5, badge: "Tapak Warisan Dunia UNESCO", title: "Benteng Galle", desc: "Bandar berkubu kolonial Belanda yang terpelihara sempurna di pantai selatan, penuh dengan butik dan kafe." },
+    { img: IMAGES.destYala, badge: "Safari Hidupan Liar", title: "Taman Negara Yala", desc: "Rumah kepada kepadatan harimau kumbang tertinggi di dunia. Juga boleh melihat gajah, buaya, dan beratus-ratus spesies burung." },
+    { img: IMAGES.destElla, badge: "Kereta Api Pemandangan", title: "Ella — Jambatan Sembilan Lengkungan", desc: "Viaduk kereta api era kolonial yang ikonik, dikelilingi hutan rimba dan ladang teh. Saat yang wajib dirakam." },
   ];
   return (
     <section id="destinations">
       <div className="container">
-        <div className="section-eyebrow">DESTINATIONS</div>
-        <h2 className="section-title">Sri Lanka's Most<br />Iconic Destinations</h2>
-        <p className="section-sub">From UNESCO World Heritage sites to pristine beaches, Sri Lanka packs an extraordinary variety of experiences into a compact island.</p>
+        <div className="section-eyebrow">DESTINASI</div>
+        <h2 className="section-title">Destinasi Paling Ikonik<br />di Sri Lanka</h2>
+        <p className="section-sub">Daripada tapak Warisan Dunia UNESCO ke pantai yang murni, Sri Lanka menawarkan pelbagai pengalaman luar biasa dalam sebuah pulau yang padat.</p>
         <div className="destinations-grid">
           {dests.map((d, i) => (
             <div key={i} className="dest-card">
@@ -1088,7 +1091,7 @@ function HomeRatingsMini({ driver, vehicle, operator }: { driver: number; vehicl
   return (
     <div style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(201,168,76,0.15)", borderRadius: "8px", padding: "12px 16px", marginTop: "12px" }}>
       <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-        <span style={{ fontSize: "0.72rem", color: "#888", letterSpacing: "0.06em", textTransform: "uppercase", fontWeight: 600 }}>Overall</span>
+        <span style={{ fontSize: "0.72rem", color: "#888", letterSpacing: "0.06em", textTransform: "uppercase", fontWeight: 600 }}>Keseluruhan</span>
         <span style={{ fontSize: "1.2rem", fontWeight: 700, color: "#c9a84c", fontFamily: "'Playfair Display', serif" }}>{overall.toFixed(1)}</span>
         <span style={{ color: "#c9a84c", fontSize: "0.85rem", letterSpacing: "1px" }}>
           {[1,2,3,4,5].map(i => {
@@ -1099,7 +1102,7 @@ function HomeRatingsMini({ driver, vehicle, operator }: { driver: number; vehicl
         </span>
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-        {([{ label: "Driver", score: driver }, { label: "Vehicle", score: vehicle }, { label: "Operator", score: operator }] as { label: string; score: number }[]).map(({ label, score }) => (
+        {([{ label: "Pemandu", score: driver }, { label: "Kenderaan", score: vehicle }, { label: "Operator", score: operator }] as { label: string; score: number }[]).map(({ label, score }) => (
           <div key={label} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <span style={{ fontSize: "0.72rem", color: "#888", width: "56px", flexShrink: 0 }}>{label}</span>
             <div style={{ flex: 1, height: "5px", background: "rgba(255,255,255,0.1)", borderRadius: "3px", overflow: "hidden" }}>
@@ -1119,63 +1122,63 @@ function Reviews() {
     {
       photo: "/manus-storage/review1_r_family_eranga_a3545b4c.png",
       photoPosition: "center center",
-      name: "The R Family",
-      pax: "4 passengers",
-      period: "August 2025",
+      name: "Keluarga R",
+      pax: "4 penumpang",
+      period: "Ogos 2025",
       driver: "Eranga",
       ratings: { driver: 5.0, vehicle: 5.0, operator: 5.0 },
-      quote: "Professional service from first enquiry to final drop-off — we felt completely at ease throughout.",
-      body: "From pre-booking through the day of travel, the team responded promptly and clearly. Pricing and itinerary planning were explained in a way that left no room for uncertainty. On the day, Eranga drove with care and composure, seamlessly rerouting around congestion to keep us on schedule. His deep knowledge of Anuradhapura, Dambulla, Sigiriya, and Polonnaruwa gave us a rich historical foundation for understanding this remarkable country. We consider ourselves fortunate to have had him as both driver and guide.",
+      quote: "Perkhidmatan profesional dari pertanyaan pertama hingga penghantaran akhir — kami berasa tenang sepanjang masa.",
+      body: "Daripada tempahan awal hingga hari perjalanan, pasukan bertindak balas dengan pantas dan jelas. Harga dan perancangan itinerari diterangkan dengan cara yang tiada kekeliruan. Pada hari itu, Eranga memandu dengan penuh perhatian dan tenang, mengubah jalan tanpa gangguan untuk memastikan kami sentiasa mengikut jadual. Pengetahuannya yang mendalam tentang Anuradhapura, Dambulla, Sigiriya, dan Polonnaruwa memberi asas sejarah yang kukuh untuk memahami negara yang luar biasa ini. Kami berasa bertuah kerana dia menjadi pemandu dan juga pemandu pelancong kami.",
     },
     {
       photo: "/manus-storage/review_lasith_family_ae2d2464.jpeg",
-      name: "The R Family",
-      pax: "3 passengers",
-      period: "March 2026",
+      name: "Keluarga R",
+      pax: "3 penumpang",
+      period: "Mac 2026",
       driver: "Lasith",
       ratings: { driver: 5.0, vehicle: 4.5, operator: 5.0 },
-      quote: "Lasith was endlessly patient with our children and made every moment of the trip feel effortless.",
-      body: "Having Lasith with us was a genuine stroke of luck. His warm manner with the kids put us all at ease, and his clear English meant nothing was ever lost in translation. Punctual, full of thoughtful suggestions for sights and local restaurants, and consistently calm behind the wheel — he was everything we could have asked for. (We'll probably skip that road between Passikudah and Sigiriya next time, though!) We recommend him without hesitation: attentive, knowledgeable, and completely trustworthy. If you're ever in Europe, Lasith — the first round is on us.",
+      quote: "Lasith sangat sabar dengan anak-anak kami dan menjadikan setiap saat perjalanan sangat mudah.",
+      body: "Mempunyai Lasith bersama kami adalah satu tuah sebenar. Sikap mesranya dengan kanak-kanak memberikan ketenangan kepada kami semua, dan Bahasa Inggerisnya yang jelas memastikan tiada yang hilang dalam terjemahan. Tepat masa, penuh cadangan baik tempat menarik dan restoran tempatan, serta sentiasa tenang ketika memandu — dia adalah segala yang kami harapkan. (Mungkin kami akan elakkan jalan antara Passikudah dan Sigiriya pada masa hadapan!) Kami sangat mengesyorkan beliau: penyayang, berpengetahuan, dan boleh dipercayai sepenuhnya. Jika anda berada di Eropah suatu hari nanti, Lasith — minuman pertama atas kami.",
     },
     {
       photo: "/manus-storage/review_ranjana_new_2b654dea.png",
-      name: "The H Couple",
-      pax: "2 passengers",
+      name: "Pasangan H",
+      pax: "2 penumpang",
       period: "November 2025",
       driver: "Ranjana",
       ratings: { driver: 5.0, vehicle: 4.5, operator: 4.5 },
-      quote: "Ranjana turned our Sri Lanka trip into something far beyond ordinary sightseeing.",
-      body: "We booked a private charter for two and were paired with Ranjana — a decision we couldn't be happier about. He brought a quiet confidence to every drive, navigating mountain roads and busy town centres with equal ease. What stood out most was his genuine enthusiasm: he suggested a white-water rafting experience we hadn't planned, and it became one of the highlights of the trip. His local knowledge of hidden viewpoints, authentic eateries, and cultural customs enriched every day. Ranjana is the kind of guide who makes you feel like a guest of the country, not just a tourist passing through.",
+      quote: "Ranjana menjadikan perjalanan Sri Lanka kami sesuatu yang jauh melampaui lawatan biasa.",
+      body: "Kami menempah sewa kereta dengan pemandu untuk dua orang dan ditempatkan bersama Ranjana — keputusan yang sangat kami hargai. Dia membawa keyakinan tenang dalam setiap pemanduan, mengendalikan jalan gunung dan pusat bandar yang sibuk dengan mudah. Yang paling menonjol adalah semangat jujurnya: dia mencadangkan pengalaman arung jeram yang tidak kami rancangkan, dan ia menjadi salah satu kemuncak perjalanan. Pengetahuan tempatan tentang tempat pandangan tersembunyi, tempat makan asli, dan adat budaya memperkayakan setiap hari. Ranjana adalah jenis pemandu yang membuat anda rasa seperti tetamu negara ini, bukan hanya pelancong yang lalu.",
     },
     {
       photo: "/manus-storage/review_priyantha_couple_e0a47aaf.png",
       name: "The A&S",
-      pax: "2 passengers",
-      period: "August 2025",
+      pax: "2 penumpang",
+      period: "Ogos 2025",
       driver: "Priyanth",
       ratings: { driver: 5.0, vehicle: 4.5, operator: 5.0 },
-      quote: "Priyanth made six days feel like a journey with a trusted friend rather than a hired driver.",
-      body: "Starting from Colombo Airport, Priyanth guided us through Sigiriya, Kandy, Nuwara Eliya, and Galle over six days. He was punctual and drove with care throughout, always checking in on how we were feeling — something we genuinely appreciated on longer stretches. His cheerful company made every transfer enjoyable, and his insights into Sri Lankan history and culture added real depth to what we saw. He also took us to a breathtaking viewpoint that wasn't in our original plan, and introduced us to local restaurants that were simply outstanding. We'd love to travel with him again on our next visit to Sri Lanka.",
+      quote: "Priyanth membuatkan enam hari terasa seperti perjalanan bersama teman dipercayai dan bukan hanya pemandu sewa.",
+      body: "Bermula dari Lapangan Terbang Colombo, Priyanth membimbing kami melalui Sigiriya, Kandy, Nuwara Eliya, dan Galle selama enam hari. Dia sentiasa tepat waktu dan memandu dengan berhati-hati, selalu bertanya tentang keadaan kami — sesuatu yang kami hargai terutama pada perjalanan jauh. Syarikatnya yang ceria membuat setiap perjalanan menjadi menyeronokkan, dan pengetahuannya tentang sejarah dan budaya Sri Lanka menambah kedalaman sebenar kepada apa yang kami lihat. Dia juga membawa kami ke tempat pandangan yang memukau yang tidak ada dalam rancangan asal kami, dan memperkenalkan kami kepada restoran tempatan yang luar biasa. Kami sangat ingin melancong bersamanya lagi apabila melawat Sri Lanka akan datang.",
     },
     {
       photo: "/manus-storage/review5_t_couple_indika_519f1510.png",
       name: "The T Couple",
-      pax: "2 passengers",
-      period: "October 2025",
+      pax: "2 penumpang",
+      period: "Oktober 2025",
       driver: "Indika",
       ratings: { driver: 5.0, vehicle: 5.0, operator: 5.0 },
-      quote: "Thanks to Indika, our trip became not just sightseeing — it became a richly colourful, unforgettable journey.",
-      body: "We travelled as a couple from Negombo through Sigiriya, Kandy, Nuwara Eliya, and Mirissa over five days. On the very first morning — which happened to be a birthday — a cake appeared at breakfast, arranged quietly by Indika through the hotel. He also gave us a small elephant figurine as a gift. We were genuinely moved. Throughout the trip he was a steady, reassuring presence: briefing us before each site, handling early starts without complaint, recommending restaurants he personally frequents (every one was excellent), and even riding the train with us to keep us safe in the crowds. When something seemed overpriced, he'd simply say, 'Let's skip it' — that honesty made us trust him completely. Meeting Indika was, without question, part of what made this trip perfect.",
+      quote: "Terima kasih kepada Indika, perjalanan kami bukan sekadar pemandangan — ia menjadi perjalanan berwarna-warni yang tidak dapat dilupakan.",
+      body: "Kami melancong sebagai pasangan dari Negombo melalui Sigiriya, Kandy, Nuwara Eliya, dan Mirissa selama lima hari. Pada pagi pertama — yang kebetulan adalah hari jadi — kek tiba ketika sarapan, yang disusun secara diam-diam oleh Indika melalui hotel. Dia juga memberikan kami sefigurine gajah kecil sebagai hadiah. Kami sangat terharu. Sepanjang perjalanan, dia merupakan kehadiran yang mantap dan menenangkan: memberi taklimat sebelum setiap tempat, menghadapi permulaan awal tanpa rungutan, mencadangkan restoran yang sering dia kunjungi (semuanya hebat), dan bahkan menaiki kereta api bersama kami untuk menjaga keselamatan dalam kerumunan. Bila sesuatu kelihatan mahal, dia hanya berkata, 'Mari kita langkau' — kejujuran itu membuat kami percaya sepenuhnya kepadanya. Bertemu Indika tanpa ragu-ragu adalah sebahagian daripada yang menjadikan perjalanan ini sempurna.",
     },
     {
       photo: "/manus-storage/review_dfamily_chamil_9214e24c.png",
       name: "The D Family",
-      pax: "5 passengers",
-      period: "December 2025",
+      pax: "5 penumpang",
+      period: "Disember 2025",
       driver: "Chamil",
       ratings: { driver: 5.0, vehicle: 5.0, operator: 4.5 },
-      quote: "Despite having to completely rearrange our itinerary after a cyclone, Chamil made it the trip of a lifetime.",
-      body: "We travelled as three generations — grandparents, parents, and a child — just after a cyclone had disrupted the island. Chamil constantly gathered the latest information on road conditions and safety, and always proposed the best available routes with our preferences in mind. When we needed to cancel hotels and train bookings and arrange new ones at short notice, he was right there helping us every step of the way. He joined us for the Sigiriya Rock climb and the safari, which gave us enormous reassurance. His attentiveness to our child was especially touching — when tiredness struck at an inconvenient moment, we felt completely comfortable leaving our child in his care. He also took us to local restaurants that only residents would know, and every single meal was a revelation. Chamil's warmth, quick thinking, and natural thoughtfulness won over every member of our family — children and adults alike. We are already looking forward to our next trip to Sri Lanka, and we will absolutely be asking for Chamil again.",
+      quote: "Walaupun terpaksa menyusun semula sepenuhnya itinerari kami selepas taufan, Chamil menjadikan ia perjalanan seumur hidup.",
+      body: "Kami melancong sebagai tiga generasi — datuk nenek, ibu bapa, dan seorang kanak-kanak — sejurus selepas taufan mengganggu pulau. Chamil sentiasa mengumpul maklumat terkini mengenai keadaan jalan dan keselamatan, dan selalu mencadangkan laluan terbaik dengan mengambil kira keutamaan kami. Bila kami perlu membatalkan tempahan hotel dan kereta api serta mengatur yang baru pada saat akhir, dia sentiasa membantu setiap langkah. Dia turut menyertai kami dalam pendakian Batu Sigiriya dan safari, yang memberikan kami jaminan besar. Perhatiannya terhadap anak kami sangat menyentuh — ketika keletihan datang pada masa yang tidak sesuai, kami rasa selesa menyerahkan anak kami dalam jagaan dia. Dia juga membawa kami ke restoran tempatan yang hanya diketahui penduduk, dan setiap hidangan adalah penemuan baru. Kehangatan, pemikiran pantas, dan keprihatinan semula jadi Chamil memikat setiap ahli keluarga kami — kanak-kanak dan dewasa sama. Kami sudah tidak sabar untuk perjalanan kami yang seterusnya ke Sri Lanka, dan pasti akan meminta Chamil lagi.",
     },
   ];
 
@@ -1189,9 +1192,9 @@ function Reviews() {
   return (
     <section id="reviews" style={{ background: "var(--dark2)" }}>
       <div className="container">
-        <div className="section-eyebrow">CUSTOMER VOICES</div>
-        <h2 className="section-title">What Our Guests Say</h2>
-        <p className="section-sub">Real reviews from travellers who have explored Sri Lanka with SLTCS.</p>
+        <div className="section-eyebrow">SUARA PELANGGAN</div>
+        <h2 className="section-title">Apa Kata Tetamu Kami</h2>
+        <p className="section-sub">Ulasan sebenar daripada pelancong yang telah meneroka Sri Lanka bersama SLTCS.</p>
         <div className="reviews-slider">
           <div className="reviews-slide-row">
             {visibleReviews.map((r, i) => (
@@ -1208,7 +1211,7 @@ function Reviews() {
                     <div className="review-tags">
                       <span className="review-tag-item">{r.pax}</span>
                       <span className="review-tag-item">{r.period}</span>
-                      <span className="review-tag-item">Driver: {r.driver}</span>
+                      <span className="review-tag-item">Pemandu: {r.driver}</span>
                     </div>
                   </div>
                 </div>
@@ -1216,18 +1219,18 @@ function Reviews() {
             ))}
           </div>
           <div className="reviews-controls">
-            <button className="reviews-nav" onClick={prevSlide} aria-label="Previous">‹</button>
+            <button className="reviews-nav" onClick={prevSlide} aria-label="Sebelumnya">‹</button>
             <div className="reviews-dots">
               {Array.from({ length: totalSlides }).map((_, i) => (
                 <button
                   key={i}
                   className={`reviews-dot${i === slide ? " active" : ""}`}
                   onClick={() => setSlide(i)}
-                  aria-label={`Slide ${i + 1}`}
+                  aria-label={`Slaid ${i + 1}`}
                 />
               ))}
             </div>
-            <button className="reviews-nav" onClick={nextSlide} aria-label="Next">›</button>
+            <button className="reviews-nav" onClick={nextSlide} aria-label="Seterusnya">›</button>
           </div>
           {/* More Voice button */}
           <div style={{ textAlign: "center", marginTop: "32px" }}>
@@ -1249,7 +1252,7 @@ function Reviews() {
               onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "rgba(201,168,76,0.1)"; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "transparent"; }}
             >
-              More Voice
+              Lebih Banyak Ulasan
             </a>
           </div>
         </div>
@@ -1261,17 +1264,17 @@ function Reviews() {
 // ─── How It Works ─────────────────────────────────────────────────────────────
 function HowItWorks() {
   const steps = [
-    { icon: "💬", title: "1. Send Enquiry", desc: "Fill in the contact form with your travel dates, group size, and preferences." },
-    { icon: "📋", title: "2. Receive Proposal", desc: "We'll send a tailored itinerary and quote within 24 hours." },
-    { icon: "💳", title: "3. Confirm", desc: "Happy with the plan? Simply confirm your booking. No upfront payment is required — you pay only upon arrival in Sri Lanka." },
-    { icon: "🕐", title: "4. Pre-Trip Briefing", desc: "Before departure, we confirm your driver details, meeting point, and final itinerary." },
-    { icon: "🏝️", title: "5. Enjoy Sri Lanka!", desc: "Your private driver is with you every step of the way. Relax and explore." },
+    { icon: "💬", title: "1. Hantar Pertanyaan", desc: "Isikan borang pertanyaan dengan tarikh perjalanan, bilangan kumpulan, dan keutamaan anda." },
+    { icon: "📋", title: "2. Terima Cadangan", desc: "Kami akan menghantar contoh itinerari dan harga dalam masa 24 jam." },
+    { icon: "💳", title: "3. Sahkan", desc: "Berpuas hati dengan rancangan? Sahkan tempahan anda. Tiada bayaran awal diperlukan — anda hanya bayar setiba di Sri Lanka." },
+    { icon: "🕐", title: "4. Taklimat Pra-Perjalanan", desc: "Sebelum berlepas, kami mengesahkan butiran pemandu, tempat bertemu, dan itinerari akhir anda." },
+    { icon: "🏝️", title: "5. Nikmati Sri Lanka!", desc: "Pemandu peribadi anda akan bersama anda setiap langkah. Berehat dan jelajah." },
   ];
   return (
     <section id="how">
       <div className="container">
-        <div className="section-eyebrow">HOW IT WORKS</div>
-        <h2 className="section-title">Booking Your Sri Lanka<br />Private Driver in 5 Steps</h2>
+        <div className="section-eyebrow">CARA BERFUNGSI</div>
+        <h2 className="section-title">Tempah Pemandu Peribadi Sri Lanka<br />dalam 5 Langkah</h2>
         <div className="how-steps">
           {steps.map((s, i) => (
             <div key={i} className="how-step">
@@ -1291,33 +1294,33 @@ function Vehicles() {
   return (
     <section id="vehicles" style={{ background: "var(--dark3)" }}>
       <div className="container">
-        <div className="section-eyebrow">VEHICLES</div>
-        <h2 className="section-title">Our Fleet</h2>
-        <p className="section-sub">All vehicles are air-conditioned, clean, and regularly maintained for your comfort and safety.</p>
+        <div className="section-eyebrow">KENDERAAN</div>
+        <h2 className="section-title">Kenderaan Kami</h2>
+        <p className="section-sub">Semua kenderaan berpenyejuk udara, bersih, dan diselenggara dengan rapi untuk keselesaan dan keselamatan anda.</p>
         <div className="vehicles-grid">
           <div className="vehicle-card">
             <div className="vehicle-img-wrap">
               <img src="/manus-storage/vehicle_sedan_b6b21042.png" alt="Sedan" className="vehicle-img" />
             </div>
             <h3>Sedan</h3>
-            <div className="vehicle-capacity">Up to 3 passengers</div>
-            <p>Ideal for solo travellers and couples. Comfortable and economical for touring Sri Lanka.</p>
+            <div className="vehicle-capacity">Sehingga 3 penumpang</div>
+            <p>Sesuai untuk pelancong solo dan pasangan. Selesa dan ekonomik untuk melawat Sri Lanka.</p>
           </div>
           <div className="vehicle-card featured">
             <div className="vehicle-img-wrap">
               <img src="/manus-storage/vehicle_van_70a807f8.png" alt="Van" className="vehicle-img" />
             </div>
             <h3>Van</h3>
-            <div className="vehicle-capacity">Up to 6 passengers</div>
-            <p>Our most popular choice. Spacious and comfortable for families and small groups.</p>
+            <div className="vehicle-capacity">Sehingga 6 penumpang</div>
+            <p>Pilihan paling popular kami. Luas dan selesa untuk keluarga dan kumpulan kecil.</p>
           </div>
           <div className="vehicle-card">
             <div className="vehicle-img-wrap">
-              <img src="/manus-storage/vehicle_large_van_61632670.png" alt="Large Van" className="vehicle-img" />
+              <img src="/manus-storage/vehicle_large_van_61632670.png" alt="Van Besar" className="vehicle-img" />
             </div>
-            <h3>Large Van</h3>
-            <div className="vehicle-capacity">Up to 10 passengers</div>
-            <p>Perfect for large groups and families. Maximum comfort for long-distance journeys across the island.</p>
+            <h3>Van Besar</h3>
+            <div className="vehicle-capacity">Sehingga 10 penumpang</div>
+            <p>Sesuai untuk kumpulan besar dan keluarga. Keselesaan maksimum untuk perjalanan jarak jauh merentasi pulau.</p>
           </div>
         </div>
       </div>
@@ -1331,17 +1334,17 @@ function Company() {
   return (
     <section id="company" style={{ background: "var(--dark2)" }}>
       <div className="container">
-        <div className="section-eyebrow">COMPANY</div>
-        <h2 className="section-title">About SLTCS</h2>
+        <div className="section-eyebrow">SYARIKAT</div>
+        <h2 className="section-title">Mengenai SLTCS</h2>
         <table className="company-table">
           <tbody>
-            <tr><th>Service Name</th><td>SLTCS｜Sri Lanka Car Hire with Private Driver</td></tr>
-            <tr><th>Full Name</th><td>Sri Lanka Taxi Charter Service (SLTCS)<br /><small style={{ color: "var(--text-muted)", fontSize: "0.78rem" }}>Registered Trademark No. 7034996</small></td></tr>
-            <tr><th>Business</th><td>Online ground transportation intermediary service</td></tr>
-            <tr><th>Coverage Area</th><td>All of Sri Lanka — Colombo, Negombo, Kandy, Sigiriya, Nuwara Eliya, Galle, Yala, and beyond</td></tr>
-            <tr><th>Languages</th><td>English</td></tr>
-            <tr><th>Operating Hours</th><td>24/7 — Enquiries accepted at any time</td></tr>
-            <tr><th>Contact</th><td>Please use the enquiry form on this page</td></tr>
+            <tr><th>Nama Perkhidmatan</th><td>SLTCS｜Sri Lanka Sewa Kereta dengan Pemandu Peribadi</td></tr>
+            <tr><th>Nama Penuh</th><td>Sri Lanka Taxi Charter Service (SLTCS)<br /><small style={{ color: "var(--text-muted)", fontSize: "0.78rem" }}>Cap Dagangan Berdaftar No. 7034996</small></td></tr>
+            <tr><th>Perkhidmatan</th><td>Perkhidmatan perantara pengangkutan darat dalam talian</td></tr>
+            <tr><th>Wilayah Liputan</th><td>Seluruh Sri Lanka — Colombo, Negombo, Kandy, Sigiriya, Nuwara Eliya, Galle, Yala, dan kawasan lain</td></tr>
+            <tr><th>Bahasa</th><td>English</td></tr>
+            <tr><th>Waktu Operasi</th><td>24/7 — Pertanyaan diterima pada bila-bila masa</td></tr>
+            <tr><th>Hubungi</th><td>Sila gunakan borang pertanyaan pada halaman ini</td></tr>
           </tbody>
         </table>
       </div>
@@ -1358,41 +1361,41 @@ function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="footer-logo">SLTCS</div>
-            <p>Sri Lanka Car Hire with Private Driver. Fully private, fully flexible charter service covering all of Sri Lanka — trusted by European and UK travellers.</p>
+            <p>Sri Lanka Car Hire with Private Driver. Perkhidmatan carter peribadi sepenuhnya, fleksibel merangkumi seluruh Sri Lanka — dipercayai oleh pelancong dari Eropah dan UK.</p>
           </div>
           <div className="footer-col">
-            <h4>Navigation</h4>
+            <h4>Navigasi</h4>
             <ul>
-              <li><a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Plans</a></li>
-              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Model Itineraries</a></li>
-              <li><a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>Vehicles</a></li>
-              <li><a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>FAQ</a></li>
-              <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Contact</a></li>
+              <li><a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Pelan</a></li>
+              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Contoh Itinerari</a></li>
+              <li><a href="#vehicles" onClick={(e) => { e.preventDefault(); scrollTo("vehicles"); }}>Kenderaan</a></li>
+              <li><a href="#faq" onClick={(e) => { e.preventDefault(); scrollTo("faq"); }}>Soalan Lazim</a></li>
+              <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Hubungi</a></li>
             </ul>
           </div>
           <div className="footer-col">
-            <h4>Itineraries</h4>
+            <h4>Itinerari</h4>
             <ul>
-              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nights / 5 Days</a></li>
-              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nights / 6 Days</a></li>
-              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nights / 7 Days</a></li>
-              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5–7 Days Cultural</a></li>
-              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Days – 2 Weeks</a></li>
+              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Malam / 5 Hari</a></li>
+              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Malam / 6 Hari</a></li>
+              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Malam / 7 Hari</a></li>
+              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5–7 Hari Budaya</a></li>
+              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Hari – 2 Minggu</a></li>
             </ul>
           </div>
           <div className="footer-col">
-            <h4>Legal</h4>
+            <h4>Undang-undang</h4>
             <ul>
-              <li><a href="#" onClick={(e) => e.preventDefault()}>Privacy Policy</a></li>
-              <li><a href="#" onClick={(e) => e.preventDefault()}>Terms &amp; Conditions</a></li>
+              <li><a href="#" onClick={(e) => e.preventDefault()}>Polisi Privasi</a></li>
+              <li><a href="#" onClick={(e) => e.preventDefault()}>Terma &amp; Syarat</a></li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>Copyright © SLTCS｜Sri Lanka Car Hire with Private Driver. All Rights Reserved.</p>
+          <p>Hak Cipta © SLTCS｜Sri Lanka Car Hire with Private Driver. Semua Hak Terpelihara.</p>
           <div className="footer-bottom-links">
-            <a href="#" onClick={(e) => e.preventDefault()}>Privacy Policy</a>
-            <a href="#" onClick={(e) => e.preventDefault()}>Terms &amp; Conditions</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>Polisi Privasi</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>Terma &amp; Syarat</a>
           </div>
         </div>
       </div>
@@ -1406,7 +1409,7 @@ function FloatingCTA() {
   return (
     <div className="floating-cta">
       <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>
-        <span>💬</span> Free Enquiry
+        <span>💬</span> Pertanyaan Percuma
       </a>
     </div>
   );

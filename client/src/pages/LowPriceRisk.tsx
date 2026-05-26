@@ -4,102 +4,102 @@ import SiteNavbar from "@/components/SiteNavbar";
 
 // ─── SEO ─────────────────────────────────────────────────────────────────────
 const PAGE_TITLE =
-  "Risks of Low-Price Car Hire in Sri Lanka | Why Cheap Services Cost More | SLTCS";
+  "Risiko Sewa Kereta Harga Rendah di Sri Lanka | Mengapa Perkhidmatan Murah Menelan Kos Lebih | SLTCS";
 const PAGE_DESC =
-  "Discover the hidden risks of ultra-low-cost car hire in Sri Lanka: mileage limits, inflated distances, no-show drivers, kickback detours, and poor support. Learn why SLTCS prioritises quality over price.";
+  "Temui risiko tersembunyi sewa kereta kos sangat rendah di Sri Lanka: had jarak, jarak yang dibesar-besarkan, pemandu tidak hadir, hentian berulang untuk komisen, dan sokongan yang lemah. Ketahui mengapa SLTCS mengutamakan kualiti berbanding harga.";
 
 // ─── Risk Items ───────────────────────────────────────────────────────────────
 const RISKS = [
   {
     id: "mileage-limits",
     icon: "📏",
-    title: "Hidden Mileage Limits and Overage Charges",
+    title: "Had Jarak Tersembunyi dan Caj Lebihan",
     body: [
-      "Budget-priced services almost always include distance caps buried in the fine print. A headline rate of £80 per day may look attractive — until you notice the 150 km daily limit. Sri Lanka's top attractions are spread across the island, and a single day of sightseeing can easily exceed 250 km.",
-      "One of our team members experienced this firsthand as a tourist: a Colombo–Sigiriya transfer of roughly 180 km was billed as 250 km. The dispute that followed was stressful and time-consuming — the last thing you want on a holiday.",
-      "SLTCS quotes a single flat rate based on your full itinerary. There are no per-kilometre charges, no distance caps, and no surprise additions at the end of each day.",
+      "Perkhidmatan berharga bajet hampir selalu termasuk had jarak yang tersembunyi dalam teks halus. Kadar utama £80 sehari mungkin nampak menarik — sehingga anda perasan had 150 km sehari. Tarikan utama Sri Lanka tersebar di seluruh pulau, dan satu hari melawat boleh melebihi 250 km dengan mudah.",
+      "Seorang ahli pasukan kami mengalami sendiri sebagai pelancong: pemindahan Colombo–Sigiriya kira-kira 180 km dicaj sebagai 250 km. Pertikaian yang berlaku selepas itu sangat membebankan dan memakan masa — perkara terakhir yang anda mahukan semasa bercuti.",
+      "SLTCS menawarkan satu kadar rata berdasarkan keseluruhan itinerari anda. Tiada caj per kilometer, tiada had jarak, dan tiada tambahan mengejut pada akhir setiap hari.",
     ],
     highlight:
-      "With SLTCS, your price is agreed in writing before departure. What you see is what you pay.",
+      "Dengan SLTCS, harga anda dipersetujui secara bertulis sebelum bertolak. Apa yang anda lihat adalah apa yang anda bayar.",
   },
   {
     id: "old-vehicles",
     icon: "🚗",
-    title: "Ageing Vehicles in Poor Condition",
+    title: "Kenderaan Berumur dalam Keadaan Buruk",
     body: [
-      "Sri Lanka imposes steep import tariffs on vehicles — a car priced at £12,000 in Japan can cost £36,000 once imported. Drivers who cannot afford newer models continue operating vehicles that are 20 years old or more.",
-      "A driver who does invest in a newer car must service a substantial loan, which means their daily rates must be higher to remain viable. When a price seems unusually low, the vehicle quality is almost always the reason.",
-      "SLTCS works exclusively with drivers who maintain modern, well-serviced vehicles. Every car in our network is air-conditioned, clean, and regularly inspected.",
+      "Sri Lanka mengenakan tarif import yang tinggi ke atas kenderaan — sebuah kereta berharga £12,000 di Jepun boleh berharga £36,000 setelah diimport. Pemandu yang tidak mampu membeli model lebih baru terus menggunakan kenderaan berumur 20 tahun atau lebih.",
+      "Pemandu yang melabur dalam kereta lebih baru perlu membayar pinjaman besar, jadi kadar harian mereka mesti lebih tinggi untuk kekal berdaya saing. Apabila harga kelihatan luar biasa murah, kualiti kenderaan hampir selalu sebabnya.",
+      "SLTCS bekerjasama eksklusif dengan pemandu yang mengekalkan kenderaan moden dan diselenggara dengan baik. Setiap kereta dalam rangkaian kami ber-AC, bersih, dan diperiksa secara berkala.",
     ],
-    highlight: "There is always a reason behind a low price — and it usually affects your comfort and safety.",
+    highlight: "Sentiasa ada sebab di sebalik harga rendah — dan biasanya ia menjejaskan keselesaan dan keselamatan anda.",
   },
   {
     id: "no-show",
     icon: "⏰",
-    title: "Drivers Who Fail to Appear",
+    title: "Pemandu yang Tidak Datang",
     body: [
-      "The first moments of a trip — arriving at an airport or hotel and looking for your driver — are already nerve-wracking. Budget operators sometimes fail to show up entirely, leaving travellers stranded in an unfamiliar place with no local support.",
-      "Even a significant delay at the start of the day can cascade into missed entry times, closed attractions, and a ruined schedule.",
-      "SLTCS employs drivers with a proven track record of punctuality. Any driver who is late without good reason receives immediate feedback; repeated issues result in contract termination. Should an unforeseen problem ever arise, our English-speaking coordinators are available around the clock to resolve it.",
+      "Detik permulaan perjalanan — tiba di lapangan terbang atau hotel dan mencari pemandu anda — sudah cukup membuat anda cemas. Operator bajet kadang-kadang langsung tidak muncul, meninggalkan pelancong terperangkap di tempat asing tanpa sokongan tempatan.",
+      "Kelewatan besar walaupun di awal hari boleh menyebabkan terlepas waktu masuk, tempat menarik ditutup, dan jadual rosak.",
+      "SLTCS menggaji pemandu dengan rekod ketepatan masa yang terbukti. Mana-mana pemandu yang lambat tanpa alasan munasabah menerima maklum balas segera; masalah berulang membawa kepada penamatan kontrak. Sekiranya berlaku masalah tidak dijangka, penyelaras berbahasa Inggeris kami tersedia 24/7 untuk menyelesaikannya.",
     ],
     highlight:
-      "Our 24/7 English-speaking support team ensures you are never left without assistance.",
+      "Pasukan sokongan berbahasa Inggeris kami yang beroperasi 24/7 memastikan anda tidak pernah ditinggalkan tanpa bantuan.",
   },
   {
     id: "limited-scope",
     icon: "🗺️",
-    title: "Drivers Who Only Cover Point-to-Point Transfers",
+    title: "Pemandu yang Hanya Melakukan Pemindahan Titik-ke-Titik",
     body: [
-      "A private charter should handle all ground transportation throughout your trip — not just the main inter-city legs. Some low-cost drivers drop you at your hotel and consider their job done, leaving you to arrange separate transport to each attraction.",
-      "For example, a driver might take you from Colombo to Sigiriya but refuse to drive the short distance from your hotel to Sigiriya Rock or the Dambulla Cave Temple. Negotiating fares with unfamiliar local drivers at each stop adds cost, stress, and unpredictability.",
-      "SLTCS drivers accompany you door to door throughout your entire itinerary. If a driver ever falls short of this standard, we compensate the customer for any additional costs incurred and terminate the driver's contract.",
+      "Sewa peribadi sepatutnya mengurus semua pengangkutan darat sepanjang perjalanan anda — bukan hanya leg antara bandar utama. Sesetengah pemandu kos rendah menghantar anda ke hotel dan menganggap tugas selesai, meninggalkan anda mengatur pengangkutan berasingan ke setiap tarikan.",
+      "Sebagai contoh, pemandu mungkin membawa anda dari Colombo ke Sigiriya tetapi enggan memandu jarak pendek dari hotel anda ke Batu Sigiriya atau Kuil Gua Dambulla. Berunding tambang dengan pemandu tempatan yang tidak dikenali di setiap hentian menambah kos, tekanan, dan ketidakpastian.",
+      "Pemandu SLTCS menemani anda dari pintu ke pintu sepanjang keseluruhan itinerari anda. Jika pemandu gagal memenuhi standard ini, kami akan mengganti kos tambahan yang ditanggung pelanggan dan menamatkan kontrak pemandu itu.",
     ],
     highlight:
-      "Your SLTCS driver is responsible for every journey from the moment you land to the moment you depart.",
+      "Pemandu SLTCS anda bertanggungjawab untuk setiap perjalanan dari saat mendarat hingga berlepas.",
   },
   {
     id: "kickbacks",
     icon: "🛍️",
-    title: "Persistent Detours to Kickback-Affiliated Shops",
+    title: "Hentian Berterusan ke Kedai Bersekutu Komisen",
     body: [
-      "This is a well-known frustration for travellers across South and South-East Asia. Drivers operating on thin margins supplement their income by steering passengers to restaurants, gem shops, and Ayurvedic spas that pay referral commissions.",
-      "The establishments involved are rarely the best options — prices tend to be inflated and quality inconsistent. Worse, these unplanned stops eat into your day and can prevent you from completing your original itinerary.",
-      "SLTCS drivers are paid fairly, so they have no financial incentive to take you anywhere you have not asked to visit. If you would like recommendations for an Ayurvedic treatment, a jeep safari, or a whale-watching excursion, your driver can arrange trusted options — but only when you ask.",
+      "Ini adalah kekecewaan yang diketahui ramai pelancong di Selatan dan Asia Tenggara. Pemandu yang beroperasi dengan margin tipis menambah pendapatan dengan membawa penumpang ke restoran, kedai batu permata, dan spa Ayurvedic yang memberi komisen rujukan.",
+      "Tempat-tempat ini jarang menjadi pilihan terbaik — harga cenderung melambung dan kualiti tidak konsisten. Lebih teruk, hentian tidak dirancang ini mengurangkan masa hari anda dan boleh menghalang anda menyelesaikan itinerari asal.",
+      "Pemandu SLTCS dibayar dengan adil, jadi mereka tiada insentif kewangan untuk membawa anda ke mana-mana tempat yang anda tidak minta lawati. Jika anda mahukan cadangan untuk rawatan Ayurvedic, safari jeep, atau aktiviti menonton paus, pemandu anda boleh atur pilihan dipercayai — hanya apabila anda minta.",
     ],
     highlight:
-      "SLTCS drivers suggest activities only when requested. Your itinerary remains entirely under your control.",
+      "Pemandu SLTCS mencadangkan aktiviti hanya bila diminta. Itinerari anda kekal sepenuhnya di bawah kawalan anda.",
   },
   {
     id: "poor-support",
     icon: "💬",
-    title: "No Meaningful Support Before or During Your Trip",
+    title: "Tiada Sokongan Bermakna Sebelum atau Semasa Perjalanan",
     body: [
-      "Low-cost operators often lack the infrastructure to provide genuine pre-trip assistance. Planning a Sri Lanka itinerary involves many moving parts — distances, road conditions, opening hours, seasonal closures — and expert guidance makes a significant difference.",
-      "Many budget services go silent once a booking is confirmed, leaving customers without help if anything changes or goes wrong on the ground.",
-      "SLTCS provides English-language support from your very first enquiry through to your final drop-off. Our locally based coordinators — with over 20 years of combined experience — are on hand to assist with itinerary planning, last-minute changes, and any issues that arise during your trip.",
+      "Operator bajet sering kekurangan infrastruktur untuk menyediakan bantuan pra-perjalanan yang tulen. Merancang itinerari Sri Lanka melibatkan banyak aspek — jarak, keadaan jalan, waktu buka, penutupan bermusim — dan panduan pakar membuat perbezaan ketara.",
+      "Banyak perkhidmatan bajet hilang komunikasi setelah tempahan disahkan, meninggalkan pelanggan tanpa bantuan jika ada perubahan atau masalah di lapangan.",
+      "SLTCS menyediakan sokongan berbahasa Inggeris dari pertanyaan pertama anda hingga penghantaran terakhir. Penyelaras tempatan kami — dengan lebih 20 tahun pengalaman gabungan — sedia membantu perancangan itinerari, perubahan saat akhir, dan sebarang isu yang timbul sepanjang perjalanan anda.",
     ],
     highlight:
-      "From first contact to final farewell, SLTCS is with you every step of the way.",
+      "Dari kontak pertama hingga selamat tinggal terakhir, SLTCS bersama anda di setiap langkah.",
   },
 ];
 
 // ─── Why Prices Are What They Are ────────────────────────────────────────────
 const COST_FACTORS = [
   {
-    label: "Vehicle Import Tariffs",
-    desc: "Sri Lanka levies high import duties on automobiles. A car worth £12,000 in Japan costs approximately £36,000 after importation. Drivers must price their services accordingly to service vehicle loans.",
+    label: "Tarif Import Kenderaan",
+    desc: "Sri Lanka mengenakan cukai import tinggi ke atas automotif. Kereta bernilai £12,000 di Jepun berharga kira-kira £36,000 selepas import. Pemandu harus menetapkan harga sesuai untuk membayar pinjaman kenderaan.",
   },
   {
-    label: "Government-Certified Drivers",
-    desc: "SLTCS works only with drivers holding official Sri Lanka Tourism Development Authority (SLTDA) licences. Qualified drivers command higher rates — and deliver a measurably better experience.",
+    label: "Pemandu Bertauliah Kerajaan",
+    desc: "SLTCS hanya bekerjasama dengan pemandu yang memegang lesen rasmi dari Sri Lanka Tourism Development Authority (SLTDA). Pemandu berkelayakan mengenakan kadar lebih tinggi — dan memberi pengalaman yang jauh lebih baik.",
   },
   {
-    label: "Rigorous Driver Selection",
-    desc: "Our local managers, with over 20 years of experience, personally vet every driver on attitude, language ability, punctuality, and vehicle condition. Only the top candidates are accepted.",
+    label: "Pemilihan Pemandu yang Ketat",
+    desc: "Pengurus tempatan kami, dengan pengalaman lebih 20 tahun, menilai setiap pemandu berdasarkan sikap, kebolehan bahasa, ketepatan masa, dan keadaan kenderaan. Hanya calon terbaik yang diterima.",
   },
   {
-    label: "Ongoing Quality Management",
-    desc: "Customer feedback is reviewed after every trip. Drivers who receive complaints are counselled immediately; those who fail to improve are removed from the network.",
+    label: "Pengurusan Kualiti Berterusan",
+    desc: "Maklum balas pelanggan dikaji selepas setiap perjalanan. Pemandu yang menerima aduan diberi nasihat segera; yang gagal memperbaiki akan dikeluarkan dari rangkaian.",
   },
 ];
 
@@ -125,7 +125,7 @@ export default function LowPriceRisk() {
       "@context": "https://schema.org",
       "@type": "Article",
       headline:
-        "Risks of Low-Price Car Hire in Sri Lanka: Why Cheap Services Often Cost More",
+        "Risiko Sewa Kereta Harga Rendah di Sri Lanka: Mengapa Perkhidmatan Murah Sering Menelan Kos Lebih",
       description: PAGE_DESC,
       url: "https://en.srilanka-charter.com/low-price-risk",
       author: {
@@ -194,7 +194,7 @@ export default function LowPriceRisk() {
             marginBottom: "20px",
           }}
         >
-          SERVICE QUALITY
+          KUALITI PERKHIDMATAN
         </div>
         <h1
           style={{
@@ -206,11 +206,11 @@ export default function LowPriceRisk() {
             maxWidth: "760px",
           }}
         >
-          Why{" "}
+          Mengapa{" "}
           <em style={{ color: "#c9a84c", fontStyle: "italic" }}>
-            Low-Price
+            Sewa Kereta Harga Rendah
           </em>{" "}
-          Car Hire in Sri Lanka Carries Real Risks
+          di Sri Lanka Memiliki Risiko Sebenar
         </h1>
         <p
           style={{
@@ -221,9 +221,7 @@ export default function LowPriceRisk() {
             lineHeight: 1.75,
           }}
         >
-          A headline rate that looks too good to be true usually is. This page
-          explains the six most common pitfalls of ultra-budget car hire
-          services in Sri Lanka — and how SLTCS addresses each one.
+          Kadar utama yang kelihatan terlalu baik untuk dipercayai biasanya memang begitu. Halaman ini menerangkan enam perangkap biasa sewa kereta ultra-bajet di Sri Lanka — dan bagaimana SLTCS menangani setiap satu.
         </p>
       </section>
 
@@ -238,12 +236,7 @@ export default function LowPriceRisk() {
               fontSize: "0.97rem",
             }}
           >
-            SLTCS was founded on a straightforward conviction: a Sri Lanka
-            holiday should not be spoiled by the very driver hired to make it
-            memorable. In the early days of the business, we experimented with
-            lower-cost driver arrangements to keep prices competitive. The
-            customer complaints that followed taught us an important lesson —
-            below a certain threshold, quality cannot be maintained.
+            SLTCS diasaskan berdasarkan satu kepercayaan mudah: percutian di Sri Lanka tidak seharusnya rosak oleh pemandu yang sepatutnya menjadikannya tidak dapat dilupakan. Pada awal perniagaan, kami mencuba susunan pemandu kos rendah untuk mengekalkan harga yang kompetitif. Aduan pelanggan yang diikuti mengajar kami satu pengajaran penting — di bawah paras tertentu, kualiti tidak dapat dikekalkan.
           </p>
           <p
             style={{
@@ -253,10 +246,7 @@ export default function LowPriceRisk() {
               marginTop: "16px",
             }}
           >
-            Today, SLTCS works exclusively with government-licensed drivers who
-            meet our own strict internal standards. Our rates are set at the
-            lowest level that allows us to uphold that commitment. This page
-            explains what happens when services cut below that level.
+            Hari ini, SLTCS bekerjasama secara eksklusif dengan pemandu yang berlesen kerajaan yang memenuhi piawaian dalaman ketat kami sendiri. Kadar kami ditetapkan pada tahap terendah yang membolehkan kami menegakkan komitmen tersebut. Halaman ini menerangkan apa yang berlaku apabila perkhidmatan ditawarkan di bawah tahap tersebut.
           </p>
         </section>
 
@@ -271,7 +261,7 @@ export default function LowPriceRisk() {
               textAlign: "center",
             }}
           >
-            Six Risks of Choosing an Ultra-Low-Cost Service
+            Enam Risiko Memilih Perkhidmatan Kos Rendah Sangat
           </h2>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "32px" }}>
@@ -374,7 +364,7 @@ export default function LowPriceRisk() {
               marginBottom: "12px",
             }}
           >
-            Why SLTCS Prices Are What They Are
+            Mengapa Harga SLTCS Begitu
           </h2>
           <p
             style={{
@@ -384,11 +374,7 @@ export default function LowPriceRisk() {
               marginBottom: "28px",
             }}
           >
-            Sri Lanka's car hire market looks inexpensive compared with Europe,
-            but several structural factors push costs higher than many
-            travellers expect. Understanding these factors helps explain why
-            responsible operators cannot simply match the lowest advertised
-            rates.
+            Pasaran sewa kereta di Sri Lanka kelihatan murah berbanding Eropah, tetapi beberapa faktor struktur mendorong kos lebih tinggi daripada yang dijangka oleh ramai pelancong. Memahami faktor-faktor ini membantu menjelaskan mengapa pengusaha bertanggungjawab tidak boleh hanya menyamai kadar terendah yang diiklankan.
           </p>
 
           <div
@@ -460,7 +446,7 @@ export default function LowPriceRisk() {
               marginBottom: "16px",
             }}
           >
-            GOLD PLAN
+            PELAN EMAS
           </div>
           <h2
             style={{
@@ -471,7 +457,7 @@ export default function LowPriceRisk() {
               lineHeight: 1.3,
             }}
           >
-            The Gold Plan: Guided-Tour Quality at a Private-Charter Price
+            Pelan Emas: Kualiti Lawatan Berpanduan pada Harga Sewaan Peribadi
           </h2>
           <p
             style={{
@@ -482,12 +468,7 @@ export default function LowPriceRisk() {
               margin: "0 auto 24px",
             }}
           >
-            Our Gold Plan assigns drivers holding the Chauffeur Guide Driver
-            licence — the highest qualification issued by the Sri Lankan
-            government. Unlike standard Tourist Driver licences, this
-            credential permits the driver to accompany you inside tourist sites
-            and provide expert commentary on the history and culture of each
-            location.
+            Pelan Emas kami melantik pemandu yang memegang lesen Chauffeur Guide Driver — kelayakan tertinggi yang dikeluarkan oleh kerajaan Sri Lanka. Berbeza dengan lesen Pemandu Pelancong standard, kelayakan ini membenarkan pemandu menemani anda di dalam tapak pelancongan dan memberikan komen pakar mengenai sejarah dan budaya setiap lokasi.
           </p>
           <p
             style={{
@@ -498,11 +479,7 @@ export default function LowPriceRisk() {
               margin: "0 auto 28px",
             }}
           >
-            Whether you are ascending Sigiriya Rock, exploring the ancient
-            ruins of Anuradhapura, or visiting the Temple of the Tooth in
-            Kandy, your Gold Plan driver is beside you — explaining, guiding,
-            and enhancing every moment. Trusted recommendations for safari
-            jeep tours and whale-watching excursions are available on request.
+            Sama ada anda sedang menanjak Batu Sigiriya, meneroka runtuhan purba Anuradhapura, atau melawat Kuil Gigi di Kandy, pemandu Pelan Emas anda sentiasa di sisi — menerangkan, membimbing, dan memperkayakan setiap saat. Cadangan dipercayai untuk lawatan jip safari dan ekspedisi penjejak ikan paus boleh diperoleh atas permintaan.
           </p>
           <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link
@@ -519,7 +496,7 @@ export default function LowPriceRisk() {
                 letterSpacing: "0.04em",
               }}
             >
-              View Pricing
+              Lihat Harga
             </Link>
             <a
               href="/#contact"
@@ -536,7 +513,7 @@ export default function LowPriceRisk() {
                 letterSpacing: "0.04em",
               }}
             >
-              Free Enquiry
+              Pertanyaan Percuma
             </a>
           </div>
         </section>
@@ -551,7 +528,7 @@ export default function LowPriceRisk() {
               marginBottom: "16px",
             }}
           >
-            The True Cost of a Cheap Service
+            Kos Sebenar Perkhidmatan Murah
           </h2>
           <p
             style={{
@@ -561,11 +538,7 @@ export default function LowPriceRisk() {
               marginBottom: "16px",
             }}
           >
-            A low headline price rarely reflects the full cost of a trip. Once
-            mileage overages, detour time, last-minute local transport
-            arrangements, and the stress of poor communication are factored in,
-            a budget service frequently ends up costing more — in money, time,
-            and peace of mind — than a properly priced alternative.
+            Harga tajuk yang rendah jarang mencerminkan keseluruhan kos perjalanan. Setelah kiraan lebihan jarak, masa perjalanan memutar, pengaturan pengangkutan tempatan pada saat akhir, dan tekanan akibat komunikasi yang lemah diambil kira, perkhidmatan bajet sering kali berakhir dengan kos yang lebih tinggi — dari segi wang, masa, dan ketenangan fikiran — berbanding alternatif yang ditetapkan harga dengan betul.
           </p>
           <p
             style={{
@@ -574,9 +547,7 @@ export default function LowPriceRisk() {
               fontSize: "0.95rem",
             }}
           >
-            SLTCS sets its prices at the minimum level that allows us to
-            deliver a service we are genuinely proud of. We invite you to
-            compare our flat-rate quotes and judge for yourself.
+            SLTCS menetapkan harga pada tahap minimum yang membolehkan kami memberikan perkhidmatan yang kami benar-benar banggakan. Kami menjemput anda untuk membandingkan sebut harga kadar tetap kami dan membuat penilaian sendiri.
           </p>
         </section>
 
@@ -592,7 +563,7 @@ export default function LowPriceRisk() {
               paddingBottom: "2px",
             }}
           >
-            ← Back to Pricing
+            ← Kembali ke Harga
           </Link>
         </div>
 
@@ -610,14 +581,14 @@ export default function LowPriceRisk() {
       >
         <p style={{ margin: "0 0 8px" }}>
           © {new Date().getFullYear()} Sri Lanka Taxi Charter Service
-          International Limited. All rights reserved.
+          International Limited. Hak cipta terpelihara.
         </p>
         <div style={{ display: "flex", gap: "20px", justifyContent: "center", flexWrap: "wrap" }}>
-          <a href="/" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Home</a>
-          <a href="/price" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Pricing</a>
-          <a href="/vehicles" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Vehicles</a>
-          <a href="/faq" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>FAQ</a>
-          <a href="/#contact" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Contact</a>
+          <a href="/" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Laman Utama</a>
+          <a href="/price" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Harga</a>
+          <a href="/vehicles" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Kenderaan</a>
+          <a href="/faq" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Soalan Lazim</a>
+          <a href="/#contact" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>Hubungi</a>
         </div>
       </footer>
     </div>

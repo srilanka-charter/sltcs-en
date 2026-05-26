@@ -1,7 +1,7 @@
 /**
- * Voice – Guest Reviews Page
+ * Voice – Laman Ulasan Tetamu
  * URL: /voice
- * All 8 driver reviews with 3-category 5-star ratings (Driver / Vehicle / Operator)
+ * Semua 8 ulasan pemandu dengan penilaian 5-bintang dalam 3 kategori (Pemandu / Kenderaan / Operator)
  */
 
 import { Link } from "wouter";
@@ -28,7 +28,7 @@ function RatingsBreakdown({ driver, vehicle, operator }: { driver: number; vehic
   return (
     <div className="voice-ratings">
       <div className="voice-total-score">
-        <span className="voice-total-label">Overall</span>
+        <span className="voice-total-label">Keseluruhan</span>
         <span className="voice-total-num">{total.toFixed(1)}</span>
         <span className="voice-total-stars">
           {[1, 2, 3, 4, 5].map((i) => {
@@ -40,8 +40,8 @@ function RatingsBreakdown({ driver, vehicle, operator }: { driver: number; vehic
       </div>
       <div className="voice-breakdown">
         {[
-          { label: "Driver", score: driver },
-          { label: "Vehicle", score: vehicle },
+          { label: "Pemandu", score: driver },
+          { label: "Kenderaan", score: vehicle },
           { label: "Operator", score: operator },
         ].map(({ label, score }) => (
           <div key={label} className="voice-breakdown-row">
@@ -58,81 +58,81 @@ function RatingsBreakdown({ driver, vehicle, operator }: { driver: number; vehic
 }
 
 // ─── Review Data ────────────────────────────────────────────────────────────────────────────────
-// Reviews from the home page (What Our Guests Say section)
+// Ulasan dari laman utama (Bahagian Apa Kata Tetamu Kami)
 const HOME_REVIEWS = [
   {
     id: "eranga",
     photo: "/manus-storage/review1_r_family_eranga_a3545b4c.png",
     driver: "Eranga",
-    name: "The R Family",
-    pax: "4 passengers",
-    period: "August 2025",
+    name: "Keluarga R",
+    pax: "4 penumpang",
+    period: "Ogos 2025",
     route: "Anuradhapura – Dambulla – Sigiriya – Polonnaruwa",
     ratings: { driver: 5.0, vehicle: 5.0, operator: 5.0 },
-    quote: "Professional service from first enquiry to final drop-off — we felt completely at ease throughout.",
-    body: "From pre-booking through the day of travel, the team responded promptly and clearly. Pricing and itinerary planning were explained in a way that left no room for uncertainty. On the day, Eranga drove with care and composure, seamlessly rerouting around congestion to keep us on schedule. His deep knowledge of Anuradhapura, Dambulla, Sigiriya, and Polonnaruwa gave us a rich historical foundation for understanding this remarkable country. We consider ourselves fortunate to have had him as both driver and guide.",
+    quote: "Perkhidmatan profesional dari pertanyaan pertama hingga penghantaran akhir — kami berasa sangat selesa sepanjang perjalanan.",
+    body: "Dari tempahan awal hingga hari perjalanan, pasukan memberi maklum balas dengan pantas dan jelas. Harga dan perancangan itinerari dijelaskan dengan cara yang tiada ruang untuk keraguan. Pada hari perjalanan, Eranga memandu dengan berhati-hati dan tenang, tanpa masalah mengelakkan kesesakan lalu lintas agar kami tetap mengikut jadual. Pengetahuannya yang mendalam tentang Anuradhapura, Dambulla, Sigiriya, dan Polonnaruwa memberikan kami asas sejarah yang kaya untuk memahami negara yang luar biasa ini. Kami berasa bertuah mempunyai beliau sebagai pemandu dan pemandu pelancong.",
   },
   {
     id: "lasith-home",
     photo: "/manus-storage/review_lasith_family_ae2d2464.jpeg",
     driver: "Lasith",
-    name: "The W Family",
-    pax: "3 passengers",
-    period: "March 2026",
+    name: "Keluarga W",
+    pax: "3 penumpang",
+    period: "Mac 2026",
     route: "Passikudah – Sigiriya – Colombo",
     ratings: { driver: 5.0, vehicle: 4.5, operator: 5.0 },
-    quote: "Lasith was endlessly patient with our children and made every moment of the trip feel effortless.",
-    body: "Having Lasith with us was a genuine stroke of luck. His warm manner with the kids put us all at ease, and his clear English meant nothing was ever lost in translation. Punctual, full of thoughtful suggestions for sights and local restaurants, and consistently calm behind the wheel — he was everything we could have asked for. (We'll probably skip that road between Passikudah and Sigiriya next time, though!) We recommend him without hesitation: attentive, knowledgeable, and completely trustworthy. If you're ever in Europe, Lasith — the first round is on us.",
+    quote: "Lasith sangat sabar dengan anak-anak kami dan menjadikan setiap saat perjalanan sangat mudah.",
+    body: "Mempunyai Lasith bersama kami adalah tuah sebenar. Sikap mesranya dengan anak-anak membuatkan kami semua berasa tenang, dan bahasa Inggerisnya yang jelas memastikan tiada apa yang hilang dalam terjemahan. Tepat waktu, penuh dengan cadangan menarik tentang tempat lawatan dan restoran tempatan, dan sentiasa tenang di belakang stereng — dia adalah apa yang kami harapkan. (Kami mungkin akan elak jalan antara Passikudah dan Sigiriya pada masa hadapan!) Kami syorkan beliau tanpa ragu: prihatin, berpengetahuan, dan sangat boleh dipercayai. Jika kamu ke Eropah suatu hari nanti, Lasith — pusingan pertama ditanggung kami.",
   },
   {
     id: "ranjana-home",
     photo: "/manus-storage/review_ranjana_new_2b654dea.png",
     driver: "Ranjana",
-    name: "The H Couple",
-    pax: "2 passengers",
+    name: "Pasangan H",
+    pax: "2 penumpang",
     period: "November 2025",
     route: "Colombo – Kandy – Nuwara Eliya – Galle",
     ratings: { driver: 5.0, vehicle: 4.5, operator: 4.5 },
-    quote: "Ranjana turned our Sri Lanka trip into something far beyond ordinary sightseeing.",
-    body: "We booked a private charter for two and were paired with Ranjana — a decision we couldn't be happier about. He brought a quiet confidence to every drive, navigating mountain roads and busy town centres with equal ease. What stood out most was his genuine enthusiasm: he suggested a white-water rafting experience we hadn't planned, and it became one of the highlights of the trip. His local knowledge of hidden viewpoints, authentic eateries, and cultural customs enriched every day. Ranjana is the kind of guide who makes you feel like a guest of the country, not just a tourist passing through.",
+    quote: "Ranjana mengubah perjalanan Sri Lanka kami menjadi sesuatu yang jauh lebih daripada pemandangan biasa.",
+    body: "Kami menempah sewaan peribadi untuk dua orang dan dipasangkan dengan Ranjana — keputusan yang kami sangat gembira. Dia membawa keyakinan tenang setiap kali memandu, mengemudi jalan bukit dan pusat bandar yang sibuk dengan mudah. Apa yang paling menonjol adalah semangat tulennya: beliau mencadangkan pengalaman arung jeram yang tidak kami rancang, dan ia menjadi salah satu momen terbaik perjalanan. Pengetahuannya tentang pandangan tersembunyi, tempat makan asli, dan adat budaya memperkayakan setiap hari perjalanan kami. Ranjana adalah pemandu pelancong yang membuat kamu berasa seperti tetamu negara, bukan sekadar pelancong yang lalu.",
   },
   {
     id: "priyanth",
     photo: "/manus-storage/review_priyantha_couple_e0a47aaf.png",
     photoPosition: "center 40%",
     driver: "Priyanth",
-    name: "The A&S",
-    pax: "2 passengers",
-    period: "August 2025",
+    name: "Pasangan A&S",
+    pax: "2 penumpang",
+    period: "Ogos 2025",
     route: "Colombo – Sigiriya – Kandy – Nuwara Eliya – Galle",
     ratings: { driver: 5.0, vehicle: 4.5, operator: 5.0 },
-    quote: "Priyanth made six days feel like a journey with a trusted friend rather than a hired driver.",
-    body: "Starting from Colombo Airport, Priyanth guided us through Sigiriya, Kandy, Nuwara Eliya, and Galle over six days. He was punctual and drove with care throughout, always checking in on how we were feeling — something we genuinely appreciated on longer stretches. His cheerful company made every transfer enjoyable, and his insights into Sri Lankan history and culture added real depth to what we saw. He also took us to a breathtaking viewpoint that wasn't in our original plan, and introduced us to local restaurants that were simply outstanding. We'd love to travel with him again on our next visit to Sri Lanka.",
+    quote: "Priyanth menjadikan enam hari seperti perjalanan dengan sahabat dipercayai, bukan hanya pemandu sewa.",
+    body: "Bermula dari Lapangan Terbang Colombo, Priyanth membimbing kami melalui Sigiriya, Kandy, Nuwara Eliya, dan Galle selama enam hari. Dia sentiasa tepat pada masa dan memandu dengan berhati-hati, sentiasa bertanya bagaimana perasaan kami — sesuatu yang kami hargai dalam perjalanan jauh. Syarikatnya yang ceria membuatkan setiap pemindahan menyeronokkan, dan pandangannya tentang sejarah dan budaya Sri Lanka menambah kedalaman kepada apa yang kami lihat. Dia juga membawa kami ke tempat pandangan yang menakjubkan yang bukan dalam rancangan asal, serta memperkenalkan restoran tempatan yang sangat memuaskan. Kami ingin melancong bersamanya lagi pada lawatan kami berikutnya ke Sri Lanka.",
   },
   {
     id: "indika",
     photo: "/manus-storage/review5_t_couple_indika_519f1510.png",
     photoPosition: "center 35%",
     driver: "Indika",
-    name: "The T Couple",
-    pax: "2 passengers",
-    period: "October 2025",
+    name: "Pasangan T",
+    pax: "2 penumpang",
+    period: "Oktober 2025",
     route: "Negombo – Sigiriya – Kandy – Nuwara Eliya – Mirissa",
     ratings: { driver: 5.0, vehicle: 5.0, operator: 5.0 },
-    quote: "Thanks to Indika, our trip became not just sightseeing — it became a richly colourful, unforgettable journey.",
-    body: "We travelled as a couple from Negombo through Sigiriya, Kandy, Nuwara Eliya, and Mirissa over five days. On the very first morning — which happened to be a birthday — a cake appeared at breakfast, arranged quietly by Indika through the hotel. He also gave us a small elephant figurine as a gift. We were genuinely moved. Throughout the trip he was a steady, reassuring presence: briefing us before each site, handling early starts without complaint, recommending restaurants he personally frequents (every one was excellent), and even riding the train with us to keep us safe in the crowds. When something seemed overpriced, he'd simply say, 'Let's skip it' — that honesty made us trust him completely.",
+    quote: "Terima kasih kepada Indika, perjalanan kami bukan sekadar lawatan — ia menjadi pengalaman berwarna-warni dan tidak dapat dilupakan.",
+    body: "Kami melancong sebagai pasangan dari Negombo melalui Sigiriya, Kandy, Nuwara Eliya, dan Mirissa selama lima hari. Pada pagi pertama — yang kebetulan adalah hari jadi — kek muncul semasa sarapan, dikendalikan secara senyap oleh Indika melalui hotel. Dia juga memberi kami figura gajah kecil sebagai hadiah. Kami benar-benar tersentuh. Sepanjang perjalanan dia menjadi pendamping yang stabil dan meyakinkan: memberi taklimat sebelum setiap lokasi, mengurus permulaan awal tanpa rungutan, mencadangkan restoran yang sering dikunjunginya (semuanya sangat bagus), dan turut menaiki kereta api bersama kami untuk memastikan keselamatan di kalangan orang ramai. Apabila sesuatu nampak terlalu mahal, dia hanya berkata, 'Mari kita tidak pergi' — kejujurannya membuatkan kami sangat percaya kepadanya.",
   },
   {
     id: "chamil",
     photo: "/manus-storage/review_dfamily_chamil_9214e24c.png",
     driver: "Chamil",
-    name: "The D Family",
-    pax: "5 passengers",
-    period: "December 2025",
+    name: "Keluarga D",
+    pax: "5 penumpang",
+    period: "Disember 2025",
     route: "Colombo – Sigiriya – Kandy – Yala – Galle",
     ratings: { driver: 5.0, vehicle: 5.0, operator: 4.5 },
-    quote: "Despite having to completely rearrange our itinerary after a cyclone, Chamil made it the trip of a lifetime.",
-    body: "We travelled as three generations — grandparents, parents, and a child — just after a cyclone had disrupted the island. Chamil constantly gathered the latest information on road conditions and safety, and always proposed the best available routes with our preferences in mind. When we needed to cancel hotels and train bookings and arrange new ones at short notice, he was right there helping us every step of the way. He joined us for the Sigiriya Rock climb and the safari, which gave us enormous reassurance. His attentiveness to our child was especially touching. Chamil's warmth, quick thinking, and natural thoughtfulness won over every member of our family. We are already looking forward to our next trip to Sri Lanka, and we will absolutely be asking for Chamil again.",
+    quote: "Walaupun perlu mengubah sepenuhnya itinerari selepas taufan, Chamil menjadikan ia perjalanan seumur hidup.",
+    body: "Kami melancong sebagai tiga generasi — datuk nenek, ibu bapa, dan seorang anak — tepat selepas taufan yang mengganggu pulau. Chamil sentiasa mengumpul maklumat terkini tentang keadaan jalan dan keselamatan, dan sentiasa mencadangkan laluan terbaik mengikut kehendak kami. Apabila kami perlu batalkan tempahan hotel dan kereta api serta buat tempahan baru secara mengejut, dia sentiasa membantu sepanjang perjalanan. Dia turut serta dalam pendakian Batu Sigiriya dan safari, yang memberi kami rasa yakin. Perhatiannya kepada anak kami sangat menyentuh hati. Kehangatan, pemikiran cepat, dan sifat prihatin semula jadi Chamil memenangi hati setiap ahli keluarga kami. Kami sudah tidak sabar untuk perjalanan kami seterusnya ke Sri Lanka, dan pasti akan memilih Chamil lagi.",
   },
 ];
 
@@ -141,86 +141,86 @@ const VOICE_REVIEWS = [
     id: "aruna",
     photo: "/manus-storage/review_aruna_78705121.jpeg",
     driver: "Aruna",
-    name: "The M Couple",
-    pax: "2 passengers",
-    period: "March 2025",
+    name: "Pasangan M",
+    pax: "2 penumpang",
+    period: "Mac 2025",
     route: "Colombo – Ella – Nuwara Eliya – Kandy",
     ratings: { driver: 5.0, vehicle: 5.0, operator: 4.5 },
-    quote: "Aruna made every mountain road feel like an adventure, not a challenge.",
-    body: "We hired Aruna for a week-long circuit through the hill country, and he exceeded every expectation. His knowledge of the scenic viewpoints — many of which don't appear in guidebooks — was extraordinary. He timed our arrival at Ella Rock perfectly to catch the morning mist, and his suggestion to stop at a small roadside tea stall turned into one of our most cherished memories. Aruna's driving is smooth and confident even on the narrow mountain passes, and his calm demeanour put us completely at ease throughout. He was always punctual, always smiling, and always thinking one step ahead. An outstanding professional and a genuinely warm human being.",
+    quote: "Aruna menjadikan setiap jalan bukit seperti pengembaraan, bukan cabaran.",
+    body: "Kami menyewa Aruna untuk pusingan selama seminggu melalui kawasan bukit, dan dia melebihi setiap jangkaan. Pengetahuannya tentang tempat pandang yang cantik — banyak yang tidak terdapat dalam buku panduan — sangat luar biasa. Dia menyelaraskan ketibaan kami di Ella Rock untuk menangkap kabut pagi, dan cadangannya berhenti di gerai teh tepi jalan kecil menjadi salah satu kenangan paling bermakna. Pemanduannya lancar dan yakin walaupun di laluan sempit bukit, dan sikap tenangnya membuat kami sangat selesa sepanjang masa. Dia sentiasa tepat masa, sentiasa senyum, dan sentiasa berfikir satu langkah ke hadapan. Seorang profesional yang cemerlang dan insan yang sangat mesra.",
   },
   {
     id: "dhammika",
     photo: "/manus-storage/review_dhammika_f371cfdd.jpeg",
     photoPosition: "center 40%",
     driver: "Dhammika",
-    name: "The R Couple",
-    pax: "2 passengers",
-    period: "February 2025",
+    name: "Pasangan R",
+    pax: "2 penumpang",
+    period: "Februari 2025",
     route: "Colombo – Sigiriya – Kandy – Mirissa",
     ratings: { driver: 5.0, vehicle: 4.5, operator: 4.5 },
-    quote: "Dhammika's local knowledge transformed our trip from a holiday into a genuine cultural immersion.",
-    body: "From the moment Dhammika met us at Colombo Airport, we knew we were in good hands. He has an encyclopaedic knowledge of Sri Lankan history and culture that he shares with real enthusiasm — never lecturing, always conversational. At Sigiriya he knew exactly which angle to photograph the rock at golden hour, and in Kandy he took us to a Kandyan dance performance that most tourists never find. His vehicle was spotless and air-conditioned, and he always had cold water waiting for us. Dhammika is the kind of driver who genuinely cares whether you're having the best possible experience. We've already recommended him to three sets of friends.",
+    quote: "Pengetahuan tempatan Dhammika mengubah perjalanan kami daripada percutian kepada pengalaman budaya yang sebenar.",
+    body: "Sejak Dhammika bertemu kami di Lapangan Terbang Colombo, kami tahu kami berada di dalam tangan yang amanah. Dia sangat arif tentang sejarah dan budaya Sri Lanka yang dikongsi dengan penuh semangat — tidak pernah mengajar, sentiasa bersembang. Di Sigiriya dia tahu sudut mana yang terbaik untuk mengambil gambar batu pada waktu emas, dan di Kandy dia membawa kami menonton persembahan tarian Kandyan yang jarang ditemui pelancong. Kenderaannya bersih dan berhawa dingin, dan sentiasa ada air sejuk menanti kami. Dhammika adalah jenis pemandu yang benar-benar mengambil berat sama ada kamu mendapat pengalaman terbaik. Kami sudah mengesyorkannya kepada tiga kumpulan rakan.",
   },
   {
     id: "kushan",
     photo: "/manus-storage/review_kushan_f9478373.jpeg",
     driver: "Kushan",
-    name: "The B Group",
-    pax: "4 passengers",
-    period: "January 2025",
+    name: "Kumpulan B",
+    pax: "4 penumpang",
+    period: "Januari 2025",
     route: "Colombo – Dambulla – Polonnaruwa – Trincomalee",
     ratings: { driver: 5.0, vehicle: 4.5, operator: 5.0 },
-    quote: "Kushan handled four very different personalities with patience, good humour, and remarkable skill.",
-    body: "Our group of four had very different interests — history, wildlife, beaches, and food — and Kushan managed to weave all of them into a seamless itinerary. He was endlessly patient when we couldn't agree on where to eat, always had a suggestion ready, and never once made us feel rushed. His driving on the coastal roads was confident and safe, and he knew every shortcut to avoid the worst of the afternoon traffic. The vehicle was large, comfortable, and immaculately clean throughout the trip. Kushan's easy-going nature made the long driving days genuinely enjoyable. We left Sri Lanka feeling like we'd made a friend.",
+    quote: "Kushan mengurus empat personaliti yang sangat berbeza dengan sabar, jenaka dan kemahiran luar biasa.",
+    body: "Kumpulan kami seramai empat orang mempunyai minat yang sangat berbeza — sejarah, hidupan liar, pantai, dan makanan — dan Kushan berjaya menggabungkan semua itu menjadi satu itinerari yang sempurna. Dia sangat sabar apabila kami tidak dapat bersetuju di mana hendak makan, sentiasa mempunyai cadangan, dan tidak pernah membuat kami merasa tergesa-gesa. Pemanduannya di jalan pantai sangat yakin dan selamat, dan dia tahu setiap pintasan untuk mengelakkan kesesakan lalu lintas petang. Kenderaan itu besar, selesa, dan sangat bersih sepanjang perjalanan. Sikap santai Kushan menjadikan perjalanan jauh dengan memandu benar-benar menyeronokkan. Kami meninggalkan Sri Lanka dengan perasaan seperti kami telah membuat seorang kawan.",
   },
   {
     id: "lasith",
     photo: "/manus-storage/review_lasith2_555d5b29.jpeg",
     driver: "Lasith",
     name: "The W Family",
-    pax: "3 passengers",
+    pax: "3 penumpang",
     period: "April 2025",
     route: "Colombo – Sigiriya – Kandy – Galle",
     ratings: { driver: 5.0, vehicle: 5.0, operator: 5.0 },
-    quote: "Lasith was endlessly patient with our children and made every moment of the trip feel effortless.",
-    body: "Having Lasith with us was a genuine stroke of luck. His warm manner with the kids put us all at ease, and his clear English meant nothing was ever lost in translation. Punctual, full of thoughtful suggestions for sights and local restaurants, and consistently calm behind the wheel — he was everything we could have asked for. We recommend him without hesitation: attentive, knowledgeable, and completely trustworthy. If you're ever in Europe, Lasith — the first round is on us.",
+    quote: "Lasith sangat sabar dengan anak-anak kami dan menjadikan setiap detik perjalanan terasa mudah.",
+    body: "Mempunyai Lasith bersama kami adalah satu tuah sebenar. Sikap mesranya dengan kanak-kanak membuat kami semua rasa tenang, dan Inggerisnya yang jelas memastikan tiada apa yang hilang dalam terjemahan. Tepat pada masanya, penuh dengan cadangan bernas untuk tempat menarik dan restoran tempatan, serta sentiasa tenang di belakang roda — dia adalah segala yang kami inginkan. Kami mengesyorkannya tanpa ragu-ragu: prihatin, berpengetahuan, dan sangat boleh dipercayai. Jika anda pernah di Eropah, Lasith — pusingan pertama atas kami.",
   },
   {
     id: "malinga",
     photo: "/manus-storage/review_malinga_5636b125.jpeg",
     driver: "Malinga",
     name: "The S Couple",
-    pax: "2 passengers",
-    period: "May 2025",
+    pax: "2 penumpang",
+    period: "Mei 2025",
     route: "Negombo – Wilpattu – Anuradhapura – Trincomalee",
     ratings: { driver: 5.0, vehicle: 4.5, operator: 5.0 },
-    quote: "Malinga's enthusiasm for Sri Lanka's wildlife was completely infectious — he made every safari unforgettable.",
-    body: "We chose a wildlife-focused itinerary and Malinga was the perfect guide for it. His knowledge of Wilpattu National Park was extraordinary — he spotted a leopard resting in a tree that our official safari jeep had completely missed. He also arranged a boat safari on the Madu River that wasn't in our original plan, and it turned out to be one of the highlights of the entire trip. Malinga drives with real care on the wildlife reserve tracks, and his patience waiting for the perfect sighting is remarkable. His cheerful commentary throughout the journey made every kilometre between parks enjoyable. An exceptional driver for anyone who loves nature.",
+    quote: "Semangat Malinga untuk hidupan liar Sri Lanka sangat menular — dia membuatkan setiap safari tidak dapat dilupakan.",
+    body: "Kami memilih itinerari bertumpu hidupan liar dan Malinga adalah pemandu yang sempurna untuk itu. Pengetahuannya tentang Taman Negara Wilpattu sangat luar biasa — dia ternampak seekor harimau kumbang berehat di atas pokok yang langsung tidak dilihat oleh jip safari rasmi kami. Dia juga mengatur safari bot di Sungai Madu yang tidak berada dalam rancangan asal kami, dan ia ternyata menjadi salah satu kemuncak perjalanan. Malinga memandu dengan sangat berhati-hati di jalan rezab hidupan liar, dan kesabarannya menunggu untuk pemerhatian terbaik sangat mengagumkan. Komen cerianya sepanjang perjalanan membuat setiap kilometer antara taman menjadi menyeronokkan. Pemandu luar biasa untuk sesiapa yang mencintai alam.",
   },
   {
     id: "ravi",
     photo: "/manus-storage/review_ravi_b940edfb.jpeg",
     driver: "Ravi",
     name: "The Y Group",
-    pax: "7 passengers",
-    period: "March 2025",
+    pax: "7 penumpang",
+    period: "Mac 2025",
     route: "Colombo – Sigiriya – Dambulla – Kandy – Galle",
     ratings: { driver: 5.0, vehicle: 4.5, operator: 4.5 },
-    quote: "Ravi kept seven of us happy, on schedule, and laughing the entire way — no small achievement.",
-    body: "Travelling as a large group of seven young adults, we were a little nervous about whether a private charter would work for us. Ravi put every concern to rest within the first hour. He has a natural gift for managing group dynamics — knowing when to suggest a stop, when to push on, and when to let everyone just enjoy the scenery in silence. His van was spacious and comfortable, and he kept it spotless throughout the trip. Ravi also has an excellent eye for photo opportunities and was always happy to pull over for the perfect shot. He introduced us to local street food that we would never have found on our own, and every recommendation was outstanding. Ravi made our group trip genuinely special.",
+    quote: "Ravi memastikan tujuh daripada kami bahagia, mengikut jadual, dan ketawa sepanjang perjalanan — pencapaian yang bukan mudah.",
+    body: "Berkelompok besar tujuh orang dewasa muda, kami sedikit risau sama ada sewaan peribadi akan berfungsi untuk kami. Ravi meletakkan semua kebimbangan itu pada tempatnya dalam masa sejam pertama. Dia mempunyai bakat semula jadi untuk menguruskan dinamik kumpulan — mengetahui bila hendak berhenti, bila hendak meneruskan perjalanan, dan bila hendak membiarkan semua orang menikmati pemandangan dalam keheningan. Van beliau luas dan selesa, dan dia menjaga kebersihannya sepanjang perjalanan. Ravi juga mempunyai mata yang tajam untuk peluang bergambar dan sentiasa gembira berhenti untuk mengambil gambar yang sempurna. Dia memperkenalkan kami kepada makanan jalanan tempatan yang kami tidak akan jumpa sendiri, dan setiap cadangan adalah luar biasa. Ravi menjadikan perjalanan kumpulan kami benar-benar istimewa.",
   },
   {
     id: "smith",
     photo: "/manus-storage/review_smith_3ba6750f.jpeg",
     driver: "Smith",
     name: "The K Family",
-    pax: "5 passengers",
-    period: "February 2025",
+    pax: "5 penumpang",
+    period: "Februari 2025",
     route: "Colombo – Ella – Yala – Mirissa",
     ratings: { driver: 5.0, vehicle: 5.0, operator: 5.0 },
-    quote: "Smith's calm professionalism and genuine warmth made our family holiday truly exceptional.",
-    body: "We travelled as a family of five — including two young children and a grandmother — and Smith handled every logistical challenge with quiet efficiency and a constant smile. He was meticulous about safety, always ensuring everyone was comfortable before setting off, and his driving on the winding roads to Ella was impressively smooth. Smith arranged a surprise birthday cake for our grandmother at a restaurant in Mirissa, which moved the whole family deeply. His knowledge of Yala National Park was outstanding — we saw leopards, elephants, and crocodiles in a single morning. Smith is the kind of driver who genuinely invests in your happiness. We cannot recommend him highly enough.",
+    quote: "Profesionalisme tenang Smith dan kehangatan tulennya menjadikan percutian keluarga kami benar-benar luar biasa.",
+    body: "Kami melancong sebagai sebuah keluarga lima orang — termasuk dua kanak-kanak kecil dan seorang nenek — dan Smith mengendalikan setiap cabaran logistik dengan cekap dan senyum sentiasa terukir. Dia sangat teliti mengenai keselamatan, sentiasa memastikan semua orang selesa sebelum memulakan perjalanan, dan pemanduannya di jalan berliku ke Ella sangat licin. Smith mengatur kek hari jadi kejutan untuk nenek kami di sebuah restoran di Mirissa, yang menyentuh perasaan seluruh keluarga. Pengetahuannya tentang Taman Negara Yala sangat luar biasa — kami melihat harimau kumbang, gajah, dan buaya dalam satu pagi sahaja. Smith adalah jenis pemandu yang benar-benar mengambil berat tentang kebahagiaan anda. Kami tidak dapat mengesyorkan beliau dengan cukup tinggi.",
   },
   {
     id: "asanka",
@@ -228,24 +228,24 @@ const VOICE_REVIEWS = [
     photoPosition: "center 30%",
     driver: "Asanka",
     name: "The P Couple",
-    pax: "2 passengers",
-    period: "January 2025",
+    pax: "2 penumpang",
+    period: "Januari 2025",
     route: "Colombo – Anuradhapura – Polonnaruwa – Sigiriya",
     ratings: { driver: 5.0, vehicle: 5.0, operator: 4.5 },
-    quote: "Asanka made the ancient cities come alive — his knowledge and warmth were simply outstanding.",
-    body: "We explored the Cultural Triangle with Asanka over three days, and it was an experience we will never forget. His deep knowledge of Anuradhapura and Polonnaruwa transformed what could have been a long walk through ruins into a genuinely moving journey through history. He knew exactly which sites to prioritise, when to linger, and when to move on — always reading our energy perfectly. At Sigiriya he guided us up the rock with patience and encouragement, and his timing meant we had the best views almost to ourselves. Asanka is warm, professional, and endlessly enthusiastic about sharing his country. We left Sri Lanka feeling we had made a true friend.",
+    quote: "Asanka menghidupkan bandar purba itu — pengetahuan dan kehangatannya sungguh luar biasa.",
+    body: "Kami meneroka Segitiga Budaya bersama Asanka selama tiga hari, dan ia merupakan pengalaman yang tidak akan kami lupa. Pengetahuannya yang mendalam tentang Anuradhapura dan Polonnaruwa menjadikan apa yang mungkin hanya perjalanan panjang melintasi runtuhan menjadi sebuah perjalanan sejarah yang benar-benar menyentuh hati. Dia tahu dengan tepat tapak mana yang harus diberi keutamaan, bila untuk berehat, dan bila untuk teruskan — sentiasa membaca tenaga kami dengan sempurna. Di Sigiriya dia membimbing kami naik batu itu dengan sabar dan memberi galakan, dan waktu yang dipilihnya membuatkan kami mendapat pemandangan terbaik hampir untuk diri kami sendiri. Asanka hangat, profesional, dan tidak pernah putus semangat untuk berkongsi negaranya. Kami meninggalkan Sri Lanka dengan rasa seperti kami telah mendapat seorang kawan sejati.",
   },
   {
     id: "ranjana",
     photo: "/manus-storage/review_ranjana_50bce7fd.jpeg",
     driver: "Ranjana",
     name: "The H Couple",
-    pax: "2 passengers",
+    pax: "2 penumpang",
     period: "November 2025",
     route: "Colombo – Kandy – Nuwara Eliya – Galle",
     ratings: { driver: 5.0, vehicle: 4.5, operator: 4.5 },
-    quote: "Ranjana turned our Sri Lanka trip into something far beyond ordinary sightseeing.",
-    body: "We booked a private charter for two and were paired with Ranjana — a decision we couldn't be happier about. He brought a quiet confidence to every drive, navigating mountain roads and busy town centres with equal ease. What stood out most was his genuine enthusiasm: he suggested a white-water rafting experience we hadn't planned, and it became one of the highlights of the trip. His local knowledge of hidden viewpoints, authentic eateries, and cultural customs enriched every day. Ranjana is the kind of guide who makes you feel like a guest of the country, not just a tourist passing through.",
+    quote: "Ranjana menjadikan perjalanan kami di Sri Lanka sesuatu yang jauh melangkaui lawatan biasa.",
+    body: "Kami menempah sewaan peribadi untuk dua orang dan dipadankan dengan Ranjana — keputusan yang kami tidak mungkin lebih gembira. Dia membawa keyakinan tenang ke setiap pemanduan, mengemudi jalan gunung dan pusat bandar yang sibuk dengan mudah. Yang paling menonjol adalah semangat sejatinya: dia mencadangkan pengalaman arung jeram yang tidak kami rancang, dan ia menjadi salah satu kemuncak perjalanan. Pengetahuan tempatan tentang tempat pandang tersembunyi, tempat makan asli, dan adat budaya memperkayakan setiap hari. Ranjana adalah jenis pemandu yang membuat anda merasa seperti tetamu negara ini, bukan hanya pelancong yang singgah.",
   },
 ];
 
@@ -256,7 +256,7 @@ function VoiceCard({ review }: { review: ReviewItem }) {
   return (
     <article className="voice-card">
       <div className="voice-card-photo-wrap">
-        <img src={review.photo} alt={`${review.driver} with guests`} className="voice-card-photo" style={(review as ReviewItem).photoPosition ? { objectPosition: (review as ReviewItem).photoPosition } : undefined} />
+        <img src={review.photo} alt={`${review.driver} dengan tetamu`} className="voice-card-photo" style={(review as ReviewItem).photoPosition ? { objectPosition: (review as ReviewItem).photoPosition } : undefined} />
         <div className="voice-card-overall-badge">
           <span className="voice-badge-star">★</span>
           <span className="voice-badge-num">{overall.toFixed(1)}</span>
@@ -265,7 +265,7 @@ function VoiceCard({ review }: { review: ReviewItem }) {
       <div className="voice-card-content">
         <div className="voice-card-header">
           <div>
-            <div className="voice-card-driver">Driver: {review.driver}</div>
+            <div className="voice-card-driver">Pemandu: {review.driver}</div>
             <div className="voice-card-meta">{review.name} · {review.pax} · {review.period}</div>
             <div className="voice-card-route">📍 {review.route}</div>
           </div>
@@ -295,33 +295,33 @@ export default function Voice() {
       {/* Navbar placeholder – reuse site nav via layout */}
       <header className="voice-header">
         <div className="voice-header-inner">
-          <Link href="/" className="voice-back-link">← Back to Home</Link>
-          <a href="/" className="voice-site-title">SLTCS｜Sri Lanka Car Hire with Private Driver</a>
+          <Link href="/" className="voice-back-link">← Kembali ke Laman Utama</Link>
+          <a href="/" className="voice-site-title">SLTCS｜Sri Lanka Sewa Kereta dengan Pemandu Peribadi</a>
         </div>
       </header>
 
       <main>
         {/* Hero */}
         <section className="voice-hero">
-          <div className="voice-hero-eyebrow">— VOICE —</div>
-          <h1 className="voice-hero-title">What Our Guests Say</h1>
+          <div className="voice-hero-eyebrow">— SUARA —</div>
+          <h1 className="voice-hero-title">Apa Kata Tetamu Kami</h1>
           <p className="voice-hero-sub">
-            Real reviews from travellers who have explored Sri Lanka with SLTCS private drivers.
+            Ulasan sebenar daripada pelancong yang telah meneroka Sri Lanka dengan pemandu peribadi SLTCS.
           </p>
           <div className="voice-summary-bar">
             <div className="voice-summary-item">
               <span className="voice-summary-num">{ALL_REVIEWS.length}</span>
-              <span className="voice-summary-label">Reviews</span>
+              <span className="voice-summary-label">Ulasan</span>
             </div>
             <div className="voice-summary-divider" />
             <div className="voice-summary-item">
               <span className="voice-summary-num">{avgOverall}</span>
-              <span className="voice-summary-label">Overall Rating</span>
+              <span className="voice-summary-label">Penilaian Keseluruhan</span>
             </div>
             <div className="voice-summary-divider" />
             <div className="voice-summary-item">
               <span className="voice-summary-num">14</span>
-              <span className="voice-summary-label">Drivers</span>
+              <span className="voice-summary-label">Pemandu</span>
             </div>
           </div>
         </section>
@@ -337,14 +337,14 @@ export default function Voice() {
 
         {/* CTA */}
         <section className="voice-cta-section">
-          <h2 className="voice-cta-title">Ready to Create Your Own Story?</h2>
-          <p className="voice-cta-sub">Join hundreds of travellers who have explored Sri Lanka with our private drivers.</p>
-          <a href="/#contact" className="voice-cta-btn">Free Enquiry</a>
+          <h2 className="voice-cta-title">Bersedia untuk Membuat Cerita Anda Sendiri?</h2>
+          <p className="voice-cta-sub">Sertailah ratusan pelancong yang telah meneroka Sri Lanka dengan pemandu peribadi kami.</p>
+          <a href="/#contact" className="voice-cta-btn">Pertanyaan Percuma</a>
         </section>
       </main>
 
       <footer className="voice-footer">
-        <p>© 2025 SLTCS – Sri Lanka Car Hire with Private Driver · <a href="/">en.srilanka-charter.com</a></p>
+        <p>© 2025 SLTCS – Sri Lanka Sewa Kereta dengan Pemandu Peribadi · <a href="/">en.srilanka-charter.com</a></p>
       </footer>
     </div>
   );

@@ -4,13 +4,14 @@ import SiteNavbar from "@/components/SiteNavbar";
 // ─── Price Data ───────────────────────────────────────────────────────────────
 type VehicleKey = "sedan" | "van" | "bigvan";
 type TierKey = "bronze" | "silver" | "gold";
-type CurrencyKey = "USD" | "GBP" | "EUR" | "AUD";
+type CurrencyKey = "USD" | "GBP" | "EUR" | "AUD" | "MYR";
 
 const CURRENCY_SYMBOLS: Record<CurrencyKey, string> = {
   USD: "$",
   GBP: "£",
   EUR: "€",
   AUD: "A$",
+  MYR: "RM",
 };
 
 // price[currency][tier][vehicle][dayIndex] — days 2..20
@@ -90,50 +91,50 @@ const DAYS = Array.from({ length: 19 }, (_, i) => i + 2); // 2..20
 const TIERS: { key: TierKey; label: string; badge?: string; color: string; features: string[] }[] = [
   {
     key: "bronze",
-    label: "Bronze Plan",
+    label: "Pelan Bronze",
     color: "#cd7f32",
     features: [
-      "Trainee driver assigned",
-      "Transfer service, including hotel and restaurant pick-up/drop-off",
-      "English-speaking local coordinator",
-      "Clean air-conditioned vehicle",
-      "Recommended plan for those who want to enjoy traveling economically",
+      "Pemandu latihan ditugaskan",
+      "Perkhidmatan pemindahan, termasuk pengambilan/penghantaran hotel dan restoran",
+      "Penyelaras tempatan yang bertutur dalam Bahasa Inggeris",
+      "Kenderaan berhawa dingin yang bersih",
+      "Pelan yang disyorkan bagi mereka yang ingin menikmati perjalanan dengan ekonomikal",
     ],
   },
   {
     key: "silver",
-    label: "Silver Plan",
-    badge: "Most Popular",
+    label: "Pelan Silver",
+    badge: "Paling Popular",
     color: "#c9a84c",
     features: [
-      "Government-certified Tourist Driver or above",
-      "Accompaniment & guiding at sightseeing spots",
-      "English-speaking local coordinator",
-      "Safari & activity arrangements",
-      "Guide service at no extra charge",
+      "Pemandu Pelancong Bertauliah Kerajaan atau lebih tinggi",
+      "Pendampingan & panduan di tempat-tempat pelancongan",
+      "Penyelaras tempatan yang bertutur dalam Bahasa Inggeris",
+      "Aturcara Safari & aktiviti",
+      "Perkhidmatan pemandu pelancong tanpa bayaran tambahan",
     ],
   },
   {
     key: "gold",
-    label: "Gold Plan",
+    label: "Pelan Gold",
     color: "#d4af37",
     features: [
-      "Highly-rated Chauffeur Guide Driver guaranteed",
-      "Full-itinerary accompaniment & guiding at sightseeing spots",
-      "English-speaking local coordinator",
-      "Dual support system",
-      "Safari & activity arrangements",
+      "Pemandu dan Pemandu Pelancong bertaraf tinggi yang dijamin",
+      "Pendampingan penuh seluruh itinerari & panduan di tempat-tempat pelancongan",
+      "Penyelaras tempatan yang bertutur dalam Bahasa Inggeris",
+      "Sistem sokongan berganda",
+      "Aturcara Safari & aktiviti",
     ],
   },
 ];
 
 const VEHICLES: { key: VehicleKey; label: string; capacity: string }[] = [
-  { key: "sedan", label: "Sedan", capacity: "1–3 people" },
-  { key: "van", label: "Van", capacity: "3–6 people" },
-  { key: "bigvan", label: "Big Van", capacity: "6–9 people" },
+  { key: "sedan", label: "Sedan", capacity: "1–3 orang" },
+  { key: "van", label: "Van", capacity: "3–6 orang" },
+  { key: "bigvan", label: "Big Van", capacity: "6–9 orang" },
 ];
 
-const CURRENCIES: CurrencyKey[] = ["USD", "GBP", "EUR", "AUD"];
+const CURRENCIES: CurrencyKey[] = ["USD", "GBP", "EUR", "AUD", "MYR"];
 
 // ─── Plan Card ────────────────────────────────────────────────────────────────
 function PlanCard({
@@ -275,7 +276,7 @@ function PlanCard({
                   background: "rgba(20,20,20,0.95)",
                 }}
               >
-                Days
+                Hari
               </th>
               <th
                 style={{
@@ -291,7 +292,7 @@ function PlanCard({
                   background: "rgba(20,20,20,0.95)",
                 }}
               >
-                Price (incl. tax)
+                Harga (termasuk cukai)
               </th>
             </tr>
           </thead>
@@ -311,7 +312,7 @@ function PlanCard({
                     fontSize: "0.85rem",
                   }}
                 >
-                  {day} days
+                  {day} hari
                 </td>
                 <td
                   style={{
@@ -341,7 +342,7 @@ export default function Pricing() {
   // ─── SEO: title, meta description, JSON-LD ──────────────────────────────────
   useEffect(() => {
     // Title
-    document.title = "Sri Lanka Car Hire Prices | Flat-Rate Plans | SLTCS";
+    document.title = "Harga Sewa Kereta Sri Lanka | Pelan Kadar Tetap | SLTCS";
 
     // Meta description
     let metaDesc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
@@ -352,60 +353,60 @@ export default function Pricing() {
     }
     const prevDesc = metaDesc.content;
     metaDesc.content =
-      "View flat-rate prices for Sri Lanka private car hire with driver. Bronze, Silver & Gold plans from $270. Sedan, Van & Big Van. USD, GBP, EUR, AUD.";
+      "Lihat harga kadar tetap untuk sewa kereta peribadi dengan pemandu di Sri Lanka. Pelan Bronze, Silver & Gold bermula dari $270. Sedan, Van & Big Van. USD, GBP, EUR, AUD, MYR.";
 
     // JSON-LD: PriceSpecification (USD, Bronze/Silver/Gold, Sedan 2-day as representative)
     const jsonLd = {
       "@context": "https://schema.org",
       "@type": "Product",
-      name: "Sri Lanka Car Hire with Private Driver",
+      name: "Sewa Kereta Peribadi di Sri Lanka",
       description:
-        "Fully private car hire service in Sri Lanka with an English-speaking driver. Three plans: Bronze, Silver, Gold.",
+        "Perkhidmatan sewa kereta peribadi sepenuhnya di Sri Lanka dengan pemandu yang bertutur bahasa Inggeris. Tiga pelan: Bronze, Silver, Gold.",
       url: "https://en.srilanka-charter.com/price",
       brand: {
         "@type": "Brand",
-        name: "SLTCS – Sri Lanka Car Hire with Private Driver",
+        name: "SLTCS – Sewa Kereta Peribadi di Sri Lanka",
       },
       offers: [
         // Bronze
         {
           "@type": "Offer",
-          name: "Bronze Plan – Sedan (2 days)",
+          name: "Pelan Bronze – Sedan (2 hari)",
           price: "270",
           priceCurrency: "USD",
           priceSpecification: {
             "@type": "UnitPriceSpecification",
             price: "270",
             priceCurrency: "USD",
-            unitText: "2 days",
+            unitText: "2 hari",
           },
           availability: "https://schema.org/InStock",
           url: "https://en.srilanka-charter.com/price",
         },
         {
           "@type": "Offer",
-          name: "Silver Plan – Sedan (2 days)",
+          name: "Pelan Silver – Sedan (2 hari)",
           price: "310",
           priceCurrency: "USD",
           priceSpecification: {
             "@type": "UnitPriceSpecification",
             price: "310",
             priceCurrency: "USD",
-            unitText: "2 days",
+            unitText: "2 hari",
           },
           availability: "https://schema.org/InStock",
           url: "https://en.srilanka-charter.com/price",
         },
         {
           "@type": "Offer",
-          name: "Gold Plan – Sedan (2 days)",
+          name: "Pelan Gold – Sedan (2 hari)",
           price: "350",
           priceCurrency: "USD",
           priceSpecification: {
             "@type": "UnitPriceSpecification",
             price: "350",
             priceCurrency: "USD",
-            unitText: "2 days",
+            unitText: "2 hari",
           },
           availability: "https://schema.org/InStock",
           url: "https://en.srilanka-charter.com/price",
@@ -420,7 +421,7 @@ export default function Pricing() {
     document.head.appendChild(script);
 
     return () => {
-      document.title = "SLTCS｜Sri Lanka Car Hire with Private Driver";
+      document.title = "SLTCS｜Sewa Kereta Peribadi di Sri Lanka";
       metaDesc!.content = prevDesc;
       document.getElementById("price-jsonld")?.remove();
     };
@@ -465,7 +466,7 @@ export default function Pricing() {
             marginBottom: "20px",
           }}
         >
-          PRICING
+          HARGA
         </div>
         <h1
           style={{
@@ -477,7 +478,7 @@ export default function Pricing() {
             maxWidth: "700px",
           }}
         >
-          Sri Lanka Car Hire{" "}
+          Harga Sewa Kereta Sri Lanka{" "}
           <em style={{ color: "#c9a84c", fontStyle: "italic" }}>Pricing</em>
         </h1>
         <p
@@ -489,7 +490,7 @@ export default function Pricing() {
             lineHeight: 1.7,
           }}
         >
-          Transparent flat-rate pricing at industry-leading low rates — for a safe and worry-free journey through Sri Lanka.
+          Kadar tetap telus dengan harga terendah dalam industri — untuk perjalanan yang selamat dan tanpa kerisauan di seluruh Sri Lanka.
         </p>
       </section>
 
@@ -498,7 +499,7 @@ export default function Pricing() {
         {/* Intro */}
         <section style={{ padding: "56px 0 0" }}>
           <p style={{ color: "rgba(255,255,255,0.75)", lineHeight: 1.8, fontSize: "0.95rem", maxWidth: "820px" }}>
-            At Sri Lanka Taxi Charter Service (SLTCS), we keep our prices as low as possible while maintaining the highest quality of service. We believe that going any lower would compromise the experience we are committed to delivering.
+            Di Sri Lanka Taxi Charter Service (SLTCS), kami mengekalkan harga kami serendah mungkin sambil mengekalkan kualiti perkhidmatan tertinggi. Kami percaya jika kurang dari ini, pengalaman yang kami komited untuk berikan akan terjejas.
           </p>
         </section>
 
@@ -523,17 +524,17 @@ export default function Pricing() {
               gap: "8px",
             }}
           >
-            ⚠ Risks of Choosing Ultra-Low-Cost Services
+            ⚠ Risiko Memilih Perkhidmatan Kos Sangat Rendah
           </h2>
           <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "14px" }}>
-            Services that compete solely on price may expose you to the following issues:
+            Perkhidmatan yang hanya bersaing dari segi harga mungkin mendedahkan anda kepada masalah berikut:
           </p>
           <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
             {[
-              "A large gap between the quoted price and the final amount charged",
-              "No English support from the initial enquiry stage",
-              "Old or poorly maintained vehicles assigned",
-              "Persistent detours to kickback-affiliated shops, disrupting your itinerary",
+              "Jurang besar antara harga yang diberitahu dan jumlah akhir yang dikenakan",
+              "Tiada sokongan bahasa Inggeris dari peringkat pertanyaan awal",
+              "Kenderaan lama atau yang tidak dijaga dengan baik diberikan",
+              "Sering dialihkan ke kedai yang mempunyai kaitan komisyen, mengganggu itinerari anda",
             ].map((item) => (
               <li
                 key={item}
@@ -552,7 +553,7 @@ export default function Pricing() {
             ))}
           </ul>
           <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.85rem", lineHeight: 1.7, marginTop: "16px" }}>
-            In particular, some seemingly low-cost services impose mileage limits and charge for overages. There have been cases where drivers reported inflated distances, resulting in bills far exceeding expectations.
+            Terutamanya, beberapa perkhidmatan kos rendah mengenakan had kilometer dan caj tambahan untuk lebihan. Ada kes pemandu melaporkan jarak yang diperbesarkan, menyebabkan bil yang jauh melebihi jangkaan.
           </p>
           <p style={{ marginTop: "10px" }}>
             <a
@@ -566,7 +567,7 @@ export default function Pricing() {
                 letterSpacing: "0.02em",
               }}
             >
-              → detail
+              → butiran
             </a>
           </p>
         </section>
@@ -581,13 +582,13 @@ export default function Pricing() {
               marginBottom: "16px",
             }}
           >
-            SLTCS's Transparent Flat-Rate Pricing
+            Harga Kadar Tetap Telus SLTCS
           </h2>
           <p style={{ color: "rgba(255,255,255,0.75)", lineHeight: 1.8, fontSize: "0.95rem", maxWidth: "820px" }}>
-            SLTCS provides a fixed quote based on your itinerary, discussed in English from the very first enquiry. Even if your itinerary is not yet finalised, simply share the spots you wish to visit and we will suggest the best route with a detailed estimate.
+            SLTCS memberikan sebut harga tetap berdasarkan itinerari anda, dibincangkan dalam bahasa Inggeris dari pertanyaan pertama. Walaupun itinerari anda belum selesai, kongsikan tempat yang ingin dilawati dan kami akan cadangkan laluan terbaik dengan anggaran terperinci.
           </p>
           <p style={{ color: "rgba(255,255,255,0.75)", lineHeight: 1.8, fontSize: "0.95rem", maxWidth: "820px", marginTop: "12px" }}>
-            All prices below are <strong style={{ color: "#fff" }}>tax-inclusive</strong> and apply to <strong style={{ color: "#fff" }}>English-speaking drivers</strong>. We offer three plans to match your travel style.
+            Semua harga di bawah adalah <strong style={{ color: "#fff" }}>termasuk cukai</strong> dan terpakai untuk <strong style={{ color: "#fff" }}>pemandu bertutur bahasa Inggeris</strong>. Kami menawarkan tiga pelan yang sesuai dengan gaya perjalanan anda.
           </p>
         </section>
 
@@ -603,7 +604,7 @@ export default function Pricing() {
               textAlign: "center",
             }}
           >
-            Plan Overview
+            Gambaran Pelan
           </h2>
           <div
             style={{
@@ -695,7 +696,7 @@ export default function Pricing() {
                 margin: 0,
               }}
             >
-              Price List
+              Senarai Harga
             </h2>
             <div
               style={{
@@ -714,7 +715,7 @@ export default function Pricing() {
                     padding: "8px 20px",
                     background: currency === c ? "rgba(201,168,76,0.2)" : "none",
                     border: "none",
-                    borderRight: c !== "EUR" ? "1px solid rgba(255,255,255,0.1)" : "none",
+                    borderRight: c !== "MYR" ? "1px solid rgba(255,255,255,0.1)" : "none",
                     color: currency === c ? "#c9a84c" : "rgba(255,255,255,0.55)",
                     fontSize: "0.85rem",
                     fontWeight: currency === c ? 700 : 400,
@@ -739,7 +740,7 @@ export default function Pricing() {
             }}
           >
             <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.85rem", lineHeight: 1.7, margin: 0 }}>
-              <strong style={{ color: "#c9a84c" }}>Note:</strong> The prices below apply to standard itineraries. Additional charges may apply if the total distance exceeds the standard estimate, or if the pick-up or drop-off point is outside the airport area (including Colombo and Negombo).
+              <strong style={{ color: "#c9a84c" }}>Nota:</strong> Harga di bawah adalah untuk itinerari standard. Caj tambahan mungkin dikenakan jika jarak keseluruhan melebihi anggaran standard, atau jika lokasi pengambilan atau penghantaran berada di luar kawasan lapangan terbang (termasuk Colombo dan Negombo).
             </p>
           </div>
 
@@ -760,7 +761,7 @@ export default function Pricing() {
         {/* CTA */}
         <section style={{ textAlign: "center", marginTop: "0" }}>
           <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.95rem", marginBottom: "24px" }}>
-            Not sure which plan suits you? Feel free to contact us for a free, personalised estimate.
+            Tidak pasti pelan mana yang sesuai untuk anda? Jangan ragu untuk <Contact /> bagi anggaran Pertanyaan Percuma yang diperibadikan.
           </p>
           <button
             onClick={scrollToContact}
@@ -780,7 +781,7 @@ export default function Pricing() {
             onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
             onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
           >
-            💬 Free Enquiry
+            💬 Pertanyaan Percuma
           </button>
         </section>
       </div>

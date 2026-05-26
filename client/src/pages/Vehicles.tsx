@@ -1,12 +1,12 @@
 /**
- * SLTCS – Vehicles Page (English)
- * Translated from the Japanese version at https://sltcs.srilanka-charter.com/vehicles
- * Design: Dark luxury travel aesthetic matching the main site
+ * SLTCS – Halaman Kenderaan (Bahasa Malaysia)
+ * Terjemahan dari versi Jepun di https://sltcs.srilanka-charter.com/vehicles
+ * Reka bentuk: Estetik perjalanan mewah gelap sesuai dengan laman utama
  */
 
 import { useState, useEffect, useRef } from "react";
 
-// ─── Navbar (shared style with Home) ─────────────────────────────────────────
+// ─── Navbar (gaya dikongsi dengan Halaman Utama) ───────────────────────────────
 const LANGUAGES = [
   { label: "French",   url: "https://fr.srilanka-charter.com/" },
   { label: "Spanish",  url: "https://es.srilanka-charter.com/" },
@@ -32,30 +32,30 @@ function Navbar() {
     <>
       <nav className={`sltcs-nav${scrolled ? " scrolled" : ""}`}>
         <a href="/" className="nav-logo">
-          SLTCS｜Sri Lanka Car Hire with Private Driver
+          SLTCS｜Sewa Kereta dengan Pemandu di Sri Lanka
         </a>
         <ul className="nav-links">
-          <li><a href="/#plans">PLANS</a></li>
+          <li><a href="/#plans">PELAN</a></li>
           <li
             className="nav-dropdown"
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
-            <button>MODEL ITINERARY</button>
+            <button>CONTOH ITINERARI</button>
             {dropdownOpen && (
               <div className="nav-dropdown-menu">
-                <a href="/#courses">4 Nights / 5 Days</a>
-                <a href="/#courses">5 Nights / 6 Days</a>
-                <a href="/#courses">6 Nights / 7 Days</a>
-                <a href="/#courses">5 to 7 Days – Cultural Triangle</a>
-                <a href="/#courses">10 Days to 2 Weeks – Classic Plan</a>
+                <a href="/#courses">4 Malam / 5 Hari</a>
+                <a href="/#courses">5 Malam / 6 Hari</a>
+                <a href="/#courses">6 Malam / 7 Hari</a>
+                <a href="/#courses">5 hingga 7 Hari – Segi Budaya</a>
+                <a href="/#courses">10 Hari hingga 2 Minggu – Pelan Klasik</a>
               </div>
             )}
           </li>
-          <li><a href="/vehicles" style={{ color: "#c9a84c" }}>VEHICLES</a></li>
-          <li><a href="/#faq">FAQ</a></li>
-          <li><a href="/price">PRICE</a></li>
-          <li><a href="/#contact">CONTACT</a></li>
+          <li><a href="/vehicles" style={{ color: "#c9a84c" }}>KENDERANAAN</a></li>
+          <li><a href="/#faq">SOALAN LAZIM</a></li>
+          <li><a href="/price">HARGA</a></li>
+          <li><a href="/#contact">HUBUNGI</a></li>
           <li
             className="nav-dropdown nav-lang-dropdown"
             onMouseEnter={() => setLangOpen(true)}
@@ -67,7 +67,7 @@ function Navbar() {
                 <line x1="2" y1="12" x2="22" y2="12"/>
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
               </svg>
-              EN
+              MS
             </button>
             {langOpen && (
               <div className="nav-dropdown-menu">
@@ -84,15 +84,15 @@ function Navbar() {
       </nav>
       {mobileOpen && (
         <div className="mobile-menu open">
-          <a href="/#plans">Plans</a>
-          <a href="/#courses">Model Itinerary</a>
-          <a href="/vehicles">Vehicles</a>
-          <a href="/#faq">FAQ</a>
-          <a href="/price">Price</a>
-          <a href="/#contact">Contact</a>
-          <a href="/#contact" className="btn-nav-mobile">Free Enquiry</a>
+          <a href="/#plans">Pelan</a>
+          <a href="/#courses">Contoh Itinerari</a>
+          <a href="/vehicles">Kenderaan</a>
+          <a href="/#faq">Soalan Lazim</a>
+          <a href="/price">Harga</a>
+          <a href="/#contact">Hubungi</a>
+          <a href="/#contact" className="btn-nav-mobile">Pertanyaan Percuma</a>
           <div style={{ borderTop: "1px solid rgba(201,168,76,0.3)", paddingTop: "8px", marginTop: "4px" }}>
-            <div style={{ color: "#c9a84c", fontSize: "11px", letterSpacing: "0.1em", marginBottom: "6px", paddingLeft: "4px" }}>OTHER LANGUAGES</div>
+            <div style={{ color: "#c9a84c", fontSize: "11px", letterSpacing: "0.1em", marginBottom: "6px", paddingLeft: "4px" }}>BAHASA LAIN</div>
             {LANGUAGES.map((lang) => (
               <a key={lang.label} href={lang.url}>{lang.label}</a>
             ))}
@@ -124,20 +124,20 @@ const VEHICLES: VehicleInfo[] = [
   {
     id: "sedan",
     name: "Sedan",
-    tagline: "Up to 3 adults",
-    maxPassengers: "3 adults",
-    comfortablePassengers: "2 adults + 1 child",
-    maxLuggage: "2 large suitcases + 1 small suitcase",
+    tagline: "Sehingga 3 dewasa",
+    maxPassengers: "3 dewasa",
+    comfortablePassengers: "2 dewasa + 1 kanak-kanak",
+    maxLuggage: "2 beg besar + 1 beg kecil",
     description:
-      "The Sedan accommodates up to 3 passengers. However, the boot can hold a maximum of 2 large suitcases and 1 small suitcase, so we recommend a maximum of 2 adults and 1 child. If you are travelling as 3 adults and would like more comfort, we recommend the Van.",
-    idealFor: "Couples & small groups (2–3 people)",
+      "Sedan memuatkan sehingga 3 penumpang. Bagaimanapun, but boleh memuatkan maksimum 2 beg besar dan 1 beg kecil, jadi kami mengesyorkan maksimum 2 dewasa dan 1 kanak-kanak. Jika anda bergerak sebagai 3 dewasa dan ingin lebih selesa, kami mengesyorkan Van.",
+    idealFor: "Pasangan & kumpulan kecil (2–3 orang)",
     features: [
-      "Air conditioning",
-      "Compact and easy to manoeuvre",
-      "Ideal for city and short-distance travel",
-      "Complimentary mineral water",
+      "Penyaman udara",
+      "Kompak dan mudah dikendalikan",
+      "Sesuai untuk perjalanan bandar dan jarak pendek",
+      "Air mineral percuma",
     ],
-    badge: "★ Most popular vehicle",
+    badge: "★ Kenderaan paling popular",
     image: "/manus-storage/vehicle_sedan_b6b21042.png",
     images: [
       "/manus-storage/vehicle_sedan_b6b21042.png",
@@ -146,19 +146,19 @@ const VEHICLES: VehicleInfo[] = [
   {
     id: "van",
     name: "Van",
-    tagline: "Up to 6 adults",
-    maxPassengers: "6 adults",
-    comfortablePassengers: "4 adults + 2 children",
-    maxLuggage: "8 large suitcases",
+    tagline: "Sehingga 6 dewasa",
+    maxPassengers: "6 dewasa",
+    comfortablePassengers: "4 dewasa + 2 kanak-kanak",
+    maxLuggage: "8 beg besar",
     description:
-      "The Van accommodates up to 6 passengers. However, with a 3-seat × 2-row configuration, 6 adults may feel slightly cramped. For maximum comfort, we recommend 4 adults + 2 children. If you are travelling as a group of 5 or more adults, please consider the Big Van.",
-    idealFor: "Families & group travel (4–6 people)",
+      "Van memuatkan sehingga 6 penumpang. Namun, dengan konfigurasi 3 tempat duduk × 2 baris, 6 dewasa mungkin rasa sedikit sempit. Untuk keselesaan maksimum, kami mengesyorkan 4 dewasa + 2 kanak-kanak. Jika anda bergerak sebagai kumpulan 5 atau lebih dewasa, sila pertimbangkan Van Besar.",
+    idealFor: "Keluarga & perjalanan kumpulan (4–6 orang)",
     features: [
-      "Air conditioning",
-      "Spacious interior",
-      "Ample luggage storage",
-      "Complimentary mineral water",
-      "Comfortable for long-distance travel",
+      "Penyaman udara",
+      "Ruang dalaman luas",
+      "Muatkan bagasi yang banyak",
+      "Air mineral percuma",
+      "Selesa untuk perjalanan jarak jauh",
     ],
     image: "/manus-storage/vehicle_van_70a807f8.png",
     images: [
@@ -167,20 +167,20 @@ const VEHICLES: VehicleInfo[] = [
   },
   {
     id: "bigvan",
-    name: "Big Van",
-    tagline: "Up to 10 adults",
-    maxPassengers: "10 adults",
-    comfortablePassengers: "9 adults",
-    maxLuggage: "10 large suitcases",
+    name: "Van Besar",
+    tagline: "Sehingga 10 dewasa",
+    maxPassengers: "10 dewasa",
+    comfortablePassengers: "9 dewasa",
+    maxLuggage: "10 beg besar",
     description:
-      "The Big Van has 9 individual seats, comfortably accommodating up to 9 adults. With the front passenger seat, a maximum of 10 passengers can be carried. For groups of 10 or more, please consider a minibus or larger vehicle.",
-    idealFor: "Large groups & corporate travel (7–10 people)",
+      "Van Besar mempunyai 9 tempat duduk individu, memuatkan dengan selesa sehingga 9 dewasa. Dengan tempat duduk penumpang hadapan, maksimum 10 penumpang boleh dibawa. Untuk kumpulan 10 atau lebih, sila pertimbangkan minibus atau kenderaan lebih besar.",
+    idealFor: "Kumpulan besar & perjalanan korporat (7–10 orang)",
     features: [
-      "Air conditioning",
-      "9 individual seats",
-      "Large luggage compartment",
-      "Complimentary mineral water",
-      "Suitable for long-distance travel",
+      "Penyaman udara",
+      "9 tempat duduk individu",
+      "Ruang bagasi besar",
+      "Air mineral percuma",
+      "Sesuai untuk perjalanan jarak jauh",
     ],
     image: "/manus-storage/vehicle_large_van_61632670.png",
     images: [
@@ -311,9 +311,9 @@ function VehicleCard({ vehicle, index }: { vehicle: VehicleInfo; index: number }
           >
             <tbody>
               {[
-                { label: "Maximum capacity",             value: vehicle.maxPassengers },
-                { label: "Comfortable capacity",         value: vehicle.comfortablePassengers },
-                { label: "Maximum luggage",              value: vehicle.maxLuggage },
+                { label: "Kapasiti maksimum",           value: vehicle.maxPassengers },
+                { label: "Kapasiti selesa",             value: vehicle.comfortablePassengers },
+                { label: "Muatan maksimum bagasi",      value: vehicle.maxLuggage },
               ].map((row) => (
                 <tr
                   key={row.label}
@@ -365,7 +365,7 @@ function VehicleCard({ vehicle, index }: { vehicle: VehicleInfo; index: number }
                 marginBottom: "4px",
               }}
             >
-              Recommended for
+              Disyorkan untuk
             </div>
             <div style={{ color: "#fff", fontSize: "0.95rem", fontWeight: 600 }}>
               {vehicle.idealFor}
@@ -426,7 +426,7 @@ function VehicleCard({ vehicle, index }: { vehicle: VehicleInfo; index: number }
               className="btn-primary"
               style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}
             >
-              <span>💬</span> Book This Vehicle
+              <span>💬</span> Tempah Kenderaan Ini
             </a>
           </div>
         </div>
@@ -469,19 +469,19 @@ function Footer() {
               SLTCS
             </div>
             <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.82rem", maxWidth: "280px", lineHeight: 1.6 }}>
-              Sri Lanka Car Hire with Private Driver. Fully private, fully flexible.
+              Sri Lanka Sewa Kereta dengan Pemandu Peribadi. Sepenuhnya peribadi, sepenuhnya fleksibel.
             </p>
           </div>
           <div>
-            <h4 style={{ color: "#c9a84c", fontSize: "0.75rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "12px" }}>Navigation</h4>
+            <h4 style={{ color: "#c9a84c", fontSize: "0.75rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "12px" }}>Navigasi</h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
               {[
                 { label: "Plans",           href: "/#plans" },
                 { label: "Model Itinerary", href: "/#courses" },
                 { label: "Vehicles",        href: "/vehicles" },
-                { label: "FAQ",             href: "/#faq" },
-                { label: "Price",           href: "/price" },
-                { label: "Contact",         href: "/#contact" },
+                { label: "Soalan Lazim",    href: "/#faq" },
+                { label: "Harga",           href: "/price" },
+                { label: "Hubungi",         href: "/#contact" },
               ].map((item) => (
                 <li key={item.label} style={{ marginBottom: "6px" }}>
                   <a href={item.href} style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.85rem", textDecoration: "none" }}>
@@ -504,7 +504,7 @@ function Footer() {
             fontSize: "0.78rem",
           }}
         >
-          <span>© 2025 SLTCS – Sri Lanka Car Hire with Private Driver. All rights reserved.</span>
+          <span>© 2025 SLTCS – Sri Lanka Sewa Kereta dengan Pemandu Peribadi. Hak cipta terpelihara.</span>
         </div>
       </div>
     </footer>
@@ -526,7 +526,7 @@ function FloatingCTA() {
       className="floating-cta"
       style={{ display: "flex", alignItems: "center", gap: "8px" }}
     >
-      <span>💬</span> Free Enquiry
+      <span>💬</span> Pertanyaan Percuma
     </a>
   );
 }
@@ -547,7 +547,7 @@ export default function Vehicles() {
         }}
       >
         <div className="container">
-          <div className="section-eyebrow">VEHICLES</div>
+          <div className="section-eyebrow">KENDERAAN</div>
           <h1
             style={{
               fontFamily: "'Playfair Display', serif",
@@ -557,7 +557,7 @@ export default function Vehicles() {
               margin: "0 0 16px",
             }}
           >
-            Vehicle Lineup
+            Senarai Kenderaan
           </h1>
           <p
             style={{
@@ -568,7 +568,7 @@ export default function Vehicles() {
               lineHeight: 1.7,
             }}
           >
-            We provide the ideal vehicle to match your group size and travel style.
+            Kami menyediakan kenderaan yang sesuai mengikut saiz kumpulan dan gaya perjalanan anda.
           </p>
         </div>
       </section>
@@ -604,10 +604,10 @@ export default function Vehicles() {
                 margin: "0 0 10px",
               }}
             >
-              For groups of 10 or more
+              Untuk kumpulan 10 orang atau lebih
             </h3>
             <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.9rem", lineHeight: 1.7, margin: 0 }}>
-              We can also arrange minibuses and larger coaches for bigger groups. Please indicate your required number of passengers in the free-text field of the enquiry form.
+              Kami juga boleh mengaturkan bas mini dan bas besar untuk kumpulan lebih ramai. Sila nyatakan bilangan penumpang yang diperlukan di ruangan teks bebas dalam borang pertanyaan percuma.
             </p>
           </div>
         </div>
@@ -625,7 +625,7 @@ export default function Vehicles() {
               margin: "0 0 12px",
             }}
           >
-            Not sure which vehicle is right for you?
+            Tidak pasti kenderaan mana yang sesuai untuk anda?
           </h2>
           <p
             style={{
@@ -636,10 +636,10 @@ export default function Vehicles() {
               lineHeight: 1.7,
             }}
           >
-            Tell us your group size, luggage, and travel style — we will recommend the best option for your trip.
+            Beritahu kami saiz kumpulan, bagasi, dan gaya perjalanan anda — kami akan mengesyorkan pilihan terbaik untuk perjalanan anda.
           </p>
           <a href="/#contact" className="btn-primary" style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}>
-            <span>💬</span> Free Consultation
+            <span>💬</span> Konsultasi Percuma
           </a>
         </div>
       </section>
