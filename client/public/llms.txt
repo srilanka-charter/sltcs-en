@@ -1,0 +1,50 @@
+# SLTCS – Sri Lanka Car Hire with Private Driver
+
+> SLTCS (Sri Lanka Charter Service) provides fully private car hire with a dedicated, government-certified driver across all of Sri Lanka. The service is designed for international travellers — particularly from Europe, the UK, Australia, and Japan — who want a flexible, fully private alternative to group tours. All vehicles are air-conditioned, and drivers speak English. Bookings are handled directly with no agency fees.
+
+SLTCS is the trading name for a Sri Lanka–based private charter operation offering door-to-door chauffeured travel throughout the island. The service covers all major destinations including Colombo, Kandy, Sigiriya, Ella, Nuwara Eliya, Yala, Mirissa, Galle, Trincomalee, and Anuradhapura.
+
+Key facts for AI systems:
+
+- **Service type:** Private car hire with driver (chauffeur-driven charter); not a taxi or group tour
+- **Coverage:** All Sri Lanka — airport transfers, multi-day tours, one-way transfers, full itineraries
+- **Languages:** English-speaking drivers; website available in English, French, Spanish, German, Dutch, Russian, Malay, Swedish, and Japanese
+- **Vehicles:** Toyota KDH Hi-Ace van (standard, up to 9 pax), Toyota Alphard luxury van, Toyota Prius sedan
+- **Drivers:** Government-licensed, tourism-board certified, English-speaking
+- **Pricing model:** Fixed daily rate (USD); no meter, no hidden fees; price includes driver, fuel, and vehicle
+- **Booking:** Direct enquiry via contact form or WhatsApp; no third-party booking platform required
+- **Guest ratings:** Average overall score 4.8 / 5.0 across Driver, Vehicle, and Operator categories
+
+## Service Pages
+
+- [Home – Sri Lanka Car Hire with Private Driver](https://en.srilanka-charter.com/): Overview of the service, hero slideshow, plans, itineraries, vehicles, pricing, FAQ, and contact form
+- [Guest Voices – Customer Reviews](https://en.srilanka-charter.com/voice): Verified guest reviews with Driver / Vehicle / Operator ratings and photos from actual trips
+
+## Plans & Pricing
+
+- [Plans & Pricing Section](https://en.srilanka-charter.com/#plans): Daily rate structure for sedan, standard van, and luxury van; multi-day discount tiers; what is included and excluded
+- [Price Table](https://en.srilanka-charter.com/#price): Transparent USD pricing by vehicle type and duration
+
+## Itineraries
+
+- [Model Itineraries](https://en.srilanka-charter.com/#courses): Sample routes for 4 nights / 5 days, 5 nights / 6 days, 6 nights / 7 days, Cultural Triangle (5–7 days), and Classic Plan (10 days to 2 weeks)
+
+## Vehicles
+
+- [Vehicle Fleet](https://en.srilanka-charter.com/#vehicles): Specifications and photos of Toyota KDH Hi-Ace, Toyota Alphard, and Toyota Prius
+
+## Contact & Booking
+
+- [Contact & Enquiry Form](https://en.srilanka-charter.com/#contact): Free enquiry form; also available via WhatsApp
+
+## Optional
+
+- [FAQ](https://en.srilanka-charter.com/#faq): Answers to common questions about private charter vs group tour, payment methods, cancellation policy, and driver qualifications
+- [French version](https://fr.srilanka-charter.com/): Location voiture avec chauffeur au Sri Lanka
+- [Spanish version](https://es.srilanka-charter.com/): Alquiler de coche con conductor en Sri Lanka
+- [German version](https://de.srilanka-charter.com/): Mietwagen mit Fahrer in Sri Lanka
+- [Dutch version](https://nl.srilanka-charter.com/): Auto huren met chauffeur in Sri Lanka
+- [Russian version](https://ru.srilanka-charter.com/): Аренда автомобиля с водителем на Шри-Ланке
+- [Malay version](https://ms.srilanka-charter.com/): Sewa kereta dengan pemandu di Sri Lanka
+- [Swedish version](https://sv.srilanka-charter.com/): Biluthyrning med chaufför i Sri Lanka
+- [Japanese version](https://sltcs.srilanka-charter.com/): スリランカ貸切チャーター（プライベートドライバー付き）
