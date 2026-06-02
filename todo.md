@@ -81,3 +81,6 @@
 - [x] llms.txt created at /public/llms.txt for AI agent indexing
 - [x] <link rel="llms-txt"> added to index.html head
 - [x] Malay (ms) and Swedish (sv) added to hreflang tags and language dropdown
+- [x] Article 1 (Private Driver Guide): "Sri Lanka Private Driver: How to Hire a Safe, Reliable Driver for Your Trip" - 2 inline images, internal links
+- [x] Article 2 (Private Driver Guide): "Sri Lanka Car Hire with Driver: Complete Guide for First-Time Visitors" - 3 images, comparison table, sample itinerary
+- [x] Article 3 (Cost & Booking Guide): "Driver Hire in Sri Lanka: Costs, Safety, and What to Check Before Booking" - 3 images, pricing table, 7-point checklist, internal links

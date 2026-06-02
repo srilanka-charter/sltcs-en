@@ -539,6 +539,220 @@ export const ARTICLES: Article[] = [
 </article>
     `,
   },
+  // ─── Article 3 ─────────────────────────────────────────────────────────────
+  {
+    id: "003",
+    slug: "driver-hire-sri-lanka-costs-safety-checklist",
+    category: "cost-booking-guide",
+    title: "Driver Hire in Sri Lanka: Costs, Safety, and What to Check Before Booking",
+    excerpt:
+      "Before you hire a private driver in Sri Lanka, there are seven key things to verify — from government licences and insurance to English ability and cancellation terms. This checklist helps you compare services with confidence and avoid the most common booking mistakes.",
+    coverImage:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article3_cover_driver_checklist-L5mZhGwmPs4uzuBS3dnse3.webp",
+    publishedAt: "2026-06-02",
+    readingTime: 9,
+    tags: [
+      "sri lanka driver hire",
+      "private driver cost",
+      "booking checklist",
+      "driver safety",
+      "sri lanka car hire",
+    ],
+    seo: {
+      metaTitle:
+        "Driver Hire in Sri Lanka: Costs, Safety & Booking Checklist (2026)",
+      metaDescription:
+        "Planning to hire a private driver in Sri Lanka? Check licences, insurance, English ability, pricing, and cancellation terms before you book. Full 2026 cost guide included.",
+      keywords: [
+        "sri lanka driver hire",
+        "hire driver sri lanka",
+        "sri lanka private driver cost",
+        "sri lanka driver hire checklist",
+        "sri lanka chauffeur booking",
+        "sri lanka car hire with driver price",
+      ],
+    },
+    content: `
+  <p>
+    Hiring a private driver is one of the smartest decisions you can make for a Sri Lanka trip — but not all driver services are created equal. Before you confirm a booking, there are seven things every traveller should check. This guide walks you through each one, along with a transparent breakdown of what driver hire in Sri Lanka actually costs in 2026.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article3_cover_driver_checklist-L5mZhGwmPs4uzuBS3dnse3.webp"
+      alt="Traveller reviewing a Sri Lanka trip checklist on a tablet with a white Japanese minivan visible outside"
+      class="article-figure-img"
+      loading="lazy"
+    />
+    <figcaption class="article-figure-caption">
+      A little preparation before booking can save you from costly surprises on the road.
+    </figcaption>
+  </figure>
+
+  <h2>Why the Booking Stage Matters So Much</h2>
+
+  <p>
+    Sri Lanka has a large and varied market for driver hire services — from solo freelance drivers to established charter operators. The quality gap between the best and worst options is significant. Travellers who book without checking the right details often encounter problems that are difficult to resolve once they are already in the country: drivers who speak little English, vehicles that do not match what was advertised, or final bills that bear no resemblance to the original quote.
+  </p>
+
+  <p>
+    The good news is that most of these issues are entirely avoidable. The checklist below covers the seven most important things to verify before you pay a deposit.
+  </p>
+
+  <h2>The 7-Point Booking Checklist</h2>
+
+  <h3>1. Government-Issued Tourist Driver Licence</h3>
+
+  <p>
+    In Sri Lanka, drivers who carry tourists are legally required to hold a <strong>Tourist Driver Licence</strong> issued by the Sri Lanka Tourism Development Authority (SLTDA). This is separate from a standard driving licence and requires the driver to pass background checks and a formal assessment. Always ask to see this document — or confirm that the operator can provide it on request.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article3_inline_driver_documents-BAPwfrwKMWXB99P7opnpye.webp"
+      alt="Sri Lankan driver holding an official SLTDA Tourist Driver Licence document"
+      class="article-figure-img"
+      loading="lazy"
+    />
+    <figcaption class="article-figure-caption">
+      A valid SLTDA Tourist Driver Licence is the baseline requirement for any driver carrying international tourists.
+    </figcaption>
+  </figure>
+
+  <h3>2. Third-Party Insurance Coverage</h3>
+
+  <p>
+    Confirm that the vehicle carries valid third-party insurance. While basic third-party cover is legally required in Sri Lanka, the level of coverage varies. Reputable operators carry comprehensive insurance that covers passengers in the event of an accident. Ask specifically whether passenger liability is included.
+  </p>
+
+  <h3>3. English Communication Ability</h3>
+
+  <p>
+    This is one of the most frequently overlooked factors — and one of the most impactful on your day-to-day experience. A driver who cannot communicate in English makes it difficult to adjust your itinerary, ask questions about local sites, or handle unexpected situations. When enquiring, send a message in English and assess the response directly. A professional operator will reply promptly in clear English.
+  </p>
+
+  <h3>4. Vehicle Condition and Type</h3>
+
+  <p>
+    Ask for the specific vehicle that will be assigned to your trip, not just a category. Confirm the approximate age of the vehicle and whether it has working air conditioning — essential in Sri Lanka's heat. For groups of four or more, a <strong>Japanese KDH Hi-Ace van</strong> is the standard choice, offering generous luggage space and a high seating position. For couples or solo travellers, a <strong>Japanese compact sedan</strong> is comfortable and more economical. For larger groups or families with young children, a <strong>luxury Japanese MPV</strong> with captain's seats provides the most comfort.
+  </p>
+
+  <p>
+    For a full overview of available vehicle types, see our <a href="/#vehicles" class="article-internal-link">Vehicles page</a>.
+  </p>
+
+  <h3>5. What Is (and Is Not) Included in the Price</h3>
+
+  <p>
+    Always ask for a written breakdown of what the quoted price covers. Key questions to ask:
+  </p>
+
+  <ul>
+    <li>Is fuel included, or charged separately?</li>
+    <li>Are highway tolls and parking fees included?</li>
+    <li>Is the driver's accommodation included on multi-day trips?</li>
+    <li>Are there mileage limits that could trigger overage charges?</li>
+    <li>Are entrance fees to national parks or cultural sites included?</li>
+  </ul>
+
+  <p>
+    At SLTCS, all prices are <strong>flat-rate and tax-inclusive</strong>. Fuel, tolls, and driver accommodation are covered within the quoted price for standard itineraries. There are no hidden mileage charges. The only potential additions are entrance fees to specific attractions, which are paid directly at the gate.
+  </p>
+
+  <h3>6. Cancellation and Modification Terms</h3>
+
+  <p>
+    Travel plans change. Before booking, confirm the operator's policy on cancellations, date changes, and itinerary modifications. A reputable service will have clear, written terms. Be cautious of operators who require full payment upfront with no cancellation flexibility — this is a common red flag in the lower-cost segment of the market.
+  </p>
+
+  <h3>7. Reviews from Verified Travellers</h3>
+
+  <p>
+    Look for reviews on independent platforms — Google, TripAdvisor, or travel forums — rather than relying solely on testimonials displayed on the operator's own website. Pay attention to comments about punctuality, communication, and whether the final price matched the quote. Our <a href="/voice" class="article-internal-link">Guest Voices page</a> features verified reviews from travellers who have completed their trips with SLTCS.
+  </p>
+
+  <h2>What Does Driver Hire in Sri Lanka Actually Cost?</h2>
+
+  <p>
+    Pricing for private driver hire in Sri Lanka varies considerably depending on the operator, the driver's qualification level, the vehicle type, and the duration of the trip. The table below shows SLTCS's current flat-rate prices (USD, tax-inclusive) for the most common trip durations.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article3_inline_price_comparison-NK55A8E3tNmu4CLUCpkSPM.webp"
+      alt="Driver and two travellers reviewing a Sri Lanka itinerary and pricing on a tablet beside a white Japanese minivan, with mountains in the background"
+      class="article-figure-img"
+      loading="lazy"
+    />
+    <figcaption class="article-figure-caption">
+      Transparent, flat-rate pricing discussed in English from the first enquiry — no surprises at the end of the trip.
+    </figcaption>
+  </figure>
+
+  <h3>SLTCS Price Guide (USD, Tax-Inclusive, 2026)</h3>
+
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th>Duration</th>
+        <th>Bronze (Sedan)</th>
+        <th>Silver (Sedan)</th>
+        <th>Gold (Sedan)</th>
+        <th>Silver (Van)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>2 days</td><td>$270</td><td>$310</td><td>$350</td><td>$330</td></tr>
+      <tr><td>3 days</td><td>$340</td><td>$400</td><td>$460</td><td>$410</td></tr>
+      <tr><td>5 days</td><td>$480</td><td>$580</td><td>$680</td><td>$580</td></tr>
+      <tr><td>7 days</td><td>$560</td><td>$700</td><td>$840</td><td>$670</td></tr>
+      <tr><td>10 days</td><td>$750</td><td>$950</td><td>$1,150</td><td>$900</td></tr>
+      <tr><td>14 days</td><td>$1,050</td><td>$1,330</td><td>$1,610</td><td>$1,260</td></tr>
+    </tbody>
+  </table>
+
+  <p>
+    All prices above are for standard itineraries with English-speaking drivers. Additional charges may apply if the total distance significantly exceeds the standard estimate, or if the pick-up or drop-off point is outside the airport area (including Colombo and Negombo). For a full price list including Van and Big Van options across all durations, visit our <a href="/price" class="article-internal-link">Pricing page</a>.
+  </p>
+
+  <h3>Understanding the Three Plans</h3>
+
+  <p>
+    SLTCS offers three service tiers, each suited to a different travel style:
+  </p>
+
+  <ul>
+    <li><strong>Bronze Plan</strong> — A trainee driver assigned with full transfer service and English-speaking coordinator support. The most economical option for travellers who are comfortable navigating independently.</li>
+    <li><strong>Silver Plan (Most Popular)</strong> — A government-certified Tourist Driver or above, with accompaniment and guiding at sightseeing spots, safari and activity arrangements, and guide service at no extra charge. The best balance of value and experience for most travellers.</li>
+    <li><strong>Gold Plan</strong> — A highly-rated Chauffeur Guide Driver with full-itinerary accompaniment, dual support system, and priority service. Recommended for travellers who want the highest level of personal attention throughout their trip.</li>
+  </ul>
+
+  <h2>Red Flags to Watch For</h2>
+
+  <p>
+    Not every low price is a good deal. The following patterns are common warning signs when comparing driver hire services in Sri Lanka:
+  </p>
+
+  <ul>
+    <li><strong>Mileage-based pricing</strong> — Some operators advertise a low daily rate but apply per-kilometre charges above a set limit. Drivers have been known to report inflated distances, resulting in final bills far above the original quote.</li>
+    <li><strong>No English support at enquiry stage</strong> — If the operator cannot communicate clearly in English before you book, this will not improve once you are in the country.</li>
+    <li><strong>Pressure to visit shops or restaurants</strong> — Some drivers receive commissions from specific establishments and will divert your itinerary accordingly. This is a well-documented issue in Sri Lanka's tourism sector.</li>
+    <li><strong>No written confirmation</strong> — Any reputable operator will provide a written quote with itemised inclusions. Verbal-only agreements leave you with no recourse if the service does not match expectations.</li>
+  </ul>
+
+  <h2>How to Get an Accurate Quote</h2>
+
+  <p>
+    The most reliable way to get an accurate price for your specific trip is to share your itinerary — even a rough one — with the operator directly. At SLTCS, we provide free, personalised estimates in English based on your travel dates, group size, preferred vehicle, and the destinations you want to visit. There is no obligation to book, and no pressure to commit before you are ready.
+  </p>
+
+  <p>
+    To request a free quote, visit our <a href="/#contact" class="article-internal-link">Contact page</a> and share your travel dates, group size, and the places you would like to visit. We will respond with a detailed estimate, usually within 24 hours.
+  </p>
+
+  <a href="/#contact" class="article-cta-btn">Get a Free Quote</a>
+`,
+  },
 ];
 
 // ─── Helper Functions ─────────────────────────────────────────────────────────
