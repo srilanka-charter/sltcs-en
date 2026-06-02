@@ -303,6 +303,242 @@ export const ARTICLES: Article[] = [
 </article>
     `,
   },
+  {
+    id: "002",
+    slug: "sri-lanka-car-hire-with-driver-complete-guide",
+    category: "private-driver-guide",
+    title: "Sri Lanka Car Hire with Driver: Complete Guide for First-Time Visitors",
+    excerpt:
+      "Renting a car alone, taking a taxi, or hiring a private driver — which is right for you? This complete guide compares every transport option in Sri Lanka and explains why a dedicated driver-charter is the preferred choice for UK, Australian, and US travellers.",
+    coverImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_car_hire_guide_cover-hUrEcJK8QyU2wtNBRXKH2t.webp",
+    publishedAt: "2026-06-02",
+    readingTime: 10,
+    tags: ["Car Hire", "Private Driver", "Sri Lanka", "First-Time Visitors", "Travel Planning"],
+    seo: {
+      metaTitle: "Sri Lanka Car Hire with Driver: Complete Guide for First-Time Visitors | SLTCS",
+      metaDescription:
+        "Compare self-drive car rental, taxis, and private driver charters in Sri Lanka. Discover why car hire with a dedicated driver is the safest, most flexible option for first-time visitors from the UK, Australia, and USA.",
+      keywords: [
+        "sri lanka car hire with driver",
+        "sri lanka car hire",
+        "sri lanka private driver",
+        "sri lanka self drive",
+        "sri lanka transport options",
+      ],
+    },
+    content: `
+<article class="article-body">
+
+  <p class="article-lead">
+    For first-time visitors to Sri Lanka, one question comes up early in the planning process: how do I actually get around? The island is compact on a map but surprisingly spread out in practice — Colombo to Kandy takes roughly three hours, Kandy to Sigiriya another two, and Ella to Yala National Park a further two and a half. Understanding your transport options before you arrive will save you both money and frustration.
+  </p>
+
+  <p>
+    This guide compares every realistic transport option for independent travellers — self-drive car rental, taxis, trains, buses, and private driver charters — and explains which situations each is suited to.
+  </p>
+
+  <h2>Option 1: Self-Drive Car Rental in Sri Lanka</h2>
+
+  <p>
+    Self-drive car rental is available in Sri Lanka, but it comes with significant caveats that most first-time visitors underestimate. Sri Lanka drives on the left, but road markings, signage, and lane discipline vary considerably outside Colombo. Mountain roads in the hill country are narrow, winding, and often shared with tuk-tuks, buses, and pedestrians. Night driving is particularly challenging due to unlit roads and animals crossing.
+  </p>
+
+  <p>
+    Additionally, foreign driving licences must be endorsed by the Automobile Association of Ceylon before they are valid for driving in Sri Lanka — a process that requires a visit to their Colombo office and a fee. International Driving Permits are not sufficient on their own.
+  </p>
+
+  <p>
+    For travellers who are experienced with left-hand traffic and plan to stay primarily in flat, urban areas, self-drive is feasible. For most first-time visitors covering multiple regions, it adds stress rather than freedom.
+  </p>
+
+  <h2>Option 2: Taxis and Ride-Hailing Apps</h2>
+
+  <p>
+    PickMe and Uber operate in Colombo and a handful of larger cities. For short urban trips, they are convenient and fairly priced. However, they are not designed for multi-day itineraries or inter-city travel, and availability outside Colombo, Kandy, and Galle is unreliable. Negotiating a metered taxi for a full-day excursion is possible but requires local knowledge of fair rates and can lead to disagreements at the end of the journey.
+  </p>
+
+  <h2>Option 3: Trains and Buses</h2>
+
+  <p>
+    Sri Lanka's train network is scenic and inexpensive, and the Kandy–Ella route in particular is widely regarded as one of the most beautiful train journeys in Asia. However, the network is limited: it does not connect Sigiriya, Yala, Mirissa, or Trincomalee directly. Buses cover more ground but are slow, crowded, and not air-conditioned on most routes. For travellers with luggage, young children, or tight schedules, public transport is rarely the most practical primary option.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_car_hire_guide_cover-hUrEcJK8QyU2wtNBRXKH2t.webp"
+      alt="Western tourists in the back seat of a Toyota KDH van with a Sri Lankan private driver, driving through tropical scenery"
+      class="article-figure-img"
+      loading="lazy"
+    />
+    <figcaption class="article-figure-caption">
+      A private driver charter means one vehicle, one driver, and a fully flexible itinerary — exclusively for your group.
+    </figcaption>
+  </figure>
+
+  <h2>Option 4: Car Hire with a Private Driver (Charter)</h2>
+
+  <p>
+    Hiring a car with a dedicated private driver — often called a charter or chauffeur service — is the option that most experienced Sri Lanka travellers recommend to first-timers. You get the flexibility of a private vehicle without the stress of driving yourself, and you gain a local guide who can navigate, recommend, and adapt to your preferences in real time.
+  </p>
+
+  <p>
+    A typical private driver charter in Sri Lanka includes:
+  </p>
+
+  <ul>
+    <li>One dedicated driver for the full duration of your booking</li>
+    <li>An air-conditioned, insured vehicle suited to your group size</li>
+    <li>Fuel, parking, and highway tolls</li>
+    <li>Flexibility to adjust your itinerary each day</li>
+    <li>English-speaking communication throughout</li>
+  </ul>
+
+  <h2>Comparing Your Options: A Quick Reference</h2>
+
+  <table class="article-table">
+    <thead>
+      <tr>
+        <th>Transport Option</th>
+        <th>Best For</th>
+        <th>Limitations</th>
+        <th>Typical Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Self-drive rental</td>
+        <td>Experienced left-hand drivers, urban areas</td>
+        <td>Licence endorsement required, challenging mountain roads</td>
+        <td>USD 30–60/day (car only)</td>
+      </tr>
+      <tr>
+        <td>Taxi / ride-hailing</td>
+        <td>Short urban trips in Colombo</td>
+        <td>Limited outside cities, not suited to multi-day use</td>
+        <td>Metered / negotiated</td>
+      </tr>
+      <tr>
+        <td>Train</td>
+        <td>Scenic routes (Kandy–Ella)</td>
+        <td>Limited network, no luggage comfort, fixed schedule</td>
+        <td>USD 2–10/trip</td>
+      </tr>
+      <tr>
+        <td>Bus</td>
+        <td>Budget travellers, short hops</td>
+        <td>Slow, crowded, no air-conditioning on most routes</td>
+        <td>USD 1–5/trip</td>
+      </tr>
+      <tr>
+        <td><strong>Private driver charter</strong></td>
+        <td><strong>Most first-time visitors, families, groups</strong></td>
+        <td><strong>Higher daily cost than public transport</strong></td>
+        <td><strong>USD 60–120/day all-in</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Which Vehicle Should You Choose?</h2>
+
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_car_hire_comparison-9ZXtgidH2miFd2L86QDhf5.webp"
+      alt="Three Toyota vehicles side by side in Sri Lanka: Prius sedan, KDH Hi-Ace van, and Alphard luxury MPV"
+      class="article-figure-img"
+      loading="lazy"
+    />
+    <figcaption class="article-figure-caption">
+      Toyota Prius (couples), KDH Hi-Ace (groups of 3–8), and Alphard (premium comfort). All vehicles are air-conditioned and fully insured.
+    </figcaption>
+  </figure>
+
+  <p>
+    The right vehicle depends on your group size and comfort requirements. The three most common options are:
+  </p>
+
+  <ul>
+    <li><strong>Toyota Prius</strong> — Suited to solo travellers or couples. Fuel-efficient and comfortable for daily distances up to 200 km.</li>
+    <li><strong>Toyota KDH Hi-Ace</strong> — The standard choice for groups of 3–8. High seating position, generous luggage space, and well-suited to all road types.</li>
+    <li><strong>Toyota Alphard</strong> — Premium option with captain's seats and extra legroom. Ideal for families with young children or senior travellers.</li>
+  </ul>
+
+  <p>
+    For a full breakdown of vehicle options, visit our <a href="/#vehicles" class="article-internal-link">Vehicles page</a>.
+  </p>
+
+  <h2>Planning a Multi-Day Itinerary with a Private Driver</h2>
+
+  <p>
+    One of the greatest advantages of a private driver charter is the ability to design your own route. Sri Lanka's most popular destinations — Sigiriya, Kandy, Ella, Yala, Galle, and Mirissa — are spread across the island, and the most efficient way to cover them is by road with a dedicated vehicle.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_car_hire_route_map-PF8ZGwKegr8BKWpqVDkhZb.webp"
+      alt="Tourist holding a Sri Lanka route map showing Colombo, Kandy, Sigiriya, Ella and Galle, standing next to a white van"
+      class="article-figure-img"
+      loading="lazy"
+    />
+    <figcaption class="article-figure-caption">
+      A private driver lets you connect Colombo, Kandy, Sigiriya, Ella, and Galle at your own pace — no fixed departure times, no shared coaches.
+    </figcaption>
+  </figure>
+
+  <p>
+    A typical 7-day itinerary with a private driver might look like this:
+  </p>
+
+  <ul>
+    <li><strong>Day 1:</strong> Airport arrival → Negombo or Colombo (airport transfer)</li>
+    <li><strong>Day 2:</strong> Colombo → Sigiriya (via Dambulla Cave Temple)</li>
+    <li><strong>Day 3:</strong> Sigiriya Rock Fortress → Polonnaruwa ancient city</li>
+    <li><strong>Day 4:</strong> Sigiriya → Kandy (Temple of the Tooth, Peradeniya Botanical Garden)</li>
+    <li><strong>Day 5:</strong> Kandy → Ella (via Nuwara Eliya tea country)</li>
+    <li><strong>Day 6:</strong> Ella → Yala National Park (morning safari)</li>
+    <li><strong>Day 7:</strong> Yala → Galle Fort → Colombo or airport</li>
+  </ul>
+
+  <p>
+    Browse our <a href="/#courses" class="article-internal-link">Model Itineraries</a> for more suggested routes, including 5-day, 10-day, and Cultural Triangle options.
+  </p>
+
+  <h2>What to Look for When Booking a Car Hire with Driver</h2>
+
+  <p>
+    Not all private driver services are equal. When comparing operators, prioritise the following:
+  </p>
+
+  <ul>
+    <li><strong>SLTDA-certified driver</strong> — The Sri Lanka Tourism Development Authority issues tourist driver licences to drivers who have passed background checks and English proficiency tests. Always confirm this credential.</li>
+    <li><strong>Written quote with inclusions listed</strong> — A professional operator will provide a clear breakdown of what the daily rate covers.</li>
+    <li><strong>Verified guest reviews</strong> — Look for reviews that mention specific driver names, destinations, and trip details — not generic five-star ratings.</li>
+    <li><strong>Direct driver contact</strong> — Being able to communicate directly with your driver via WhatsApp before and during the trip is a sign of a well-run service.</li>
+  </ul>
+
+  <p>
+    Read verified reviews from past guests on our <a href="/voice" class="article-internal-link">Guest Voices page</a>, where each review includes separate ratings for Driver, Vehicle, and Operator.
+  </p>
+
+  <h2>How Much Does Car Hire with a Driver Cost in Sri Lanka?</h2>
+
+  <p>
+    Daily rates for a private driver charter in Sri Lanka typically range from <strong>USD 60 to USD 120</strong>, depending on vehicle type, daily distance, and season. This all-in rate covers the driver, fuel, parking, and tolls. It does not include entrance fees to national parks or heritage sites, or the driver's accommodation on multi-night trips.
+  </p>
+
+  <p>
+    For a transparent breakdown of our rates by vehicle and trip length, visit our <a href="/#price" class="article-internal-link">Pricing section</a>.
+  </p>
+
+  <div class="article-cta">
+    <p>
+      Ready to plan your Sri Lanka itinerary? Send us your travel dates, group size, and the destinations you want to visit — we will provide a free, no-obligation quote with a suggested route.
+    </p>
+    <a href="/#contact" class="article-cta-btn">Get a Free Quote</a>
+  </div>
+
+</article>
+    `,
+  },
 ];
 
 // ─── Helper Functions ─────────────────────────────────────────────────────────
