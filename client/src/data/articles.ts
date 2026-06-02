@@ -131,6 +131,18 @@ export const ARTICLES: Article[] = [
     Sri Lanka's tourism sector is regulated by the <strong>Sri Lanka Tourism Development Authority (SLTDA)</strong>. Licensed tourist drivers hold a government-issued tourist driver's licence, which is separate from an ordinary driving licence and requires a background check, English proficiency test, and knowledge of tourist destinations.
   </p>
 
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_img_driver_license-jnzLcGk4NURinaWPpzL9s3.webp"
+      alt="SLTDA-certified Sri Lanka tourist driver showing his government-issued licence to travellers"
+      class="article-figure-img"
+      loading="lazy"
+    />
+    <figcaption class="article-figure-caption">
+      A government-certified SLTDA tourist driver licence is the key credential to verify before booking your private driver in Sri Lanka.
+    </figcaption>
+  </figure>
+
   <p>
     When evaluating a driver or operator, look for the following:
   </p>
@@ -172,6 +184,18 @@ export const ARTICLES: Article[] = [
     The right vehicle depends on your group size and comfort priorities. The three most common options in Sri Lanka are:
   </p>
 
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_img_vehicle_comparison-WsH762YjRq7i9U9Q9L6Cj6.webp"
+      alt="Three Sri Lanka tourist vehicles: Toyota Prius, Toyota KDH Hi-Ace van, and Toyota Alphard luxury van"
+      class="article-figure-img"
+      loading="lazy"
+    />
+    <figcaption class="article-figure-caption">
+      From left: Toyota Prius (solo/couple), Toyota KDH Hi-Ace (groups of 3–8), Toyota Alphard (premium comfort). All vehicles are air-conditioned and insured.
+    </figcaption>
+  </figure>
+
   <ul>
     <li>
       <strong>Toyota Prius (sedan)</strong> — Ideal for solo travellers or couples. Fuel-efficient and comfortable for distances up to 200 km per day. Air-conditioned.
@@ -184,6 +208,10 @@ export const ARTICLES: Article[] = [
     </li>
   </ul>
 
+  <p>
+    For more details on vehicle options and what each includes, see our <a href="/#vehicles" class="article-internal-link">Vehicles page</a>.
+  </p>
+
   <h2>How to Compare Costs Without Being Misled</h2>
 
   <p>
@@ -191,7 +219,7 @@ export const ARTICLES: Article[] = [
   </p>
 
   <p>
-    The most transparent operators provide a fixed daily rate with a clear written list of inclusions and exclusions. This protects both parties and avoids the uncomfortable conversations that arise when unexpected charges appear at the end of a trip.
+    The most transparent operators provide a fixed daily rate with a clear written list of inclusions and exclusions. This protects both parties and avoids the uncomfortable conversations that arise when unexpected charges appear at the end of a trip. For a full pricing breakdown, visit our <a href="/#price" class="article-internal-link">Cost &amp; Pricing section</a>.
   </p>
 
   <h2>Questions to Ask Before You Book</h2>
@@ -221,7 +249,7 @@ export const ARTICLES: Article[] = [
   </p>
 
   <p>
-    For multi-day itineraries, a private driver becomes your guide, navigator, and local contact rolled into one. The driver will typically know which roads to avoid during monsoon season, which viewpoints are worth the detour, and which local restaurants are genuinely good rather than tourist-priced.
+    For multi-day itineraries, a private driver becomes your guide, navigator, and local contact rolled into one. The driver will typically know which roads to avoid during monsoon season, which viewpoints are worth the detour, and which local restaurants are genuinely good rather than tourist-priced. Browse our <a href="/#courses" class="article-internal-link">model itineraries</a> to see example routes.
   </p>
 
   <h2>Summary: What Makes a Good Private Driver Service</h2>
@@ -260,6 +288,10 @@ export const ARTICLES: Article[] = [
       </tr>
     </tbody>
   </table>
+
+  <p>
+    Want to read what past guests say about their experience? Visit our <a href="/voice" class="article-internal-link">Guest Voices page</a> for verified reviews with Driver, Vehicle, and Operator ratings.
+  </p>
 
   <div class="article-cta">
     <p>
