@@ -1443,6 +1443,13 @@ export const ARTICLES: Article[] = [
     In the afternoon, enjoy an optional jeep safari at <strong>Minneriya National Park</strong>, famous for its seasonal elephant gatherings — one of the largest in the world. Return to your hotel for the evening.
   </p>
 
+  <img
+    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/itinerary_4n5d_polonnaruwa-dqNrcQMEeaYvmV4MWBsQDZ.webp"
+    alt="Polonnaruwa ancient ruins, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
   <h3>Day 3 — Kandy: Temple of the Tooth</h3>
   <p>
     Drive to <strong>Kandy</strong> (approximately 2.5 hours), stopping at a traditional spice garden in Matale along the way. Visit the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO), the most sacred Buddhist site in Sri Lanka, which houses a relic of the Buddha. In the evening, attend a Kandyan cultural dance performance — a vibrant showcase of traditional drumming and costumed dancers.
@@ -1589,6 +1596,13 @@ export const ARTICLES: Article[] = [
     Transfer to the Yala area (approximately 2 hours from Ella). Spend the full day on a <strong>jeep safari at Yala National Park</strong> — Sri Lanka's most famous wildlife reserve and home to the world's highest density of leopards. Also look out for elephants, sloth bears, crocodiles, and hundreds of bird species. Overnight near Yala or Tissamaharama.
   </p>
 
+  <img
+    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/itinerary_5n6d_mirissa_beach-ftrxYnsz8FW6Rrxs5qwhPg.webp"
+    alt="Mirissa Beach at sunset, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
   <h3>Day 6 — Galle Fort → Departure</h3>
   <p>
     Drive to <strong>Galle Fort</strong> (UNESCO) on the southern coast. Spend the morning exploring the Dutch colonial ramparts, boutique shops, and ocean views before your driver transfers you to Colombo Airport for departure.
@@ -1719,6 +1733,13 @@ export const ARTICLES: Article[] = [
   <p>
     Full-day jeep safari at <strong>Yala National Park</strong> — Sri Lanka's premier wildlife reserve. Look out for leopards, elephants, sloth bears, crocodiles, and over 200 bird species. Overnight near Yala or Tissamaharama.
   </p>
+
+  <img
+    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/itinerary_6n7d_yala_safari-8T2qtPnX7odhVEEJBFotKn.webp"
+    alt="Leopard at Yala National Park, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
 
   <h3>Day 7 — Galle Fort → Departure</h3>
   <p>
@@ -1859,6 +1880,13 @@ export const ARTICLES: Article[] = [
     loading="lazy"
   />
 
+  <img
+    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/itinerary_cultural_dambulla-GQToxw2VpoCgxDxgX5Err5.webp"
+    alt="Dambulla Cave Temple golden Buddha statues, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
   <h3>Day 4 — Polonnaruwa & Pidurangala Rock</h3>
   <p>
     Optional morning climb of <strong>Pidurangala Rock</strong> for spectacular views of Sigiriya from above. Then explore the medieval city of <strong>Polonnaruwa</strong> (UNESCO) — remarkably well-preserved temples, palaces, and the famous <strong>Gal Vihara</strong> rock temple with its colossal Buddha statues carved directly into the granite face.
@@ -1991,6 +2019,13 @@ export const ARTICLES: Article[] = [
   <p>
     Early morning jeep safari at <strong>Yala National Park</strong> — Sri Lanka's most famous wildlife park, home to the world's highest density of leopards. Afternoon transfer to the beach resort of <strong>Mirissa</strong>.
   </p>
+
+  <img
+    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/itinerary_10days_bentota-AFBmRkdBvTUXKvEwtA2mQt.webp"
+    alt="Bentota beach resort aerial view, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
 
   <h3>Day 8 — Galle Fort & Beach Day</h3>
   <p>
