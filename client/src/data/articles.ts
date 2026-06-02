@@ -1722,10 +1722,24 @@ export const ARTICLES: Article[] = [
     Climb <strong>Sigiriya Rock Fortress</strong> (UNESCO) in the morning. In the afternoon, transfer to the ancient city of <strong>Polonnaruwa</strong> (UNESCO) — a remarkably well-preserved medieval capital with temples, palaces, and colossal Buddha statues. Return to your hotel.
   </p>
 
+  <img
+    src="/manus-storage/6n7d_day2_sigiriya_top_b1661daf.jpg"
+    alt="SLTCS driver and guests at the top of Sigiriya Rock Fortress, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
   <h3>Day 3 — Kandy</h3>
   <p>
     Drive to <strong>Kandy</strong> via a spice garden in Matale. Visit the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO) and enjoy a traditional Kandyan dance performance in the evening.
   </p>
+
+  <img
+    src="/manus-storage/6n7d_day3_kandy_temple_5f18e5cf.jpg"
+    alt="Temple of the Sacred Tooth Relic illuminated at sunset, Kandy, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
 
   <h3>Day 4 — Nuwara Eliya: Tea Highlands</h3>
   <p>
@@ -1744,14 +1758,31 @@ export const ARTICLES: Article[] = [
     Travel to <strong>Ella</strong> and ride (or photograph) the iconic tea-country train. Visit the <strong>Nine Arches Bridge</strong> and hike to <strong>Little Adam's Peak</strong> for panoramic views across the valley. Overnight in Ella.
   </p>
 
+  <img
+    src="/manus-storage/6n7d_day5_ella_bridge_f782b415.jpg"
+    alt="SLTCS driver and guests at Nine Arches Bridge, Ella, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
   <h3>Day 6 — Yala National Park Safari</h3>
   <p>
     Full-day jeep safari at <strong>Yala National Park</strong> — Sri Lanka's premier wildlife reserve. Look out for leopards, elephants, sloth bears, crocodiles, and over 200 bird species. Overnight near Yala or Tissamaharama.
   </p>
 
+  <div class="article-highlight-box">
+    <h4>🚙 Private Jeep Safari — Arranged by SLTCS</h4>
+    <p>
+      SLTCS can arrange a <strong>fully private jeep safari</strong> for your Yala visit. Unlike shared group safaris, your private jeep is reserved exclusively for your party — no strangers, no fixed schedule. What truly sets the SLTCS experience apart is that <strong>your dedicated driver can ride along inside the jeep</strong>, providing real-time commentary on the wildlife, habitats, and park history throughout the safari. This means you benefit from both a certified park tracker and your trusted SLTCS driver in one seamless experience.
+    </p>
+    <p>
+      Interested in a private jeep safari? <a href="/#contact" class="article-link">Contact us</a> when making your enquiry and we will include it in your personalised quote.
+    </p>
+  </div>
+
   <img
-    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/itinerary_6n7d_yala_safari-8T2qtPnX7odhVEEJBFotKn.webp"
-    alt="Leopard at Yala National Park, Sri Lanka"
+    src="/manus-storage/6n7d_day6_yala_jeep_c0d55756.jpg"
+    alt="Private jeep safari at Yala National Park, Sri Lanka — arranged by SLTCS"
     class="article-inline-img"
     loading="lazy"
   />
