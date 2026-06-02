@@ -142,14 +142,17 @@ export default function Plans() {
           {PLANS.map((plan) => (
             <div
               key={plan.key}
-              className={`plans-card${plan.popular ? " plans-card--popular" : ""}`}
-              style={{ background: plan.bgGradient, borderColor: plan.borderColor }}
+              className={`plans-card-wrapper${plan.popular ? " plans-card-wrapper--popular" : ""}`}
             >
               {plan.popular && (
-                <div className="plans-card-badge" style={{ background: plan.color }}>
+                <div className="plans-card-badge-outer" style={{ background: plan.color }}>
                   ★ Most Popular
                 </div>
               )}
+              <div
+                className={`plans-card${plan.popular ? " plans-card--popular" : ""}`}
+                style={{ background: plan.bgGradient, borderColor: plan.borderColor }}
+              >
 
               {/* Header */}
               <div className="plans-card-header">
@@ -222,6 +225,7 @@ export default function Plans() {
               >
                 Enquire About This Plan
               </a>
+              </div>
             </div>
           ))}
         </div>
