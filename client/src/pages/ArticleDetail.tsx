@@ -135,8 +135,25 @@ export default function ArticleDetail() {
     day: "numeric",
   });
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://en.srilanka-charter.com/" },
+      { "@type": "ListItem", position: 2, name: "Information", item: `https://en.srilanka-charter.com${categoryMeta.path}` },
+      { "@type": "ListItem", position: 3, name: categoryMeta.label, item: `https://en.srilanka-charter.com${categoryMeta.path}` },
+      { "@type": "ListItem", position: 4, name: article.title, item: `https://en.srilanka-charter.com/information/${article.category}/${article.slug}` },
+    ],
+  };
+
   return (
     <div className="article-detail-page">
+      {/* ── JSON-LD BreadcrumbList ── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
       {/* ── Hero Image ── */}
       <div className="article-detail-hero">
         <img
@@ -164,13 +181,23 @@ export default function ArticleDetail() {
       <div className="article-detail-layout">
         {/* Breadcrumb */}
         <nav className="article-breadcrumb" aria-label="Breadcrumb">
-          <Link href="/">Home</Link>
-          <span className="breadcrumb-sep">›</span>
-          <Link href="/">Information</Link>
-          <span className="breadcrumb-sep">›</span>
-          <Link href={categoryMeta.path}>{categoryMeta.label}</Link>
-          <span className="breadcrumb-sep">›</span>
-          <span className="breadcrumb-current">{article.title}</span>
+          <ol className="breadcrumb-list">
+            <li className="breadcrumb-item">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="breadcrumb-sep" aria-hidden="true">›</li>
+            <li className="breadcrumb-item">
+              <Link href={categoryMeta.path}>Information</Link>
+            </li>
+            <li className="breadcrumb-sep" aria-hidden="true">›</li>
+            <li className="breadcrumb-item">
+              <Link href={categoryMeta.path}>{categoryMeta.label}</Link>
+            </li>
+            <li className="breadcrumb-sep" aria-hidden="true">›</li>
+            <li className="breadcrumb-item breadcrumb-current" aria-current="page">
+              <span>{article.title}</span>
+            </li>
+          </ol>
         </nav>
 
         <div className="article-detail-content-wrap">
