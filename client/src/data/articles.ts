@@ -186,7 +186,7 @@ export const ARTICLES: Article[] = [
 
   <figure class="article-figure">
     <img
-      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_img_vehicle_comparison-WsH762YjRq7i9U9Q9L6Cj6.webp"
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_img_vehicle_comparison_v2-DUm9xxArsoh98aMKpukKti.webp"
       alt="Three Japanese vehicles commonly used in Sri Lanka: a compact sedan, a KDH Hi-Ace van, and a luxury MPV"
       class="article-figure-img"
       loading="lazy"
@@ -442,7 +442,7 @@ export const ARTICLES: Article[] = [
 
   <figure class="article-figure">
     <img
-      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_car_hire_comparison-9ZXtgidH2miFd2L86QDhf5.webp"
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_car_hire_comparison_v2-FtUE4sb4cNLh7TUfJsaYTz.webp"
       alt="Three Japanese vehicles side by side in Sri Lanka: compact sedan, KDH Hi-Ace van, and luxury MPV"
       class="article-figure-img"
       loading="lazy"
