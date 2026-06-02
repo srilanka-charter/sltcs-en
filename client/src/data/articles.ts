@@ -187,24 +187,24 @@ export const ARTICLES: Article[] = [
   <figure class="article-figure">
     <img
       src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_img_vehicle_comparison-WsH762YjRq7i9U9Q9L6Cj6.webp"
-      alt="Three Sri Lanka tourist vehicles: Toyota Prius, Toyota KDH Hi-Ace van, and Toyota Alphard luxury van"
+      alt="Three Japanese vehicles commonly used in Sri Lanka: a compact sedan, a KDH Hi-Ace van, and a luxury MPV"
       class="article-figure-img"
       loading="lazy"
     />
     <figcaption class="article-figure-caption">
-      From left: Toyota Prius (solo/couple), Toyota KDH Hi-Ace (groups of 3–8), Toyota Alphard (premium comfort). All vehicles are air-conditioned and insured.
+      From left: Japanese compact sedan (solo/couple), KDH Hi-Ace van (groups of 3–8), luxury MPV (premium comfort). All vehicles are air-conditioned and insured.
     </figcaption>
   </figure>
 
   <ul>
     <li>
-      <strong>Toyota Prius (sedan)</strong> — Ideal for solo travellers or couples. Fuel-efficient and comfortable for distances up to 200 km per day. Air-conditioned.
+      <strong>Japanese compact sedan</strong> — Ideal for solo travellers or couples. Fuel-efficient and comfortable for distances up to 200 km per day. Air-conditioned.
     </li>
     <li>
-      <strong>Toyota KDH Hi-Ace van</strong> — The standard choice for groups of 3–8 passengers. Spacious luggage area, high seating position for views, and well-suited to mountain roads. Air-conditioned.
+      <strong>KDH Hi-Ace van</strong> — The standard choice for groups of 3–8 passengers. Spacious luggage area, high seating position for views, and well-suited to mountain roads. Air-conditioned.
     </li>
     <li>
-      <strong>Toyota Alphard (luxury van)</strong> — Premium option for those who want captain's seats, extra legroom, and a quieter ride. Suited to families with young children or senior travellers who prioritise comfort.
+      <strong>Luxury Japanese MPV</strong> — Premium option for those who want captain's seats, extra legroom, and a quieter ride. Suited to families with young children or senior travellers who prioritise comfort.
     </li>
   </ul>
 
@@ -366,7 +366,7 @@ export const ARTICLES: Article[] = [
   <figure class="article-figure">
     <img
       src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_car_hire_guide_cover-hUrEcJK8QyU2wtNBRXKH2t.webp"
-      alt="Western tourists in the back seat of a Toyota KDH van with a Sri Lankan private driver, driving through tropical scenery"
+      alt="Western tourists in the back seat of a Japanese van with a Sri Lankan private driver, driving through tropical scenery"
       class="article-figure-img"
       loading="lazy"
     />
@@ -443,12 +443,12 @@ export const ARTICLES: Article[] = [
   <figure class="article-figure">
     <img
       src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_car_hire_comparison-9ZXtgidH2miFd2L86QDhf5.webp"
-      alt="Three Toyota vehicles side by side in Sri Lanka: Prius sedan, KDH Hi-Ace van, and Alphard luxury MPV"
+      alt="Three Japanese vehicles side by side in Sri Lanka: compact sedan, KDH Hi-Ace van, and luxury MPV"
       class="article-figure-img"
       loading="lazy"
     />
     <figcaption class="article-figure-caption">
-      Toyota Prius (couples), KDH Hi-Ace (groups of 3–8), and Alphard (premium comfort). All vehicles are air-conditioned and fully insured.
+      Japanese compact sedan (couples), KDH Hi-Ace van (groups of 3–8), and luxury MPV (premium comfort). All vehicles are air-conditioned and fully insured.
     </figcaption>
   </figure>
 
@@ -457,9 +457,9 @@ export const ARTICLES: Article[] = [
   </p>
 
   <ul>
-    <li><strong>Toyota Prius</strong> — Suited to solo travellers or couples. Fuel-efficient and comfortable for daily distances up to 200 km.</li>
-    <li><strong>Toyota KDH Hi-Ace</strong> — The standard choice for groups of 3–8. High seating position, generous luggage space, and well-suited to all road types.</li>
-    <li><strong>Toyota Alphard</strong> — Premium option with captain's seats and extra legroom. Ideal for families with young children or senior travellers.</li>
+    <li><strong>Japanese compact sedan</strong> — Suited to solo travellers or couples. Fuel-efficient and comfortable for daily distances up to 200 km.</li>
+    <li><strong>KDH Hi-Ace van</strong> — The standard choice for groups of 3–8. High seating position, generous luggage space, and well-suited to all road types.</li>
+    <li><strong>Luxury Japanese MPV</strong> — Premium option with captain's seats and extra legroom. Ideal for families with young children or senior travellers.</li>
   </ul>
 
   <p>
