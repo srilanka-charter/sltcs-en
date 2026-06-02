@@ -1,12 +1,12 @@
 /**
  * ArticleDetail.tsx
- * Individual article page with SEO meta tags and structured content
+ * Individual article page with SEO meta tags, structured content, and auto-generated Table of Contents
  * Route: /information/:category/:slug
  */
 
 import { useParams, Link } from "wouter";
 import { getArticleBySlug, CATEGORIES, getArticlesByCategory, type ArticleCategory } from "@/data/articles";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import Article3PriceTable from "@/components/Article3PriceTable";
 import Article3PlanCards from "@/components/Article3PlanCards";
 
@@ -15,6 +15,94 @@ const ARTICLE3_SLUG = "driver-hire-sri-lanka-costs-safety-checklist";
 // Placeholder markers in the article HTML
 const PRICE_TABLE_PLACEHOLDER = "<!-- PRICE_TABLE_PLACEHOLDER -->";
 const PLAN_CARDS_PLACEHOLDER = "<!-- PLAN_CARDS_PLACEHOLDER -->";
+
+// ─── TOC Utilities ────────────────────────────────────────────────────────────
+
+interface TocItem {
+  id: string;
+  text: string;
+  level: 2 | 3;
+}
+
+/**
+ * Convert a heading text to a URL-safe id slug
+ */
+function slugifyHeading(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+}
+
+/**
+ * Parse H2 and H3 headings from HTML string.
+ * Returns array of TocItem and the HTML with id attributes injected.
+ */
+function extractToc(html: string): { toc: TocItem[]; htmlWithIds: string } {
+  const toc: TocItem[] = [];
+  const idCount: Record<string, number> = {};
+
+  const htmlWithIds = html.replace(/<(h[23])([^>]*)>([\s\S]*?)<\/h[23]>/gi, (match, tag, attrs, inner) => {
+    const level = parseInt(tag[1], 10) as 2 | 3;
+    // Strip any inner HTML tags to get plain text
+    const text = inner.replace(/<[^>]+>/g, "").trim();
+    if (!text) return match;
+
+    const baseId = slugifyHeading(text);
+    if (!baseId) return match;
+
+    // Deduplicate ids
+    const count = idCount[baseId] ?? 0;
+    idCount[baseId] = count + 1;
+    const id = count === 0 ? baseId : `${baseId}-${count}`;
+
+    toc.push({ id, text, level });
+
+    // Inject id into the heading tag (preserve existing attrs)
+    return `<${tag}${attrs} id="${id}">${inner}</${tag}>`;
+  });
+
+  return { toc, htmlWithIds };
+}
+
+// ─── TableOfContents Component ────────────────────────────────────────────────
+
+function TableOfContents({ toc }: { toc: TocItem[] }) {
+  if (toc.length < 2) return null;
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      const offset = 80; // navbar height
+      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
+
+  return (
+    <nav className="article-toc" aria-label="Table of Contents">
+      <p className="article-toc-title">Table of Contents</p>
+      <ol className="article-toc-list">
+        {toc.map((item) => (
+          <li
+            key={item.id}
+            style={item.level === 3 ? { paddingLeft: "1.2rem", listStyleType: "none" } : undefined}
+          >
+            <a
+              href={`#${item.id}`}
+              onClick={(e) => handleClick(e, item.id)}
+            >
+              {item.level === 3 ? "↳ " : ""}{item.text}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  );
+}
 
 // ─── Related Article Card (small) ────────────────────────────────────────────
 
@@ -180,6 +268,12 @@ export default function ArticleDetail() {
     };
   }, [article]);
 
+  // ── TOC extraction (memoised per article) ──────────────────────────────────
+  const { toc, htmlWithIds } = useMemo(() => {
+    if (!article) return { toc: [], htmlWithIds: "" };
+    return extractToc(article.content);
+  }, [article]);
+
   if (!article) {
     return (
       <div className="article-detail-page">
@@ -211,6 +305,17 @@ export default function ArticleDetail() {
       { "@type": "ListItem", position: 3, name: categoryMeta.label, item: `https://en.srilanka-charter.com${categoryMeta.path}` },
       { "@type": "ListItem", position: 4, name: article.title, item: `https://en.srilanka-charter.com/information/${article.category}/${article.slug}` },
     ],
+  };
+
+  // For Article 3: apply TOC id injection to each HTML segment
+  const getArticle3Parts = () => {
+    const priceParts = htmlWithIds.split(PRICE_TABLE_PLACEHOLDER);
+    const beforePrice = priceParts[0] ?? "";
+    const afterPrice = priceParts[1] ?? "";
+    const planParts = afterPrice.split(PLAN_CARDS_PLACEHOLDER);
+    const betweenComponents = planParts[0] ?? "";
+    const afterPlans = planParts[1] ?? "";
+    return { beforePrice, betweenComponents, afterPlans };
   };
 
   return (
@@ -279,18 +384,14 @@ export default function ArticleDetail() {
               ))}
             </div>
 
+            {/* ── Table of Contents (auto-generated) ── */}
+            <TableOfContents toc={toc} />
+
             {/* Content */}
             {article.slug === ARTICLE3_SLUG ? (
               // Article 3: split at both placeholders and inject React components
               (() => {
-                // First split on price table placeholder
-                const priceParts = article.content.split(PRICE_TABLE_PLACEHOLDER);
-                const beforePrice = priceParts[0] ?? "";
-                const afterPrice = priceParts[1] ?? "";
-                // Then split the after-price section on plan cards placeholder
-                const planParts = afterPrice.split(PLAN_CARDS_PLACEHOLDER);
-                const betweenComponents = planParts[0] ?? "";
-                const afterPlans = planParts[1] ?? "";
+                const { beforePrice, betweenComponents, afterPlans } = getArticle3Parts();
                 return (
                   <>
                     <div
@@ -317,7 +418,7 @@ export default function ArticleDetail() {
             ) : (
               <div
                 className="article-detail-body"
-                dangerouslySetInnerHTML={{ __html: article.content }}
+                dangerouslySetInnerHTML={{ __html: htmlWithIds }}
               />
             )}
           </main>

@@ -98,3 +98,7 @@
 - [x] Model Itinerary: 5-7 Days Cultural Triangle article (model-itinerary category)
 - [x] Model Itinerary: 10 Days to 2 Weeks Classic Plan article (model-itinerary category)
 - [x] Header Model Itinerary dropdown links to each article URL
+- [x] SEO最適化: 全10記事のmetaTitle・metaDescription・keywords強化（2026年号・ロングテールキーワード追加）
+- [x] SEO最適化: ArticleDetail.tsx共通改善（canonical URL・Article JSON-LD・Twitter Card・og:url/og:site_name/og:locale追加）
+- [x] SEO最適化: サイトマップlastmod更新（2026-06-03）・記事URLのpriority引き上げ
+- [x] /price ページ構造化データ修正: image・shippingDetails・hasMerchantReturnPolicy追加（Google Search Console対応）
