@@ -1443,9 +1443,26 @@ export const ARTICLES: Article[] = [
     In the afternoon, enjoy an optional jeep safari at <strong>Minneriya National Park</strong>, famous for its seasonal elephant gatherings — one of the largest in the world. Return to your hotel for the evening.
   </p>
 
+  <div class="article-highlight-box">
+    <h4>🚙 Private Jeep Safari — Arranged by SLTCS</h4>
+    <p>
+      SLTCS can arrange a <strong>fully private jeep safari</strong> for your Minneriya or Yala visit. Unlike shared group safaris, your private jeep is reserved exclusively for your party — no strangers, no fixed schedule. What truly sets the SLTCS experience apart is that <strong>your dedicated driver can ride along inside the jeep</strong>, providing real-time commentary on the wildlife, habitats, and park history throughout the safari. This means you benefit from both a certified park tracker and your trusted SLTCS driver in one seamless experience.
+    </p>
+    <p>
+      Interested in a private jeep safari? <a href="/#contact" class="article-link">Contact us</a> when making your enquiry and we will include it in your personalised quote.
+    </p>
+  </div>
+
   <img
-    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/itinerary_4n5d_polonnaruwa-dqNrcQMEeaYvmV4MWBsQDZ.webp"
-    alt="Polonnaruwa ancient ruins, Sri Lanka"
+    src="/manus-storage/safari_jeep_wilpatthu_guests_c0e078f1.jpeg"
+    alt="Private jeep safari arranged by SLTCS — guests aboard a safari jeep in Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <img
+    src="/manus-storage/safari_jeep_yala_group_08928221.jpeg"
+    alt="Group enjoying a private jeep safari in Yala National Park, Sri Lanka"
     class="article-inline-img"
     loading="lazy"
   />
