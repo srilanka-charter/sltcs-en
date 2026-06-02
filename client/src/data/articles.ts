@@ -1993,14 +1993,14 @@ export const ARTICLES: Article[] = [
 
   <h2>Day-by-Day Itinerary</h2>
 
-  <h3>Day 1 — Airport → Dambulla Cave Temple → Sigiriya</h3>
+  <h3>Day 1 — Airport → Anuradhapura → Sigiriya</h3>
   <p>
-    Depart from Colombo Airport or Negombo. Drive to the Cultural Triangle (approximately 3 hours). Stop at the <strong>Dambulla Cave Temple</strong> (UNESCO) for lunch and sightseeing. Check in at Heritance Kandalama — a celebrated Geoffrey Bawa hotel set amid forest and lake.
+    Depart from Colombo Airport or Negombo. Drive north to the ancient capital of <strong>Anuradhapura</strong> (approximately 3.5–4 hours). Explore the UNESCO World Heritage Site — the sacred <strong>Sri Maha Bodhi</strong> (the world's oldest documented tree), the great <strong>Ruwanwelisaya Stupa</strong>, and the sprawling ancient ruins of this 2,500-year-old city. Continue to the Sigiriya area (approximately 1.5 hours) and check in to your hotel.
   </p>
 
-  <h3>Day 2 — Sigiriya Rock & Anuradhapura</h3>
+  <h3>Day 2 — Sigiriya Rock & Minneriya Jeep Safari</h3>
   <p>
-    Morning climb of <strong>Sigiriya Rock Fortress</strong> (UNESCO). Transfer to the ancient capital of <strong>Anuradhapura</strong> (1.5–2 hours). Explore the sacred Bodhi Tree, stupas, and ancient ruins. Return to hotel.
+    Morning climb of <strong>Sigiriya Rock Fortress</strong> (UNESCO) — allow 2.5–3 hours for the full ascent and descent, taking in the ancient water gardens, the famous frescoes of the celestial maidens, and the breathtaking panoramic views from the summit plateau. In the afternoon, head to <strong>Minneriya National Park</strong> for a thrilling jeep safari. Minneriya is renowned for <em>The Gathering</em> — one of Asia's greatest wildlife spectacles, where hundreds of wild elephants congregate around the ancient reservoir. Overnight in Sigiriya.
   </p>
 
   <h3>Day 3 — Kandy: Spice Garden & Temple</h3>
