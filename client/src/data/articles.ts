@@ -4,7 +4,8 @@ export type ArticleCategory =
   | "private-driver-guide"
   | "cost-booking-guide"
   | "family-group-travel"
-  | "travel-tips-safety";
+  | "travel-tips-safety"
+  | "model-itinerary";
 
 export interface Article {
   id: string;
@@ -57,6 +58,13 @@ export const CATEGORIES: Record<
     description:
       "Honest, practical tips on road safety, transport options, and how to travel Sri Lanka with peace of mind.",
     path: "/information/travel-tips-safety",
+  },
+  "model-itinerary": {
+    label: "Model Itinerary",
+    slug: "model-itinerary",
+    description:
+      "Carefully crafted sample itineraries for Sri Lanka private driver tours — from 4-night highlights to 2-week classic plans.",
+    path: "/information/model-itinerary",
   },
 };
 
@@ -1367,10 +1375,676 @@ export const ARTICLES: Article[] = [
 </article>
 `,
   },
+  // ─── Model Itinerary Articles ─────────────────────────────────────────────
+  {
+    id: "mi-4n5d",
+    slug: "sri-lanka-4-nights-5-days-itinerary",
+    category: "model-itinerary",
+    title: "Sri Lanka 4 Nights / 5 Days Itinerary: Cultural Highlights by Private Driver",
+    excerpt: "A compact yet rewarding 5-day private driver tour covering Sigiriya, Kandy, Nuwara Eliya, and Galle — perfect for first-time visitors on a tight schedule.",
+    coverImage: "/manus-storage/slide2_sigiriya_b8468f12.jpg",
+    publishedAt: "2026-06-02",
+    readingTime: 8,
+    tags: ["4 Nights 5 Days", "Sigiriya", "Kandy", "Galle", "Private Driver", "First-Time Visitors"],
+    seo: {
+      metaTitle: "Sri Lanka 4 Nights 5 Days Itinerary | Private Driver Tour",
+      metaDescription: "Explore Sri Lanka in 5 days with a private driver. Visit Sigiriya, Kandy, Nuwara Eliya, and Galle Fort on this compact cultural highlights tour.",
+      keywords: ["Sri Lanka 4 nights 5 days", "Sri Lanka 5 day itinerary", "private driver Sri Lanka", "Sigiriya Kandy Galle tour"],
+    },
+    content: `
+<article class="article-body">
+
+  <img
+    src="/manus-storage/slide2_sigiriya_b8468f12.jpg"
+    alt="Sigiriya Rock Fortress aerial view, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h2>Overview: 4 Nights / 5 Days Cultural Highlights</h2>
+  <p>
+    This 5-day private driver itinerary is designed for first-time visitors who want to experience the very best of Sri Lanka without feeling rushed. In five days, you will visit four of the island's most celebrated UNESCO World Heritage sites, travel through stunning highland scenery, and arrive at the historic southern coast — all from the comfort of a fully private, air-conditioned vehicle with a dedicated driver.
+  </p>
+  <p>
+    All SLTCS itineraries are flexible by design. If you want to linger longer at Sigiriya, skip a stop, or add a spontaneous detour, your driver will adapt. This plan is a starting point, not a rigid schedule.
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Detail</th>
+          <th>Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Duration</td><td>5 Days / 4 Nights</td></tr>
+        <tr><td>Focus</td><td>Cultural Highlights</td></tr>
+        <tr><td>Key Destinations</td><td>Sigiriya, Kandy, Nuwara Eliya, Galle</td></tr>
+        <tr><td>Ideal For</td><td>First-time visitors on a tight schedule</td></tr>
+        <tr><td>Start / End Point</td><td>Colombo Airport (BIA)</td></tr>
+        <tr><td>Recommended Plan</td><td><a href="/plans" class="article-link">Silver or Gold</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Day-by-Day Itinerary</h2>
+
+  <h3>Day 1 — Arrival → Sigiriya</h3>
+  <p>
+    Arrive at Bandaranaike International Airport (BIA) in Colombo. Your driver will meet you at the arrivals hall with a name board. Drive north to the Sigiriya area (approximately 3–4 hours), stopping en route at the <strong>Dambulla Cave Temple</strong> — a UNESCO World Heritage site featuring five cave shrines adorned with over 150 Buddha statues and ancient murals. Check in to your hotel in the Sigiriya or Kandalama area.
+  </p>
+
+  <h3>Day 2 — Sigiriya Rock Fortress</h3>
+  <p>
+    Begin the day with an early morning climb of <strong>Sigiriya Rock Fortress</strong> (UNESCO), one of the most extraordinary archaeological sites in Asia. The 5th-century royal citadel rises 200 metres above the surrounding jungle, and the summit offers panoramic views across the plains. Allow 2.5–3 hours for the full climb and descent.
+  </p>
+  <p>
+    In the afternoon, enjoy an optional jeep safari at <strong>Minneriya National Park</strong>, famous for its seasonal elephant gatherings — one of the largest in the world. Return to your hotel for the evening.
+  </p>
+
+  <h3>Day 3 — Kandy: Temple of the Tooth</h3>
+  <p>
+    Drive to <strong>Kandy</strong> (approximately 2.5 hours), stopping at a traditional spice garden in Matale along the way. Visit the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO), the most sacred Buddhist site in Sri Lanka, which houses a relic of the Buddha. In the evening, attend a Kandyan cultural dance performance — a vibrant showcase of traditional drumming and costumed dancers.
+  </p>
+
+  <h3>Day 4 — Nuwara Eliya → Galle</h3>
+  <p>
+    Depart Kandy for a scenic drive through rolling <strong>tea estates</strong> to Nuwara Eliya — Sri Lanka's 'Little England', set at 1,868 metres above sea level. Stop at a tea factory for a guided tour and tasting. Continue south through the highlands and down to the coast, arriving at <strong>Galle Fort</strong> (UNESCO) on the southern coast by late afternoon.
+  </p>
+
+  <img
+    src="/manus-storage/slide5_galle_8aced38c.jpg"
+    alt="Galle Fort Dutch colonial ramparts and lighthouse, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Day 5 — Galle Fort → Departure</h3>
+  <p>
+    Spend the morning exploring <strong>Galle Fort</strong> — a remarkably well-preserved Dutch colonial fortification dating from the 17th century. Walk the ramparts, browse the boutique shops and galleries within the fort walls, and enjoy a coffee overlooking the Indian Ocean. Your driver will then transfer you to Colombo Airport for your departure flight.
+  </p>
+
+  <h2>What's Included in This Itinerary</h2>
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Included</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Private air-conditioned vehicle</td><td class="val-yes">Yes</td></tr>
+        <tr><td>Dedicated driver for all 5 days</td><td class="val-yes">Yes</td></tr>
+        <tr><td>Airport pick-up and drop-off</td><td class="val-yes">Yes</td></tr>
+        <tr><td>Flexible itinerary adjustments</td><td class="val-yes">Yes</td></tr>
+        <tr><td>Hotel bookings</td><td class="val-limited">Not included (we can recommend)</td></tr>
+        <tr><td>Site entrance fees</td><td class="val-limited">Not included (paid separately)</td></tr>
+        <tr><td>Meals</td><td class="val-limited">Not included</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Recommended SLTCS Plans</h2>
+  <p>
+    For a 5-day cultural itinerary, we recommend the <a href="/plans" class="article-link">Silver Plan</a> (Highly-Rated Tourist Driver or Chauffeur Guide Driver) or the <a href="/plans" class="article-link">Gold Plan</a> (dedicated Chauffeur Guide Driver with a second support driver). A Chauffeur Guide Driver will significantly enrich your experience at Sigiriya, Kandy, and Galle by providing certified cultural commentary at each site.
+  </p>
+  <p>
+    View our full <a href="/price" class="article-link">pricing page</a> for transparent rates, or <a href="/#contact" class="article-link">submit a free enquiry</a> and we will prepare a personalised quote within 24 hours.
+  </p>
+
+  <div class="article-cta">
+    <div class="article-cta-title">Ready to Book Your 5-Day Sri Lanka Tour?</div>
+    <div class="article-cta-desc">Tell us your travel dates and group size. We'll respond with a tailored quote within 24 hours.</div>
+    <a href="/#contact" class="article-cta-btn">Get a Free Quote</a>
+  </div>
+
+</article>
+`,
+  },
+  {
+    id: "mi-5n6d",
+    slug: "sri-lanka-5-nights-6-days-itinerary",
+    category: "model-itinerary",
+    title: "Sri Lanka 5 Nights / 6 Days Itinerary: Culture + Nature by Private Driver",
+    excerpt: "A well-balanced 6-day private driver tour combining cultural landmarks, highland scenery, and wildlife safari — ideal for couples and small groups.",
+    coverImage: "/manus-storage/slide3_tea_train_e100395a.jpg",
+    publishedAt: "2026-06-02",
+    readingTime: 9,
+    tags: ["5 Nights 6 Days", "Sigiriya", "Kandy", "Ella", "Yala", "Private Driver", "Couples"],
+    seo: {
+      metaTitle: "Sri Lanka 5 Nights 6 Days Itinerary | Private Driver Tour",
+      metaDescription: "Explore Sri Lanka in 6 days with a private driver. Sigiriya, Kandy, Ella, Yala National Park, and Galle — the perfect balance of culture and nature.",
+      keywords: ["Sri Lanka 5 nights 6 days", "Sri Lanka 6 day itinerary", "private driver Sri Lanka", "Sigiriya Ella Yala tour"],
+    },
+    content: `
+<article class="article-body">
+
+  <img
+    src="/manus-storage/slide3_tea_train_e100395a.jpg"
+    alt="Scenic tea country train journey in Sri Lanka highlands"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h2>Overview: 5 Nights / 6 Days Culture + Nature</h2>
+  <p>
+    This 6-day private driver itinerary strikes the ideal balance between cultural exploration and natural adventure. You will climb Sigiriya, explore the sacred city of Kandy, travel through the tea highlands to Ella, embark on a full-day wildlife safari at Yala, and finish at the historic Galle Fort — all in a fully private vehicle with a dedicated driver.
+  </p>
+  <p>
+    This plan is particularly popular among couples and small groups who want to experience both the cultural depth and the natural beauty of Sri Lanka without feeling rushed.
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Detail</th>
+          <th>Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Duration</td><td>6 Days / 5 Nights</td></tr>
+        <tr><td>Focus</td><td>Culture + Nature</td></tr>
+        <tr><td>Key Destinations</td><td>Sigiriya, Kandy, Ella, Yala, Galle</td></tr>
+        <tr><td>Ideal For</td><td>Couples &amp; small groups</td></tr>
+        <tr><td>Start / End Point</td><td>Colombo Airport (BIA)</td></tr>
+        <tr><td>Recommended Plan</td><td><a href="/plans" class="article-link">Silver or Gold</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Day-by-Day Itinerary</h2>
+
+  <h3>Day 1 — Arrival → Sigiriya</h3>
+  <p>
+    Arrive at Colombo Airport. Your driver will meet you at arrivals and transfer you north to the Sigiriya area (approximately 3–4 hours), stopping at the <strong>Dambulla Cave Temple</strong> (UNESCO) en route. Check in to your hotel in the Sigiriya or Kandalama area.
+  </p>
+
+  <h3>Day 2 — Sigiriya Rock & Wildlife Safari</h3>
+  <p>
+    Climb <strong>Sigiriya Rock Fortress</strong> (UNESCO) in the morning — allow 2.5–3 hours for the full ascent and descent. In the afternoon, take a jeep safari at <strong>Minneriya or Kaudulla National Park</strong>, where you may encounter large herds of wild elephants gathering around the ancient reservoirs.
+  </p>
+
+  <h3>Day 3 — Kandy Sightseeing</h3>
+  <p>
+    Travel to <strong>Kandy</strong> via the Matale Spice Garden. Visit the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO) and the beautiful <strong>Peradeniya Botanical Gardens</strong>, home to over 4,000 plant species including a famous avenue of royal palms. Evening at leisure in Kandy town.
+  </p>
+
+  <h3>Day 4 — Nuwara Eliya & Ella</h3>
+  <p>
+    Drive through the stunning <strong>tea highlands</strong> to Nuwara Eliya. Visit a tea factory and enjoy high tea with views across the estate. Continue to <strong>Ella</strong> — a charming hill village famous for the <strong>Nine Arches Bridge</strong>, a colonial-era viaduct set amid jungle and tea terraces. Overnight in Ella.
+  </p>
+
+  <img
+    src="/manus-storage/dest_ella_bd8060fc.jpg"
+    alt="Nine Arches Bridge in Ella, Sri Lanka surrounded by tea terraces"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Day 5 — Yala National Park Safari</h3>
+  <p>
+    Transfer to the Yala area (approximately 2 hours from Ella). Spend the full day on a <strong>jeep safari at Yala National Park</strong> — Sri Lanka's most famous wildlife reserve and home to the world's highest density of leopards. Also look out for elephants, sloth bears, crocodiles, and hundreds of bird species. Overnight near Yala or Tissamaharama.
+  </p>
+
+  <h3>Day 6 — Galle Fort → Departure</h3>
+  <p>
+    Drive to <strong>Galle Fort</strong> (UNESCO) on the southern coast. Spend the morning exploring the Dutch colonial ramparts, boutique shops, and ocean views before your driver transfers you to Colombo Airport for departure.
+  </p>
+
+  <h2>What's Included in This Itinerary</h2>
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Included</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Private air-conditioned vehicle</td><td class="val-yes">Yes</td></tr>
+        <tr><td>Dedicated driver for all 6 days</td><td class="val-yes">Yes</td></tr>
+        <tr><td>Airport pick-up and drop-off</td><td class="val-yes">Yes</td></tr>
+        <tr><td>Flexible itinerary adjustments</td><td class="val-yes">Yes</td></tr>
+        <tr><td>Hotel bookings</td><td class="val-limited">Not included (we can recommend)</td></tr>
+        <tr><td>Yala jeep safari fee</td><td class="val-limited">Not included (paid separately)</td></tr>
+        <tr><td>Meals</td><td class="val-limited">Not included</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Recommended SLTCS Plans</h2>
+  <p>
+    For a 6-day culture-and-nature itinerary, we recommend the <a href="/plans" class="article-link">Silver Plan</a> or <a href="/plans" class="article-link">Gold Plan</a>. A Chauffeur Guide Driver on the Gold Plan will provide certified commentary at Sigiriya, Kandy, and Galle, and can help coordinate your Yala safari logistics.
+  </p>
+  <p>
+    View our <a href="/price" class="article-link">pricing page</a> for transparent rates, or <a href="/#contact" class="article-link">submit a free enquiry</a> for a personalised quote.
+  </p>
+
+  <div class="article-cta">
+    <div class="article-cta-title">Ready to Book Your 6-Day Sri Lanka Tour?</div>
+    <div class="article-cta-desc">Tell us your travel dates and group size. We'll respond with a tailored quote within 24 hours.</div>
+    <a href="/#contact" class="article-cta-btn">Get a Free Quote</a>
+  </div>
+
+</article>
+`,
+  },
+  {
+    id: "mi-6n7d",
+    slug: "sri-lanka-6-nights-7-days-itinerary",
+    category: "model-itinerary",
+    title: "Sri Lanka 6 Nights / 7 Days Itinerary: Full Island Experience by Private Driver",
+    excerpt: "A comprehensive 7-day private driver tour covering the Cultural Triangle, Kandy, tea highlands, Ella, Yala, and Galle — ideal for families and thorough explorers.",
+    coverImage: "/manus-storage/slide4_kandy_19bf406f.jpg",
+    publishedAt: "2026-06-02",
+    readingTime: 10,
+    tags: ["6 Nights 7 Days", "Sigiriya", "Polonnaruwa", "Kandy", "Ella", "Yala", "Galle", "Families"],
+    seo: {
+      metaTitle: "Sri Lanka 6 Nights 7 Days Itinerary | Private Driver Tour",
+      metaDescription: "A 7-day private driver itinerary covering Sigiriya, Polonnaruwa, Kandy, tea highlands, Ella, Yala, and Galle — the full Sri Lanka experience.",
+      keywords: ["Sri Lanka 6 nights 7 days", "Sri Lanka 7 day itinerary", "private driver Sri Lanka", "full island tour Sri Lanka"],
+    },
+    content: `
+<article class="article-body">
+
+  <img
+    src="/manus-storage/slide4_kandy_19bf406f.jpg"
+    alt="Temple of the Sacred Tooth Relic in Kandy, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h2>Overview: 6 Nights / 7 Days Full Island Experience</h2>
+  <p>
+    This 7-day private driver itinerary is the most popular choice for families and travellers who want a thorough introduction to Sri Lanka. Over seven days, you will explore the ancient Cultural Triangle, the sacred city of Kandy, the dramatic tea highlands, the scenic village of Ella, the wildlife-rich Yala National Park, and the historic Galle Fort — a genuinely complete island experience.
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Detail</th>
+          <th>Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Duration</td><td>7 Days / 6 Nights</td></tr>
+        <tr><td>Focus</td><td>Full Island Experience</td></tr>
+        <tr><td>Key Destinations</td><td>Sigiriya, Polonnaruwa, Kandy, Nuwara Eliya, Ella, Yala, Galle</td></tr>
+        <tr><td>Ideal For</td><td>Families &amp; thorough explorers</td></tr>
+        <tr><td>Start / End Point</td><td>Colombo Airport (BIA)</td></tr>
+        <tr><td>Recommended Plan</td><td><a href="/plans" class="article-link">Silver or Gold</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Day-by-Day Itinerary</h2>
+
+  <h3>Day 1 — Arrival → Cultural Triangle</h3>
+  <p>
+    Arrive at Colombo Airport. Drive north via the <strong>Dambulla Cave Temple</strong> (UNESCO) to the Sigiriya or Kandalama area (approximately 3–4 hours). Check in to your hotel.
+  </p>
+
+  <h3>Day 2 — Sigiriya & Polonnaruwa</h3>
+  <p>
+    Climb <strong>Sigiriya Rock Fortress</strong> (UNESCO) in the morning. In the afternoon, transfer to the ancient city of <strong>Polonnaruwa</strong> (UNESCO) — a remarkably well-preserved medieval capital with temples, palaces, and colossal Buddha statues. Return to your hotel.
+  </p>
+
+  <h3>Day 3 — Kandy</h3>
+  <p>
+    Drive to <strong>Kandy</strong> via a spice garden in Matale. Visit the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO) and enjoy a traditional Kandyan dance performance in the evening.
+  </p>
+
+  <h3>Day 4 — Nuwara Eliya: Tea Highlands</h3>
+  <p>
+    Scenic mountain drive to <strong>Nuwara Eliya</strong> through rolling tea estates. Enjoy a tea-plucking experience and high tea at a colonial-era plantation hotel. Explore the charming town, often called 'Little England' for its cool climate and British colonial architecture.
+  </p>
+
+  <img
+    src="/manus-storage/dest_nuwara_57f4e54f.jpg"
+    alt="Tea estate in Nuwara Eliya highlands, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Day 5 — Ella & Nine Arches Bridge</h3>
+  <p>
+    Travel to <strong>Ella</strong> and ride (or photograph) the iconic tea-country train. Visit the <strong>Nine Arches Bridge</strong> and hike to <strong>Little Adam's Peak</strong> for panoramic views across the valley. Overnight in Ella.
+  </p>
+
+  <h3>Day 6 — Yala National Park Safari</h3>
+  <p>
+    Full-day jeep safari at <strong>Yala National Park</strong> — Sri Lanka's premier wildlife reserve. Look out for leopards, elephants, sloth bears, crocodiles, and over 200 bird species. Overnight near Yala or Tissamaharama.
+  </p>
+
+  <h3>Day 7 — Galle Fort → Departure</h3>
+  <p>
+    Morning visit to <strong>Galle Fort</strong> (UNESCO) — walk the ramparts, explore the boutique lanes, and enjoy a final coffee with ocean views. Optional stop at <strong>Mirissa beach</strong>. Transfer to Colombo Airport for departure.
+  </p>
+
+  <h2>What's Included in This Itinerary</h2>
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Included</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Private air-conditioned vehicle</td><td class="val-yes">Yes</td></tr>
+        <tr><td>Dedicated driver for all 7 days</td><td class="val-yes">Yes</td></tr>
+        <tr><td>Airport pick-up and drop-off</td><td class="val-yes">Yes</td></tr>
+        <tr><td>Flexible itinerary adjustments</td><td class="val-yes">Yes</td></tr>
+        <tr><td>Hotel bookings</td><td class="val-limited">Not included (we can recommend)</td></tr>
+        <tr><td>Yala jeep safari fee</td><td class="val-limited">Not included (paid separately)</td></tr>
+        <tr><td>Meals</td><td class="val-limited">Not included</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Recommended SLTCS Plans</h2>
+  <p>
+    For a 7-day full island itinerary, we recommend the <a href="/plans" class="article-link">Silver Plan</a> or <a href="/plans" class="article-link">Gold Plan</a>. The Gold Plan includes a dedicated Chauffeur Guide Driver plus a second support driver — ideal for families with children or travellers who want maximum flexibility and cultural depth.
+  </p>
+  <p>
+    View our <a href="/price" class="article-link">pricing page</a>, or <a href="/#contact" class="article-link">submit a free enquiry</a> for a personalised quote.
+  </p>
+
+  <div class="article-cta">
+    <div class="article-cta-title">Ready to Book Your 7-Day Sri Lanka Tour?</div>
+    <div class="article-cta-desc">Tell us your travel dates and group size. We'll respond with a tailored quote within 24 hours.</div>
+    <a href="/#contact" class="article-cta-btn">Get a Free Quote</a>
+  </div>
+
+</article>
+`,
+  },
+  {
+    id: "mi-cultural",
+    slug: "sri-lanka-5-7-days-cultural-triangle-itinerary",
+    category: "model-itinerary",
+    title: "Sri Lanka 5–7 Days Cultural Triangle Itinerary: UNESCO Heritage Focus",
+    excerpt: "An in-depth 5 to 7-day private driver tour focused on Sri Lanka's UNESCO Cultural Triangle — Sigiriya, Anuradhapura, Polonnaruwa, and Kandy.",
+    coverImage: "/manus-storage/slide2_sigiriya_b8468f12.jpg",
+    publishedAt: "2026-06-02",
+    readingTime: 10,
+    tags: ["Cultural Triangle", "UNESCO", "Sigiriya", "Anuradhapura", "Polonnaruwa", "Kandy", "History"],
+    seo: {
+      metaTitle: "Sri Lanka Cultural Triangle Itinerary 5-7 Days | Private Driver",
+      metaDescription: "Explore Sri Lanka's UNESCO Cultural Triangle in 5 to 7 days with a private driver. Sigiriya, Anuradhapura, Polonnaruwa, and Kandy in depth.",
+      keywords: ["Sri Lanka Cultural Triangle itinerary", "Sri Lanka UNESCO sites tour", "Sigiriya Anuradhapura Polonnaruwa", "private driver Cultural Triangle"],
+    },
+    content: `
+<article class="article-body">
+
+  <img
+    src="/manus-storage/slide2_sigiriya_b8468f12.jpg"
+    alt="Sigiriya Rock Fortress — centrepiece of Sri Lanka's Cultural Triangle"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h2>Overview: 5–7 Days Cultural Triangle Focus</h2>
+  <p>
+    Sri Lanka's Cultural Triangle is a region in the north-central part of the island that contains an extraordinary concentration of UNESCO World Heritage sites — ancient capitals, rock fortresses, sacred temples, and cave shrines that together tell the story of over 2,000 years of Sinhalese civilisation. This itinerary is designed for history and culture enthusiasts who want to explore these sites in depth, rather than rushing through them.
+  </p>
+  <p>
+    The plan can be completed in 5 days at a moderate pace, or extended to 7 days for a more relaxed and thorough experience. A <a href="/information/private-driver-guide/chauffeur-guide-sri-lanka-driver-vs-tourist-guide" class="article-link">Chauffeur Guide Driver</a> is strongly recommended for this itinerary, as the historical context provided at each site significantly enriches the experience.
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Detail</th>
+          <th>Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Duration</td><td>5–7 Days</td></tr>
+        <tr><td>Focus</td><td>UNESCO Heritage Sites &amp; Safari</td></tr>
+        <tr><td>Key Destinations</td><td>Sigiriya, Anuradhapura, Polonnaruwa, Kandy</td></tr>
+        <tr><td>Ideal For</td><td>History &amp; culture enthusiasts</td></tr>
+        <tr><td>Start / End Point</td><td>Colombo Airport (BIA)</td></tr>
+        <tr><td>Recommended Plan</td><td><a href="/plans" class="article-link">Gold Plan</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>The UNESCO World Heritage Sites of the Cultural Triangle</h2>
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Site</th>
+          <th>UNESCO Status</th>
+          <th>Highlights</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Sigiriya</strong></td><td class="val-yes">World Heritage Site</td><td>5th-century rock fortress, frescoes, water gardens</td></tr>
+        <tr><td><strong>Dambulla Cave Temple</strong></td><td class="val-yes">World Heritage Site</td><td>5 cave shrines, 150+ Buddha statues, ancient murals</td></tr>
+        <tr><td><strong>Anuradhapura</strong></td><td class="val-yes">World Heritage Site</td><td>Sri Lanka's first ancient capital, sacred Bodhi Tree, stupas</td></tr>
+        <tr><td><strong>Polonnaruwa</strong></td><td class="val-yes">World Heritage Site</td><td>Medieval capital, Gal Vihara Buddha statues, palaces</td></tr>
+        <tr><td><strong>Kandy</strong></td><td class="val-yes">World Heritage Site</td><td>Temple of the Sacred Tooth Relic, Kandyan dance</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Day-by-Day Itinerary</h2>
+
+  <h3>Day 1 — Airport → Dambulla Cave Temple → Sigiriya</h3>
+  <p>
+    Depart from Colombo Airport (approximately 3–4 hours drive). En route, visit the <strong>Dambulla Cave Temple</strong> — a stunning UNESCO World Heritage site carved into a rock face, featuring five cave shrines with over 150 Buddha statues and ancient murals. Check in at Heritance Kandalama, a Geoffrey Bawa–designed architectural masterpiece set amid forest and lake.
+  </p>
+
+  <h3>Day 2 — Sigiriya Rock Fortress & Minneriya Safari</h3>
+  <p>
+    Early morning climb of <strong>Sigiriya Rock</strong> (UNESCO) — allow 2.5–3 hours for the round trip. The summit offers extraordinary views and the ascent passes the famous 5th-century frescoes and the Mirror Wall. In the afternoon, take a jeep safari at <strong>Minneriya National Park</strong>, famous for its elephant gatherings. Return to hotel.
+  </p>
+
+  <h3>Day 3 — Ancient Capital of Anuradhapura</h3>
+  <p>
+    Explore the vast UNESCO-listed ruins of <strong>Anuradhapura</strong> — Sri Lanka's first ancient capital, founded in the 4th century BC. Visit the sacred <strong>Sri Maha Bodhi</strong> (the oldest documented tree in the world, grown from a cutting of the original Bodhi Tree under which the Buddha attained enlightenment), the <strong>Ruwanwelisaya Stupa</strong>, and the Jetavanaramaya. Allow a full day for this sprawling site.
+  </p>
+
+  <img
+    src="/manus-storage/slide4_kandy_19bf406f.jpg"
+    alt="Temple of the Sacred Tooth Relic in Kandy, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Day 4 — Polonnaruwa & Pidurangala Rock</h3>
+  <p>
+    Optional morning climb of <strong>Pidurangala Rock</strong> for spectacular views of Sigiriya from above. Then explore the medieval city of <strong>Polonnaruwa</strong> (UNESCO) — remarkably well-preserved temples, palaces, and the famous <strong>Gal Vihara</strong> rock temple with its colossal Buddha statues carved directly into the granite face.
+  </p>
+
+  <h3>Day 5 — Kandy via Spice Garden</h3>
+  <p>
+    Drive to <strong>Kandy</strong> via a traditional spice garden in Matale. Visit the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO) and enjoy a Kandyan cultural dance performance in the evening.
+  </p>
+
+  <h3>Day 6 — Colombo Sightseeing & Ayurveda (Optional Extension)</h3>
+  <p>
+    For travellers extending to 6 or 7 days: explore Colombo's colonial architecture, vibrant Pettah Market, and the Gangaramaya Temple. Optional: check into an Ayurveda hotel in Negombo to unwind before departure.
+  </p>
+
+  <h3>Day 7 — Transfer to Airport</h3>
+  <p>
+    Final morning at leisure. Transfer to Colombo Airport (BIA) for your homeward flight.
+  </p>
+
+  <h2>Recommended SLTCS Plans</h2>
+  <p>
+    For a Cultural Triangle itinerary, we strongly recommend the <a href="/plans" class="article-link">Gold Plan</a> with a dedicated Chauffeur Guide Driver. The depth of historical and archaeological knowledge required to fully appreciate Anuradhapura and Polonnaruwa makes a qualified guide invaluable. See our <a href="/information/private-driver-guide/chauffeur-guide-sri-lanka-driver-vs-tourist-guide" class="article-link">Chauffeur Guide Driver guide</a> for more information.
+  </p>
+  <p>
+    View our <a href="/price" class="article-link">pricing page</a>, or <a href="/#contact" class="article-link">submit a free enquiry</a> for a personalised quote.
+  </p>
+
+  <div class="article-cta">
+    <div class="article-cta-title">Explore Sri Lanka's Ancient Heritage</div>
+    <div class="article-cta-desc">Tell us your travel dates and interests. We'll prepare a tailored Cultural Triangle itinerary and quote within 24 hours.</div>
+    <a href="/#contact" class="article-cta-btn">Get a Free Quote</a>
+  </div>
+
+</article>
+`,
+  },
+  {
+    id: "mi-10to14d",
+    slug: "sri-lanka-10-days-2-weeks-itinerary",
+    category: "model-itinerary",
+    title: "Sri Lanka 10 Days to 2 Weeks Itinerary: Classic First-Timer Plan by Private Driver",
+    excerpt: "The ultimate Sri Lanka private driver itinerary — 10 to 14 days covering Sigiriya, Kandy, the tea train, Ella, Yala, Galle, and beach relaxation. Perfect for first-timers wanting the complete experience.",
+    coverImage: "/manus-storage/hero_van_srilanka_706f8966.jpg",
+    publishedAt: "2026-06-02",
+    readingTime: 12,
+    tags: ["10 Days", "2 Weeks", "Classic Plan", "Sigiriya", "Kandy", "Ella", "Yala", "Galle", "Beach"],
+    seo: {
+      metaTitle: "Sri Lanka 10 Days to 2 Weeks Itinerary | Classic Private Driver Tour",
+      metaDescription: "The complete Sri Lanka private driver itinerary — 10 to 14 days covering all the highlights: Sigiriya, Kandy, tea train, Ella, Yala, Galle, and beach.",
+      keywords: ["Sri Lanka 10 day itinerary", "Sri Lanka 2 weeks itinerary", "private driver Sri Lanka", "Sri Lanka classic tour"],
+    },
+    content: `
+<article class="article-body">
+
+  <img
+    src="/manus-storage/hero_van_srilanka_706f8966.jpg"
+    alt="Private driver van on a scenic Sri Lanka road at sunset"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h2>Overview: 10 Days to 2 Weeks Classic First-Timer Plan</h2>
+  <p>
+    This is the itinerary we recommend most often to first-time visitors who have the time to experience Sri Lanka properly. Over 10 to 14 days, you will travel from the ancient Cultural Triangle through the sacred city of Kandy, up into the dramatic tea highlands, across to the wildlife-rich south, and finally to the beaches of the southern coast — all in a fully private vehicle with a dedicated driver.
+  </p>
+  <p>
+    This plan can be completed in 10 days at a comfortable pace, or extended to 14 days by adding extra nights at your favourite locations, incorporating an Ayurveda retreat, or exploring additional destinations such as Trincomalee on the east coast.
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Detail</th>
+          <th>Information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Duration</td><td>10–14 Days</td></tr>
+        <tr><td>Focus</td><td>Complete Island Experience</td></tr>
+        <tr><td>Key Destinations</td><td>Sigiriya, Kandy, Tea Train, Ella, Yala, Galle, Beach</td></tr>
+        <tr><td>Ideal For</td><td>First-timers wanting the full Sri Lanka experience</td></tr>
+        <tr><td>Start / End Point</td><td>Colombo Airport (BIA)</td></tr>
+        <tr><td>Recommended Plan</td><td><a href="/plans" class="article-link">Gold Plan</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Day-by-Day Itinerary</h2>
+
+  <h3>Day 1 — Airport → Dambulla Cave Temple → Sigiriya</h3>
+  <p>
+    Depart from Colombo Airport or Negombo. Drive to the Cultural Triangle (approximately 3 hours). Stop at the <strong>Dambulla Cave Temple</strong> (UNESCO) for lunch and sightseeing. Check in at Heritance Kandalama — a celebrated Geoffrey Bawa hotel set amid forest and lake.
+  </p>
+
+  <h3>Day 2 — Sigiriya Rock & Anuradhapura</h3>
+  <p>
+    Morning climb of <strong>Sigiriya Rock Fortress</strong> (UNESCO). Transfer to the ancient capital of <strong>Anuradhapura</strong> (1.5–2 hours). Explore the sacred Bodhi Tree, stupas, and ancient ruins. Return to hotel.
+  </p>
+
+  <h3>Day 3 — Kandy: Spice Garden & Temple</h3>
+  <p>
+    Drive to <strong>Kandy</strong> via a spice garden in Matale (approximately 3 hours). Visit the <strong>Geragama Tea Factory</strong> and the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO). Evening Kandyan dance performance.
+  </p>
+
+  <h3>Day 4 — Nuwara Eliya: Tea Highlands</h3>
+  <p>
+    Scenic mountain drive to <strong>Nuwara Eliya</strong> through rolling tea estates. Tea-plucking experience and high tea at a colonial plantation hotel. Explore the charming 'Little England' town.
+  </p>
+
+  <h3>Day 5 — Scenic Tea Train → Nine Arches Bridge → Ella</h3>
+  <p>
+    Board the iconic <strong>tea-country train</strong> for a breathtaking journey through misty mountains. Photograph the famous <strong>Nine Arches Bridge</strong>. Arrive in <strong>Ella</strong>.
+  </p>
+
+  <img
+    src="/manus-storage/dest_ella_bd8060fc.jpg"
+    alt="Nine Arches Bridge in Ella, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>Day 6 — Ella Sightseeing → Yala</h3>
+  <p>
+    Morning hike to <strong>Little Adam's Peak</strong> and Ella Rock for panoramic views. Afternoon transfer to the Yala area (approximately 2 hours). Check in to a safari lodge.
+  </p>
+
+  <h3>Day 7 — Yala National Park Safari → Mirissa Beach</h3>
+  <p>
+    Early morning jeep safari at <strong>Yala National Park</strong> — Sri Lanka's most famous wildlife park, home to the world's highest density of leopards. Afternoon transfer to the beach resort of <strong>Mirissa</strong>.
+  </p>
+
+  <h3>Day 8 — Galle Fort & Beach Day</h3>
+  <p>
+    Morning visit to the UNESCO-listed <strong>Galle Fort</strong> — Dutch colonial ramparts, boutique shops, and ocean views. Afternoon at leisure on Mirissa beach. Optional whale watching (seasonal: November–April).
+  </p>
+
+  <h3>Day 9 — Negombo: Ayurveda & Rest</h3>
+  <p>
+    Transfer to <strong>Negombo</strong> on the west coast (approximately 3–4 hours). Check into an Ayurveda hotel for traditional treatments and relaxation before your departure.
+  </p>
+
+  <h3>Day 10 — Colombo Sightseeing → Airport</h3>
+  <p>
+    Morning exploration of <strong>Colombo</strong> — Gangaramaya Temple, Pettah Market, and the vibrant Galle Face Green. Transfer to Colombo Airport (BIA) for your departure flight.
+  </p>
+
+  <h2>Optional Extensions (Days 11–14)</h2>
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Extension</th>
+          <th>Duration</th>
+          <th>Highlights</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Trincomalee East Coast</td><td>2–3 days</td><td>Pristine beaches, Pigeon Island snorkelling, whale watching</td></tr>
+        <tr><td>Polonnaruwa Deep Dive</td><td>1 day</td><td>Medieval capital, Gal Vihara rock temple, ancient reservoirs</td></tr>
+        <tr><td>Ayurveda Retreat</td><td>2–4 days</td><td>Traditional treatments, yoga, relaxation before departure</td></tr>
+        <tr><td>Jaffna (Far North)</td><td>2–3 days</td><td>Tamil culture, Nallur Kandaswamy Temple, unique cuisine</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Recommended SLTCS Plans</h2>
+  <p>
+    For a 10 to 14-day itinerary, we strongly recommend the <a href="/plans" class="article-link">Gold Plan</a> — a dedicated Chauffeur Guide Driver with a second support driver. Over a longer journey, the value of having a knowledgeable, certified guide who can bring each destination to life becomes even more apparent. The second support driver also ensures maximum flexibility and safety on longer travel days.
+  </p>
+  <p>
+    View our <a href="/price" class="article-link">pricing page</a> for transparent rates, or <a href="/#contact" class="article-link">submit a free enquiry</a> for a personalised quote tailored to your exact dates and group size.
+  </p>
+
+  <div class="article-cta">
+    <div class="article-cta-title">Plan Your Dream Sri Lanka Journey</div>
+    <div class="article-cta-desc">Tell us your travel dates and group size. We'll respond with a tailored 10–14 day itinerary and quote within 24 hours.</div>
+    <a href="/#contact" class="article-cta-btn">Get a Free Quote</a>
+  </div>
+
+</article>
+`,
+  },
 ];
-
 // ─── Helper Functions ─────────────────────────────────────────────────────────
-
 export function getArticlesByCategory(category: ArticleCategory): Article[] {
   return ARTICLES.filter((a) => a.category === category);
 }

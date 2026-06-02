@@ -60,11 +60,11 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
             <button>MODEL ITINERARY</button>
             {dropdownOpen && (
               <div className="nav-dropdown-menu">
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nights / 5 Days</a>
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nights / 6 Days</a>
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nights / 7 Days</a>
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 to 7 Days – Cultural Triangle</a>
-                <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Days to 2 Weeks – Classic Plan</a>
+                <a href="/information/model-itinerary/sri-lanka-4-nights-5-days-itinerary">4 Nights / 5 Days</a>
+                <a href="/information/model-itinerary/sri-lanka-5-nights-6-days-itinerary">5 Nights / 6 Days</a>
+                <a href="/information/model-itinerary/sri-lanka-6-nights-7-days-itinerary">6 Nights / 7 Days</a>
+                <a href="/information/model-itinerary/sri-lanka-5-7-days-cultural-triangle-itinerary">5 to 7 Days – Cultural Triangle</a>
+                <a href="/information/model-itinerary/sri-lanka-10-days-2-weeks-itinerary">10 Days to 2 Weeks – Classic Plan</a>
               </div>
             )}
           </li>
@@ -113,7 +113,7 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
       {mobileOpen && (
         <div className="mobile-menu open">
           <a href="/plans">Plans</a>
-          <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Model Itinerary</a>
+          <a href="/information/model-itinerary">Model Itinerary</a>
           <a href="/vehicles">Vehicles</a>
           <a href="/voice">Voice</a>
           {/* Information accordion */}

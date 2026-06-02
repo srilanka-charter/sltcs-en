@@ -157,11 +157,11 @@ function Navbar() {
             <button>MODEL ITINERARY</button>
             {dropdownOpen && (
               <div className="nav-dropdown-menu">
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nights / 5 Days</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nights / 6 Days</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nights / 7 Days</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 to 7 Days – Cultural Triangle</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Days to 2 Weeks – Classic Plan</a>
+                <a href="/information/model-itinerary/sri-lanka-4-nights-5-days-itinerary">4 Nights / 5 Days</a>
+                <a href="/information/model-itinerary/sri-lanka-5-nights-6-days-itinerary">5 Nights / 6 Days</a>
+                <a href="/information/model-itinerary/sri-lanka-6-nights-7-days-itinerary">6 Nights / 7 Days</a>
+                <a href="/information/model-itinerary/sri-lanka-5-7-days-cultural-triangle-itinerary">5 to 7 Days – Cultural Triangle</a>
+                <a href="/information/model-itinerary/sri-lanka-10-days-2-weeks-itinerary">10 Days to 2 Weeks – Classic Plan</a>
               </div>
             )}
           </li>
@@ -216,11 +216,11 @@ function Navbar() {
             </button>
             {mobileItineraryOpen && (
               <div className="mobile-accordion-body">
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nights / 5 Days</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nights / 6 Days</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nights / 7 Days</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5–7 Days – Cultural Triangle</a>
-                <a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Days to 2 Weeks – Classic</a>
+                <a href="/information/model-itinerary/sri-lanka-4-nights-5-days-itinerary">4 Nights / 5 Days</a>
+                <a href="/information/model-itinerary/sri-lanka-5-nights-6-days-itinerary">5 Nights / 6 Days</a>
+                <a href="/information/model-itinerary/sri-lanka-6-nights-7-days-itinerary">6 Nights / 7 Days</a>
+                <a href="/information/model-itinerary/sri-lanka-5-7-days-cultural-triangle-itinerary">5–7 Days – Cultural Triangle</a>
+                <a href="/information/model-itinerary/sri-lanka-10-days-2-weeks-itinerary">10 Days to 2 Weeks – Classic</a>
               </div>
             )}
           </div>
@@ -1409,11 +1409,11 @@ function Footer() {
           <div className="footer-col">
             <h4>Itineraries</h4>
             <ul>
-              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>4 Nights / 5 Days</a></li>
-              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5 Nights / 6 Days</a></li>
-              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>6 Nights / 7 Days</a></li>
-              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>5–7 Days Cultural</a></li>
-              <li><a href="#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>10 Days – 2 Weeks</a></li>
+              <li><a href="/information/model-itinerary/sri-lanka-4-nights-5-days-itinerary">4 Nights / 5 Days</a></li>
+              <li><a href="/information/model-itinerary/sri-lanka-5-nights-6-days-itinerary">5 Nights / 6 Days</a></li>
+              <li><a href="/information/model-itinerary/sri-lanka-6-nights-7-days-itinerary">6 Nights / 7 Days</a></li>
+              <li><a href="/information/model-itinerary/sri-lanka-5-7-days-cultural-triangle-itinerary">5–7 Days Cultural</a></li>
+              <li><a href="/information/model-itinerary/sri-lanka-10-days-2-weeks-itinerary">10 Days – 2 Weeks</a></li>
             </ul>
           </div>
           <div className="footer-col">

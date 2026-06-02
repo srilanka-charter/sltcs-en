@@ -413,11 +413,11 @@ export default function FAQ() {
             <button>MODEL ITINERARY</button>
             {dropdownOpen && (
               <div className="nav-dropdown-menu">
-                <Link href="/#courses" onClick={(e) => { e.preventDefault(); window.location.href = "/#courses"; }}>4 Nights / 5 Days</Link>
-                <Link href="/#courses" onClick={(e) => { e.preventDefault(); window.location.href = "/#courses"; }}>5 Nights / 6 Days</Link>
-                <Link href="/#courses" onClick={(e) => { e.preventDefault(); window.location.href = "/#courses"; }}>6 Nights / 7 Days</Link>
-                <Link href="/#courses" onClick={(e) => { e.preventDefault(); window.location.href = "/#courses"; }}>5 to 7 Days – Cultural Triangle</Link>
-                <Link href="/#courses" onClick={(e) => { e.preventDefault(); window.location.href = "/#courses"; }}>10 Days to 2 Weeks – Classic Plan</Link>
+                <Link href="/information/model-itinerary/sri-lanka-4-nights-5-days-itinerary">4 Nights / 5 Days</Link>
+                <Link href="/information/model-itinerary/sri-lanka-5-nights-6-days-itinerary">5 Nights / 6 Days</Link>
+                <Link href="/information/model-itinerary/sri-lanka-6-nights-7-days-itinerary">6 Nights / 7 Days</Link>
+                <Link href="/information/model-itinerary/sri-lanka-5-7-days-cultural-triangle-itinerary">5 to 7 Days – Cultural Triangle</Link>
+                <Link href="/information/model-itinerary/sri-lanka-10-days-2-weeks-itinerary">10 Days to 2 Weeks – Classic Plan</Link>
               </div>
             )}
           </li>
@@ -447,7 +447,7 @@ export default function FAQ() {
       {mobileOpen && (
         <div className="mobile-menu open">
           <Link href="/plans">Plans</Link>
-          <Link href="/#courses" onClick={() => setMobileOpen(false)}>Model Itinerary</Link>
+          <Link href="/information/model-itinerary" onClick={() => setMobileOpen(false)}>Model Itinerary</Link>
           <Link href="/vehicles" onClick={() => setMobileOpen(false)}>Vehicles</Link>
           <Link href="/price" onClick={() => setMobileOpen(false)}>Price</Link>
           <Link href="/#contact" onClick={() => setMobileOpen(false)}>Contact</Link>
@@ -554,10 +554,10 @@ export default function FAQ() {
             <div className="footer-nav-col">
               <div className="footer-nav-title">Navigation</div>
               <Link href="/plans">Plans</Link>
-              <Link href="/#courses">4 Nights / 5 Days</Link>
-              <Link href="/#courses">5 Nights / 6 Days</Link>
-              <Link href="/#courses">6 Nights / 7 Days</Link>
-              <Link href="/#courses">Model Itinerary</Link>
+              <Link href="/information/model-itinerary/sri-lanka-4-nights-5-days-itinerary">4 Nights / 5 Days</Link>
+              <Link href="/information/model-itinerary/sri-lanka-5-nights-6-days-itinerary">5 Nights / 6 Days</Link>
+              <Link href="/information/model-itinerary/sri-lanka-6-nights-7-days-itinerary">6 Nights / 7 Days</Link>
+              <Link href="/information/model-itinerary">Model Itinerary</Link>
             </div>
             <div className="footer-nav-col">
               <Link href="/vehicles">Vehicles</Link>

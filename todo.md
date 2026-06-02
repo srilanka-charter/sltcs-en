@@ -92,3 +92,9 @@
 - [x] Mobile optimisation for Articles 1, 3, 10: table overflow-x scroll, font scaling, 1-column grids at ≤480px, sidebar hidden on mobile
 - [x] Mobile overflow fix: article-detail-content-wrap/main/body min-width:0 + overflow-x:hidden + word-wrap:break-word (CSS Grid overflow prevention)
 - [x] Article 6 (Private Driver Guide): "Chauffeur Guide in Sri Lanka: Driver vs Tourist Guide Explained" - 3 AI images, driver-type comparison tables, plan cards (Bronze/Silver/Gold), internal links, mobile responsive
+- [x] Model Itinerary: 4 Nights 5 Days article (model-itinerary category)
+- [x] Model Itinerary: 5 Nights 6 Days article (model-itinerary category)
+- [x] Model Itinerary: 6 Nights 7 Days article (model-itinerary category)
+- [x] Model Itinerary: 5-7 Days Cultural Triangle article (model-itinerary category)
+- [x] Model Itinerary: 10 Days to 2 Weeks Classic Plan article (model-itinerary category)
+- [x] Header Model Itinerary dropdown links to each article URL
