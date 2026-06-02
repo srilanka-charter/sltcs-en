@@ -1536,6 +1536,14 @@ export const ARTICLES: Article[] = [
   />
 
   <h2>Overview: 5 Nights / 6 Days Culture + Nature</h2>
+
+  <img
+    src="/manus-storage/itinerary_5n6d_route_map_83f6d60b.png"
+    alt="Sri Lanka 5 Nights 6 Days Itinerary Illustrated Route Map"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
   <p>
     This 6-day private driver itinerary strikes the ideal balance between cultural exploration and natural adventure. You will climb Sigiriya, explore the sacred city of Kandy, travel through the tea highlands to Ella, embark on a full-day wildlife safari at Yala, and finish at the historic Galle Fort — all in a fully private vehicle with a dedicated driver.
   </p>
@@ -1573,6 +1581,13 @@ export const ARTICLES: Article[] = [
   <p>
     Climb <strong>Sigiriya Rock Fortress</strong> (UNESCO) in the morning — allow 2.5–3 hours for the full ascent and descent. In the afternoon, take a jeep safari at <strong>Minneriya or Kaudulla National Park</strong>, where you may encounter large herds of wild elephants gathering around the ancient reservoirs.
   </p>
+
+  <img
+    src="/manus-storage/itinerary_5n6d_sigiriya_top_24b584a1.jpg"
+    alt="Driver and guests at the top of Sigiriya Rock Fortress, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
 
   <h3>Day 3 — Kandy Sightseeing</h3>
   <p>
