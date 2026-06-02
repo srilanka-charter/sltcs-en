@@ -691,31 +691,9 @@ export const ARTICLES: Article[] = [
     </figcaption>
   </figure>
 
-  <h3>SLTCS Price Guide (USD, Tax-Inclusive, 2026)</h3>
+  <h3>SLTCS Price Guide (2026)</h3>
 
-  <table class="article-table">
-    <thead>
-      <tr>
-        <th>Duration</th>
-        <th>Bronze (Sedan)</th>
-        <th>Silver (Sedan)</th>
-        <th>Gold (Sedan)</th>
-        <th>Silver (Van)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>2 days</td><td>$270</td><td>$310</td><td>$350</td><td>$330</td></tr>
-      <tr><td>3 days</td><td>$340</td><td>$400</td><td>$460</td><td>$410</td></tr>
-      <tr><td>5 days</td><td>$480</td><td>$580</td><td>$680</td><td>$580</td></tr>
-      <tr><td>7 days</td><td>$560</td><td>$700</td><td>$840</td><td>$670</td></tr>
-      <tr><td>10 days</td><td>$750</td><td>$950</td><td>$1,150</td><td>$900</td></tr>
-      <tr><td>14 days</td><td>$1,050</td><td>$1,330</td><td>$1,610</td><td>$1,260</td></tr>
-    </tbody>
-  </table>
-
-  <p>
-    All prices above are for standard itineraries with English-speaking drivers. Additional charges may apply if the total distance significantly exceeds the standard estimate, or if the pick-up or drop-off point is outside the airport area (including Colombo and Negombo). For a full price list including Van and Big Van options across all durations, visit our <a href="/price" class="article-internal-link">Pricing page</a>.
-  </p>
+  <!-- PRICE_TABLE_PLACEHOLDER -->
 
   <h3>Understanding the Three Plans</h3>
 

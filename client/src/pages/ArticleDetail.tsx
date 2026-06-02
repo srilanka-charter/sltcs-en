@@ -7,6 +7,12 @@
 import { useParams, Link } from "wouter";
 import { getArticleBySlug, CATEGORIES, getArticlesByCategory, type ArticleCategory } from "@/data/articles";
 import { useEffect } from "react";
+import Article3PriceTable from "@/components/Article3PriceTable";
+
+// Slug for Article 3 — price table is rendered as a React component
+const ARTICLE3_SLUG = "driver-hire-sri-lanka-costs-safety-checklist";
+// Placeholder marker in the article HTML that gets replaced by the React component
+const PRICE_TABLE_PLACEHOLDER = "<!-- PRICE_TABLE_PLACEHOLDER -->";
 
 // ─── Related Article Card (small) ────────────────────────────────────────────
 
@@ -178,10 +184,32 @@ export default function ArticleDetail() {
             </div>
 
             {/* Content */}
-            <div
-              className="article-detail-body"
-              dangerouslySetInnerHTML={{ __html: article.content }}
-            />
+            {article.slug === ARTICLE3_SLUG ? (
+              // Article 3: split content at placeholder and inject React price table
+              (() => {
+                const parts = article.content.split(PRICE_TABLE_PLACEHOLDER);
+                return (
+                  <>
+                    <div
+                      className="article-detail-body"
+                      dangerouslySetInnerHTML={{ __html: parts[0] ?? "" }}
+                    />
+                    <Article3PriceTable />
+                    {parts[1] && (
+                      <div
+                        className="article-detail-body"
+                        dangerouslySetInnerHTML={{ __html: parts[1] }}
+                      />
+                    )}
+                  </>
+                );
+              })()
+            ) : (
+              <div
+                className="article-detail-body"
+                dangerouslySetInnerHTML={{ __html: article.content }}
+              />
+            )}
           </main>
 
           {/* Sidebar */}
