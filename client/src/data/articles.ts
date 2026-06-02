@@ -1098,7 +1098,7 @@ export const ARTICLES: Article[] = [
   </p>
 
   <div class="article-table-wrap">
-    <table>
+    <table class="article-table">
       <thead>
         <tr>
           <th>Driver Type</th>
@@ -1120,14 +1120,14 @@ export const ARTICLES: Article[] = [
           <td><strong>Chauffeur Guide Driver</strong></td>
           <td>Transport + cultural commentary</td>
           <td>Certified guiding at major sites</td>
-          <td>Fluent</td>
+          <td class="val-yes">Fluent</td>
           <td>First-time visitors, couples, families wanting depth</td>
         </tr>
         <tr>
           <td><strong>National Guide</strong></td>
           <td>Full guided tour leadership</td>
           <td>Comprehensive — history, archaeology, ecology</td>
-          <td>Fluent / professional</td>
+          <td class="val-yes">Fluent / professional</td>
           <td>Large groups, specialist cultural or wildlife tours</td>
         </tr>
       </tbody>
@@ -1159,7 +1159,7 @@ export const ARTICLES: Article[] = [
 
   <h3>What a Chauffeur Guide Driver Provides</h3>
   <div class="article-table-wrap">
-    <table>
+    <table class="article-table">
       <thead>
         <tr>
           <th>Service Element</th>
@@ -1170,38 +1170,38 @@ export const ARTICLES: Article[] = [
       <tbody>
         <tr>
           <td>Airport pick-up and drop-off</td>
-          <td>Yes</td>
-          <td>Yes</td>
+          <td class="val-yes">Yes</td>
+          <td class="val-yes">Yes</td>
         </tr>
         <tr>
           <td>Multi-day island-wide charter</td>
-          <td>Yes</td>
-          <td>Yes</td>
+          <td class="val-yes">Yes</td>
+          <td class="val-yes">Yes</td>
         </tr>
         <tr>
           <td>Flexible itinerary adjustments</td>
-          <td>Yes</td>
-          <td>Yes</td>
+          <td class="val-yes">Yes</td>
+          <td class="val-yes">Yes</td>
         </tr>
         <tr>
           <td>Cultural &amp; historical commentary at sites</td>
-          <td>Limited</td>
-          <td>Yes — SLTDA certified</td>
+          <td class="val-limited">Limited</td>
+          <td class="val-yes">Yes — SLTDA certified</td>
         </tr>
         <tr>
           <td>Restaurant and local experience recommendations</td>
-          <td>Basic</td>
-          <td>Detailed, personalised</td>
+          <td class="val-limited">Basic</td>
+          <td class="val-yes">Detailed, personalised</td>
         </tr>
         <tr>
           <td>Assistance with ticket purchase and entry logistics</td>
-          <td>Limited</td>
-          <td>Yes</td>
+          <td class="val-limited">Limited</td>
+          <td class="val-yes">Yes</td>
         </tr>
         <tr>
           <td>Itinerary planning advice before travel</td>
-          <td>Rarely</td>
-          <td>Yes</td>
+          <td class="val-limited">Rarely</td>
+          <td class="val-yes">Yes</td>
         </tr>
       </tbody>
     </table>
@@ -1234,7 +1234,7 @@ export const ARTICLES: Article[] = [
   </p>
 
   <div class="article-table-wrap">
-    <table>
+    <table class="article-table">
       <thead>
         <tr>
           <th>Travel Style</th>
