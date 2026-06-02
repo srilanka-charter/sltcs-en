@@ -1965,6 +1965,14 @@ export const ARTICLES: Article[] = [
   />
 
   <h2>Overview: 10 Days to 2 Weeks Classic First-Timer Plan</h2>
+
+  <img
+    src="/manus-storage/itinerary_10days_route_map_a68b9a7c.png"
+    alt="10-Day Sri Lanka Itinerary Illustrated Route Map"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
   <p>
     This is the itinerary we recommend most often to first-time visitors who have the time to experience Sri Lanka properly. Over 10 to 14 days, you will travel from the ancient Cultural Triangle through the sacred city of Kandy, up into the dramatic tea highlands, across to the wildlife-rich south, and finally to the beaches of the southern coast — all in a fully private vehicle with a dedicated driver.
   </p>
