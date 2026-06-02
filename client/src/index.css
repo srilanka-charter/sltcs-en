@@ -2652,3 +2652,38 @@ footer {
 .a3-quote-step-num { width: 36px; height: 36px; border-radius: 50%; background: #c9a84c; color: #0a0a0a; font-size: 1rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .a3-quote-step-text { font-size: 0.82rem; color: #c8b89a; line-height: 1.5; }
 @media (max-width: 640px) { .a3-quote-box { padding: 24px 20px; } .a3-quote-steps { flex-direction: column; } }
+
+/* ─── Article 10 – Advantage Grid ────────────────────────────────────────────── */
+.a10-advantage-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 28px 0 40px; }
+.a10-advantage-card { display: flex; gap: 16px; align-items: flex-start; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.18); border-radius: 10px; padding: 20px; transition: border-color 0.2s, background 0.2s; }
+.a10-advantage-card:hover { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.35); }
+.a10-advantage-num { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: rgba(201,168,76,0.5); line-height: 1; flex-shrink: 0; min-width: 36px; }
+.a10-advantage-title { font-size: 0.9rem; font-weight: 700; color: #e8d5b0; margin-bottom: 6px; }
+.a10-advantage-desc { font-size: 0.83rem; color: #9a9080; line-height: 1.65; }
+@media (max-width: 640px) { .a10-advantage-grid { grid-template-columns: 1fr; } }
+
+/* ─── Article 10 – Plan Row ──────────────────────────────────────────────────── */
+.a10-plan-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0 32px; }
+.a10-plan-card { position: relative; border-radius: 12px; padding: 24px 20px; display: flex; flex-direction: column; gap: 8px; }
+.a10-plan-bronze { background: rgba(205,127,50,0.07); border: 1px solid rgba(205,127,50,0.25); }
+.a10-plan-silver { background: rgba(201,168,76,0.1); border: 2px solid rgba(201,168,76,0.4); }
+.a10-plan-gold { background: rgba(212,175,55,0.07); border: 1px solid rgba(212,175,55,0.25); }
+.a10-plan-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #c9a84c; color: #0a0a0a; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; padding: 3px 12px; border-radius: 20px; white-space: nowrap; }
+.a10-plan-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; color: #9a9080; text-transform: uppercase; }
+.a10-plan-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #f5f0e8; }
+.a10-plan-driver { font-size: 0.78rem; color: #c9a84c; font-weight: 600; margin-bottom: 4px; }
+.a10-plan-desc { font-size: 0.82rem; color: #9a9080; line-height: 1.65; margin: 0; }
+@media (max-width: 768px) { .a10-plan-row { grid-template-columns: 1fr; } }
+
+/* ─── Article 10 – Review Grid ──────────────────────────────────────────────── */
+.a10-review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 28px 0 32px; }
+.a10-review-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+.a10-review-photo-wrap { width: 100%; aspect-ratio: 4/3; overflow: hidden; }
+.a10-review-photo { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform 0.4s; }
+.a10-review-card:hover .a10-review-photo { transform: scale(1.04); }
+.a10-review-body { padding: 18px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.a10-review-stars { color: #c9a84c; font-size: 0.85rem; letter-spacing: 2px; }
+.a10-review-quote { font-size: 0.88rem; font-style: italic; color: #e8d5b0; line-height: 1.55; }
+.a10-review-meta { font-size: 0.75rem; color: #c9a84c; font-weight: 600; }
+.a10-review-text { font-size: 0.82rem; color: #9a9080; line-height: 1.65; margin: 0; }
+@media (max-width: 768px) { .a10-review-grid { grid-template-columns: 1fr; } }

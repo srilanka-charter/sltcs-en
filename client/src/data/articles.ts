@@ -765,6 +765,289 @@ export const ARTICLES: Article[] = [
 </article>
 `,
   },
+  // ─── Article 10: Van Hire with Driver for Families and Small Groups ───────────
+  {
+    id: "010",
+    slug: "van-hire-driver-sri-lanka-families-small-groups",
+    category: "family-group-travel",
+    title: "Van Hire with Driver in Sri Lanka for Families and Small Groups",
+    excerpt:
+      "Travelling with children, grandparents, or a group of friends? A private van with a dedicated driver is the most comfortable and practical way to explore Sri Lanka together. Here is everything you need to know.",
+    coverImage: "/manus-storage/review_smith_3ba6750f.jpeg",
+    publishedAt: "2026-06-02",
+    readingTime: 10,
+    tags: ["Family Travel", "Group Travel", "Van Hire", "Sri Lanka", "Private Driver"],
+    seo: {
+      metaTitle: "Van Hire with Driver in Sri Lanka for Families & Small Groups | SLTCS",
+      metaDescription:
+        "Planning a family or group trip to Sri Lanka? Discover why a private van with driver is the best option — luggage space, child safety, flexible itineraries, and transparent pricing.",
+      keywords: [
+        "van hire sri lanka family",
+        "sri lanka group travel private driver",
+        "family car hire sri lanka",
+        "private van driver sri lanka",
+        "sri lanka travel with children",
+        "group charter sri lanka",
+      ],
+    },
+    content: `
+<article class="article-body">
+
+  <p class="article-lead">
+    Sri Lanka is one of the most rewarding destinations in Asia for family and group travel — but getting around comfortably with multiple passengers, pushchairs, luggage, and different energy levels requires the right vehicle and the right driver. A private van charter with a dedicated English-speaking driver solves every one of these challenges in a single booking.
+  </p>
+
+  <img
+    src="/manus-storage/review1_r_family_eranga_a3545b4c.png"
+    alt="Family travellers with their private driver in Sri Lanka"
+    class="article-inline-img"
+  />
+
+  <h2>Why a Private Van Is the Best Choice for Families and Groups</h2>
+
+  <p>
+    Public transport in Sri Lanka — buses and trains — can be a wonderful experience for solo travellers or adventurous couples, but it is rarely practical for families or groups of four or more. Luggage space is limited, air conditioning is inconsistent, and coordinating multiple passengers across connections adds significant stress to every journey.
+  </p>
+  <p>
+    A private van charter eliminates all of these friction points. Your group travels together in a single air-conditioned vehicle, departures happen on your schedule, and the driver handles all navigation and logistics. There are no connections to miss, no queues to manage, and no strangers in your personal space.
+  </p>
+
+  <h3>What Makes a Van the Right Vehicle for Groups?</h3>
+
+  <p>
+    The standard vehicle for group travel in Sri Lanka is the <strong>Japanese KDH Hi-Ace van</strong> — a high-roof minibus that seats up to six passengers comfortably, with generous luggage space in the rear. For larger groups of up to nine, a <strong>luxury Japanese MPV</strong> with captain's seats provides the most comfort on longer journeys.
+  </p>
+  <p>
+    Both vehicle types offer high seating positions — ideal for viewing wildlife, paddy fields, and coastal scenery — and the elevated cabin keeps the interior cooler than a standard sedan in Sri Lanka's tropical heat. For families with young children, the step-up entry and wide sliding doors make boarding and alighting with car seats or pushchairs straightforward.
+  </p>
+  <p>
+    For a full overview of all available vehicle types and their passenger capacities, visit our <a href="/vehicles" class="article-link">Vehicles page</a>.
+  </p>
+
+  <h2>The 7 Biggest Advantages for Family and Group Travellers</h2>
+
+  <div class="a10-advantage-grid">
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">01</div>
+      <div class="a10-advantage-title">Door-to-Door Service</div>
+      <div class="a10-advantage-desc">Your driver meets you at the airport arrivals hall and drops you at every hotel entrance. No transfers, no taxis, no navigating unfamiliar streets with luggage.</div>
+    </div>
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">02</div>
+      <div class="a10-advantage-title">Flexible Itinerary</div>
+      <div class="a10-advantage-desc">Stop whenever the children need a break, change plans when someone is tired, or add an unplanned beach stop. The itinerary adapts to your group — not the other way around.</div>
+    </div>
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">03</div>
+      <div class="a10-advantage-title">Luggage Space</div>
+      <div class="a10-advantage-desc">The KDH van's rear cargo area accommodates large suitcases, pushchairs, and sports equipment with ease — a significant advantage over smaller vehicles or shared transfers.</div>
+    </div>
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">04</div>
+      <div class="a10-advantage-title">Child Safety</div>
+      <div class="a10-advantage-desc">SLTCS drivers are experienced with family groups and drive with particular care on mountain roads and coastal highways. Child car seats can be arranged on request.</div>
+    </div>
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">05</div>
+      <div class="a10-advantage-title">English-Speaking Driver</div>
+      <div class="a10-advantage-desc">Every SLTCS driver communicates clearly in English — essential for families who need to explain dietary requirements, medical needs, or simply ask for a restaurant recommendation.</div>
+    </div>
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">06</div>
+      <div class="a10-advantage-title">Flat-Rate Pricing</div>
+      <div class="a10-advantage-desc">All SLTCS prices are fixed and tax-inclusive. Fuel, tolls, and driver accommodation are included. There are no mileage charges or end-of-trip surprises — particularly important when splitting costs across a group.</div>
+    </div>
+    <div class="a10-advantage-card">
+      <div class="a10-advantage-num">07</div>
+      <div class="a10-advantage-title">Local Knowledge</div>
+      <div class="a10-advantage-desc">A good driver knows the best family-friendly restaurants, the quietest times to visit popular sites, and the shortcuts that keep long driving days manageable. This knowledge is invaluable when travelling with children or elderly passengers.</div>
+    </div>
+  </div>
+
+  <h2>Van Hire Pricing for Families and Groups (2026)</h2>
+
+  <p>
+    Van hire pricing at SLTCS is flat-rate and tax-inclusive. The table below shows indicative prices for the most common trip durations. All prices are in USD; quotes are also available in <strong>GBP, EUR, and AUD</strong>.
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Duration</th>
+          <th>Bronze (Van)<br/><span style="font-weight:400;font-size:0.8em;">Trainee Driver</span></th>
+          <th>Silver (Van)<br/><span style="font-weight:400;font-size:0.8em;">Tourist / Chauffeur Guide</span></th>
+          <th>Gold (Van)<br/><span style="font-weight:400;font-size:0.8em;">Chauffeur Guide (Highly Rated)</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2 Days</td><td>USD 180</td><td>USD 220</td><td>USD 280</td></tr>
+        <tr><td>3 Days</td><td>USD 255</td><td>USD 315</td><td>USD 400</td></tr>
+        <tr><td>5 Days</td><td>USD 395</td><td>USD 490</td><td>USD 625</td></tr>
+        <tr><td>7 Days</td><td>USD 525</td><td>USD 650</td><td>USD 830</td></tr>
+        <tr><td>10 Days</td><td>USD 720</td><td>USD 895</td><td>USD 1,140</td></tr>
+        <tr><td>14 Days</td><td>USD 980</td><td>USD 1,215</td><td>USD 1,550</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="font-size:0.82rem;color:#9a9080;margin-top:-8px;">
+    Prices are indicative and subject to itinerary. For a personalised quote, visit the <a href="/price" class="article-link">Pricing page</a> or <a href="/#contact" class="article-link">contact us directly</a>.
+  </p>
+
+  <p>
+    For groups of six to nine passengers, the <strong>Big Van</strong> (luxury Japanese MPV) is available at a slightly higher rate. Full pricing for all vehicle types and durations is available on our <a href="/price" class="article-link">Pricing page</a>.
+  </p>
+
+  <h2>Choosing the Right Service Plan for Your Group</h2>
+
+  <p>
+    SLTCS offers three service tiers. For families and groups, the choice of plan often comes down to the type of experience you are looking for:
+  </p>
+
+  <div class="a10-plan-row">
+    <div class="a10-plan-card a10-plan-bronze">
+      <div class="a10-plan-label">BRONZE</div>
+      <div class="a10-plan-name">Best Value</div>
+      <div class="a10-plan-driver">Trainee Driver</div>
+      <p class="a10-plan-desc">A reliable, government-licensed driver for groups who are comfortable navigating independently. Ideal for repeat visitors to Sri Lanka or travellers with a fixed itinerary who do not need guiding commentary.</p>
+    </div>
+    <div class="a10-plan-card a10-plan-silver">
+      <div class="a10-plan-badge">★ MOST POPULAR</div>
+      <div class="a10-plan-label">SILVER</div>
+      <div class="a10-plan-name">Most Popular</div>
+      <div class="a10-plan-driver">Highly-Rated Tourist Driver or Chauffeur Guide Driver</div>
+      <p class="a10-plan-desc">The most popular choice for families. Your driver accompanies you at sightseeing spots, provides guiding commentary, and handles safari and activity arrangements. Recommended for first-time visitors and families with children.</p>
+    </div>
+    <div class="a10-plan-card a10-plan-gold">
+      <div class="a10-plan-label">GOLD</div>
+      <div class="a10-plan-name">Premium Service</div>
+      <div class="a10-plan-driver">Chauffeur Guide Driver (Highly Rated)</div>
+      <p class="a10-plan-desc">Full-itinerary accompaniment with a highly rated Chauffeur Guide Driver. Dual support system throughout. Recommended for multi-generational families, groups with elderly passengers, or travellers who want the highest level of personalised attention.</p>
+    </div>
+  </div>
+
+  <p>For a full comparison of all three plans, visit our <a href="/plans" class="article-link">Plans page</a>.</p>
+
+  <h2>What Families and Groups Say About Travelling with SLTCS</h2>
+
+  <p>The following reviews are from families and groups who have completed their trips with SLTCS drivers.</p>
+
+  <div class="a10-review-grid">
+    <div class="a10-review-card">
+      <div class="a10-review-photo-wrap">
+        <img src="/manus-storage/review_smith_3ba6750f.jpeg" alt="The K Family with Driver Smith" class="a10-review-photo" />
+      </div>
+      <div class="a10-review-body">
+        <div class="a10-review-stars">★★★★★</div>
+        <div class="a10-review-quote">"Smith's calm professionalism and genuine warmth made our family holiday truly exceptional."</div>
+        <div class="a10-review-meta">The K Family · 5 passengers · Colombo – Ella – Yala – Mirissa</div>
+        <p class="a10-review-text">We travelled as a family of five — including two young children and a grandmother — and Smith handled every logistical challenge with quiet efficiency and a constant smile. His knowledge of Yala National Park was outstanding — we saw leopards, elephants, and crocodiles in a single morning.</p>
+      </div>
+    </div>
+    <div class="a10-review-card">
+      <div class="a10-review-photo-wrap">
+        <img src="/manus-storage/review_lasith_family_ae2d2464.jpeg" alt="The W Family with Driver Lasith" class="a10-review-photo" />
+      </div>
+      <div class="a10-review-body">
+        <div class="a10-review-stars">★★★★★</div>
+        <div class="a10-review-quote">"Lasith was endlessly patient with our children and made every moment of the trip feel effortless."</div>
+        <div class="a10-review-meta">The W Family · 3 passengers · Colombo – Sigiriya – Kandy – Galle</div>
+        <p class="a10-review-text">His warm manner with the kids put us all at ease, and his clear English meant nothing was ever lost in translation. Punctual, full of thoughtful suggestions for sights and local restaurants, and consistently calm behind the wheel.</p>
+      </div>
+    </div>
+    <div class="a10-review-card">
+      <div class="a10-review-photo-wrap">
+        <img src="/manus-storage/review_dfamily_chamil_9214e24c.png" alt="The D Family with Driver Chamil" class="a10-review-photo" />
+      </div>
+      <div class="a10-review-body">
+        <div class="a10-review-stars">★★★★★</div>
+        <div class="a10-review-quote">"Chamil's warmth, quick thinking, and natural thoughtfulness won over every member of our family."</div>
+        <div class="a10-review-meta">The D Family · 3 generations · Sigiriya – Kandy – Colombo</div>
+        <p class="a10-review-text">We travelled as three generations — grandparents, parents, and a child. Chamil constantly gathered the latest information on road conditions and safety, and his attentiveness to our child was especially touching.</p>
+      </div>
+    </div>
+  </div>
+
+  <p>Read more verified reviews on our <a href="/voice" class="article-link">Guest Voices page</a>.</p>
+
+  <img
+    src="/manus-storage/review1_r_family_eranga_a3545b4c.png"
+    alt="The R Family exploring Sri Lanka with their private driver"
+    class="article-inline-img"
+  />
+
+  <h2>Practical Tips for Families and Groups</h2>
+
+  <h3>Travelling with Young Children</h3>
+  <p>
+    Sri Lanka's roads vary considerably in quality — smooth expressways connect the major cities, but mountain routes and rural roads can be winding and bumpy. For infants and toddlers, a child car seat is strongly recommended. SLTCS can arrange a suitable seat on request; please mention this when you enquire.
+  </p>
+  <p>
+    Plan for rest stops every two to three hours on longer driving days. Most drivers know the best roadside stops — shaded areas with clean facilities and cold drinks. The hill country routes in particular benefit from an early start to avoid afternoon heat and to make the most of the morning light.
+  </p>
+
+  <h3>Travelling with Elderly Passengers</h3>
+  <p>
+    For groups that include elderly passengers, the <strong>Gold plan</strong> with a Chauffeur Guide Driver is the most appropriate choice. These drivers are experienced in managing the pace of the itinerary to suit all energy levels, and the dual support system ensures that no passenger is left without assistance at any point during the trip.
+  </p>
+  <p>
+    The KDH van's high seating position can require a step up to board — if mobility is a concern, the luxury MPV with lower entry and captain's seats may be more comfortable. Please mention any mobility requirements when you enquire.
+  </p>
+
+  <h3>Splitting Costs Across a Group</h3>
+  <p>
+    One of the most significant advantages of a private van charter for groups is the cost-per-person value. The table below illustrates how the per-person cost decreases as group size increases, using the Silver Van 7-day rate as an example:
+  </p>
+
+  <div class="article-table-wrap">
+    <table class="article-table">
+      <thead>
+        <tr>
+          <th>Group Size</th>
+          <th>Total (Silver Van, 7 Days)</th>
+          <th>Cost Per Person</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2 passengers</td><td>USD 650</td><td>USD 325</td></tr>
+        <tr><td>3 passengers</td><td>USD 650</td><td>USD 217</td></tr>
+        <tr><td>4 passengers</td><td>USD 650</td><td>USD 163</td></tr>
+        <tr><td>5 passengers</td><td>USD 650</td><td>USD 130</td></tr>
+        <tr><td>6 passengers</td><td>USD 650</td><td>USD 108</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="font-size:0.82rem;color:#9a9080;margin-top:-8px;">Based on indicative Silver Van 7-day rate. Actual prices may vary by itinerary.</p>
+
+  <h2>How to Book a Van Charter for Your Group</h2>
+
+  <div class="a3-quote-box">
+    <h3 class="a3-quote-heading">Get a Free, No-Obligation Quote</h3>
+    <p class="a3-quote-lead">
+      The easiest way to confirm the right vehicle and plan for your group is to share your travel dates, group size, and a rough itinerary with us. We will provide a personalised estimate in English — with no obligation to book and no pressure to commit before you are ready.
+    </p>
+    <div class="a3-quote-steps">
+      <div class="a3-quote-step">
+        <div class="a3-quote-step-num">1</div>
+        <div class="a3-quote-step-text">Share your travel dates, group size &amp; destinations</div>
+      </div>
+      <div class="a3-quote-step">
+        <div class="a3-quote-step-num">2</div>
+        <div class="a3-quote-step-text">Choose your preferred vehicle &amp; service plan</div>
+      </div>
+      <div class="a3-quote-step">
+        <div class="a3-quote-step-num">3</div>
+        <div class="a3-quote-step-text">Receive a detailed estimate within 24 hours</div>
+      </div>
+    </div>
+    <a href="/#contact" class="article-cta-btn">Get a Free Quote</a>
+  </div>
+
+</article>
+`,
+  },
 ];
 
 // ─── Helper Functions ─────────────────────────────────────────────────────────
