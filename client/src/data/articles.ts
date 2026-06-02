@@ -1439,6 +1439,14 @@ export const ARTICLES: Article[] = [
   <p>
     Begin the day with an early morning climb of <strong>Sigiriya Rock Fortress</strong> (UNESCO), one of the most extraordinary archaeological sites in Asia. The 5th-century royal citadel rises 200 metres above the surrounding jungle, and the summit offers panoramic views across the plains. Allow 2.5–3 hours for the full climb and descent.
   </p>
+
+  <img
+    src="/manus-storage/sigiriya_top_driver_guests_4n5d_e9dfe478.jpeg"
+    alt="SLTCS driver with guests at the summit of Sigiriya Rock Fortress, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
   <p>
     In the afternoon, enjoy an optional jeep safari at <strong>Minneriya National Park</strong>, famous for its seasonal elephant gatherings — one of the largest in the world. Return to your hotel for the evening.
   </p>
