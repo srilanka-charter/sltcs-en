@@ -147,6 +147,7 @@ export const ARTICLES: Article[] = [
     When evaluating a driver or operator, look for the following:
   </p>
 
+  <div class="article-table-wrap">
   <table class="article-table">
     <thead>
       <tr>
@@ -177,6 +178,7 @@ export const ARTICLES: Article[] = [
       </tr>
     </tbody>
   </table>
+  </div>
 
   <h2>Which Vehicle Type Should You Choose?</h2>
 
@@ -254,6 +256,7 @@ export const ARTICLES: Article[] = [
 
   <h2>Summary: What Makes a Good Private Driver Service</h2>
 
+  <div class="article-table-wrap">
   <table class="article-table">
     <thead>
       <tr>
@@ -288,6 +291,7 @@ export const ARTICLES: Article[] = [
       </tr>
     </tbody>
   </table>
+  </div>
 
   <p>
     Want to read what past guests say about their experience? Visit our <a href="/voice" class="article-internal-link">Guest Voices page</a> for verified reviews with Driver, Vehicle, and Operator ratings.
@@ -395,6 +399,7 @@ export const ARTICLES: Article[] = [
 
   <h2>Comparing Your Options: A Quick Reference</h2>
 
+  <div class="article-table-wrap">
   <table class="article-table">
     <thead>
       <tr>
@@ -437,6 +442,7 @@ export const ARTICLES: Article[] = [
       </tr>
     </tbody>
   </table>
+  </div>
 
   <h2>Which Vehicle Should You Choose?</h2>
 

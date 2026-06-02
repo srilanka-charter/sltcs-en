@@ -88,3 +88,5 @@
 - [x] Header PLANS link updated to /plans across all pages (Home, SiteNavbar, Vehicles, FAQ)
 - [x] Article3PlanCards internal links updated to /plans
 - [x] Silver Plan updated to "Highly-Rated Tourist Driver or Chauffeur Guide Driver"
+- [x] Article 10 (Family & Group Travel): "Van Hire with Driver in Sri Lanka for Families and Small Groups" - VOICE family photos, advantage grid, price table, plan cards, review grid
+- [x] Mobile optimisation for Articles 1, 3, 10: table overflow-x scroll, font scaling, 1-column grids at ≤480px, sidebar hidden on mobile
