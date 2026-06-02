@@ -709,24 +709,58 @@ export const ARTICLES: Article[] = [
     Not every low price is a good deal. The following patterns are common warning signs when comparing driver hire services in Sri Lanka:
   </p>
 
-  <ul>
-    <li><strong>Mileage-based pricing</strong> — Some operators advertise a low daily rate but apply per-kilometre charges above a set limit. Drivers have been known to report inflated distances, resulting in final bills far above the original quote.</li>
-    <li><strong>No English support at enquiry stage</strong> — If the operator cannot communicate clearly in English before you book, this will not improve once you are in the country.</li>
-    <li><strong>Pressure to visit shops or restaurants</strong> — Some drivers receive commissions from specific establishments and will divert your itinerary accordingly. This is a well-documented issue in Sri Lanka's tourism sector.</li>
-    <li><strong>No written confirmation</strong> — Any reputable operator will provide a written quote with itemised inclusions. Verbal-only agreements leave you with no recourse if the service does not match expectations.</li>
-  </ul>
+  <div class="a3-redflag-grid">
+    <div class="a3-redflag-card">
+      <div class="a3-redflag-icon">⚠</div>
+      <div class="a3-redflag-body">
+        <div class="a3-redflag-title">Mileage-Based Pricing</div>
+        <div class="a3-redflag-desc">Some operators advertise a low daily rate but apply per-kilometre charges above a set limit. Drivers have been known to report inflated distances, resulting in final bills far above the original quote.</div>
+      </div>
+    </div>
+    <div class="a3-redflag-card">
+      <div class="a3-redflag-icon">⚠</div>
+      <div class="a3-redflag-body">
+        <div class="a3-redflag-title">No English Support at Enquiry Stage</div>
+        <div class="a3-redflag-desc">If the operator cannot communicate clearly in English before you book, this will not improve once you are in the country.</div>
+      </div>
+    </div>
+    <div class="a3-redflag-card">
+      <div class="a3-redflag-icon">⚠</div>
+      <div class="a3-redflag-body">
+        <div class="a3-redflag-title">Pressure to Visit Shops or Restaurants</div>
+        <div class="a3-redflag-desc">Some drivers receive commissions from specific establishments and will divert your itinerary accordingly. This is a well-documented issue in Sri Lanka's tourism sector.</div>
+      </div>
+    </div>
+    <div class="a3-redflag-card">
+      <div class="a3-redflag-icon">⚠</div>
+      <div class="a3-redflag-body">
+        <div class="a3-redflag-title">No Written Confirmation</div>
+        <div class="a3-redflag-desc">Any reputable operator will provide a written quote with itemised inclusions. Verbal-only agreements leave you with no recourse if the service does not match expectations.</div>
+      </div>
+    </div>
+  </div>
 
-  <h2>How to Get an Accurate Quote</h2>
-
-  <p>
-    The most reliable way to get an accurate price for your specific trip is to share your itinerary — even a rough one — with the operator directly. At SLTCS, we provide free, personalised estimates in English based on your travel dates, group size, preferred vehicle, and the destinations you want to visit. There is no obligation to book, and no pressure to commit before you are ready.
-  </p>
-
-  <p>
-    To request a free quote, visit our <a href="/#contact" class="article-internal-link">Contact page</a> and share your travel dates, group size, and the places you would like to visit. We will respond with a detailed estimate, usually within 24 hours.
-  </p>
-
-  <a href="/#contact" class="article-cta-btn">Get a Free Quote</a>
+  <div class="a3-quote-box">
+    <h2 class="a3-quote-heading">How to Get an Accurate Quote</h2>
+    <p class="a3-quote-lead">
+      The most reliable way to get an accurate price for your specific trip is to share your itinerary — even a rough one — with the operator directly. At SLTCS, we provide free, personalised estimates in English based on your travel dates, group size, preferred vehicle, and the destinations you want to visit. There is no obligation to book, and no pressure to commit before you are ready.
+    </p>
+    <div class="a3-quote-steps">
+      <div class="a3-quote-step">
+        <div class="a3-quote-step-num">1</div>
+        <div class="a3-quote-step-text">Share your travel dates &amp; group size</div>
+      </div>
+      <div class="a3-quote-step">
+        <div class="a3-quote-step-num">2</div>
+        <div class="a3-quote-step-text">Tell us your preferred vehicle &amp; destinations</div>
+      </div>
+      <div class="a3-quote-step">
+        <div class="a3-quote-step-num">3</div>
+        <div class="a3-quote-step-text">Receive a detailed estimate within 24 hours</div>
+      </div>
+    </div>
+    <a href="/#contact" class="article-cta-btn">Get a Free Quote</a>
+  </div>
 
 </article>
 `,

@@ -2633,3 +2633,22 @@ footer {
   .plans-section { padding: 48px 16px; }
   .plans-compare-section, .plans-faq-section, .plans-cta-section { padding: 48px 16px; }
 }
+
+/* ─── Article 3 – Red Flags Grid ───────────────────────────────────────────── */
+.a3-redflag-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 28px 0 40px; }
+.a3-redflag-card { display: flex; gap: 14px; align-items: flex-start; background: rgba(200, 40, 40, 0.07); border: 1px solid rgba(200, 40, 40, 0.25); border-radius: 10px; padding: 18px 20px; transition: border-color 0.2s, background 0.2s; }
+.a3-redflag-card:hover { background: rgba(200, 40, 40, 0.12); border-color: rgba(200, 40, 40, 0.45); }
+.a3-redflag-icon { font-size: 1.3rem; color: #e05555; flex-shrink: 0; margin-top: 2px; }
+.a3-redflag-title { font-size: 0.9rem; font-weight: 700; color: #e8d5b0; margin-bottom: 6px; letter-spacing: 0.02em; }
+.a3-redflag-desc { font-size: 0.85rem; color: #9a9080; line-height: 1.65; }
+@media (max-width: 640px) { .a3-redflag-grid { grid-template-columns: 1fr; } }
+
+/* ─── Article 3 – Quote Box ─────────────────────────────────────────────────── */
+.a3-quote-box { background: linear-gradient(135deg, rgba(201,168,76,0.08) 0%, rgba(201,168,76,0.03) 100%); border: 1px solid rgba(201,168,76,0.25); border-radius: 14px; padding: 36px 40px; margin: 40px 0; }
+.a3-quote-heading { font-family: 'Playfair Display', serif; font-size: clamp(1.2rem, 2.5vw, 1.5rem); font-weight: 700; color: #f5f0e8; margin: 0 0 16px; padding-bottom: 12px; border-bottom: 1px solid rgba(201,168,76,0.2); }
+.a3-quote-lead { font-size: 0.9rem; color: #9a9080; line-height: 1.75; margin: 0 0 28px; }
+.a3-quote-steps { display: flex; gap: 16px; margin-bottom: 28px; }
+.a3-quote-step { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.15); border-radius: 10px; padding: 18px 12px; }
+.a3-quote-step-num { width: 36px; height: 36px; border-radius: 50%; background: #c9a84c; color: #0a0a0a; font-size: 1rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.a3-quote-step-text { font-size: 0.82rem; color: #c8b89a; line-height: 1.5; }
+@media (max-width: 640px) { .a3-quote-box { padding: 24px 20px; } .a3-quote-steps { flex-direction: column; } }
