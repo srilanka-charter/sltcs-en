@@ -1747,8 +1747,8 @@ export const ARTICLES: Article[] = [
   </p>
 
   <img
-    src="/manus-storage/dest_nuwara_57f4e54f.jpg"
-    alt="Tea estate in Nuwara Eliya highlands, Sri Lanka"
+    src="/manus-storage/lasith_nuwara_eliya_tea_family_107c01c5.jpeg"
+    alt="SLTCS driver with guests at Nuwara Eliya tea estate, Sri Lanka"
     class="article-inline-img"
     loading="lazy"
   />
