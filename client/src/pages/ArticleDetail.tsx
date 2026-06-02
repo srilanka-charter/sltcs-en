@@ -8,11 +8,13 @@ import { useParams, Link } from "wouter";
 import { getArticleBySlug, CATEGORIES, getArticlesByCategory, type ArticleCategory } from "@/data/articles";
 import { useEffect } from "react";
 import Article3PriceTable from "@/components/Article3PriceTable";
+import Article3PlanCards from "@/components/Article3PlanCards";
 
-// Slug for Article 3 — price table is rendered as a React component
+// Slug for Article 3 — interactive components are rendered as React components
 const ARTICLE3_SLUG = "driver-hire-sri-lanka-costs-safety-checklist";
-// Placeholder marker in the article HTML that gets replaced by the React component
+// Placeholder markers in the article HTML
 const PRICE_TABLE_PLACEHOLDER = "<!-- PRICE_TABLE_PLACEHOLDER -->";
+const PLAN_CARDS_PLACEHOLDER = "<!-- PLAN_CARDS_PLACEHOLDER -->";
 
 // ─── Related Article Card (small) ────────────────────────────────────────────
 
@@ -185,20 +187,34 @@ export default function ArticleDetail() {
 
             {/* Content */}
             {article.slug === ARTICLE3_SLUG ? (
-              // Article 3: split content at placeholder and inject React price table
+              // Article 3: split at both placeholders and inject React components
               (() => {
-                const parts = article.content.split(PRICE_TABLE_PLACEHOLDER);
+                // First split on price table placeholder
+                const priceParts = article.content.split(PRICE_TABLE_PLACEHOLDER);
+                const beforePrice = priceParts[0] ?? "";
+                const afterPrice = priceParts[1] ?? "";
+                // Then split the after-price section on plan cards placeholder
+                const planParts = afterPrice.split(PLAN_CARDS_PLACEHOLDER);
+                const betweenComponents = planParts[0] ?? "";
+                const afterPlans = planParts[1] ?? "";
                 return (
                   <>
                     <div
                       className="article-detail-body"
-                      dangerouslySetInnerHTML={{ __html: parts[0] ?? "" }}
+                      dangerouslySetInnerHTML={{ __html: beforePrice }}
                     />
                     <Article3PriceTable />
-                    {parts[1] && (
+                    {betweenComponents && (
                       <div
                         className="article-detail-body"
-                        dangerouslySetInnerHTML={{ __html: parts[1] }}
+                        dangerouslySetInnerHTML={{ __html: betweenComponents }}
+                      />
+                    )}
+                    <Article3PlanCards />
+                    {afterPlans && (
+                      <div
+                        className="article-detail-body"
+                        dangerouslySetInnerHTML={{ __html: afterPlans }}
                       />
                     )}
                   </>

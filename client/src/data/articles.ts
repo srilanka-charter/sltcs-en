@@ -698,14 +698,10 @@ export const ARTICLES: Article[] = [
   <h3>Understanding the Three Plans</h3>
 
   <p>
-    SLTCS offers three service tiers, each suited to a different travel style:
+    SLTCS offers three service tiers, each suited to a different travel style. Click any plan below to learn more.
   </p>
 
-  <ul>
-    <li><strong>Bronze Plan</strong> — A trainee driver assigned with full transfer service and English-speaking coordinator support. The most economical option for travellers who are comfortable navigating independently.</li>
-    <li><strong>Silver Plan (Most Popular)</strong> — A government-certified Tourist Driver or above, with accompaniment and guiding at sightseeing spots, safari and activity arrangements, and guide service at no extra charge. The best balance of value and experience for most travellers.</li>
-    <li><strong>Gold Plan</strong> — A highly-rated Chauffeur Guide Driver with full-itinerary accompaniment, dual support system, and priority service. Recommended for travellers who want the highest level of personal attention throughout their trip.</li>
-  </ul>
+  <!-- PLAN_CARDS_PLACEHOLDER -->
 
   <h2>Red Flags to Watch For</h2>
 
