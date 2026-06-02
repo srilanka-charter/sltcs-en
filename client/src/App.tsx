@@ -11,14 +11,16 @@ import FAQ from "./pages/FAQ";
 import Thanks from "./pages/Thanks";
 import LowPriceRisk from "./pages/LowPriceRisk";
 import Voice from "./pages/Voice";
-import ArticleList from "./pages/ArticleList";
-import ArticleDetail from "./pages/ArticleDetail";
+import ArticleList from "@/pages/ArticleList";
+import ArticleDetail from "@/pages/ArticleDetail";
+import Plans from "@/pages/Plans";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/plans"} component={Plans} />
       <Route path={"/thanks"} component={Thanks} />
       <Route path={"/price"} component={Pricing} />
       <Route path={"/vehicles"} component={Vehicles} />

@@ -403,7 +403,7 @@ export default function FAQ() {
         </Link>
         <ul className="nav-links">
           <li>
-            <Link href="/#plans" onClick={(e) => { e.preventDefault(); window.location.href = "/#plans"; }}>PLANS</Link>
+            <Link href="/plans">PLANS</Link>
           </li>
           <li
             className="nav-dropdown"
@@ -446,7 +446,7 @@ export default function FAQ() {
       </nav>
       {mobileOpen && (
         <div className="mobile-menu open">
-          <Link href="/#plans" onClick={() => setMobileOpen(false)}>Plans</Link>
+          <Link href="/plans">Plans</Link>
           <Link href="/#courses" onClick={() => setMobileOpen(false)}>Model Itinerary</Link>
           <Link href="/vehicles" onClick={() => setMobileOpen(false)}>Vehicles</Link>
           <Link href="/price" onClick={() => setMobileOpen(false)}>Price</Link>
@@ -553,7 +553,7 @@ export default function FAQ() {
           <div className="footer-nav">
             <div className="footer-nav-col">
               <div className="footer-nav-title">Navigation</div>
-              <Link href="/#plans">Plans</Link>
+              <Link href="/plans">Plans</Link>
               <Link href="/#courses">4 Nights / 5 Days</Link>
               <Link href="/#courses">5 Nights / 6 Days</Link>
               <Link href="/#courses">6 Nights / 7 Days</Link>

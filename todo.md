@@ -84,3 +84,7 @@
 - [x] Article 1 (Private Driver Guide): "Sri Lanka Private Driver: How to Hire a Safe, Reliable Driver for Your Trip" - 2 inline images, internal links
 - [x] Article 2 (Private Driver Guide): "Sri Lanka Car Hire with Driver: Complete Guide for First-Time Visitors" - 3 images, comparison table, sample itinerary
 - [x] Article 3 (Cost & Booking Guide): "Driver Hire in Sri Lanka: Costs, Safety, and What to Check Before Booking" - 3 images, pricing table, 7-point checklist, internal links
+- [x] Plans dedicated page (/plans) created with Bronze/Silver/Gold plan cards, comparison table, FAQ, and CTA
+- [x] Header PLANS link updated to /plans across all pages (Home, SiteNavbar, Vehicles, FAQ)
+- [x] Article3PlanCards internal links updated to /plans
+- [x] Silver Plan updated to "Highly-Rated Tourist Driver or Chauffeur Guide Driver"

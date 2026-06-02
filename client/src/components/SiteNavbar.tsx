@@ -54,10 +54,7 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
         </a>
         <ul className="nav-links">
           <li>
-            <a href={mode === "home" ? "#plans" : "/#plans"}
-              onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>
-              PLANS
-            </a>
+            <a href="/plans">PLANS</a>
           </li>
           <li className="nav-dropdown" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
             <button>MODEL ITINERARY</button>
@@ -115,7 +112,7 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
       </nav>
       {mobileOpen && (
         <div className="mobile-menu open">
-          <a href="/#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Plans</a>
+          <a href="/plans">Plans</a>
           <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Model Itinerary</a>
           <a href="/vehicles">Vehicles</a>
           <a href="/voice">Voice</a>

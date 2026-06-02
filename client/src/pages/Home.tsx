@@ -152,7 +152,7 @@ function Navbar() {
           <span className="nav-logo-short">SLTCS</span>
         </a>
         <ul className="nav-links">
-          <li><a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>PLANS</a></li>
+          <li><a href="/plans">PLANS</a></li>
           <li className="nav-dropdown" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
             <button>MODEL ITINERARY</button>
             {dropdownOpen && (
@@ -201,7 +201,7 @@ function Navbar() {
       </nav>
       {mobileOpen && (
         <div className="mobile-menu open">
-          <a href="#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Plans</a>
+          <a href="/plans">Plans</a>
           {/* Model Itinerary accordion */}
           <div className="mobile-accordion">
             <button

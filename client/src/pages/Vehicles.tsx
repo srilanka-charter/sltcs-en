@@ -35,7 +35,7 @@ function Navbar() {
           SLTCS｜Sri Lanka Car Hire with Private Driver
         </a>
         <ul className="nav-links">
-          <li><a href="/#plans">PLANS</a></li>
+          <li><a href="/plans">PLANS</a></li>
           <li
             className="nav-dropdown"
             onMouseEnter={() => setDropdownOpen(true)}
@@ -84,7 +84,7 @@ function Navbar() {
       </nav>
       {mobileOpen && (
         <div className="mobile-menu open">
-          <a href="/#plans">Plans</a>
+          <a href="/plans">Plans</a>
           <a href="/#courses">Model Itinerary</a>
           <a href="/vehicles">Vehicles</a>
           <a href="/#faq">FAQ</a>
@@ -476,7 +476,7 @@ function Footer() {
             <h4 style={{ color: "#c9a84c", fontSize: "0.75rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "12px" }}>Navigation</h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
               {[
-                { label: "Plans",           href: "/#plans" },
+                { label: "Plans",           href: "/plans" },
                 { label: "Model Itinerary", href: "/#courses" },
                 { label: "Vehicles",        href: "/vehicles" },
                 { label: "FAQ",             href: "/#faq" },
