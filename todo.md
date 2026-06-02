@@ -64,3 +64,20 @@
 - [x] index.css: Voice page CSS styles added (.voice-page, .voice-card, .voice-ratings, .voice-breakdown, etc.)
 - [x] Navbar: VOICE link added (desktop + mobile)
 - [x] Home Reviews section: "More Voice" button added linking to /voice
+- [x] Information nav dropdown added to Home.tsx navbar (CONTACT left side)
+- [x] 4 categories: Private Driver Guide, Cost & Booking Guide, Family & Group Travel, Travel Tips & Safety
+- [x] ArticleList.tsx: category article listing page (/information/:category)
+- [x] ArticleDetail.tsx: article detail page (/information/:category/:slug)
+- [x] articles.ts: article data structure and first article (Private Driver Guide #1)
+- [x] App.tsx: routes for /information/:category and /information/:category/:slug
+- [x] SiteNavbar.tsx: VOICE + INFORMATION dropdown + Malay/Swedish added
+- [x] Article CSS styles added to index.css
+- [x] Breadcrumb /information dead link fixed (→ Home)
+- [x] Asanka review added to /voice page
+- [x] VOICE nav link moved to between VEHICLES and PRICE
+- [x] All ratings updated to 0.5-unit scale (1.0-5.0), OVERALL 4.5-5.0
+- [x] Half-star display support added (Home + Voice)
+- [x] Voice card layout changed to vertical (photo top, text bottom)
+- [x] llms.txt created at /public/llms.txt for AI agent indexing
+- [x] <link rel="llms-txt"> added to index.html head
+- [x] Malay (ms) and Swedish (sv) added to hreflang tags and language dropdown

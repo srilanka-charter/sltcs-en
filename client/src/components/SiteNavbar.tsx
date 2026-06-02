@@ -9,7 +9,9 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [infoOpen, setInfoOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [mobileInfoOpen, setMobileInfoOpen] = useState(false);
 
   const LANGUAGES = [
     { label: "French",   url: "https://fr.srilanka-charter.com/" },
@@ -17,7 +19,16 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
     { label: "German",   url: "https://de.srilanka-charter.com/" },
     { label: "Dutch",    url: "https://nl.srilanka-charter.com/" },
     { label: "Russian",  url: "https://ru.srilanka-charter.com/" },
+    { label: "Malay",    url: "https://ms.srilanka-charter.com/" },
+    { label: "Swedish",  url: "https://sv.srilanka-charter.com/" },
     { label: "Japanese", url: "https://sltcs.srilanka-charter.com/" },
+  ];
+
+  const INFO_CATEGORIES = [
+    { label: "Private Driver Guide",  path: "/information/private-driver-guide" },
+    { label: "Cost & Booking Guide",  path: "/information/cost-booking-guide" },
+    { label: "Family & Group Travel", path: "/information/family-group-travel" },
+    { label: "Travel Tips & Safety",  path: "/information/travel-tips-safety" },
   ];
 
   useEffect(() => {
@@ -61,6 +72,17 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
             )}
           </li>
           <li><a href="/vehicles">VEHICLES</a></li>
+          <li><a href="/voice">VOICE</a></li>
+          <li className="nav-dropdown" onMouseEnter={() => setInfoOpen(true)} onMouseLeave={() => setInfoOpen(false)}>
+            <button>INFORMATION</button>
+            {infoOpen && (
+              <div className="nav-dropdown-menu">
+                {INFO_CATEGORIES.map((cat) => (
+                  <a key={cat.path} href={cat.path}>{cat.label}</a>
+                ))}
+              </div>
+            )}
+          </li>
           <li><a href="/price">PRICE</a></li>
           <li>
             <a href={mode === "home" ? "#contact" : "/#contact"}
@@ -96,6 +118,23 @@ export default function SiteNavbar({ mode = "page" }: SiteNavbarProps) {
           <a href="/#plans" onClick={(e) => { e.preventDefault(); scrollTo("plans"); }}>Plans</a>
           <a href="/#courses" onClick={(e) => { e.preventDefault(); scrollTo("courses"); }}>Model Itinerary</a>
           <a href="/vehicles">Vehicles</a>
+          <a href="/voice">Voice</a>
+          {/* Information accordion */}
+          <div className="mobile-accordion">
+            <button
+              className="mobile-accordion-btn"
+              onClick={() => setMobileInfoOpen((o) => !o)}
+            >
+              Information <span>{mobileInfoOpen ? "▲" : "▼"}</span>
+            </button>
+            {mobileInfoOpen && (
+              <div className="mobile-accordion-body">
+                {INFO_CATEGORIES.map((cat) => (
+                  <a key={cat.path} href={cat.path}>{cat.label}</a>
+                ))}
+              </div>
+            )}
+          </div>
           <a href="/price">Price</a>
           <a href="/#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Contact</a>
           <a href="/faq">FAQ</a>

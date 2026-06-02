@@ -117,6 +117,8 @@ function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [infoOpen, setInfoOpen] = useState(false);
+  const [mobileInfoOpen, setMobileInfoOpen] = useState(false);
   const [mobileItineraryOpen, setMobileItineraryOpen] = useState(false);
   const [mobileLangOpen, setMobileLangOpen] = useState(false);
 
@@ -166,6 +168,17 @@ function Navbar() {
           <li><a href="/vehicles">VEHICLES</a></li>
           <li><a href="/voice">VOICE</a></li>
           <li><a href="/price">PRICE</a></li>
+          <li className="nav-dropdown" onMouseEnter={() => setInfoOpen(true)} onMouseLeave={() => setInfoOpen(false)}>
+            <button>INFORMATION</button>
+            {infoOpen && (
+              <div className="nav-dropdown-menu">
+                <a href="/information/private-driver-guide">Private Driver Guide</a>
+                <a href="/information/cost-booking-guide">Cost &amp; Booking Guide</a>
+                <a href="/information/family-group-travel">Family &amp; Group Travel</a>
+                <a href="/information/travel-tips-safety">Travel Tips &amp; Safety</a>
+              </div>
+            )}
+          </li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>CONTACT</a></li>
           <li><a href="/faq">FAQ</a></li>
           <li className="nav-dropdown nav-lang-dropdown" onMouseEnter={() => setLangOpen(true)} onMouseLeave={() => setLangOpen(false)}>
@@ -216,6 +229,27 @@ function Navbar() {
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }}>Contact</a>
           <a href="/faq">FAQ</a>
           <a href="/voice">Voice</a>
+          {/* Information accordion */}
+          <div className="mobile-accordion">
+            <button
+              className="mobile-accordion-btn"
+              onClick={() => setMobileInfoOpen(o => !o)}
+            >
+              <span>Information</span>
+              <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                style={{ transform: mobileInfoOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
+              ><path d="M6 9l6 6 6-6" /></svg>
+            </button>
+            {mobileInfoOpen && (
+              <div className="mobile-accordion-body">
+                <a href="/information/private-driver-guide">Private Driver Guide</a>
+                <a href="/information/cost-booking-guide">Cost &amp; Booking Guide</a>
+                <a href="/information/family-group-travel">Family &amp; Group Travel</a>
+                <a href="/information/travel-tips-safety">Travel Tips &amp; Safety</a>
+              </div>
+            )}
+          </div>
           {/* Language accordion */}
           <div className="mobile-accordion">
             <button

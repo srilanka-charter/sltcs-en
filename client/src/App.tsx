@@ -11,6 +11,8 @@ import FAQ from "./pages/FAQ";
 import Thanks from "./pages/Thanks";
 import LowPriceRisk from "./pages/LowPriceRisk";
 import Voice from "./pages/Voice";
+import ArticleList from "./pages/ArticleList";
+import ArticleDetail from "./pages/ArticleDetail";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -23,6 +25,8 @@ function Router() {
       <Route path={"/faq"} component={FAQ} />
       <Route path={"/low-price-risk"} component={LowPriceRisk} />
       <Route path={"/voice"} component={Voice} />
+      <Route path={"/information/:category/:slug"} component={ArticleDetail} />
+      <Route path={"/information/:category"} component={ArticleList} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
