@@ -573,7 +573,9 @@ export const ARTICLES: Article[] = [
       ],
     },
     content: `
-  <p>
+<article class="article-body">
+
+  <p class="article-lead">
     Hiring a private driver is one of the smartest decisions you can make for a Sri Lanka trip — but not all driver services are created equal. Before you confirm a booking, there are seven things every traveller should check. This guide walks you through each one, along with a transparent breakdown of what driver hire in Sri Lanka actually costs in 2026.
   </p>
 
@@ -751,6 +753,8 @@ export const ARTICLES: Article[] = [
   </p>
 
   <a href="/#contact" class="article-cta-btn">Get a Free Quote</a>
+
+</article>
 `,
   },
 ];
