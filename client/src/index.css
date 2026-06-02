@@ -2272,7 +2272,9 @@ footer {
   grid-template-columns: 1fr 280px;
   gap: 48px;
   margin-top: 28px;
+  min-width: 0;
 }
+.article-detail-content-wrap > * { min-width: 0; }
 @media (max-width: 860px) { .article-detail-content-wrap { grid-template-columns: 1fr; } }
 .article-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
 .article-tag {
@@ -2283,7 +2285,8 @@ footer {
   padding: 4px 12px;
   border-radius: 20px;
 }
-.article-detail-body { color: #d0c8b8; font-size: 1rem; line-height: 1.85; }
+.article-detail-main { min-width: 0; overflow: hidden; }
+.article-detail-body { color: #d0c8b8; font-size: 1rem; line-height: 1.85; max-width: 100%; overflow-x: hidden; word-wrap: break-word; overflow-wrap: break-word; }
 .article-body p { margin: 0 0 1.4em; }
 .article-body .article-lead { font-size: 1.1rem; color: #e8e0d0; line-height: 1.8; margin-bottom: 1.6em; }
 .article-body h2 {
