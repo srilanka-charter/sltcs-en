@@ -2570,7 +2570,7 @@ footer {
 .plans-container--narrow { max-width: 800px; }
 .plans-section { padding: 80px 24px; }
 .plans-section > .plans-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: start; }
-.plans-card-wrapper { position: relative; display: flex; flex-direction: column; margin-top: 28px; }
+.plans-card-wrapper { position: relative; display: flex; flex-direction: column; }
 .plans-card-wrapper--popular { margin-top: 0; }
 .plans-card-badge-outer { position: absolute; top: -28px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 700; color: #0a0a0a; padding: 7px 20px; border-radius: 20px; z-index: 2; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
 .plans-card { border: 1.5px solid; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; position: relative; transition: transform 0.25s ease, box-shadow 0.25s ease; }
