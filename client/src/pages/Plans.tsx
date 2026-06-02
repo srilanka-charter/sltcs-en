@@ -155,7 +155,7 @@ export default function Plans() {
               >
 
               {/* Header */}
-              <div className="plans-card-header">
+              <div className="plans-card-header" style={plan.popular ? { paddingTop: "36px" } : undefined}>
                 <div className="plans-card-tier-row">
                   <span
                     className="plans-card-icon"
