@@ -1,45 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ── Main Pages ─────────────────────────────────────────────── -->
   <url>
     <loc>https://en.srilanka-charter.com/</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://en.srilanka-charter.com/#plans</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://en.srilanka-charter.com/#courses</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://en.srilanka-charter.com/#vehicles</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://en.srilanka-charter.com/#reviews</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://en.srilanka-charter.com/#faq</loc>
-    <lastmod>2026-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://en.srilanka-charter.com/#contact</loc>
-    <lastmod>2026-04-21</lastmod>
+    <loc>https://en.srilanka-charter.com/plans</loc>
+    <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/price</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/vehicles</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/voice</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/faq</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/low-price-risk</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ── Information Category Pages ────────────────────────────── -->
+  <url>
+    <loc>https://en.srilanka-charter.com/information/private-driver-guide</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/information/cost-booking-guide</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/information/family-group-travel</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/information/travel-tips-safety</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/information/model-itinerary</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── Private Driver Guide Articles ─────────────────────────── -->
+  <url>
+    <loc>https://en.srilanka-charter.com/information/private-driver-guide/sri-lanka-private-driver-how-to-hire</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/information/private-driver-guide/sri-lanka-car-hire-with-driver-complete-guide</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/information/private-driver-guide/chauffeur-guide-sri-lanka-driver-vs-tourist-guide</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── Cost & Booking Guide Articles ─────────────────────────── -->
+  <url>
+    <loc>https://en.srilanka-charter.com/information/cost-booking-guide/driver-hire-sri-lanka-costs-safety-checklist</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── Family & Group Travel Articles ────────────────────────── -->
+  <url>
+    <loc>https://en.srilanka-charter.com/information/family-group-travel/van-hire-driver-sri-lanka-families-small-groups</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── Model Itinerary Articles ──────────────────────────────── -->
+  <url>
+    <loc>https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-4-nights-5-days-itinerary</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-5-nights-6-days-itinerary</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-6-nights-7-days-itinerary</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-5-7-days-cultural-triangle-itinerary</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-10-days-2-weeks-itinerary</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
