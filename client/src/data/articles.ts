@@ -1964,6 +1964,22 @@ export const ARTICLES: Article[] = [
     loading="lazy"
   />
 
+  <nav class="article-toc">
+    <div class="article-toc-title">Table of Contents</div>
+    <ol class="article-toc-list">
+      <li><a href="#day1">Day 1 — Airport → Anuradhapura → Sigiriya</a></li>
+      <li><a href="#day2">Day 2 — Sigiriya Rock &amp; Minneriya Jeep Safari</a></li>
+      <li><a href="#day3">Day 3 — Kandy: Spice Garden &amp; Temple</a></li>
+      <li><a href="#day4">Day 4 — Nuwara Eliya: Tea Highlands</a></li>
+      <li><a href="#day5">Day 5 — Scenic Tea Train → Nine Arches Bridge → Ella</a></li>
+      <li><a href="#day6">Day 6 — Ella Sightseeing → Yala</a></li>
+      <li><a href="#day7">Day 7 — Yala National Park Safari → Mirissa Beach</a></li>
+      <li><a href="#day8">Day 8 — Galle Fort &amp; Beach Day</a></li>
+      <li><a href="#day9">Day 9 — Negombo: Ayurveda &amp; Rest</a></li>
+      <li><a href="#day10">Day 10 — Colombo Sightseeing → Airport</a></li>
+    </ol>
+  </nav>
+
   <h2>Overview: 10 Days to 2 Weeks Classic First-Timer Plan</h2>
 
   <img
@@ -2001,27 +2017,27 @@ export const ARTICLES: Article[] = [
 
   <h2>Day-by-Day Itinerary</h2>
 
-  <h3>Day 1 — Airport → Anuradhapura → Sigiriya</h3>
+  <h3 id="day1">Day 1 — Airport → Anuradhapura → Sigiriya</h3>
   <p>
     Depart from Colombo Airport or Negombo. Drive north to the ancient capital of <strong>Anuradhapura</strong> (approximately 3.5–4 hours). Explore the UNESCO World Heritage Site — the sacred <strong>Sri Maha Bodhi</strong> (the world's oldest documented tree), the great <strong>Ruwanwelisaya Stupa</strong>, and the sprawling ancient ruins of this 2,500-year-old city. Continue to the Sigiriya area (approximately 1.5 hours) and check in to your hotel.
   </p>
 
-  <h3>Day 2 — Sigiriya Rock & Minneriya Jeep Safari</h3>
+  <h3 id="day2">Day 2 — Sigiriya Rock & Minneriya Jeep Safari</h3>
   <p>
     Morning climb of <strong>Sigiriya Rock Fortress</strong> (UNESCO) — allow 2.5–3 hours for the full ascent and descent, taking in the ancient water gardens, the famous frescoes of the celestial maidens, and the breathtaking panoramic views from the summit plateau. In the afternoon, head to <strong>Minneriya National Park</strong> for a thrilling jeep safari. Minneriya is renowned for <em>The Gathering</em> — one of Asia's greatest wildlife spectacles, where hundreds of wild elephants congregate around the ancient reservoir. Overnight in Sigiriya.
   </p>
 
-  <h3>Day 3 — Kandy: Spice Garden & Temple</h3>
+  <h3 id="day3">Day 3 — Kandy: Spice Garden & Temple</h3>
   <p>
     Drive to <strong>Kandy</strong> via a spice garden in Matale (approximately 3 hours). Visit the <strong>Geragama Tea Factory</strong> and the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO). Evening Kandyan dance performance.
   </p>
 
-  <h3>Day 4 — Nuwara Eliya: Tea Highlands</h3>
+  <h3 id="day4">Day 4 — Nuwara Eliya: Tea Highlands</h3>
   <p>
     Scenic mountain drive to <strong>Nuwara Eliya</strong> through rolling tea estates. Tea-plucking experience and high tea at a colonial plantation hotel. Explore the charming 'Little England' town.
   </p>
 
-  <h3>Day 5 — Scenic Tea Train → Nine Arches Bridge → Ella</h3>
+  <h3 id="day5">Day 5 — Scenic Tea Train → Nine Arches Bridge → Ella</h3>
   <p>
     Board the iconic <strong>tea-country train</strong> for a breathtaking journey through misty mountains. Photograph the famous <strong>Nine Arches Bridge</strong>. Arrive in <strong>Ella</strong>.
   </p>
@@ -2033,12 +2049,12 @@ export const ARTICLES: Article[] = [
     loading="lazy"
   />
 
-  <h3>Day 6 — Ella Sightseeing → Yala</h3>
+  <h3 id="day6">Day 6 — Ella Sightseeing → Yala</h3>
   <p>
     Morning hike to <strong>Little Adam's Peak</strong> and Ella Rock for panoramic views. Afternoon transfer to the Yala area (approximately 2 hours). Check in to a safari lodge.
   </p>
 
-  <h3>Day 7 — Yala National Park Safari → Mirissa Beach</h3>
+  <h3 id="day7">Day 7 — Yala National Park Safari → Mirissa Beach</h3>
   <p>
     Early morning jeep safari at <strong>Yala National Park</strong> — Sri Lanka's most famous wildlife park, home to the world's highest density of leopards. Afternoon transfer to the beach resort of <strong>Mirissa</strong>.
   </p>
@@ -2050,17 +2066,17 @@ export const ARTICLES: Article[] = [
     loading="lazy"
   />
 
-  <h3>Day 8 — Galle Fort & Beach Day</h3>
+  <h3 id="day8">Day 8 — Galle Fort & Beach Day</h3>
   <p>
     Morning visit to the UNESCO-listed <strong>Galle Fort</strong> — Dutch colonial ramparts, boutique shops, and ocean views. Afternoon at leisure on Mirissa beach. Optional whale watching (seasonal: November–April).
   </p>
 
-  <h3>Day 9 — Negombo: Ayurveda & Rest</h3>
+  <h3 id="day9">Day 9 — Negombo: Ayurveda & Rest</h3>
   <p>
     Transfer to <strong>Negombo</strong> on the west coast (approximately 3–4 hours). Check into an Ayurveda hotel for traditional treatments and relaxation before your departure.
   </p>
 
-  <h3>Day 10 — Colombo Sightseeing → Airport</h3>
+  <h3 id="day10">Day 10 — Colombo Sightseeing → Airport</h3>
   <p>
     Morning exploration of <strong>Colombo</strong> — Gangaramaya Temple, Pettah Market, and the vibrant Galle Face Green. Transfer to Colombo Airport (BIA) for your departure flight.
   </p>
