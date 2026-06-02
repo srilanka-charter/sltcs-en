@@ -1902,7 +1902,7 @@ export const ARTICLES: Article[] = [
         <tr><td>Key Destinations</td><td>Sigiriya, Anuradhapura, Polonnaruwa, Kandy</td></tr>
         <tr><td>Ideal For</td><td>History &amp; culture enthusiasts</td></tr>
         <tr><td>Start / End Point</td><td>Colombo Airport (BIA)</td></tr>
-        <tr><td>Recommended Plan</td><td><a href="/plans" class="article-link">Gold Plan</a></td></tr>
+        <tr><td>Recommended Plan</td><td><a href="/plans" class="article-link">Silver or Gold</a></td></tr>
       </tbody>
     </table>
   </div>
@@ -1936,27 +1936,48 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 2 — Sigiriya Rock Fortress & Minneriya Safari</h3>
   <p>
-    Early morning climb of <strong>Sigiriya Rock</strong> (UNESCO) — allow 2.5–3 hours for the round trip. The summit offers extraordinary views and the ascent passes the famous 5th-century frescoes and the Mirror Wall. In the afternoon, take a jeep safari at <strong>Minneriya National Park</strong>, famous for its elephant gatherings. Return to hotel.
+    Early morning climb of <strong>Sigiriya Rock</strong> (UNESCO) — allow 2.5–3 hours for the round trip. The summit offers extraordinary views and the ascent passes the famous 5th-century frescoes and the Mirror Wall.
   </p>
+
+  <img
+    src="/manus-storage/sigiriya_top_driver_guests_4n5d_e9dfe478.jpeg"
+    alt="SLTCS driver with guests at the summit of Sigiriya Rock Fortress, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <p>
+    In the afternoon, take a jeep safari at <strong>Minneriya National Park</strong>, famous for its elephant gatherings. Return to hotel.
+  </p>
+
+  <img
+    src="/manus-storage/safari_jeep_wilpatthu_guests_c0e078f1.jpeg"
+    alt="Private jeep safari arranged by SLTCS — guests aboard a safari jeep in Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <img
+    src="/manus-storage/safari_jeep_yala_group_08928221.jpeg"
+    alt="Group enjoying a private jeep safari in Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <div class="article-highlight-box">
+    <h4>🚙 Private Jeep Safari — Arranged by SLTCS</h4>
+    <p>
+      SLTCS can arrange a <strong>fully private jeep safari</strong> for your Minneriya or Yala visit. Unlike shared group safaris, your private jeep is reserved exclusively for your party — no strangers, no fixed schedule. What truly sets the SLTCS experience apart is that <strong>your dedicated driver can ride along inside the jeep</strong>, providing real-time commentary on the wildlife, habitats, and park history throughout the safari. This means you benefit from both a certified park tracker and your trusted SLTCS driver in one seamless experience.
+    </p>
+    <p>
+      Interested in a private jeep safari? <a href="/#contact" class="article-link">Contact us</a> when making your enquiry and we will include it in your personalised quote.
+    </p>
+  </div>
 
   <h3>Day 3 — Ancient Capital of Anuradhapura</h3>
   <p>
     Explore the vast UNESCO-listed ruins of <strong>Anuradhapura</strong> — Sri Lanka's first ancient capital, founded in the 4th century BC. Visit the sacred <strong>Sri Maha Bodhi</strong> (the oldest documented tree in the world, grown from a cutting of the original Bodhi Tree under which the Buddha attained enlightenment), the <strong>Ruwanwelisaya Stupa</strong>, and the Jetavanaramaya. Allow a full day for this sprawling site.
   </p>
-
-  <img
-    src="/manus-storage/slide4_kandy_19bf406f.jpg"
-    alt="Temple of the Sacred Tooth Relic in Kandy, Sri Lanka"
-    class="article-inline-img"
-    loading="lazy"
-  />
-
-  <img
-    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/itinerary_cultural_dambulla-GQToxw2VpoCgxDxgX5Err5.webp"
-    alt="Dambulla Cave Temple golden Buddha statues, Sri Lanka"
-    class="article-inline-img"
-    loading="lazy"
-  />
 
   <h3>Day 4 — Polonnaruwa & Pidurangala Rock</h3>
   <p>
@@ -1967,6 +1988,13 @@ export const ARTICLES: Article[] = [
   <p>
     Drive to <strong>Kandy</strong> via a traditional spice garden in Matale. Visit the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO) and enjoy a Kandyan cultural dance performance in the evening.
   </p>
+
+  <img
+    src="/manus-storage/kandy_temple_sunset_ct_e8a91ee8.jpg"
+    alt="Temple of the Sacred Tooth Relic at sunset, Kandy, Sri Lanka"
+    class="article-inline-img"
+    loading="lazy"
+  />
 
   <h3>Day 6 — Colombo Sightseeing & Ayurveda (Optional Extension)</h3>
   <p>
@@ -1980,7 +2008,7 @@ export const ARTICLES: Article[] = [
 
   <h2>Recommended SLTCS Plans</h2>
   <p>
-    For a Cultural Triangle itinerary, we strongly recommend the <a href="/plans" class="article-link">Gold Plan</a> with a dedicated Chauffeur Guide Driver. The depth of historical and archaeological knowledge required to fully appreciate Anuradhapura and Polonnaruwa makes a qualified guide invaluable. See our <a href="/information/private-driver-guide/chauffeur-guide-sri-lanka-driver-vs-tourist-guide" class="article-link">Chauffeur Guide Driver guide</a> for more information.
+    For a Cultural Triangle itinerary, we recommend the <a href="/plans" class="article-link">Silver Plan</a> or <a href="/plans" class="article-link">Gold Plan</a>. The Gold Plan with a dedicated Chauffeur Guide Driver is particularly well-suited for this itinerary — the depth of historical and archaeological knowledge required to fully appreciate Anuradhapura and Polonnaruwa makes a qualified guide invaluable. See our <a href="/information/private-driver-guide/chauffeur-guide-sri-lanka-driver-vs-tourist-guide" class="article-link">Chauffeur Guide Driver guide</a> for more information.
   </p>
   <p>
     View our <a href="/price" class="article-link">pricing page</a>, or <a href="/#contact" class="article-link">submit a free enquiry</a> for a personalised quote.
