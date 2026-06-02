@@ -1597,8 +1597,8 @@ export const ARTICLES: Article[] = [
   </p>
 
   <img
-    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/itinerary_5n6d_mirissa_beach-ftrxYnsz8FW6Rrxs5qwhPg.webp"
-    alt="Mirissa Beach at sunset, Sri Lanka"
+    src="/manus-storage/itinerary_5n6d_family_safari_7774d932.jpg"
+    alt="Family enjoying a jeep safari at Yala National Park, Sri Lanka"
     class="article-inline-img"
     loading="lazy"
   />
