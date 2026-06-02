@@ -107,9 +107,76 @@ export default function ArticleDetail() {
     setOg("og:description", article.seo.metaDescription);
     setOg("og:image", article.coverImage);
     setOg("og:type", "article");
+    setOg("og:url", `https://en.srilanka-charter.com/information/${article.category}/${article.slug}`);
+    setOg("og:site_name", "SLTCS | Sri Lanka Car Hire with Private Driver");
+    setOg("og:locale", "en_GB");
+    setOg("og:image:width", "1200");
+    setOg("og:image:height", "630");
+
+    // Twitter Card
+    const setMeta = (name: string, content: string) => {
+      let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
+      if (!el) {
+        el = document.createElement("meta");
+        el.name = name;
+        document.head.appendChild(el);
+      }
+      el.content = content;
+    };
+    setMeta("twitter:card", "summary_large_image");
+    setMeta("twitter:title", article.seo.metaTitle);
+    setMeta("twitter:description", article.seo.metaDescription);
+    setMeta("twitter:image", article.coverImage);
+
+    // Canonical URL
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    const prevCanonical = canonical?.href || "https://en.srilanka-charter.com/";
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    canonical.href = `https://en.srilanka-charter.com/information/${article.category}/${article.slug}`;
+
+    // Article JSON-LD
+    const articleJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: article.title,
+      description: article.seo.metaDescription,
+      image: article.coverImage,
+      datePublished: article.publishedAt,
+      dateModified: article.publishedAt,
+      author: {
+        "@type": "Organization",
+        name: "SLTCS – Sri Lanka Car Hire with Private Driver",
+        url: "https://en.srilanka-charter.com/",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "SLTCS – Sri Lanka Car Hire with Private Driver",
+        url: "https://en.srilanka-charter.com/",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://en.srilanka-charter.com/favicon-192.png",
+        },
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": `https://en.srilanka-charter.com/information/${article.category}/${article.slug}`,
+      },
+      keywords: article.seo.keywords.join(", "),
+    };
+    const articleScript = document.createElement("script");
+    articleScript.type = "application/ld+json";
+    articleScript.id = "article-jsonld";
+    articleScript.textContent = JSON.stringify(articleJsonLd);
+    document.head.appendChild(articleScript);
 
     return () => {
       document.title = "SLTCS｜Sri Lanka Car Hire with Private Driver";
+      canonical!.href = prevCanonical;
+      document.getElementById("article-jsonld")?.remove();
     };
   }, [article]);
 
