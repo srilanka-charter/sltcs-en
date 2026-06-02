@@ -90,3 +90,5 @@
 - [x] Silver Plan updated to "Highly-Rated Tourist Driver or Chauffeur Guide Driver"
 - [x] Article 10 (Family & Group Travel): "Van Hire with Driver in Sri Lanka for Families and Small Groups" - VOICE family photos, advantage grid, price table, plan cards, review grid
 - [x] Mobile optimisation for Articles 1, 3, 10: table overflow-x scroll, font scaling, 1-column grids at ≤480px, sidebar hidden on mobile
+- [x] Mobile overflow fix: article-detail-content-wrap/main/body min-width:0 + overflow-x:hidden + word-wrap:break-word (CSS Grid overflow prevention)
+- [x] Article 6 (Private Driver Guide): "Chauffeur Guide in Sri Lanka: Driver vs Tourist Guide Explained" - 3 AI images, driver-type comparison tables, plan cards (Bronze/Silver/Gold), internal links, mobile responsive

@@ -1054,6 +1054,319 @@ export const ARTICLES: Article[] = [
 </article>
 `,
   },
+  // ─── Article 6: Chauffeur Guide in Sri Lanka ────────────────────────────────
+  {
+    id: "006",
+    slug: "chauffeur-guide-sri-lanka-driver-vs-tourist-guide",
+    category: "private-driver-guide",
+    title: "Chauffeur Guide in Sri Lanka: Driver vs Tourist Guide Explained",
+    excerpt:
+      "Confused by the different types of drivers available in Sri Lanka? This guide explains the difference between a Tourist Driver, Chauffeur Guide Driver, and National Guide — and helps you choose the right level of service for your trip.",
+    coverImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/a6_cover_chauffeur_guide-EkZi3Nkk4pVnxtJjusWdnt.webp",
+    publishedAt: "2026-06-02",
+    readingTime: 9,
+    tags: ["Chauffeur Guide", "Tourist Driver", "Private Driver", "Sri Lanka", "Travel Planning"],
+    seo: {
+      metaTitle: "Chauffeur Guide in Sri Lanka: Driver vs Tourist Guide Explained | SLTCS",
+      metaDescription:
+        "What is the difference between a Tourist Driver, Chauffeur Guide Driver, and National Guide in Sri Lanka? This guide explains each role, what qualifications they hold, and which type of driver is right for your trip.",
+      keywords: [
+        "chauffeur guide sri lanka",
+        "sri lanka chauffeur",
+        "tourist driver sri lanka",
+        "national guide sri lanka",
+        "private driver guide sri lanka",
+        "sri lanka driver types",
+      ],
+    },
+    content: `
+<article class="article-body">
+  <p class="article-lead">
+    When you start researching private transport in Sri Lanka, you will quickly encounter several different titles: <strong>Tourist Driver</strong>, <strong>Chauffeur Guide Driver</strong>, and <strong>National Guide</strong>. These are not interchangeable terms — each represents a different level of qualification, a different scope of service, and a different price point. Understanding the distinction before you book can make the difference between a good trip and a genuinely exceptional one.
+  </p>
+
+  <img
+    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/a6_cover_chauffeur_guide-EkZi3Nkk4pVnxtJjusWdnt.webp"
+    alt="Professional chauffeur guide standing beside a white van at Sigiriya Rock Fortress"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h2>The Three Driver Types in Sri Lanka — At a Glance</h2>
+  <p>
+    Sri Lanka's tourism industry is regulated by the <strong>Sri Lanka Tourism Development Authority (SLTDA)</strong>, which issues different categories of licences to drivers and guides. The three most relevant categories for travellers hiring private transport are outlined below.
+  </p>
+
+  <div class="article-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Driver Type</th>
+          <th>Primary Role</th>
+          <th>Guiding Ability</th>
+          <th>English Level</th>
+          <th>Best For</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Tourist Driver</strong></td>
+          <td>Safe, reliable transport</td>
+          <td>Basic local knowledge</td>
+          <td>Conversational</td>
+          <td>Travellers who prefer self-guided exploration</td>
+        </tr>
+        <tr>
+          <td><strong>Chauffeur Guide Driver</strong></td>
+          <td>Transport + cultural commentary</td>
+          <td>Certified guiding at major sites</td>
+          <td>Fluent</td>
+          <td>First-time visitors, couples, families wanting depth</td>
+        </tr>
+        <tr>
+          <td><strong>National Guide</strong></td>
+          <td>Full guided tour leadership</td>
+          <td>Comprehensive — history, archaeology, ecology</td>
+          <td>Fluent / professional</td>
+          <td>Large groups, specialist cultural or wildlife tours</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Tourist Driver: Reliable Transport, Minimal Commentary</h2>
+  <p>
+    A Tourist Driver holds a government-issued tourist vehicle licence and is authorised to transport visitors throughout Sri Lanka. Their primary responsibility is safe, punctual driving — not guiding. Most Tourist Drivers have a working knowledge of English and can recommend restaurants or help with basic logistics, but they are not trained or certified to deliver historical or cultural commentary at sites.
+  </p>
+  <p>
+    This category suits travellers who have already researched the destinations they plan to visit, prefer to explore independently at each stop, or are travelling with a separate tour leader. It is also the most common driver type offered by budget operators and ride-hailing platforms.
+  </p>
+  <p>
+    At SLTCS, all drivers — regardless of category — hold a valid government tourist vehicle licence and have been individually vetted. You can learn more about our <a href="/vehicles" class="article-link">vehicle fleet</a> and the standards we apply to every booking.
+  </p>
+
+  <h2>Chauffeur Guide Driver: The Best of Both Worlds</h2>
+  <p>
+    A Chauffeur Guide Driver holds an additional certification issued by the SLTDA that qualifies them to provide guided commentary at tourist sites. This is the most popular choice among independent travellers from the UK, Australia, and Europe who want more than a driver — they want someone who can bring the country to life.
+  </p>
+
+  <img
+    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/a6_inline2_kandy_temple-ctUQ7HJMF9PHm5B4D9pqGx.webp"
+    alt="Chauffeur guide explaining the history of the Temple of the Tooth in Kandy to a Western couple"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h3>What a Chauffeur Guide Driver Provides</h3>
+  <div class="article-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Service Element</th>
+          <th>Tourist Driver</th>
+          <th>Chauffeur Guide Driver</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Airport pick-up and drop-off</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Multi-day island-wide charter</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Flexible itinerary adjustments</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Cultural &amp; historical commentary at sites</td>
+          <td>Limited</td>
+          <td>Yes — SLTDA certified</td>
+        </tr>
+        <tr>
+          <td>Restaurant and local experience recommendations</td>
+          <td>Basic</td>
+          <td>Detailed, personalised</td>
+        </tr>
+        <tr>
+          <td>Assistance with ticket purchase and entry logistics</td>
+          <td>Limited</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Itinerary planning advice before travel</td>
+          <td>Rarely</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    A Chauffeur Guide Driver is the right choice if you want to understand what you are seeing — not just visit a list of sites. At Sigiriya, they will explain the hydraulic engineering of the ancient water gardens. At the Temple of the Tooth in Kandy, they will describe the significance of the relic and the correct way to observe the evening ceremony. At Yala, they will identify wildlife and explain the ecosystem.
+  </p>
+  <p>
+    SLTCS offers Chauffeur Guide Drivers under the <a href="/plans" class="article-link">Silver Plan</a> (Highly-Rated Tourist Driver or Chauffeur Guide Driver) and the <a href="/plans" class="article-link">Gold Plan</a> (dedicated Chauffeur Guide Driver with a second support driver for longer itineraries).
+  </p>
+
+  <h2>National Guide: Specialist Expertise for Complex Tours</h2>
+  <p>
+    A National Guide holds the highest level of guiding certification in Sri Lanka, issued after a rigorous multi-year training programme covering history, archaeology, ecology, and multiple languages. National Guides are typically engaged for large group tours, specialist cultural programmes, or high-end itineraries that require deep expertise across multiple disciplines.
+  </p>
+  <p>
+    For most independent travellers booking a private car or van charter, a National Guide is not necessary — and the additional cost is rarely justified unless the itinerary is specifically focused on archaeological depth (for example, a dedicated tour of the ancient cities of Anuradhapura and Polonnaruwa). A well-qualified Chauffeur Guide Driver provides more than enough cultural context for the vast majority of Sri Lanka itineraries.
+  </p>
+
+  <img
+    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/a6_inline1_driver_types-AHEoJ9oNFD8U4UHrP2ipNH.webp"
+    alt="Three driver types in Sri Lanka: Tourist Driver, Chauffeur Guide Driver, and National Guide"
+    class="article-inline-img"
+    loading="lazy"
+  />
+
+  <h2>Which Driver Type Is Right for Your Trip?</h2>
+  <p>
+    The right choice depends on how you prefer to travel, the length of your itinerary, and how much depth you want from each destination. The table below summarises the most common scenarios.
+  </p>
+
+  <div class="article-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Travel Style</th>
+          <th>Recommended Driver Type</th>
+          <th>SLTCS Plan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First-time visitor, wants cultural context</td>
+          <td>Chauffeur Guide Driver</td>
+          <td><a href="/plans" class="article-link">Silver or Gold</a></td>
+        </tr>
+        <tr>
+          <td>Repeat visitor, prefers self-guided exploration</td>
+          <td>Tourist Driver</td>
+          <td><a href="/plans" class="article-link">Bronze</a></td>
+        </tr>
+        <tr>
+          <td>Family with children, needs flexibility and patience</td>
+          <td>Chauffeur Guide Driver</td>
+          <td><a href="/plans" class="article-link">Silver or Gold</a></td>
+        </tr>
+        <tr>
+          <td>Couple on a honeymoon or anniversary trip</td>
+          <td>Chauffeur Guide Driver</td>
+          <td><a href="/plans" class="article-link">Gold</a></td>
+        </tr>
+        <tr>
+          <td>Group of friends, relaxed pace</td>
+          <td>Tourist Driver or Chauffeur Guide Driver</td>
+          <td><a href="/plans" class="article-link">Bronze or Silver</a></td>
+        </tr>
+        <tr>
+          <td>Senior travellers, comfort and care a priority</td>
+          <td>Chauffeur Guide Driver</td>
+          <td><a href="/plans" class="article-link">Gold</a></td>
+        </tr>
+        <tr>
+          <td>Specialist cultural or archaeological focus</td>
+          <td>National Guide + Driver</td>
+          <td>Contact us for a custom quote</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>How SLTCS Selects and Certifies Its Drivers</h2>
+  <p>
+    Every driver working with SLTCS holds a valid government-issued tourist vehicle licence as a minimum requirement. Chauffeur Guide Drivers on the Silver and Gold plans hold additional SLTDA guiding certification and have been individually assessed for English fluency, cultural knowledge, and service standards.
+  </p>
+  <p>
+    Beyond formal qualifications, SLTCS applies its own internal rating system based on guest feedback after every charter. Drivers are rated on punctuality, vehicle cleanliness, route knowledge, communication, and cultural commentary quality. Only drivers who maintain consistently high ratings across all categories are offered to new guests.
+  </p>
+  <p>
+    You can read first-hand accounts from past guests on our <a href="/voice" class="article-link">Guest Voices page</a>, where reviews include specific ratings for driver performance, vehicle condition, and overall service.
+  </p>
+
+  <h2>Understanding the SLTCS Plan Structure</h2>
+  <p>
+    SLTCS organises its service into three plans, each reflecting a different driver category and level of support. The plan you choose determines not just the driver type, but also the vehicle options available and the overall experience of your charter.
+  </p>
+
+  <div class="a6-plan-grid">
+    <div class="a6-plan-card a6-plan-bronze">
+      <div class="a6-plan-label">Bronze Plan</div>
+      <div class="a6-plan-driver">Experienced Tourist Driver</div>
+      <ul class="a6-plan-features">
+        <li>Government-licensed tourist vehicle driver</li>
+        <li>Sedan or van available</li>
+        <li>Flexible itinerary, English communication</li>
+        <li>Best for independent, self-guided travellers</li>
+      </ul>
+      <a href="/plans" class="a6-plan-btn">View Bronze Plan</a>
+    </div>
+    <div class="a6-plan-card a6-plan-silver">
+      <div class="a6-plan-badge">Most Popular</div>
+      <div class="a6-plan-label">Silver Plan</div>
+      <div class="a6-plan-driver">Highly-Rated Tourist Driver or Chauffeur Guide Driver</div>
+      <ul class="a6-plan-features">
+        <li>SLTDA-certified guiding at major sites</li>
+        <li>Sedan, van, or large van available</li>
+        <li>Cultural commentary, restaurant recommendations</li>
+        <li>Best for first-time visitors and families</li>
+      </ul>
+      <a href="/plans" class="a6-plan-btn">View Silver Plan</a>
+    </div>
+    <div class="a6-plan-card a6-plan-gold">
+      <div class="a6-plan-label">Gold Plan</div>
+      <div class="a6-plan-driver">Dedicated Chauffeur Guide Driver + Support Driver</div>
+      <ul class="a6-plan-features">
+        <li>Dual-driver system for longer itineraries</li>
+        <li>Luxury MPV or large van available</li>
+        <li>Premium service, full itinerary planning</li>
+        <li>Best for couples, seniors, and premium travel</li>
+      </ul>
+      <a href="/plans" class="a6-plan-btn">View Gold Plan</a>
+    </div>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Can I request a Chauffeur Guide Driver on the Bronze Plan?</h3>
+  <p>
+    The Bronze Plan is designed around experienced Tourist Drivers. If you would like a certified Chauffeur Guide Driver, the Silver or Gold Plan is the appropriate choice. You can compare all three plans on the <a href="/plans" class="article-link">Plans page</a>.
+  </p>
+
+  <h3>Is a Chauffeur Guide Driver the same as a tour guide?</h3>
+  <p>
+    Not exactly. A Chauffeur Guide Driver is primarily your driver — they are responsible for your transport throughout the trip. Their guiding role is complementary: they provide cultural context and commentary at the sites you visit, but they do not lead large group tours or replace a specialist guide for in-depth archaeological programmes. For most independent travellers, this combination is ideal.
+  </p>
+
+  <h3>Do Chauffeur Guide Drivers speak English fluently?</h3>
+  <p>
+    All Chauffeur Guide Drivers working with SLTCS have been assessed for English fluency as part of our internal vetting process. Fluent English communication is a core requirement for the Silver and Gold plans. If you have specific language requirements, please mention this when you <a href="/#contact" class="article-link">submit your enquiry</a>.
+  </p>
+
+  <h3>How much more does a Chauffeur Guide Driver cost compared to a Tourist Driver?</h3>
+  <p>
+    The price difference between the Bronze and Silver plans reflects the additional qualification and experience of the driver. For a full breakdown of rates by vehicle type and duration, visit the <a href="/price" class="article-link">Pricing page</a>.
+  </p>
+
+  <div class="article-cta-box">
+    <div class="article-cta-title">Not Sure Which Plan Is Right for You?</div>
+    <p class="article-cta-desc">
+      Share your travel dates, group size, and a rough itinerary — we will recommend the most suitable driver type and provide a personalised quote in English within 24 hours. No obligation, no pressure.
+    </p>
+    <a href="/#contact" class="article-cta-btn">Get a Free Quote</a>
+  </div>
+</article>
+`,
+  },
 ];
 
 // ─── Helper Functions ─────────────────────────────────────────────────────────
