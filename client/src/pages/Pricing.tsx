@@ -362,6 +362,7 @@ export default function Pricing() {
       description:
         "Fully private car hire service in Sri Lanka with an English-speaking driver. Three plans: Bronze, Silver, Gold.",
       url: "https://en.srilanka-charter.com/price",
+      image: "https://en.srilanka-charter.com/manus-storage/hero_van_srilanka_706f8966.jpg",
       brand: {
         "@type": "Brand",
         name: "SLTCS – Sri Lanka Car Hire with Private Driver",
@@ -381,6 +382,38 @@ export default function Pricing() {
           },
           availability: "https://schema.org/InStock",
           url: "https://en.srilanka-charter.com/price",
+          shippingDetails: {
+            "@type": "OfferShippingDetails",
+            shippingRate: {
+              "@type": "MonetaryAmount",
+              value: "0",
+              currency: "USD",
+            },
+            shippingDestination: {
+              "@type": "DefinedRegion",
+              addressCountry: "LK",
+            },
+            deliveryTime: {
+              "@type": "ShippingDeliveryTime",
+              handlingTime: {
+                "@type": "QuantitativeValue",
+                minValue: 0,
+                maxValue: 1,
+                unitCode: "DAY",
+              },
+              transitTime: {
+                "@type": "QuantitativeValue",
+                minValue: 0,
+                maxValue: 0,
+                unitCode: "DAY",
+              },
+            },
+          },
+          hasMerchantReturnPolicy: {
+            "@type": "MerchantReturnPolicy",
+            applicableCountry: "LK",
+            returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+          },
         },
         {
           "@type": "Offer",
@@ -395,6 +428,38 @@ export default function Pricing() {
           },
           availability: "https://schema.org/InStock",
           url: "https://en.srilanka-charter.com/price",
+          shippingDetails: {
+            "@type": "OfferShippingDetails",
+            shippingRate: {
+              "@type": "MonetaryAmount",
+              value: "0",
+              currency: "USD",
+            },
+            shippingDestination: {
+              "@type": "DefinedRegion",
+              addressCountry: "LK",
+            },
+            deliveryTime: {
+              "@type": "ShippingDeliveryTime",
+              handlingTime: {
+                "@type": "QuantitativeValue",
+                minValue: 0,
+                maxValue: 1,
+                unitCode: "DAY",
+              },
+              transitTime: {
+                "@type": "QuantitativeValue",
+                minValue: 0,
+                maxValue: 0,
+                unitCode: "DAY",
+              },
+            },
+          },
+          hasMerchantReturnPolicy: {
+            "@type": "MerchantReturnPolicy",
+            applicableCountry: "LK",
+            returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+          },
         },
         {
           "@type": "Offer",
@@ -409,6 +474,38 @@ export default function Pricing() {
           },
           availability: "https://schema.org/InStock",
           url: "https://en.srilanka-charter.com/price",
+          shippingDetails: {
+            "@type": "OfferShippingDetails",
+            shippingRate: {
+              "@type": "MonetaryAmount",
+              value: "0",
+              currency: "USD",
+            },
+            shippingDestination: {
+              "@type": "DefinedRegion",
+              addressCountry: "LK",
+            },
+            deliveryTime: {
+              "@type": "ShippingDeliveryTime",
+              handlingTime: {
+                "@type": "QuantitativeValue",
+                minValue: 0,
+                maxValue: 1,
+                unitCode: "DAY",
+              },
+              transitTime: {
+                "@type": "QuantitativeValue",
+                minValue: 0,
+                maxValue: 0,
+                unitCode: "DAY",
+              },
+            },
+          },
+          hasMerchantReturnPolicy: {
+            "@type": "MerchantReturnPolicy",
+            applicableCountry: "LK",
+            returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+          },
         },
       ],
     };
