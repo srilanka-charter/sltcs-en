@@ -104,3 +104,4 @@
 - [x] /price ページ構造化データ修正: image・shippingDetails・hasMerchantReturnPolicy追加（Google Search Console対応）
 - [x] Article 3 H3見出しデザイン改善: 左ゴールドボーダー・薄い背景色・フォントサイズ強化（index.css）
 - [x] Article 3 段落分割: 2文ごとに</p><p>を挿入して可読性向上
+- [x] 全10記事に段落分割（2文ごとに改行）を適用: Article 1・2・6・10 + 5つのModel Itinerary記事

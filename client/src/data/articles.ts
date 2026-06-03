@@ -100,7 +100,10 @@ export const ARTICLES: Article[] = [
 <article class="article-body">
 
   <p class="article-lead">
-    Sri Lanka is one of the most rewarding destinations in Asia — ancient temples, misty tea highlands, leopard-filled national parks, and pristine beaches, all within a single island. But getting between these places is where most travellers hit their first obstacle. Buses are slow and crowded, trains only cover a handful of routes, and self-driving on narrow mountain roads is genuinely challenging. Hiring a private driver is, for most visitors, the single best decision they make before landing.
+    Sri Lanka is one of the most rewarding destinations in Asia — ancient temples, misty tea highlands, leopard-filled national parks, and pristine beaches, all within a single island. But getting between these places is where most travellers hit their first obstacle.
+  </p>
+  <p class="article-lead">
+    Buses are slow and crowded, trains only cover a handful of routes, and self-driving on narrow mountain roads is genuinely challenging. Hiring a private driver is, for most visitors, the single best decision they make before landing.
   </p>
 
   <p>
@@ -110,11 +113,17 @@ export const ARTICLES: Article[] = [
   <h2>What Does "Private Driver" Actually Mean in Sri Lanka?</h2>
 
   <p>
-    The term is used loosely, so it is worth being precise. A <strong>private driver</strong> — sometimes called a chauffeur or charter driver — means one dedicated driver and one vehicle assigned exclusively to your group for the duration of your trip. You are not sharing the vehicle with other passengers. You set the itinerary, the pace, and the stops.
+    The term is used loosely, so it is worth being precise. A <strong>private driver</strong> — sometimes called a chauffeur or charter driver — means one dedicated driver and one vehicle assigned exclusively to your group for the duration of your trip.
+  </p>
+  <p>
+    You are not sharing the vehicle with other passengers. You set the itinerary, the pace, and the stops.
   </p>
 
   <p>
-    This is fundamentally different from a taxi, which operates on a per-trip metered basis, or a group tour, where you follow a fixed schedule with strangers. With a private driver, if you want to spend an extra hour at Sigiriya Rock Fortress or make an unplanned stop at a roadside spice garden, you simply ask.
+    This is fundamentally different from a taxi, which operates on a per-trip metered basis, or a group tour, where you follow a fixed schedule with strangers.
+  </p>
+  <p>
+    With a private driver, if you want to spend an extra hour at Sigiriya Rock Fortress or make an unplanned stop at a roadside spice garden, you simply ask.
   </p>
 
   <h2>What Is Typically Included in the Daily Rate?</h2>
@@ -132,7 +141,10 @@ export const ARTICLES: Article[] = [
   </ul>
 
   <p>
-    Items that are <strong>not</strong> included — and which you should clarify upfront — typically include entrance fees to national parks and heritage sites, the driver's accommodation on multi-day trips (usually a modest guesthouse near yours), and meals for the driver. These are standard practice across the industry and should not come as a surprise if disclosed clearly at booking.
+    Items that are <strong>not</strong> included — and which you should clarify upfront — typically include entrance fees to national parks and heritage sites, the driver's accommodation on multi-day trips (usually a modest guesthouse near yours), and meals for the driver.
+  </p>
+  <p>
+    These are standard practice across the industry and should not come as a surprise if disclosed clearly at booking.
   </p>
 
   <h2>How to Verify That a Driver Is Legitimate</h2>
@@ -227,11 +239,17 @@ export const ARTICLES: Article[] = [
   <h2>How to Compare Costs Without Being Misled</h2>
 
   <p>
-    Daily rates for a private driver in Sri Lanka typically range from <strong>USD 60 to USD 120</strong> depending on vehicle type, distance, and season. If you receive a quote significantly below this range, it is worth asking what has been excluded. Common omissions in low quotes include fuel surcharges for long-distance days, driver accommodation on multi-night trips, and highway tolls.
+    Daily rates for a private driver in Sri Lanka typically range from <strong>USD 60 to USD 120</strong> depending on vehicle type, distance, and season. If you receive a quote significantly below this range, it is worth asking what has been excluded.
+  </p>
+  <p>
+    Common omissions in low quotes include fuel surcharges for long-distance days, driver accommodation on multi-night trips, and highway tolls.
   </p>
 
   <p>
-    The most transparent operators provide a fixed daily rate with a clear written list of inclusions and exclusions. This protects both parties and avoids the uncomfortable conversations that arise when unexpected charges appear at the end of a trip. For a full pricing breakdown, visit our <a href="/#price" class="article-internal-link">Cost &amp; Pricing section</a>.
+    The most transparent operators provide a fixed daily rate with a clear written list of inclusions and exclusions. This protects both parties and avoids the uncomfortable conversations that arise when unexpected charges appear at the end of a trip.
+  </p>
+  <p>
+    For a full pricing breakdown, visit our <a href="/#price" class="article-internal-link">Cost &amp; Pricing section</a>.
   </p>
 
   <h2>Questions to Ask Before You Book</h2>
@@ -257,11 +275,17 @@ export const ARTICLES: Article[] = [
   <h2>Airport Transfers vs Multi-Day Charters</h2>
 
   <p>
-    Private driver services in Sri Lanka are available for both single-day transfers and extended multi-day charters. For airport transfers — for example, from Bandaranaike International Airport (CMB) to Colombo, Negombo, Kandy, or Sigiriya — a private driver provides a fixed-price, stress-free alternative to metered taxis or shared shuttles, particularly for late-night arrivals or families with luggage.
+    Private driver services in Sri Lanka are available for both single-day transfers and extended multi-day charters. For airport transfers — for example, from Bandaranaike International Airport (CMB) to Colombo, Negombo, Kandy, or Sigiriya — a private driver provides a fixed-price, stress-free alternative to metered taxis or shared shuttles.
+  </p>
+  <p>
+    This is particularly valuable for late-night arrivals or families with luggage.
   </p>
 
   <p>
-    For multi-day itineraries, a private driver becomes your guide, navigator, and local contact rolled into one. The driver will typically know which roads to avoid during monsoon season, which viewpoints are worth the detour, and which local restaurants are genuinely good rather than tourist-priced. Browse our <a href="/#courses" class="article-internal-link">model itineraries</a> to see example routes.
+    For multi-day itineraries, a private driver becomes your guide, navigator, and local contact rolled into one. The driver will typically know which roads to avoid during monsoon season, which viewpoints are worth the detour, and which local restaurants are genuinely good rather than tourist-priced.
+  </p>
+  <p>
+    Browse our <a href="/#courses" class="article-internal-link">model itineraries</a> to see example routes.
   </p>
 
   <h2>Summary: What Makes a Good Private Driver Service</h2>
@@ -346,7 +370,10 @@ export const ARTICLES: Article[] = [
 <article class="article-body">
 
   <p class="article-lead">
-    For first-time visitors to Sri Lanka, one question comes up early in the planning process: how do I actually get around? The island is compact on a map but surprisingly spread out in practice — Colombo to Kandy takes roughly three hours, Kandy to Sigiriya another two, and Ella to Yala National Park a further two and a half. Understanding your transport options before you arrive will save you both money and frustration.
+    For first-time visitors to Sri Lanka, one question comes up early in the planning process: how do I actually get around? The island is compact on a map but surprisingly spread out in practice — Colombo to Kandy takes roughly three hours, Kandy to Sigiriya another two, and Ella to Yala National Park a further two and a half.
+  </p>
+  <p class="article-lead">
+    Understanding your transport options before you arrive will save you both money and frustration.
   </p>
 
   <p>
@@ -356,11 +383,17 @@ export const ARTICLES: Article[] = [
   <h2>Option 1: Self-Drive Car Rental in Sri Lanka</h2>
 
   <p>
-    Self-drive car rental is available in Sri Lanka, but it comes with significant caveats that most first-time visitors underestimate. Sri Lanka drives on the left, but road markings, signage, and lane discipline vary considerably outside Colombo. Mountain roads in the hill country are narrow, winding, and often shared with tuk-tuks, buses, and pedestrians. Night driving is particularly challenging due to unlit roads and animals crossing.
+    Self-drive car rental is available in Sri Lanka, but it comes with significant caveats that most first-time visitors underestimate. Sri Lanka drives on the left, but road markings, signage, and lane discipline vary considerably outside Colombo.
+  </p>
+  <p>
+    Mountain roads in the hill country are narrow, winding, and often shared with tuk-tuks, buses, and pedestrians. Night driving is particularly challenging due to unlit roads and animals crossing.
   </p>
 
   <p>
-    Additionally, foreign driving licences must be endorsed by the Automobile Association of Ceylon before they are valid for driving in Sri Lanka — a process that requires a visit to their Colombo office and a fee. International Driving Permits are not sufficient on their own.
+    Additionally, foreign driving licences must be endorsed by the Automobile Association of Ceylon before they are valid for driving in Sri Lanka — a process that requires a visit to their Colombo office and a fee.
+  </p>
+  <p>
+    International Driving Permits are not sufficient on their own.
   </p>
 
   <p>
@@ -370,13 +403,19 @@ export const ARTICLES: Article[] = [
   <h2>Option 2: Taxis and Ride-Hailing Apps</h2>
 
   <p>
-    PickMe and Uber operate in Colombo and a handful of larger cities. For short urban trips, they are convenient and fairly priced. However, they are not designed for multi-day itineraries or inter-city travel, and availability outside Colombo, Kandy, and Galle is unreliable. Negotiating a metered taxi for a full-day excursion is possible but requires local knowledge of fair rates and can lead to disagreements at the end of the journey.
+    PickMe and Uber operate in Colombo and a handful of larger cities. For short urban trips, they are convenient and fairly priced.
+  </p>
+  <p>
+    However, they are not designed for multi-day itineraries or inter-city travel, and availability outside Colombo, Kandy, and Galle is unreliable. Negotiating a metered taxi for a full-day excursion is possible but requires local knowledge of fair rates and can lead to disagreements at the end of the journey.
   </p>
 
   <h2>Option 3: Trains and Buses</h2>
 
   <p>
-    Sri Lanka's train network is scenic and inexpensive, and the Kandy–Ella route in particular is widely regarded as one of the most beautiful train journeys in Asia. However, the network is limited: it does not connect Sigiriya, Yala, Mirissa, or Trincomalee directly. Buses cover more ground but are slow, crowded, and not air-conditioned on most routes. For travellers with luggage, young children, or tight schedules, public transport is rarely the most practical primary option.
+    Sri Lanka's train network is scenic and inexpensive, and the Kandy–Ella route in particular is widely regarded as one of the most beautiful train journeys in Asia. However, the network is limited: it does not connect Sigiriya, Yala, Mirissa, or Trincomalee directly.
+  </p>
+  <p>
+    Buses cover more ground but are slow, crowded, and not air-conditioned on most routes. For travellers with luggage, young children, or tight schedules, public transport is rarely the most practical primary option.
   </p>
 
   <figure class="article-figure">
@@ -394,7 +433,10 @@ export const ARTICLES: Article[] = [
   <h2>Option 4: Car Hire with a Private Driver (Charter)</h2>
 
   <p>
-    Hiring a car with a dedicated private driver — often called a charter or chauffeur service — is the option that most experienced Sri Lanka travellers recommend to first-timers. You get the flexibility of a private vehicle without the stress of driving yourself, and you gain a local guide who can navigate, recommend, and adapt to your preferences in real time.
+    Hiring a car with a dedicated private driver — often called a charter or chauffeur service — is the option that most experienced Sri Lanka travellers recommend to first-timers.
+  </p>
+  <p>
+    You get the flexibility of a private vehicle without the stress of driving yourself, and you gain a local guide who can navigate, recommend, and adapt to your preferences in real time.
   </p>
 
   <p>
@@ -487,7 +529,10 @@ export const ARTICLES: Article[] = [
   <h2>Planning a Multi-Day Itinerary with a Private Driver</h2>
 
   <p>
-    One of the greatest advantages of a private driver charter is the ability to design your own route. Sri Lanka's most popular destinations — Sigiriya, Kandy, Ella, Yala, Galle, and Mirissa — are spread across the island, and the most efficient way to cover them is by road with a dedicated vehicle.
+    One of the greatest advantages of a private driver charter is the ability to design your own route. Sri Lanka's most popular destinations — Sigiriya, Kandy, Ella, Yala, Galle, and Mirissa — are spread across the island.
+  </p>
+  <p>
+    The most efficient way to cover them is by road with a dedicated vehicle.
   </p>
 
   <figure class="article-figure">
@@ -540,7 +585,10 @@ export const ARTICLES: Article[] = [
   <h2>How Much Does Car Hire with a Driver Cost in Sri Lanka?</h2>
 
   <p>
-    Daily rates for a private driver charter in Sri Lanka typically range from <strong>USD 60 to USD 120</strong>, depending on vehicle type, daily distance, and season. This all-in rate covers the driver, fuel, parking, and tolls. It does not include entrance fees to national parks or heritage sites, or the driver's accommodation on multi-night trips.
+    Daily rates for a private driver charter in Sri Lanka typically range from <strong>USD 60 to USD 120</strong>, depending on vehicle type, daily distance, and season. This all-in rate covers the driver, fuel, parking, and tolls.
+  </p>
+  <p>
+    It does not include entrance fees to national parks or heritage sites, or the driver's accommodation on multi-night trips.
   </p>
 
   <p>
@@ -673,7 +721,10 @@ export const ARTICLES: Article[] = [
     Ask for the specific vehicle that will be assigned to your trip, not just a category. Confirm the approximate age of the vehicle and whether it has working air conditioning — essential in Sri Lanka's heat.
   </p>
   <p>
-    For groups of four or more, a <strong>Japanese KDH Hi-Ace van</strong> is the standard choice, offering generous luggage space and a high seating position. For couples or solo travellers, a <strong>Japanese compact sedan</strong> is comfortable and more economical. For larger groups or families with young children, a <strong>luxury Japanese MPV</strong> with captain's seats provides the most comfort.
+    For groups of four or more, a <strong>Japanese KDH Hi-Ace van</strong> is the standard choice, offering generous luggage space and a high seating position. For couples or solo travellers, a <strong>Japanese compact sedan</strong> is comfortable and more economical.
+  </p>
+  <p>
+    For larger groups or families with young children, a <strong>luxury Japanese MPV</strong> with captain's seats provides the most comfort.
   </p>
 
   <p>
@@ -848,7 +899,10 @@ export const ARTICLES: Article[] = [
 <article class="article-body">
 
   <p class="article-lead">
-    Sri Lanka is one of the most rewarding destinations in Asia for family and group travel — but getting around comfortably with multiple passengers, pushchairs, luggage, and different energy levels requires the right vehicle and the right driver. A private van charter with a dedicated English-speaking driver solves every one of these challenges in a single booking.
+    Sri Lanka is one of the most rewarding destinations in Asia for family and group travel — but getting around comfortably with multiple passengers, pushchairs, luggage, and different energy levels requires the right vehicle and the right driver.
+  </p>
+  <p class="article-lead">
+    A private van charter with a dedicated English-speaking driver solves every one of these challenges in a single booking.
   </p>
 
   <img
@@ -860,19 +914,31 @@ export const ARTICLES: Article[] = [
   <h2>Why a Private Van Is the Best Choice for Families and Groups</h2>
 
   <p>
-    Public transport in Sri Lanka — buses and trains — can be a wonderful experience for solo travellers or adventurous couples, but it is rarely practical for families or groups of four or more. Luggage space is limited, air conditioning is inconsistent, and coordinating multiple passengers across connections adds significant stress to every journey.
+    Public transport in Sri Lanka — buses and trains — can be a wonderful experience for solo travellers or adventurous couples, but it is rarely practical for families or groups of four or more.
   </p>
   <p>
-    A private van charter eliminates all of these friction points. Your group travels together in a single air-conditioned vehicle, departures happen on your schedule, and the driver handles all navigation and logistics. There are no connections to miss, no queues to manage, and no strangers in your personal space.
+    Luggage space is limited, air conditioning is inconsistent, and coordinating multiple passengers across connections adds significant stress to every journey.
+  </p>
+  <p>
+    A private van charter eliminates all of these friction points. Your group travels together in a single air-conditioned vehicle, departures happen on your schedule, and the driver handles all navigation and logistics.
+  </p>
+  <p>
+    There are no connections to miss, no queues to manage, and no strangers in your personal space.
   </p>
 
   <h3>What Makes a Van the Right Vehicle for Groups?</h3>
 
   <p>
-    The standard vehicle for group travel in Sri Lanka is the <strong>Japanese KDH Hi-Ace van</strong> — a high-roof minibus that seats up to six passengers comfortably, with generous luggage space in the rear. For larger groups of up to nine, a <strong>luxury Japanese MPV</strong> with captain's seats provides the most comfort on longer journeys.
+    The standard vehicle for group travel in Sri Lanka is the <strong>Japanese KDH Hi-Ace van</strong> — a high-roof minibus that seats up to six passengers comfortably, with generous luggage space in the rear.
   </p>
   <p>
-    Both vehicle types offer high seating positions — ideal for viewing wildlife, paddy fields, and coastal scenery — and the elevated cabin keeps the interior cooler than a standard sedan in Sri Lanka's tropical heat. For families with young children, the step-up entry and wide sliding doors make boarding and alighting with car seats or pushchairs straightforward.
+    For larger groups of up to nine, a <strong>luxury Japanese MPV</strong> with captain's seats provides the most comfort on longer journeys.
+  </p>
+  <p>
+    Both vehicle types offer high seating positions — ideal for viewing wildlife, paddy fields, and coastal scenery — and the elevated cabin keeps the interior cooler than a standard sedan in Sri Lanka's tropical heat.
+  </p>
+  <p>
+    For families with young children, the step-up entry and wide sliding doors make boarding and alighting with car seats or pushchairs straightforward.
   </p>
   <p>
     For a full overview of all available vehicle types and their passenger capacities, visit our <a href="/vehicles" class="article-link">Vehicles page</a>.
@@ -921,7 +987,10 @@ export const ARTICLES: Article[] = [
   <h2>Van Hire Pricing for Families and Groups (2026)</h2>
 
   <p>
-    Van hire pricing at SLTCS is flat-rate and tax-inclusive. The table below shows indicative prices for the most common trip durations. All prices are in USD; quotes are also available in <strong>GBP, EUR, and AUD</strong>.
+    Van hire pricing at SLTCS is flat-rate and tax-inclusive. The table below shows indicative prices for the most common trip durations.
+  </p>
+  <p>
+    All prices are in USD; quotes are also available in <strong>GBP, EUR, and AUD</strong>.
   </p>
 
   <div class="article-table-wrap">
@@ -1035,18 +1104,30 @@ export const ARTICLES: Article[] = [
 
   <h3>Travelling with Young Children</h3>
   <p>
-    Sri Lanka's roads vary considerably in quality — smooth expressways connect the major cities, but mountain routes and rural roads can be winding and bumpy. For infants and toddlers, a child car seat is strongly recommended. SLTCS can arrange a suitable seat on request; please mention this when you enquire.
+    Sri Lanka's roads vary considerably in quality — smooth expressways connect the major cities, but mountain routes and rural roads can be winding and bumpy. For infants and toddlers, a child car seat is strongly recommended.
   </p>
   <p>
-    Plan for rest stops every two to three hours on longer driving days. Most drivers know the best roadside stops — shaded areas with clean facilities and cold drinks. The hill country routes in particular benefit from an early start to avoid afternoon heat and to make the most of the morning light.
+    SLTCS can arrange a suitable seat on request; please mention this when you enquire.
+  </p>
+  <p>
+    Plan for rest stops every two to three hours on longer driving days. Most drivers know the best roadside stops — shaded areas with clean facilities and cold drinks.
+  </p>
+  <p>
+    The hill country routes in particular benefit from an early start to avoid afternoon heat and to make the most of the morning light.
   </p>
 
   <h3>Travelling with Elderly Passengers</h3>
   <p>
-    For groups that include elderly passengers, the <strong>Gold plan</strong> with a Chauffeur Guide Driver is the most appropriate choice. These drivers are experienced in managing the pace of the itinerary to suit all energy levels, and the dual support system ensures that no passenger is left without assistance at any point during the trip.
+    For groups that include elderly passengers, the <strong>Gold plan</strong> with a Chauffeur Guide Driver is the most appropriate choice. These drivers are experienced in managing the pace of the itinerary to suit all energy levels.
   </p>
   <p>
-    The KDH van's high seating position can require a step up to board — if mobility is a concern, the luxury MPV with lower entry and captain's seats may be more comfortable. Please mention any mobility requirements when you enquire.
+    The dual support system ensures that no passenger is left without assistance at any point during the trip.
+  </p>
+  <p>
+    The KDH van's high seating position can require a step up to board — if mobility is a concern, the luxury MPV with lower entry and captain's seats may be more comfortable.
+  </p>
+  <p>
+    Please mention any mobility requirements when you enquire.
   </p>
 
   <h3>Splitting Costs Across a Group</h3>
@@ -1132,7 +1213,10 @@ export const ARTICLES: Article[] = [
     content: `
 <article class="article-body">
   <p class="article-lead">
-    When you start researching private transport in Sri Lanka, you will quickly encounter several different titles: <strong>Tourist Driver</strong>, <strong>Chauffeur Guide Driver</strong>, and <strong>National Guide</strong>. These are not interchangeable terms — each represents a different level of qualification, a different scope of service, and a different price point. Understanding the distinction before you book can make the difference between a good trip and a genuinely exceptional one.
+    When you start researching private transport in Sri Lanka, you will quickly encounter several different titles: <strong>Tourist Driver</strong>, <strong>Chauffeur Guide Driver</strong>, and <strong>National Guide</strong>. These are not interchangeable terms — each represents a different level of qualification, a different scope of service, and a different price point.
+  </p>
+  <p class="article-lead">
+    Understanding the distinction before you book can make the difference between a good trip and a genuinely exceptional one.
   </p>
 
   <img
@@ -1144,7 +1228,10 @@ export const ARTICLES: Article[] = [
 
   <h2>The Three Driver Types in Sri Lanka — At a Glance</h2>
   <p>
-    Sri Lanka's tourism industry is regulated by the <strong>Sri Lanka Tourism Development Authority (SLTDA)</strong>, which issues different categories of licences to drivers and guides. The three most relevant categories for travellers hiring private transport are outlined below.
+    Sri Lanka's tourism industry is regulated by the <strong>Sri Lanka Tourism Development Authority (SLTDA)</strong>, which issues different categories of licences to drivers and guides.
+  </p>
+  <p>
+    The three most relevant categories for travellers hiring private transport are outlined below.
   </p>
 
   <div class="article-table-wrap">
@@ -1186,10 +1273,16 @@ export const ARTICLES: Article[] = [
 
   <h2>Tourist Driver: Reliable Transport, Minimal Commentary</h2>
   <p>
-    A Tourist Driver holds a government-issued tourist vehicle licence and is authorised to transport visitors throughout Sri Lanka. Their primary responsibility is safe, punctual driving — not guiding. Most Tourist Drivers have a working knowledge of English and can recommend restaurants or help with basic logistics, but they are not trained or certified to deliver historical or cultural commentary at sites.
+    A Tourist Driver holds a government-issued tourist vehicle licence and is authorised to transport visitors throughout Sri Lanka. Their primary responsibility is safe, punctual driving — not guiding.
   </p>
   <p>
-    This category suits travellers who have already researched the destinations they plan to visit, prefer to explore independently at each stop, or are travelling with a separate tour leader. It is also the most common driver type offered by budget operators and ride-hailing platforms.
+    Most Tourist Drivers have a working knowledge of English and can recommend restaurants or help with basic logistics, but they are not trained or certified to deliver historical or cultural commentary at sites.
+  </p>
+  <p>
+    This category suits travellers who have already researched the destinations they plan to visit, prefer to explore independently at each stop, or are travelling with a separate tour leader.
+  </p>
+  <p>
+    It is also the most common driver type offered by budget operators and ride-hailing platforms.
   </p>
   <p>
     At SLTCS, all drivers — regardless of category — hold a valid government tourist vehicle licence and have been individually vetted. You can learn more about our <a href="/vehicles" class="article-link">vehicle fleet</a> and the standards we apply to every booking.
@@ -1197,7 +1290,10 @@ export const ARTICLES: Article[] = [
 
   <h2>Chauffeur Guide Driver: The Best of Both Worlds</h2>
   <p>
-    A Chauffeur Guide Driver holds an additional certification issued by the SLTDA that qualifies them to provide guided commentary at tourist sites. This is the most popular choice among independent travellers from the UK, Australia, and Europe who want more than a driver — they want someone who can bring the country to life.
+    A Chauffeur Guide Driver holds an additional certification issued by the SLTDA that qualifies them to provide guided commentary at tourist sites.
+  </p>
+  <p>
+    This is the most popular choice among independent travellers from the UK, Australia, and Europe who want more than a driver — they want someone who can bring the country to life.
   </p>
 
   <img
@@ -1257,7 +1353,10 @@ export const ARTICLES: Article[] = [
     </table>
   </div>
   <p>
-    A Chauffeur Guide Driver is the right choice if you want to understand what you are seeing — not just visit a list of sites. At Sigiriya, they will explain the hydraulic engineering of the ancient water gardens. At the Temple of the Tooth in Kandy, they will describe the significance of the relic and the correct way to observe the evening ceremony. At Yala, they will identify wildlife and explain the ecosystem.
+    A Chauffeur Guide Driver is the right choice if you want to understand what you are seeing — not just visit a list of sites. At Sigiriya, they will explain the hydraulic engineering of the ancient water gardens.
+  </p>
+  <p>
+    At the Temple of the Tooth in Kandy, they will describe the significance of the relic and the correct way to observe the evening ceremony. At Yala, they will identify wildlife and explain the ecosystem.
   </p>
   <p>
     SLTCS offers Chauffeur Guide Drivers under the <a href="/plans" class="article-link">Silver Plan</a> (Highly-Rated Tourist Driver or Chauffeur Guide Driver) and the <a href="/plans" class="article-link">Gold Plan</a> (dedicated Chauffeur Guide Driver with a second support driver for longer itineraries).
@@ -1265,10 +1364,16 @@ export const ARTICLES: Article[] = [
 
   <h2>National Guide: Specialist Expertise for Complex Tours</h2>
   <p>
-    A National Guide holds the highest level of guiding certification in Sri Lanka, issued after a rigorous multi-year training programme covering history, archaeology, ecology, and multiple languages. National Guides are typically engaged for large group tours, specialist cultural programmes, or high-end itineraries that require deep expertise across multiple disciplines.
+    A National Guide holds the highest level of guiding certification in Sri Lanka, issued after a rigorous multi-year training programme covering history, archaeology, ecology, and multiple languages.
   </p>
   <p>
-    For most independent travellers booking a private car or van charter, a National Guide is not necessary — and the additional cost is rarely justified unless the itinerary is specifically focused on archaeological depth (for example, a dedicated tour of the ancient cities of Anuradhapura and Polonnaruwa). A well-qualified Chauffeur Guide Driver provides more than enough cultural context for the vast majority of Sri Lanka itineraries.
+    National Guides are typically engaged for large group tours, specialist cultural programmes, or high-end itineraries that require deep expertise across multiple disciplines.
+  </p>
+  <p>
+    For most independent travellers booking a private car or van charter, a National Guide is not necessary — and the additional cost is rarely justified unless the itinerary is specifically focused on archaeological depth (for example, a dedicated tour of the ancient cities of Anuradhapura and Polonnaruwa).
+  </p>
+  <p>
+    A well-qualified Chauffeur Guide Driver provides more than enough cultural context for the vast majority of Sri Lanka itineraries.
   </p>
 
   <img
@@ -1337,7 +1442,10 @@ export const ARTICLES: Article[] = [
     Every driver working with SLTCS holds a valid government-issued tourist vehicle licence as a minimum requirement. Chauffeur Guide Drivers on the Silver and Gold plans hold additional SLTDA guiding certification and have been individually assessed for English fluency, cultural knowledge, and service standards.
   </p>
   <p>
-    Beyond formal qualifications, SLTCS applies its own internal rating system based on guest feedback after every charter. Drivers are rated on punctuality, vehicle cleanliness, route knowledge, communication, and cultural commentary quality. Only drivers who maintain consistently high ratings across all categories are offered to new guests.
+    Beyond formal qualifications, SLTCS applies its own internal rating system based on guest feedback after every charter. Drivers are rated on punctuality, vehicle cleanliness, route knowledge, communication, and cultural commentary quality.
+  </p>
+  <p>
+    Only drivers who maintain consistently high ratings across all categories are offered to new guests.
   </p>
   <p>
     You can read first-hand accounts from past guests on our <a href="/voice" class="article-link">Guest Voices page</a>, where reviews include specific ratings for driver performance, vehicle condition, and overall service.
@@ -1345,7 +1453,10 @@ export const ARTICLES: Article[] = [
 
   <h2>Understanding the SLTCS Plan Structure</h2>
   <p>
-    SLTCS organises its service into three plans, each reflecting a different driver category and level of support. The plan you choose determines not just the driver type, but also the vehicle options available and the overall experience of your charter.
+    SLTCS organises its service into three plans, each reflecting a different driver category and level of support.
+  </p>
+  <p>
+    The plan you choose determines not just the driver type, but also the vehicle options available and the overall experience of your charter.
   </p>
 
   <div class="a6-plan-grid">
@@ -1389,17 +1500,26 @@ export const ARTICLES: Article[] = [
 
   <h3>Can I request a Chauffeur Guide Driver on the Bronze Plan?</h3>
   <p>
-    The Bronze Plan is designed around experienced Tourist Drivers. If you would like a certified Chauffeur Guide Driver, the Silver or Gold Plan is the appropriate choice. You can compare all three plans on the <a href="/plans" class="article-link">Plans page</a>.
+    The Bronze Plan is designed around experienced Tourist Drivers. If you would like a certified Chauffeur Guide Driver, the Silver or Gold Plan is the appropriate choice.
+  </p>
+  <p>
+    You can compare all three plans on the <a href="/plans" class="article-link">Plans page</a>.
   </p>
 
   <h3>Is a Chauffeur Guide Driver the same as a tour guide?</h3>
   <p>
-    Not exactly. A Chauffeur Guide Driver is primarily your driver — they are responsible for your transport throughout the trip. Their guiding role is complementary: they provide cultural context and commentary at the sites you visit, but they do not lead large group tours or replace a specialist guide for in-depth archaeological programmes. For most independent travellers, this combination is ideal.
+    Not exactly. A Chauffeur Guide Driver is primarily your driver — they are responsible for your transport throughout the trip. Their guiding role is complementary: they provide cultural context and commentary at the sites you visit, but they do not lead large group tours or replace a specialist guide for in-depth archaeological programmes.
+  </p>
+  <p>
+    For most independent travellers, this combination is ideal.
   </p>
 
   <h3>Do Chauffeur Guide Drivers speak English fluently?</h3>
   <p>
-    All Chauffeur Guide Drivers working with SLTCS have been assessed for English fluency as part of our internal vetting process. Fluent English communication is a core requirement for the Silver and Gold plans. If you have specific language requirements, please mention this when you <a href="/#contact" class="article-link">submit your enquiry</a>.
+    All Chauffeur Guide Drivers working with SLTCS have been assessed for English fluency as part of our internal vetting process. Fluent English communication is a core requirement for the Silver and Gold plans.
+  </p>
+  <p>
+    If you have specific language requirements, please mention this when you <a href="/#contact" class="article-link">submit your enquiry</a>.
   </p>
 
   <h3>How much more does a Chauffeur Guide Driver cost compared to a Tourist Driver?</h3>
@@ -1452,10 +1572,16 @@ export const ARTICLES: Article[] = [
 
   <h2>Overview: 4 Nights / 5 Days Cultural Highlights</h2>
   <p>
-    This 5-day private driver itinerary is designed for first-time visitors who want to experience the very best of Sri Lanka without feeling rushed. In five days, you will visit four of the island's most celebrated UNESCO World Heritage sites, travel through stunning highland scenery, and arrive at the historic southern coast — all from the comfort of a fully private, air-conditioned vehicle with a dedicated driver.
+    This 5-day private driver itinerary is designed for first-time visitors who want to experience the very best of Sri Lanka without feeling rushed. In five days, you will visit four of the island's most celebrated UNESCO World Heritage sites, travel through stunning highland scenery, and arrive at the historic southern coast.
   </p>
   <p>
-    All SLTCS itineraries are flexible by design. If you want to linger longer at Sigiriya, skip a stop, or add a spontaneous detour, your driver will adapt. This plan is a starting point, not a rigid schedule.
+    All of this is from the comfort of a fully private, air-conditioned vehicle with a dedicated driver.
+  </p>
+  <p>
+    All SLTCS itineraries are flexible by design. If you want to linger longer at Sigiriya, skip a stop, or add a spontaneous detour, your driver will adapt.
+  </p>
+  <p>
+    This plan is a starting point, not a rigid schedule.
   </p>
 
   <div class="article-table-wrap">
@@ -1481,12 +1607,18 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 1 — Arrival → Sigiriya</h3>
   <p>
-    Arrive at Bandaranaike International Airport (BIA) in Colombo. Your driver will meet you at the arrivals hall with a name board. Drive north to the Sigiriya area (approximately 3–4 hours), stopping en route at the <strong>Dambulla Cave Temple</strong> — a UNESCO World Heritage site featuring five cave shrines adorned with over 150 Buddha statues and ancient murals. Check in to your hotel in the Sigiriya or Kandalama area.
+    Arrive at Bandaranaike International Airport (BIA) in Colombo. Your driver will meet you at the arrivals hall with a name board.
+  </p>
+  <p>
+    Drive north to the Sigiriya area (approximately 3–4 hours), stopping en route at the <strong>Dambulla Cave Temple</strong> — a UNESCO World Heritage site featuring five cave shrines adorned with over 150 Buddha statues and ancient murals. Check in to your hotel in the Sigiriya or Kandalama area.
   </p>
 
   <h3>Day 2 — Sigiriya Rock Fortress</h3>
   <p>
-    Begin the day with an early morning climb of <strong>Sigiriya Rock Fortress</strong> (UNESCO), one of the most extraordinary archaeological sites in Asia. The 5th-century royal citadel rises 200 metres above the surrounding jungle, and the summit offers panoramic views across the plains. Allow 2.5–3 hours for the full climb and descent.
+    Begin the day with an early morning climb of <strong>Sigiriya Rock Fortress</strong> (UNESCO), one of the most extraordinary archaeological sites in Asia. The 5th-century royal citadel rises 200 metres above the surrounding jungle, and the summit offers panoramic views across the plains.
+  </p>
+  <p>
+    Allow 2.5–3 hours for the full climb and descent.
   </p>
 
   <img
@@ -1503,7 +1635,10 @@ export const ARTICLES: Article[] = [
   <div class="article-highlight-box">
     <h4>🚙 Private Jeep Safari — Arranged by SLTCS</h4>
     <p>
-      SLTCS can arrange a <strong>fully private jeep safari</strong> for your Minneriya or Yala visit. Unlike shared group safaris, your private jeep is reserved exclusively for your party — no strangers, no fixed schedule. What truly sets the SLTCS experience apart is that <strong>your dedicated driver can ride along inside the jeep</strong>, providing real-time commentary on the wildlife, habitats, and park history throughout the safari. This means you benefit from both a certified park tracker and your trusted SLTCS driver in one seamless experience.
+      SLTCS can arrange a <strong>fully private jeep safari</strong> for your Minneriya or Yala visit. Unlike shared group safaris, your private jeep is reserved exclusively for your party — no strangers, no fixed schedule.
+    </p>
+    <p>
+      What truly sets the SLTCS experience apart is that <strong>your dedicated driver can ride along inside the jeep</strong>, providing real-time commentary on the wildlife, habitats, and park history throughout the safari. This means you benefit from both a certified park tracker and your trusted SLTCS driver in one seamless experience.
     </p>
     <p>
       Interested in a private jeep safari? <a href="/#contact" class="article-link">Contact us</a> when making your enquiry and we will include it in your personalised quote.
@@ -1511,7 +1646,7 @@ export const ARTICLES: Article[] = [
   </div>
 
   <img
-    src="/manus-storage/safari_jeep_wilpatthu_guests_c0e078f1.jpeg"
+    src="/manus-storage/itinerary_5n6d_sigiriya_top_24b584a1.jpg"
     alt="Private jeep safari arranged by SLTCS — guests aboard a safari jeep in Sri Lanka"
     class="article-inline-img"
     loading="lazy"
@@ -1526,12 +1661,18 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 3 — Kandy: Temple of the Tooth</h3>
   <p>
-    Drive to <strong>Kandy</strong> (approximately 2.5 hours), stopping at a traditional spice garden in Matale along the way. Visit the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO), the most sacred Buddhist site in Sri Lanka, which houses a relic of the Buddha. In the evening, attend a Kandyan cultural dance performance — a vibrant showcase of traditional drumming and costumed dancers.
+    Drive to <strong>Kandy</strong> (approximately 2.5 hours), stopping at a traditional spice garden in Matale along the way. Visit the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO), the most sacred Buddhist site in Sri Lanka, which houses a relic of the Buddha.
+  </p>
+  <p>
+    In the evening, attend a Kandyan cultural dance performance — a vibrant showcase of traditional drumming and costumed dancers.
   </p>
 
   <h3>Day 4 — Nuwara Eliya → Galle</h3>
   <p>
-    Depart Kandy for a scenic drive through rolling <strong>tea estates</strong> to Nuwara Eliya — Sri Lanka's 'Little England', set at 1,868 metres above sea level. Stop at a tea factory for a guided tour and tasting. Continue south through the highlands and down to the coast, arriving at <strong>Galle Fort</strong> (UNESCO) on the southern coast by late afternoon.
+    Depart Kandy for a scenic drive through rolling <strong>tea estates</strong> to Nuwara Eliya — Sri Lanka's 'Little England', set at 1,868 metres above sea level. Stop at a tea factory for a guided tour and tasting.
+  </p>
+  <p>
+    Continue south through the highlands and down to the coast, arriving at <strong>Galle Fort</strong> (UNESCO) on the southern coast by late afternoon.
   </p>
 
   <img
@@ -1543,7 +1684,10 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 5 — Galle Fort → Departure</h3>
   <p>
-    Spend the morning exploring <strong>Galle Fort</strong> — a remarkably well-preserved Dutch colonial fortification dating from the 17th century. Walk the ramparts, browse the boutique shops and galleries within the fort walls, and enjoy a coffee overlooking the Indian Ocean. Your driver will then transfer you to Colombo Airport for your departure flight.
+    Spend the morning exploring <strong>Galle Fort</strong> — a remarkably well-preserved Dutch colonial fortification dating from the 17th century. Walk the ramparts, browse the boutique shops and galleries within the fort walls, and enjoy a coffee overlooking the Indian Ocean.
+  </p>
+  <p>
+    Your driver will then transfer you to Colombo Airport for your departure flight.
   </p>
 
   <h2>What's Included in This Itinerary</h2>
@@ -1569,7 +1713,10 @@ export const ARTICLES: Article[] = [
 
   <h2>Recommended SLTCS Plans</h2>
   <p>
-    For a 5-day cultural itinerary, we recommend the <a href="/plans" class="article-link">Silver Plan</a> (Highly-Rated Tourist Driver or Chauffeur Guide Driver) or the <a href="/plans" class="article-link">Gold Plan</a> (dedicated Chauffeur Guide Driver with a second support driver). A Chauffeur Guide Driver will significantly enrich your experience at Sigiriya, Kandy, and Galle by providing certified cultural commentary at each site.
+    For a 5-day cultural itinerary, we recommend the <a href="/plans" class="article-link">Silver Plan</a> (Highly-Rated Tourist Driver or Chauffeur Guide Driver) or the <a href="/plans" class="article-link">Gold Plan</a> (dedicated Chauffeur Guide Driver with a second support driver).
+  </p>
+  <p>
+    A Chauffeur Guide Driver will significantly enrich your experience at Sigiriya, Kandy, and Galle by providing certified cultural commentary at each site.
   </p>
   <p>
     View our full <a href="/price" class="article-link">pricing page</a> for transparent rates, or <a href="/#contact" class="article-link">submit a free enquiry</a> and we will prepare a personalised quote within 24 hours.
@@ -1655,12 +1802,18 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 1 — Arrival → Sigiriya</h3>
   <p>
-    Arrive at Colombo Airport. Your driver will meet you at arrivals and transfer you north to the Sigiriya area (approximately 3–4 hours), stopping at the <strong>Dambulla Cave Temple</strong> (UNESCO) en route. Check in to your hotel in the Sigiriya or Kandalama area.
+    Arrive at Colombo Airport. Your driver will meet you at arrivals and transfer you north to the Sigiriya area (approximately 3–4 hours), stopping at the <strong>Dambulla Cave Temple</strong> (UNESCO) en route.
+  </p>
+  <p>
+    Check in to your hotel in the Sigiriya or Kandalama area.
   </p>
 
   <h3>Day 2 — Sigiriya Rock & Wildlife Safari</h3>
   <p>
-    Climb <strong>Sigiriya Rock Fortress</strong> (UNESCO) in the morning — allow 2.5–3 hours for the full ascent and descent. In the afternoon, take a jeep safari at <strong>Minneriya or Kaudulla National Park</strong>, where you may encounter large herds of wild elephants gathering around the ancient reservoirs.
+    Climb <strong>Sigiriya Rock Fortress</strong> (UNESCO) in the morning — allow 2.5–3 hours for the full ascent and descent.
+  </p>
+  <p>
+    In the afternoon, take a jeep safari at <strong>Minneriya or Kaudulla National Park</strong>, where you may encounter large herds of wild elephants gathering around the ancient reservoirs.
   </p>
 
   <img
@@ -1672,12 +1825,18 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 3 — Kandy Sightseeing</h3>
   <p>
-    Travel to <strong>Kandy</strong> via the Matale Spice Garden. Visit the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO) and the beautiful <strong>Peradeniya Botanical Gardens</strong>, home to over 4,000 plant species including a famous avenue of royal palms. Evening at leisure in Kandy town.
+    Travel to <strong>Kandy</strong> via the Matale Spice Garden. Visit the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO) and the beautiful <strong>Peradeniya Botanical Gardens</strong>, home to over 4,000 plant species including a famous avenue of royal palms.
+  </p>
+  <p>
+    Evening at leisure in Kandy town.
   </p>
 
   <h3>Day 4 — Nuwara Eliya & Ella</h3>
   <p>
-    Drive through the stunning <strong>tea highlands</strong> to Nuwara Eliya. Visit a tea factory and enjoy high tea with views across the estate. Continue to <strong>Ella</strong> — a charming hill village famous for the <strong>Nine Arches Bridge</strong>, a colonial-era viaduct set amid jungle and tea terraces. Overnight in Ella.
+    Drive through the stunning <strong>tea highlands</strong> to Nuwara Eliya. Visit a tea factory and enjoy high tea with views across the estate.
+  </p>
+  <p>
+    Continue to <strong>Ella</strong> — a charming hill village famous for the <strong>Nine Arches Bridge</strong>, a colonial-era viaduct set amid jungle and tea terraces. Overnight in Ella.
   </p>
 
   <img
@@ -1689,7 +1848,10 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 5 — Yala National Park Safari</h3>
   <p>
-    Transfer to the Yala area (approximately 2 hours from Ella). Spend the full day on a <strong>jeep safari at Yala National Park</strong> — Sri Lanka's most famous wildlife reserve and home to the world's highest density of leopards. Also look out for elephants, sloth bears, crocodiles, and hundreds of bird species. Overnight near Yala or Tissamaharama.
+    Transfer to the Yala area (approximately 2 hours from Ella). Spend the full day on a <strong>jeep safari at Yala National Park</strong> — Sri Lanka's most famous wildlife reserve and home to the world's highest density of leopards.
+  </p>
+  <p>
+    Also look out for elephants, sloth bears, crocodiles, and hundreds of bird species. Overnight near Yala or Tissamaharama.
   </p>
 
   <img
@@ -1701,7 +1863,10 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 6 — Galle Fort → Departure</h3>
   <p>
-    Drive to <strong>Galle Fort</strong> (UNESCO) on the southern coast. Spend the morning exploring the Dutch colonial ramparts, boutique shops, and ocean views before your driver transfers you to Colombo Airport for departure.
+    Drive to <strong>Galle Fort</strong> (UNESCO) on the southern coast. Spend the morning exploring the Dutch colonial ramparts, boutique shops, and ocean views.
+  </p>
+  <p>
+    Your driver will then transfer you to Colombo Airport for departure.
   </p>
 
   <h2>What's Included in This Itinerary</h2>
@@ -1727,7 +1892,10 @@ export const ARTICLES: Article[] = [
 
   <h2>Recommended SLTCS Plans</h2>
   <p>
-    For a 6-day culture-and-nature itinerary, we recommend the <a href="/plans" class="article-link">Silver Plan</a> or <a href="/plans" class="article-link">Gold Plan</a>. A Chauffeur Guide Driver on the Gold Plan will provide certified commentary at Sigiriya, Kandy, and Galle, and can help coordinate your Yala safari logistics.
+    For a 6-day culture-and-nature itinerary, we recommend the <a href="/plans" class="article-link">Silver Plan</a> or <a href="/plans" class="article-link">Gold Plan</a>.
+  </p>
+  <p>
+    A Chauffeur Guide Driver on the Gold Plan will provide certified commentary at Sigiriya, Kandy, and Galle, and can help coordinate your Yala safari logistics.
   </p>
   <p>
     View our <a href="/price" class="article-link">pricing page</a> for transparent rates, or <a href="/#contact" class="article-link">submit a free enquiry</a> for a personalised quote.
@@ -1776,7 +1944,10 @@ export const ARTICLES: Article[] = [
 
   <h2>Overview: 6 Nights / 7 Days Full Island Experience</h2>
   <p>
-    This 7-day private driver itinerary is the most popular choice for families and travellers who want a thorough introduction to Sri Lanka. Over seven days, you will explore the ancient Cultural Triangle, the sacred city of Kandy, the dramatic tea highlands, the scenic village of Ella, the wildlife-rich Yala National Park, and the historic Galle Fort — a genuinely complete island experience.
+    This 7-day private driver itinerary is the most popular choice for families and travellers who want a thorough introduction to Sri Lanka.
+  </p>
+  <p>
+    Over seven days, you will explore the ancient Cultural Triangle, the sacred city of Kandy, the dramatic tea highlands, the scenic village of Ella, the wildlife-rich Yala National Park, and the historic Galle Fort — a genuinely complete island experience.
   </p>
 
   <div class="article-table-wrap">
@@ -1802,12 +1973,18 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 1 — Arrival → Cultural Triangle</h3>
   <p>
-    Arrive at Colombo Airport. Drive north via the <strong>Dambulla Cave Temple</strong> (UNESCO) to the Sigiriya or Kandalama area (approximately 3–4 hours). Check in to your hotel.
+    Arrive at Colombo Airport. Drive north via the <strong>Dambulla Cave Temple</strong> (UNESCO) to the Sigiriya or Kandalama area (approximately 3–4 hours).
+  </p>
+  <p>
+    Check in to your hotel.
   </p>
 
   <h3>Day 2 — Sigiriya & Polonnaruwa</h3>
   <p>
-    Climb <strong>Sigiriya Rock Fortress</strong> (UNESCO) in the morning. In the afternoon, transfer to the ancient city of <strong>Polonnaruwa</strong> (UNESCO) — a remarkably well-preserved medieval capital with temples, palaces, and colossal Buddha statues. Return to your hotel.
+    Climb <strong>Sigiriya Rock Fortress</strong> (UNESCO) in the morning. In the afternoon, transfer to the ancient city of <strong>Polonnaruwa</strong> (UNESCO) — a remarkably well-preserved medieval capital with temples, palaces, and colossal Buddha statues.
+  </p>
+  <p>
+    Return to your hotel.
   </p>
 
   <img
@@ -1831,7 +2008,10 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 4 — Nuwara Eliya: Tea Highlands</h3>
   <p>
-    Scenic mountain drive to <strong>Nuwara Eliya</strong> through rolling tea estates. Enjoy a tea-plucking experience and high tea at a colonial-era plantation hotel. Explore the charming town, often called 'Little England' for its cool climate and British colonial architecture.
+    Scenic mountain drive to <strong>Nuwara Eliya</strong> through rolling tea estates. Enjoy a tea-plucking experience and high tea at a colonial-era plantation hotel.
+  </p>
+  <p>
+    Explore the charming town, often called 'Little England' for its cool climate and British colonial architecture.
   </p>
 
   <img
@@ -1843,7 +2023,10 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 5 — Ella & Nine Arches Bridge</h3>
   <p>
-    Travel to <strong>Ella</strong> and ride (or photograph) the iconic tea-country train. Visit the <strong>Nine Arches Bridge</strong> and hike to <strong>Little Adam's Peak</strong> for panoramic views across the valley. Overnight in Ella.
+    Travel to <strong>Ella</strong> and ride (or photograph) the iconic tea-country train. Visit the <strong>Nine Arches Bridge</strong> and hike to <strong>Little Adam's Peak</strong> for panoramic views across the valley.
+  </p>
+  <p>
+    Overnight in Ella.
   </p>
 
   <img
@@ -1855,13 +2038,19 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 6 — Yala National Park Safari</h3>
   <p>
-    Full-day jeep safari at <strong>Yala National Park</strong> — Sri Lanka's premier wildlife reserve. Look out for leopards, elephants, sloth bears, crocodiles, and over 200 bird species. Overnight near Yala or Tissamaharama.
+    Full-day jeep safari at <strong>Yala National Park</strong> — Sri Lanka's premier wildlife reserve. Look out for leopards, elephants, sloth bears, crocodiles, and over 200 bird species.
+  </p>
+  <p>
+    Overnight near Yala or Tissamaharama.
   </p>
 
   <div class="article-highlight-box">
     <h4>🚙 Private Jeep Safari — Arranged by SLTCS</h4>
     <p>
-      SLTCS can arrange a <strong>fully private jeep safari</strong> for your Yala visit. Unlike shared group safaris, your private jeep is reserved exclusively for your party — no strangers, no fixed schedule. What truly sets the SLTCS experience apart is that <strong>your dedicated driver can ride along inside the jeep</strong>, providing real-time commentary on the wildlife, habitats, and park history throughout the safari. This means you benefit from both a certified park tracker and your trusted SLTCS driver in one seamless experience.
+      SLTCS can arrange a <strong>fully private jeep safari</strong> for your Yala visit. Unlike shared group safaris, your private jeep is reserved exclusively for your party — no strangers, no fixed schedule.
+    </p>
+    <p>
+      What truly sets the SLTCS experience apart is that <strong>your dedicated driver can ride along inside the jeep</strong>, providing real-time commentary on the wildlife, habitats, and park history throughout the safari. This means you benefit from both a certified park tracker and your trusted SLTCS driver in one seamless experience.
     </p>
     <p>
       Interested in a private jeep safari? <a href="/#contact" class="article-link">Contact us</a> when making your enquiry and we will include it in your personalised quote.
@@ -1877,7 +2066,10 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 7 — Galle Fort → Departure</h3>
   <p>
-    Morning visit to <strong>Galle Fort</strong> (UNESCO) — walk the ramparts, explore the boutique lanes, and enjoy a final coffee with ocean views. Optional stop at <strong>Mirissa beach</strong>. Transfer to Colombo Airport for departure.
+    Morning visit to <strong>Galle Fort</strong> (UNESCO) — walk the ramparts, explore the boutique lanes, and enjoy a final coffee with ocean views. Optional stop at <strong>Mirissa beach</strong>.
+  </p>
+  <p>
+    Transfer to Colombo Airport for departure.
   </p>
 
   <h2>What's Included in This Itinerary</h2>
@@ -1903,7 +2095,10 @@ export const ARTICLES: Article[] = [
 
   <h2>Recommended SLTCS Plans</h2>
   <p>
-    For a 7-day full island itinerary, we recommend the <a href="/plans" class="article-link">Silver Plan</a> or <a href="/plans" class="article-link">Gold Plan</a>. The Gold Plan includes a dedicated Chauffeur Guide Driver plus a second support driver — ideal for families with children or travellers who want maximum flexibility and cultural depth.
+    For a 7-day full island itinerary, we recommend the <a href="/plans" class="article-link">Silver Plan</a> or <a href="/plans" class="article-link">Gold Plan</a>.
+  </p>
+  <p>
+    The Gold Plan includes a dedicated Chauffeur Guide Driver plus a second support driver — ideal for families with children or travellers who want maximum flexibility and cultural depth.
   </p>
   <p>
     View our <a href="/price" class="article-link">pricing page</a>, or <a href="/#contact" class="article-link">submit a free enquiry</a> for a personalised quote.
@@ -1952,7 +2147,10 @@ export const ARTICLES: Article[] = [
 
   <h2>Overview: 5–7 Days Cultural Triangle Focus</h2>
   <p>
-    Sri Lanka's Cultural Triangle is a region in the north-central part of the island that contains an extraordinary concentration of UNESCO World Heritage sites — ancient capitals, rock fortresses, sacred temples, and cave shrines that together tell the story of over 2,000 years of Sinhalese civilisation. This itinerary is designed for history and culture enthusiasts who want to explore these sites in depth, rather than rushing through them.
+    Sri Lanka's Cultural Triangle is a region in the north-central part of the island that contains an extraordinary concentration of UNESCO World Heritage sites — ancient capitals, rock fortresses, sacred temples, and cave shrines that together tell the story of over 2,000 years of Sinhalese civilisation.
+  </p>
+  <p>
+    This itinerary is designed for history and culture enthusiasts who want to explore these sites in depth, rather than rushing through them.
   </p>
   <p>
     The plan can be completed in 5 days at a moderate pace, or extended to 7 days for a more relaxed and thorough experience. A <a href="/information/private-driver-guide/chauffeur-guide-sri-lanka-driver-vs-tourist-guide" class="article-link">Chauffeur Guide Driver</a> is strongly recommended for this itinerary, as the historical context provided at each site significantly enriches the experience.
@@ -2001,7 +2199,10 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 1 — Airport → Dambulla Cave Temple → Sigiriya</h3>
   <p>
-    Depart from Colombo Airport (approximately 3–4 hours drive). En route, visit the <strong>Dambulla Cave Temple</strong> — a stunning UNESCO World Heritage site carved into a rock face, featuring five cave shrines with over 150 Buddha statues and ancient murals. Check in at Heritance Kandalama, a Geoffrey Bawa–designed architectural masterpiece set amid forest and lake.
+    Depart from Colombo Airport (approximately 3–4 hours drive). En route, visit the <strong>Dambulla Cave Temple</strong> — a stunning UNESCO World Heritage site carved into a rock face, featuring five cave shrines with over 150 Buddha statues and ancient murals.
+  </p>
+  <p>
+    Check in at Heritance Kandalama, a Geoffrey Bawa–designed architectural masterpiece set amid forest and lake.
   </p>
 
   <h3>Day 2 — Sigiriya Rock Fortress & Minneriya Safari</h3>
@@ -2037,7 +2238,10 @@ export const ARTICLES: Article[] = [
   <div class="article-highlight-box">
     <h4>🚙 Private Jeep Safari — Arranged by SLTCS</h4>
     <p>
-      SLTCS can arrange a <strong>fully private jeep safari</strong> for your Minneriya or Yala visit. Unlike shared group safaris, your private jeep is reserved exclusively for your party — no strangers, no fixed schedule. What truly sets the SLTCS experience apart is that <strong>your dedicated driver can ride along inside the jeep</strong>, providing real-time commentary on the wildlife, habitats, and park history throughout the safari. This means you benefit from both a certified park tracker and your trusted SLTCS driver in one seamless experience.
+      SLTCS can arrange a <strong>fully private jeep safari</strong> for your Minneriya or Yala visit. Unlike shared group safaris, your private jeep is reserved exclusively for your party — no strangers, no fixed schedule.
+    </p>
+    <p>
+      What truly sets the SLTCS experience apart is that <strong>your dedicated driver can ride along inside the jeep</strong>, providing real-time commentary on the wildlife, habitats, and park history throughout the safari. This means you benefit from both a certified park tracker and your trusted SLTCS driver in one seamless experience.
     </p>
     <p>
       Interested in a private jeep safari? <a href="/#contact" class="article-link">Contact us</a> when making your enquiry and we will include it in your personalised quote.
@@ -2046,12 +2250,18 @@ export const ARTICLES: Article[] = [
 
   <h3>Day 3 — Ancient Capital of Anuradhapura</h3>
   <p>
-    Explore the vast UNESCO-listed ruins of <strong>Anuradhapura</strong> — Sri Lanka's first ancient capital, founded in the 4th century BC. Visit the sacred <strong>Sri Maha Bodhi</strong> (the oldest documented tree in the world, grown from a cutting of the original Bodhi Tree under which the Buddha attained enlightenment), the <strong>Ruwanwelisaya Stupa</strong>, and the Jetavanaramaya. Allow a full day for this sprawling site.
+    Explore the vast UNESCO-listed ruins of <strong>Anuradhapura</strong> — Sri Lanka's first ancient capital, founded in the 4th century BC. Visit the sacred <strong>Sri Maha Bodhi</strong> (the oldest documented tree in the world, grown from a cutting of the original Bodhi Tree under which the Buddha attained enlightenment), the <strong>Ruwanwelisaya Stupa</strong>, and the Jetavanaramaya.
+  </p>
+  <p>
+    Allow a full day for this sprawling site.
   </p>
 
   <h3>Day 4 — Polonnaruwa & Pidurangala Rock</h3>
   <p>
-    Optional morning climb of <strong>Pidurangala Rock</strong> for spectacular views of Sigiriya from above. Then explore the medieval city of <strong>Polonnaruwa</strong> (UNESCO) — remarkably well-preserved temples, palaces, and the famous <strong>Gal Vihara</strong> rock temple with its colossal Buddha statues carved directly into the granite face.
+    Optional morning climb of <strong>Pidurangala Rock</strong> for spectacular views of Sigiriya from above.
+  </p>
+  <p>
+    Then explore the medieval city of <strong>Polonnaruwa</strong> (UNESCO) — remarkably well-preserved temples, palaces, and the famous <strong>Gal Vihara</strong> rock temple with its colossal Buddha statues carved directly into the granite face.
   </p>
 
   <h3>Day 5 — Kandy via Spice Garden</h3>
@@ -2078,7 +2288,10 @@ export const ARTICLES: Article[] = [
 
   <h2>Recommended SLTCS Plans</h2>
   <p>
-    For a Cultural Triangle itinerary, we recommend the <a href="/plans" class="article-link">Silver Plan</a> or <a href="/plans" class="article-link">Gold Plan</a>. The Gold Plan with a dedicated Chauffeur Guide Driver is particularly well-suited for this itinerary — the depth of historical and archaeological knowledge required to fully appreciate Anuradhapura and Polonnaruwa makes a qualified guide invaluable. See our <a href="/information/private-driver-guide/chauffeur-guide-sri-lanka-driver-vs-tourist-guide" class="article-link">Chauffeur Guide Driver guide</a> for more information.
+    For a Cultural Triangle itinerary, we recommend the <a href="/plans" class="article-link">Silver Plan</a> or <a href="/plans" class="article-link">Gold Plan</a>.
+  </p>
+  <p>
+    The Gold Plan with a dedicated Chauffeur Guide Driver is particularly well-suited for this itinerary — the depth of historical and archaeological knowledge required to fully appreciate Anuradhapura and Polonnaruwa makes a qualified guide invaluable. See our <a href="/information/private-driver-guide/chauffeur-guide-sri-lanka-driver-vs-tourist-guide" class="article-link">Chauffeur Guide Driver guide</a> for more information.
   </p>
   <p>
     View our <a href="/price" class="article-link">pricing page</a>, or <a href="/#contact" class="article-link">submit a free enquiry</a> for a personalised quote.
@@ -2152,7 +2365,10 @@ export const ARTICLES: Article[] = [
   />
 
   <p>
-    This is the itinerary we recommend most often to first-time visitors who have the time to experience Sri Lanka properly. Over 10 to 14 days, you will travel from the ancient Cultural Triangle through the sacred city of Kandy, up into the dramatic tea highlands, across to the wildlife-rich south, and finally to the beaches of the southern coast — all in a fully private vehicle with a dedicated driver.
+    This is the itinerary we recommend most often to first-time visitors who have the time to experience Sri Lanka properly.
+  </p>
+  <p>
+    Over 10 to 14 days, you will travel from the ancient Cultural Triangle through the sacred city of Kandy, up into the dramatic tea highlands, across to the wildlife-rich south, and finally to the beaches of the southern coast — all in a fully private vehicle with a dedicated driver.
   </p>
   <p>
     This plan can be completed in 10 days at a comfortable pace, or extended to 14 days by adding extra nights at your favourite locations, incorporating an Ayurveda retreat, or exploring additional destinations such as Trincomalee on the east coast.
@@ -2181,27 +2397,48 @@ export const ARTICLES: Article[] = [
 
   <h3 id="day1">Day 1 — Airport → Anuradhapura → Sigiriya</h3>
   <p>
-    Depart from Colombo Airport or Negombo. Drive north to the ancient capital of <strong>Anuradhapura</strong> (approximately 3.5–4 hours). Explore the UNESCO World Heritage Site — the sacred <strong>Sri Maha Bodhi</strong> (the world's oldest documented tree), the great <strong>Ruwanwelisaya Stupa</strong>, and the sprawling ancient ruins of this 2,500-year-old city. Continue to the Sigiriya area (approximately 1.5 hours) and check in to your hotel.
+    Depart from Colombo Airport or Negombo. Drive north to the ancient capital of <strong>Anuradhapura</strong> (approximately 3.5–4 hours).
+  </p>
+  <p>
+    Explore the UNESCO World Heritage Site — the sacred <strong>Sri Maha Bodhi</strong> (the world's oldest documented tree), the great <strong>Ruwanwelisaya Stupa</strong>, and the sprawling ancient ruins of this 2,500-year-old city.
+  </p>
+  <p>
+    Continue to the Sigiriya area (approximately 1.5 hours) and check in to your hotel.
   </p>
 
   <h3 id="day2">Day 2 — Sigiriya Rock & Minneriya Jeep Safari</h3>
   <p>
-    Morning climb of <strong>Sigiriya Rock Fortress</strong> (UNESCO) — allow 2.5–3 hours for the full ascent and descent, taking in the ancient water gardens, the famous frescoes of the celestial maidens, and the breathtaking panoramic views from the summit plateau. In the afternoon, head to <strong>Minneriya National Park</strong> for a thrilling jeep safari. Minneriya is renowned for <em>The Gathering</em> — one of Asia's greatest wildlife spectacles, where hundreds of wild elephants congregate around the ancient reservoir. Overnight in Sigiriya.
+    Morning climb of <strong>Sigiriya Rock Fortress</strong> (UNESCO) — allow 2.5–3 hours for the full ascent and descent, taking in the ancient water gardens, the famous frescoes of the celestial maidens, and the breathtaking panoramic views from the summit plateau.
+  </p>
+  <p>
+    In the afternoon, head to <strong>Minneriya National Park</strong> for a thrilling jeep safari. Minneriya is renowned for <em>The Gathering</em> — one of Asia's greatest wildlife spectacles, where hundreds of wild elephants congregate around the ancient reservoir.
+  </p>
+  <p>
+    Overnight in Sigiriya.
   </p>
 
   <h3 id="day3">Day 3 — Kandy: Spice Garden & Temple</h3>
   <p>
-    Drive to <strong>Kandy</strong> via a spice garden in Matale (approximately 3 hours). Visit the <strong>Geragama Tea Factory</strong> and the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO). Evening Kandyan dance performance.
+    Drive to <strong>Kandy</strong> via a spice garden in Matale (approximately 3 hours). Visit the <strong>Geragama Tea Factory</strong> and the <strong>Temple of the Sacred Tooth Relic</strong> (UNESCO).
+  </p>
+  <p>
+    Evening Kandyan dance performance.
   </p>
 
   <h3 id="day4">Day 4 — Nuwara Eliya: Tea Highlands</h3>
   <p>
-    Scenic mountain drive to <strong>Nuwara Eliya</strong> through rolling tea estates. Tea-plucking experience and high tea at a colonial plantation hotel. Explore the charming 'Little England' town.
+    Scenic mountain drive to <strong>Nuwara Eliya</strong> through rolling tea estates. Tea-plucking experience and high tea at a colonial plantation hotel.
+  </p>
+  <p>
+    Explore the charming 'Little England' town.
   </p>
 
   <h3 id="day5">Day 5 — Scenic Tea Train → Nine Arches Bridge → Ella</h3>
   <p>
-    Board the iconic <strong>tea-country train</strong> for a breathtaking journey through misty mountains. Photograph the famous <strong>Nine Arches Bridge</strong>. Arrive in <strong>Ella</strong>.
+    Board the iconic <strong>tea-country train</strong> for a breathtaking journey through misty mountains. Photograph the famous <strong>Nine Arches Bridge</strong>.
+  </p>
+  <p>
+    Arrive in <strong>Ella</strong>.
   </p>
 
   <img
@@ -2213,12 +2450,18 @@ export const ARTICLES: Article[] = [
 
   <h3 id="day6">Day 6 — Ella Sightseeing → Yala</h3>
   <p>
-    Morning hike to <strong>Little Adam's Peak</strong> and Ella Rock for panoramic views. Afternoon transfer to the Yala area (approximately 2 hours). Check in to a safari lodge.
+    Morning hike to <strong>Little Adam's Peak</strong> and Ella Rock for panoramic views. Afternoon transfer to the Yala area (approximately 2 hours).
+  </p>
+  <p>
+    Check in to a safari lodge.
   </p>
 
   <h3 id="day7">Day 7 — Yala National Park Safari → Mirissa Beach</h3>
   <p>
-    Early morning jeep safari at <strong>Yala National Park</strong> — Sri Lanka's most famous wildlife park, home to the world's highest density of leopards. Afternoon transfer to the beach resort of <strong>Mirissa</strong>.
+    Early morning jeep safari at <strong>Yala National Park</strong> — Sri Lanka's most famous wildlife park, home to the world's highest density of leopards.
+  </p>
+  <p>
+    Afternoon transfer to the beach resort of <strong>Mirissa</strong>.
   </p>
 
   <img
@@ -2230,7 +2473,10 @@ export const ARTICLES: Article[] = [
 
   <h3 id="day8">Day 8 — Galle Fort & Beach Day</h3>
   <p>
-    Morning visit to the UNESCO-listed <strong>Galle Fort</strong> — Dutch colonial ramparts, boutique shops, and ocean views. Afternoon at leisure on Mirissa beach. Optional whale watching (seasonal: November–April).
+    Morning visit to the UNESCO-listed <strong>Galle Fort</strong> — Dutch colonial ramparts, boutique shops, and ocean views. Afternoon at leisure on Mirissa beach.
+  </p>
+  <p>
+    Optional whale watching (seasonal: November–April).
   </p>
 
   <h3 id="day9">Day 9 — Negombo: Ayurveda & Rest</h3>
@@ -2264,7 +2510,10 @@ export const ARTICLES: Article[] = [
 
   <h2>Recommended SLTCS Plans</h2>
   <p>
-    For a 10 to 14-day itinerary, we strongly recommend the <a href="/plans" class="article-link">Gold Plan</a> — a dedicated Chauffeur Guide Driver with a second support driver. Over a longer journey, the value of having a knowledgeable, certified guide who can bring each destination to life becomes even more apparent. The second support driver also ensures maximum flexibility and safety on longer travel days.
+    For a 10 to 14-day itinerary, we strongly recommend the <a href="/plans" class="article-link">Gold Plan</a> — a dedicated Chauffeur Guide Driver with a second support driver.
+  </p>
+  <p>
+    Over a longer journey, the value of having a knowledgeable, certified guide who can bring each destination to life becomes even more apparent. The second support driver also ensures maximum flexibility and safety on longer travel days.
   </p>
   <p>
     View our <a href="/price" class="article-link">pricing page</a> for transparent rates, or <a href="/#contact" class="article-link">submit a free enquiry</a> for a personalised quote tailored to your exact dates and group size.
