@@ -349,7 +349,7 @@ export const ARTICLES: Article[] = [
     excerpt:
       "Renting a car alone, taking a taxi, or hiring a private driver — which is right for you? This complete guide compares every transport option in Sri Lanka and explains why a dedicated driver-charter is the preferred choice for UK, Australian, and US travellers.",
     coverImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article_car_hire_guide_cover-hUrEcJK8QyU2wtNBRXKH2t.webp",
-    publishedAt: "2026-06-02",
+    publishedAt: "2026-06-04",
     readingTime: 10,
     tags: ["Car Hire", "Private Driver", "Sri Lanka", "First-Time Visitors", "Travel Planning"],
     seo: {
@@ -1738,7 +1738,7 @@ export const ARTICLES: Article[] = [
     title: "Sri Lanka 5 Nights / 6 Days Itinerary: Culture + Nature by Private Driver",
     excerpt: "A well-balanced 6-day private driver tour combining cultural landmarks, highland scenery, and wildlife safari — ideal for couples and small groups.",
     coverImage: "/manus-storage/slide3_tea_train_e100395a.jpg",
-    publishedAt: "2026-06-02",
+    publishedAt: "2026-06-04",
     readingTime: 9,
     tags: ["5 Nights 6 Days", "Sigiriya", "Kandy", "Ella", "Yala", "Private Driver", "Couples"],
     seo: {
@@ -2120,7 +2120,7 @@ export const ARTICLES: Article[] = [
     title: "Sri Lanka 5–7 Days Cultural Triangle Itinerary: UNESCO Heritage Focus",
     excerpt: "An in-depth 5 to 7-day private driver tour focused on Sri Lanka's UNESCO Cultural Triangle — Sigiriya, Anuradhapura, Polonnaruwa, and Kandy.",
     coverImage: "/manus-storage/slide2_sigiriya_b8468f12.jpg",
-    publishedAt: "2026-06-02",
+    publishedAt: "2026-06-04",
     readingTime: 10,
     tags: ["Cultural Triangle", "UNESCO", "Sigiriya", "Anuradhapura", "Polonnaruwa", "Kandy", "History"],
     seo: {
