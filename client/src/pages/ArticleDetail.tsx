@@ -39,6 +39,7 @@ function slugifyHeading(text: string): string {
 /**
  * Parse H2 and H3 headings from HTML string.
  * Returns array of TocItem and the HTML with id attributes injected.
+ * If a heading already has an id attribute, that id is reused (not duplicated).
  */
 function extractToc(html: string): { toc: TocItem[]; htmlWithIds: string } {
   const toc: TocItem[] = [];
@@ -49,6 +50,14 @@ function extractToc(html: string): { toc: TocItem[]; htmlWithIds: string } {
     // Strip any inner HTML tags to get plain text
     const text = inner.replace(/<[^>]+>/g, "").trim();
     if (!text) return match;
+
+    // Check if the heading already has an id attribute
+    const existingIdMatch = attrs.match(/id="([^"]+)"/);
+    if (existingIdMatch) {
+      // Reuse the existing id — do not inject a new one
+      toc.push({ id: existingIdMatch[1], text, level });
+      return match; // Return unchanged
+    }
 
     const baseId = slugifyHeading(text);
     if (!baseId) return match;
