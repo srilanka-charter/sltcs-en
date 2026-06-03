@@ -793,7 +793,7 @@ export const ARTICLES: Article[] = [
     excerpt:
       "Travelling with children, grandparents, or a group of friends? A private van with a dedicated driver is the most comfortable and practical way to explore Sri Lanka together. Here is everything you need to know.",
     coverImage: "/manus-storage/review_smith_3ba6750f.jpeg",
-    publishedAt: "2026-06-02",
+    publishedAt: "2026-06-03",
     readingTime: 10,
     tags: ["Family Travel", "Group Travel", "Van Hire", "Sri Lanka", "Private Driver"],
     seo: {
@@ -1078,7 +1078,7 @@ export const ARTICLES: Article[] = [
     excerpt:
       "Confused by the different types of drivers available in Sri Lanka? This guide explains the difference between a Tourist Driver, Chauffeur Guide Driver, and National Guide — and helps you choose the right level of service for your trip.",
     coverImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/a6_cover_chauffeur_guide-EkZi3Nkk4pVnxtJjusWdnt.webp",
-    publishedAt: "2026-06-02",
+    publishedAt: "2026-06-03",
     readingTime: 9,
     tags: ["Chauffeur Guide", "Tourist Driver", "Private Driver", "Sri Lanka", "Travel Planning"],
     seo: {
@@ -2067,7 +2067,7 @@ export const ARTICLES: Article[] = [
     title: "Sri Lanka 10 Days to 2 Weeks Itinerary: Classic First-Timer Plan by Private Driver",
     excerpt: "The ultimate Sri Lanka private driver itinerary — 10 to 14 days covering Sigiriya, Kandy, the tea train, Ella, Yala, Galle, and beach relaxation. Perfect for first-timers wanting the complete experience.",
     coverImage: "/manus-storage/hero_van_srilanka_706f8966.jpg",
-    publishedAt: "2026-06-02",
+    publishedAt: "2026-06-03",
     readingTime: 12,
     tags: ["10 Days", "2 Weeks", "Classic Plan", "Sigiriya", "Kandy", "Ella", "Yala", "Galle", "Beach"],
     seo: {
