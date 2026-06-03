@@ -595,7 +595,10 @@ export const ARTICLES: Article[] = [
 <article class="article-body">
 
   <p class="article-lead">
-    Hiring a private driver is one of the smartest decisions you can make for a Sri Lanka trip — but not all driver services are created equal. Before you confirm a booking, there are seven things every traveller should check. This guide walks you through each one, along with a transparent breakdown of what driver hire in Sri Lanka actually costs in 2026.
+    Hiring a private driver is one of the smartest decisions you can make for a Sri Lanka trip — but not all driver services are created equal. Before you confirm a booking, there are seven things every traveller should check.
+  </p>
+  <p class="article-lead">
+    This guide walks you through each one, along with a transparent breakdown of what driver hire in Sri Lanka actually costs in 2026.
   </p>
 
   <figure class="article-figure">
@@ -613,7 +616,10 @@ export const ARTICLES: Article[] = [
   <h2>Why the Booking Stage Matters So Much</h2>
 
   <p>
-    Sri Lanka has a large and varied market for driver hire services — from solo freelance drivers to established charter operators. The quality gap between the best and worst options is significant. Travellers who book without checking the right details often encounter problems that are difficult to resolve once they are already in the country: drivers who speak little English, vehicles that do not match what was advertised, or final bills that bear no resemblance to the original quote.
+    Sri Lanka has a large and varied market for driver hire services — from solo freelance drivers to established charter operators. The quality gap between the best and worst options is significant.
+  </p>
+  <p>
+    Travellers who book without checking the right details often encounter problems that are difficult to resolve once they are already in the country: drivers who speak little English, vehicles that do not match what was advertised, or final bills that bear no resemblance to the original quote.
   </p>
 
   <p>
@@ -625,7 +631,10 @@ export const ARTICLES: Article[] = [
   <h3>1. Government-Issued Tourist Driver Licence</h3>
 
   <p>
-    In Sri Lanka, drivers who carry tourists are legally required to hold a <strong>Tourist Driver Licence</strong> issued by the Sri Lanka Tourism Development Authority (SLTDA). This is separate from a standard driving licence and requires the driver to pass background checks and a formal assessment. Always ask to see this document — or confirm that the operator can provide it on request.
+    In Sri Lanka, drivers who carry tourists are legally required to hold a <strong>Tourist Driver Licence</strong> issued by the Sri Lanka Tourism Development Authority (SLTDA). This is separate from a standard driving licence and requires the driver to pass background checks and a formal assessment.
+  </p>
+  <p>
+    Always ask to see this document — or confirm that the operator can provide it on request.
   </p>
 
   <figure class="article-figure">
@@ -643,19 +652,28 @@ export const ARTICLES: Article[] = [
   <h3>2. Third-Party Insurance Coverage</h3>
 
   <p>
-    Confirm that the vehicle carries valid third-party insurance. While basic third-party cover is legally required in Sri Lanka, the level of coverage varies. Reputable operators carry comprehensive insurance that covers passengers in the event of an accident. Ask specifically whether passenger liability is included.
+    Confirm that the vehicle carries valid third-party insurance. While basic third-party cover is legally required in Sri Lanka, the level of coverage varies.
+  </p>
+  <p>
+    Reputable operators carry comprehensive insurance that covers passengers in the event of an accident. Ask specifically whether passenger liability is included.
   </p>
 
   <h3>3. English Communication Ability</h3>
 
   <p>
-    This is one of the most frequently overlooked factors — and one of the most impactful on your day-to-day experience. A driver who cannot communicate in English makes it difficult to adjust your itinerary, ask questions about local sites, or handle unexpected situations. When enquiring, send a message in English and assess the response directly. A professional operator will reply promptly in clear English.
+    This is one of the most frequently overlooked factors — and one of the most impactful on your day-to-day experience. A driver who cannot communicate in English makes it difficult to adjust your itinerary, ask questions about local sites, or handle unexpected situations.
+  </p>
+  <p>
+    When enquiring, send a message in English and assess the response directly. A professional operator will reply promptly in clear English.
   </p>
 
   <h3>4. Vehicle Condition and Type</h3>
 
   <p>
-    Ask for the specific vehicle that will be assigned to your trip, not just a category. Confirm the approximate age of the vehicle and whether it has working air conditioning — essential in Sri Lanka's heat. For groups of four or more, a <strong>Japanese KDH Hi-Ace van</strong> is the standard choice, offering generous luggage space and a high seating position. For couples or solo travellers, a <strong>Japanese compact sedan</strong> is comfortable and more economical. For larger groups or families with young children, a <strong>luxury Japanese MPV</strong> with captain's seats provides the most comfort.
+    Ask for the specific vehicle that will be assigned to your trip, not just a category. Confirm the approximate age of the vehicle and whether it has working air conditioning — essential in Sri Lanka's heat.
+  </p>
+  <p>
+    For groups of four or more, a <strong>Japanese KDH Hi-Ace van</strong> is the standard choice, offering generous luggage space and a high seating position. For couples or solo travellers, a <strong>Japanese compact sedan</strong> is comfortable and more economical. For larger groups or families with young children, a <strong>luxury Japanese MPV</strong> with captain's seats provides the most comfort.
   </p>
 
   <p>
@@ -677,25 +695,37 @@ export const ARTICLES: Article[] = [
   </ul>
 
   <p>
-    At SLTCS, all prices are <strong>flat-rate and tax-inclusive</strong>. Fuel, tolls, and driver accommodation are covered within the quoted price for standard itineraries. There are no hidden mileage charges. The only potential additions are entrance fees to specific attractions, which are paid directly at the gate.
+    At SLTCS, all prices are <strong>flat-rate and tax-inclusive</strong>. Fuel, tolls, and driver accommodation are covered within the quoted price for standard itineraries.
+  </p>
+  <p>
+    There are no hidden mileage charges. The only potential additions are entrance fees to specific attractions, which are paid directly at the gate.
   </p>
 
   <h3>6. Cancellation and Modification Terms</h3>
 
   <p>
-    Travel plans change. Before booking, confirm the operator's policy on cancellations, date changes, and itinerary modifications. A reputable service will have clear, written terms. Be cautious of operators who require full payment upfront with no cancellation flexibility — this is a common red flag in the lower-cost segment of the market.
+    Travel plans change. Before booking, confirm the operator's policy on cancellations, date changes, and itinerary modifications. A reputable service will have clear, written terms.
+  </p>
+  <p>
+    Be cautious of operators who require full payment upfront with no cancellation flexibility — this is a common red flag in the lower-cost segment of the market.
   </p>
 
   <h3>7. Reviews from Verified Travellers</h3>
 
   <p>
-    Look for reviews on independent platforms — Google, TripAdvisor, or travel forums — rather than relying solely on testimonials displayed on the operator's own website. Pay attention to comments about punctuality, communication, and whether the final price matched the quote. Our <a href="/voice" class="article-internal-link">Guest Voices page</a> features verified reviews from travellers who have completed their trips with SLTCS.
+    Look for reviews on independent platforms — Google, TripAdvisor, or travel forums — rather than relying solely on testimonials displayed on the operator's own website. Pay attention to comments about punctuality, communication, and whether the final price matched the quote.
+  </p>
+  <p>
+    Our <a href="/voice" class="article-internal-link">Guest Voices page</a> features verified reviews from travellers who have completed their trips with SLTCS.
   </p>
 
   <h2>What Does Driver Hire in Sri Lanka Actually Cost?</h2>
 
   <p>
-    Pricing for private driver hire in Sri Lanka varies considerably depending on the operator, the driver's qualification level, the vehicle type, and the duration of the trip. The table below shows SLTCS's current flat-rate prices (USD, tax-inclusive) for the most common trip durations.
+    Pricing for private driver hire in Sri Lanka varies considerably depending on the operator, the driver's qualification level, the vehicle type, and the duration of the trip.
+  </p>
+  <p>
+    The table below shows SLTCS's current flat-rate prices (USD, tax-inclusive) for the most common trip durations.
   </p>
 
   <figure class="article-figure">
@@ -762,7 +792,10 @@ export const ARTICLES: Article[] = [
   <div class="a3-quote-box">
     <h2 class="a3-quote-heading">How to Get an Accurate Quote</h2>
     <p class="a3-quote-lead">
-      The most reliable way to get an accurate price for your specific trip is to share your itinerary — even a rough one — with the operator directly. At SLTCS, we provide free, personalised estimates in English based on your travel dates, group size, preferred vehicle, and the destinations you want to visit. There is no obligation to book, and no pressure to commit before you are ready.
+      The most reliable way to get an accurate price for your specific trip is to share your itinerary — even a rough one — with the operator directly. At SLTCS, we provide free, personalised estimates in English based on your travel dates, group size, preferred vehicle, and the destinations you want to visit.
+    </p>
+    <p class="a3-quote-lead">
+      There is no obligation to book, and no pressure to commit before you are ready.
     </p>
     <div class="a3-quote-steps">
       <div class="a3-quote-step">

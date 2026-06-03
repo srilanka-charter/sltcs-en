@@ -2339,7 +2339,17 @@ footer {
   padding-bottom: 8px;
   border-bottom: 1px solid #2a2a2a;
 }
-.article-body h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #e8e0d0; margin: 1.6em 0 0.5em; }
+.article-body h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: #f0e8d8;
+  margin: 2em 0 0.6em;
+  padding: 0.45em 0.9em;
+  border-left: 4px solid #c9a84c;
+  background: rgba(201,168,76,0.07);
+  border-radius: 0 6px 6px 0;
+  line-height: 1.4;
+}
 .article-body ul, .article-body ol { margin: 0 0 1.4em 1.4em; padding: 0; }
 .article-body li { margin-bottom: 0.5em; color: #d0c8b8; }
 .article-body strong { color: #e8e0d0; font-weight: 600; }

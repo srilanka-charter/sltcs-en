@@ -102,3 +102,5 @@
 - [x] SEO最適化: ArticleDetail.tsx共通改善（canonical URL・Article JSON-LD・Twitter Card・og:url/og:site_name/og:locale追加）
 - [x] SEO最適化: サイトマップlastmod更新（2026-06-03）・記事URLのpriority引き上げ
 - [x] /price ページ構造化データ修正: image・shippingDetails・hasMerchantReturnPolicy追加（Google Search Console対応）
+- [x] Article 3 H3見出しデザイン改善: 左ゴールドボーダー・薄い背景色・フォントサイズ強化（index.css）
+- [x] Article 3 段落分割: 2文ごとに</p><p>を挿入して可読性向上
