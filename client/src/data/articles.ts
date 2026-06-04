@@ -1092,6 +1092,9 @@ export const ARTICLES: Article[] = [
 
   <p>
     A driver who cannot earn a fair wage is more likely to seek commissions from partner shops, defer vehicle maintenance, and ultimately deliver a lower-quality experience.
+  </p>
+
+  <p>
     <strong>A cheaper trip is not necessarily a better trip.</strong>
   </p>
 
@@ -1105,6 +1108,9 @@ export const ARTICLES: Article[] = [
 
   <p>
     SLTCS employs only drivers who hold a government-issued Tourist Driver Licence from the Sri Lanka Tourism Development Authority, and maintains rigorous ongoing quality standards.
+  </p>
+
+  <p>
     English-speaking support staff add a further layer of cost — but also a further layer of reassurance for international travellers.
   </p>
 
@@ -1213,7 +1219,7 @@ export const ARTICLES: Article[] = [
   </p>
 
   <div class="a3-summary-box">
-    <div class="a3-summary-title">Key Takeaways</div>
+    <h2 class="a3-summary-title">Key Takeaways</h2>
     <ul class="a3-summary-list">
       <li>Vehicle costs in Sri Lanka are 3–4× higher than in Europe due to import duties</li>
       <li>Fuel prices are directly exposed to international oil market fluctuations</li>

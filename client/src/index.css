@@ -3111,3 +3111,32 @@ footer {
   .article-highlight-box h4 { font-size: 0.97rem; }
   .article-highlight-box p { font-size: 0.88rem; }
 }
+
+/* ─── Article 4: Private Driver Costs ─────────────────────────────────────── */
+/* Risk items */
+.a3-risks { display: flex; flex-direction: column; gap: 1.25rem; margin: 2rem 0 2.5rem; }
+.a3-risk-item { display: flex; gap: 1.25rem; align-items: flex-start; background: rgba(255,255,255,0.03); border: 1px solid rgba(201,168,76,0.18); border-radius: 12px; padding: 1.25rem 1.5rem; }
+.a3-risk-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: rgba(201,168,76,0.35); line-height: 1; min-width: 2.5rem; flex-shrink: 0; }
+.a3-risk-content { flex: 1; }
+.a3-risk-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: #f5e6c0; margin: 0 0 0.6rem; }
+.a3-risk-content p { font-size: 0.92rem; color: #c8b89a; line-height: 1.75; margin: 0 0 0.5rem; }
+.a3-risk-content p:last-child { margin-bottom: 0; }
+@media (max-width: 640px) { .a3-risk-item { flex-direction: column; gap: 0.5rem; padding: 1rem; } .a3-risk-num { font-size: 1.5rem; } }
+
+/* Feature items */
+.a3-features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 2rem 0 2.5rem; }
+.a3-feature-item { display: flex; gap: 1rem; align-items: flex-start; background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.2); border-radius: 10px; padding: 1.1rem 1.25rem; }
+.a3-feature-icon { font-size: 1.5rem; flex-shrink: 0; }
+.a3-feature-content { flex: 1; }
+.a3-feature-title { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: #f5e6c0; margin: 0 0 0.4rem; }
+.a3-feature-content p { font-size: 0.85rem; color: #9a9080; line-height: 1.65; margin: 0; }
+@media (max-width: 640px) { .a3-features { grid-template-columns: 1fr; } }
+
+/* Summary box with Key Takeaways */
+.a3-summary-box { background: linear-gradient(135deg, rgba(201,168,76,0.1) 0%, rgba(201,168,76,0.04) 100%); border: 1px solid rgba(201,168,76,0.35); border-radius: 14px; padding: 2rem 2.25rem; margin: 2rem 0 2.5rem; }
+.a3-summary-box h2.a3-summary-title,
+.a3-summary-title { font-family: 'Playfair Display', serif; font-size: clamp(1.1rem, 2vw, 1.35rem); font-weight: 700; color: #c9a84c; margin: 0 0 1.1rem; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(201,168,76,0.25); letter-spacing: 0.02em; }
+.a3-summary-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+.a3-summary-list li { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.92rem; color: #c8b89a; line-height: 1.65; }
+.a3-summary-list li::before { content: "✓"; color: #c9a84c; font-weight: 700; flex-shrink: 0; margin-top: 0.1rem; }
+@media (max-width: 640px) { .a3-summary-box { padding: 1.25rem 1rem; } }
