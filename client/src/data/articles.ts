@@ -148,6 +148,11 @@ export const ARTICLES: Article[] = [
     These are standard practice across the industry and should not come as a surprise if disclosed clearly at booking.
   </p>
 
+  <figure class="article-infographic">
+    <img src="/manus-storage/article1_daily_rate_covers_a474c139.png" alt="What Your Daily Rate Covers: 5 inclusions in a Sri Lanka private driver charter — vehicle & fuel, government-licensed driver, English communication, flexible itinerary, no hidden charges" loading="lazy" />
+    <figcaption>What your daily rate covers — 5 standard inclusions in a Sri Lanka private driver charter</figcaption>
+  </figure>
+
   <h2>How to Verify That a Driver Is Legitimate</h2>
 
   <p>
@@ -288,6 +293,11 @@ export const ARTICLES: Article[] = [
   <p>
     Browse our <a href="/#courses" class="article-internal-link">model itineraries</a> to see example routes.
   </p>
+
+  <figure class="article-infographic">
+    <img src="/manus-storage/article1_prebooking_checklist_699cf50f.png" alt="Pre-Booking Checklist: 7 questions to ask before booking a private driver in Sri Lanka" loading="lazy" />
+    <figcaption>7 questions to ask before confirming your booking — a practical pre-booking checklist</figcaption>
+  </figure>
 
   <h2>Summary: What Makes a Good Private Driver Service</h2>
 
@@ -677,6 +687,11 @@ export const ARTICLES: Article[] = [
 
   <h2>The 7-Point Booking Checklist</h2>
 
+  <figure class="article-infographic">
+    <img src="/manus-storage/article3_safety_checklist_e7567134.png" alt="Your Driver Hire Safety Checklist: 7 points — Government Tourist Driver Licence, Third-Party Insurance, English Communication, Vehicle Condition, All-Inclusive Pricing, Cancellation Terms, Verified Reviews" loading="lazy" />
+    <figcaption>7 essential checks before booking a private driver in Sri Lanka — your safety and booking checklist</figcaption>
+  </figure>
+
   <h3>1. Government-Issued Tourist Driver Licence</h3>
 
   <p>
@@ -803,6 +818,11 @@ export const ARTICLES: Article[] = [
   </p>
 
   <!-- PLAN_CARDS_PLACEHOLDER -->
+
+  <figure class="article-infographic">
+    <img src="/manus-storage/article3_red_flags_418a283e.png" alt="Red Flags to Watch For when booking a driver in Sri Lanka: no licence, price too low, mileage limits in small print, no verified reviews, vague cancellation policy" loading="lazy" />
+    <figcaption>5 red flags to watch for when comparing driver hire services in Sri Lanka</figcaption>
+  </figure>
 
   <h2>Red Flags to Watch For</h2>
 
@@ -1362,6 +1382,11 @@ export const ARTICLES: Article[] = [
 
   <h2>The 7 Biggest Advantages for Family and Group Travellers</h2>
 
+  <figure class="article-infographic">
+    <img src="/manus-storage/article10_family_van_advantages_3c77fff3.png" alt="7 Advantages of Private Van Hire for Families & Groups in Sri Lanka: door-to-door comfort, luggage space, flexible schedule, child safety, no crowded buses, fixed price, English-speaking driver" loading="lazy" />
+    <figcaption>7 reasons why families and groups choose a private van charter in Sri Lanka</figcaption>
+  </figure>
+
   <div class="a10-advantage-grid">
     <div class="a10-advantage-card">
       <div class="a10-advantage-num">01</div>
@@ -1516,6 +1541,11 @@ export const ARTICLES: Article[] = [
     class="article-inline-img"
   />
 
+  <figure class="article-infographic">
+    <img src="/manus-storage/article10_family_travel_tips_35dde4ef.png" alt="Family & Group Travel Tips in Sri Lanka: travelling with young children, travelling with elderly passengers, splitting costs across a group" loading="lazy" />
+    <figcaption>Practical travel tips for families and groups — young children, elderly passengers, and cost-sharing</figcaption>
+  </figure>
+
   <h2>Practical Tips for Families and Groups</h2>
 
   <h3>Travelling with Young Children</h3>
@@ -1641,6 +1671,11 @@ export const ARTICLES: Article[] = [
     class="article-inline-img"
     loading="lazy"
   />
+
+  <figure class="article-infographic">
+    <img src="/manus-storage/article6_driver_types_e3311f07.png" alt="Which Driver Type Is Right for You? 3 types compared: Tourist Driver, Chauffeur Guide Driver, National Guide" loading="lazy" />
+    <figcaption>Sri Lanka's three driver types compared — choose the right level of service for your trip</figcaption>
+  </figure>
 
   <h2>The Three Driver Types in Sri Lanka — At a Glance</h2>
   <p>
@@ -1866,6 +1901,11 @@ export const ARTICLES: Article[] = [
   <p>
     You can read first-hand accounts from past guests on our <a href="/voice" class="article-link">Guest Voices page</a>, where reviews include specific ratings for driver performance, vehicle condition, and overall service.
   </p>
+
+  <figure class="article-infographic">
+    <img src="/manus-storage/article6_sltcs_plans_656fe420.png" alt="Choose Your SLTCS Plan: Bronze (Toyota Axio sedan, Tourist Driver), Silver (Toyota Hi-Ace van, Chauffeur Guide Driver), Gold (Premium Hi-Ace, Senior Chauffeur Guide)" loading="lazy" />
+    <figcaption>SLTCS Bronze, Silver, and Gold plans at a glance — choose the plan that matches your travel style</figcaption>
+  </figure>
 
   <h2>Understanding the SLTCS Plan Structure</h2>
   <p>
