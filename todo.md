@@ -107,3 +107,4 @@
 - [x] 全10記事に段落分割（2文ごとに改行）を適用: Article 1・2・6・10 + 5つのModel Itinerary記事
 - [x] 全10記事の先頭にH2・H3見出しから自動生成されるTOC（目次）を追加: ArticleDetail.tsxでHTMLパース・アンカーID自動付与・スタイル適用（確認済み）
 - [x] 新記事追加: Sri Lanka Private Driver Costs Explained（cost-booking-guideカテゴリー）- 日本語版から翻訳・円→USD換算・欧州顧客向け表現
+- [ ] 新記事（Article 4）のFAQセクションをアコーディオン形式に変更: ArticleDetail.tsxにFAQアコーディオンコンポーネントを追加し、a3-faqクラスのHTMLをReactコンポーネントで置き換え

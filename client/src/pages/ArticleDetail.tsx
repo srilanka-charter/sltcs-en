@@ -6,7 +6,7 @@
 
 import { useParams, Link } from "wouter";
 import { getArticleBySlug, CATEGORIES, getArticlesByCategory, type ArticleCategory } from "@/data/articles";
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Article3PriceTable from "@/components/Article3PriceTable";
 import Article3PlanCards from "@/components/Article3PlanCards";
 
@@ -15,6 +15,104 @@ const ARTICLE3_SLUG = "driver-hire-sri-lanka-costs-safety-checklist";
 // Placeholder markers in the article HTML
 const PRICE_TABLE_PLACEHOLDER = "<!-- PRICE_TABLE_PLACEHOLDER -->";
 const PLAN_CARDS_PLACEHOLDER = "<!-- PLAN_CARDS_PLACEHOLDER -->";
+// FAQ placeholder marker for articles using a3-faq class
+const FAQ_PLACEHOLDER = "<!-- FAQ_ACCORDION_PLACEHOLDER -->";
+
+// ─── FAQ Accordion ───────────────────────────────────────────────────────────
+
+interface FaqItem {
+  q: string;
+  a: string;
+}
+
+/**
+ * Find the start and end index of the outer .a3-faq div using depth counting.
+ * Returns [start, end] or null if not found.
+ */
+function findFaqBlock(html: string): [number, number] | null {
+  const startIdx = html.indexOf('<div class="a3-faq">');
+  if (startIdx === -1) return null;
+  let depth = 0;
+  let i = startIdx;
+  while (i < html.length) {
+    if (html.slice(i, i + 4) === '<div') depth++;
+    else if (html.slice(i, i + 6) === '</div>') {
+      depth--;
+      if (depth === 0) {
+        return [startIdx, i + 6];
+      }
+    }
+    i++;
+  }
+  return null;
+}
+
+/**
+ * Parse FAQ items from HTML containing .a3-faq structure.
+ * Returns array of {q, a} pairs.
+ */
+function parseFaqItems(html: string): FaqItem[] {
+  const items: FaqItem[] = [];
+  const range = findFaqBlock(html);
+  if (!range) return items;
+
+  const faqBlock = html.slice(range[0], range[1]);
+  const itemMatches = Array.from(faqBlock.matchAll(/<div[^>]*class="a3-faq-item"[^>]*>([\s\S]*?)<\/div>\s*(?=\s*<div[^>]*class="a3-faq-item"|\s*<\/div>)/gi));
+  for (const m of itemMatches) {
+    const itemHtml = m[1];
+    const qMatch = itemHtml.match(/<div[^>]*class="a3-faq-q"[^>]*>([\s\S]*?)<\/div>/);
+    const aMatch = itemHtml.match(/<div[^>]*class="a3-faq-a"[^>]*>([\s\S]*?)<\/div>/);
+    if (qMatch && aMatch) {
+      items.push({
+        q: qMatch[1].trim(),
+        a: aMatch[1].trim(),
+      });
+    }
+  }
+  return items;
+}
+
+/**
+ * Replace .a3-faq block in HTML with a placeholder marker.
+ */
+function replaceFaqWithPlaceholder(html: string): string {
+  const range = findFaqBlock(html);
+  if (!range) return html;
+  return html.slice(0, range[0]) + FAQ_PLACEHOLDER + html.slice(range[1]);
+}
+
+function ArticleFaqAccordion({ items }: { items: FaqItem[] }) {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  if (items.length === 0) return null;
+
+  return (
+    <div className="article-faq-accordion">
+      {items.map((item, i) => (
+        <div key={i} className="faq-accordion-item">
+          <button
+            className="faq-accordion-btn"
+            onClick={() => setOpenIndex(openIndex === i ? null : i)}
+            aria-expanded={openIndex === i}
+          >
+            <span className="faq-q-badge">Q</span>
+            <span className="faq-q-text">{item.q}</span>
+            <span className={`faq-chevron${openIndex === i ? " open" : ""}`}>›</span>
+          </button>
+          {openIndex === i && (
+            <div className="faq-accordion-body">
+              <span className="faq-a-badge">A</span>
+              <div
+                className="faq-a-content"
+                dangerouslySetInnerHTML={{ __html: item.a }}
+              />
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 // ─── TOC Utilities ────────────────────────────────────────────────────────────
 
@@ -277,10 +375,17 @@ export default function ArticleDetail() {
     };
   }, [article]);
 
-  // ── TOC extraction (memoised per article) ──────────────────────────────────
-  const { toc, htmlWithIds } = useMemo(() => {
-    if (!article) return { toc: [], htmlWithIds: "" };
-    return extractToc(article.content);
+  // ── TOC extraction + FAQ rendering (memoised per article) ──────────────────────────────────────────────────────
+  const { toc, htmlWithIds, faqItems, hasFaq } = useMemo(() => {
+    if (!article) return { toc: [], htmlWithIds: "", faqItems: [], hasFaq: false };
+    // Use structured faqItems field if available (preferred approach)
+    const hasFaqItems = Array.isArray(article.faqItems) && article.faqItems.length > 0;
+    // Replace <!-- FAQ_ACCORDION --> marker with placeholder for split rendering
+    const processedContent = hasFaqItems
+      ? article.content.replace('<!-- FAQ_ACCORDION -->', FAQ_PLACEHOLDER)
+      : article.content;
+    const { toc, htmlWithIds } = extractToc(processedContent);
+    return { toc, htmlWithIds, faqItems: article.faqItems ?? [], hasFaq: hasFaqItems };
   }, [article]);
 
   if (!article) {
@@ -419,6 +524,30 @@ export default function ArticleDetail() {
                       <div
                         className="article-detail-body"
                         dangerouslySetInnerHTML={{ __html: afterPlans }}
+                      />
+                    )}
+                  </>
+                );
+              })()
+            ) : hasFaq ? (
+              // Article with FAQ accordion: split at FAQ placeholder and inject React component
+              (() => {
+                const parts = htmlWithIds.split(FAQ_PLACEHOLDER);
+                const beforeFaq = parts[0] ?? "";
+                const afterFaq = parts[1] ?? "";
+                return (
+                  <>
+                    {beforeFaq && (
+                      <div
+                        className="article-detail-body"
+                        dangerouslySetInnerHTML={{ __html: beforeFaq }}
+                      />
+                    )}
+                    <ArticleFaqAccordion items={faqItems} />
+                    {afterFaq && (
+                      <div
+                        className="article-detail-body"
+                        dangerouslySetInnerHTML={{ __html: afterFaq }}
                       />
                     )}
                   </>

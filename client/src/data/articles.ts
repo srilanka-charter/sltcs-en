@@ -18,6 +18,7 @@ export interface Article {
   readingTime: number; // minutes
   tags: string[];
   content: string; // HTML string
+  faqItems?: { q: string; a: string }[]; // Optional FAQ items for accordion rendering
   seo: {
     metaTitle: string;
     metaDescription: string;
@@ -1198,50 +1199,7 @@ export const ARTICLES: Article[] = [
 
   <h2 id="faq">Frequently Asked Questions</h2>
 
-  <div class="a3-faq">
-
-    <div class="a3-faq-item">
-      <div class="a3-faq-q">How much does SLTCS charge?</div>
-      <div class="a3-faq-a">
-        Rates vary depending on the itinerary, number of days, and vehicle type.
-        Please use the enquiry form to share your preferred route and we will provide a fixed total price within 24 hours.
-      </div>
-    </div>
-
-    <div class="a3-faq-item">
-      <div class="a3-faq-q">Is tipping expected?</div>
-      <div class="a3-faq-a">
-        SLTCS rates already include fair compensation for the driver, so tipping is not obligatory.
-        If you are happy with the service, a gratuity is always appreciated but entirely at your discretion.
-      </div>
-    </div>
-
-    <div class="a3-faq-item">
-      <div class="a3-faq-q">Can the price be negotiated down?</div>
-      <div class="a3-faq-a">
-        As explained in this article, vehicle costs and fuel prices in Sri Lanka are genuinely high.
-        Maintaining government-licensed drivers, well-serviced vehicles, and English-speaking support all carry real costs.
-        Our rates are already among the most competitive for services of this standard, and further reductions are not possible without compromising quality.
-      </div>
-    </div>
-
-    <div class="a3-faq-item">
-      <div class="a3-faq-q">Are there any additional charges after booking?</div>
-      <div class="a3-faq-a">
-        No. SLTCS fixes the total price for your full itinerary before you confirm your booking.
-        If your plans change after booking, we will discuss any adjustment with you in advance.
-      </div>
-    </div>
-
-    <div class="a3-faq-item">
-      <div class="a3-faq-q">What currency is payment made in?</div>
-      <div class="a3-faq-a">
-        Payment is made in USD, EUR, or GBP.
-        Cash payment in local currency on arrival in Sri Lanka is also possible — please confirm your preferred method when enquiring.
-      </div>
-    </div>
-
-  </div>
+  <!-- FAQ_ACCORDION -->
 
 
   <h2 id="summary">Summary: Choose by Trust, Not Just by Price</h2>
@@ -1287,6 +1245,28 @@ export const ARTICLES: Article[] = [
 
 </article>
 `,
+    faqItems: [
+      {
+        q: "How much does SLTCS charge?",
+        a: "Rates vary depending on the itinerary, number of days, and vehicle type. Please use the enquiry form to share your preferred route and we will provide a fixed total price within 24 hours.",
+      },
+      {
+        q: "Is tipping expected?",
+        a: "SLTCS rates already include fair compensation for the driver, so tipping is not obligatory. If you are happy with the service, a gratuity is always appreciated but entirely at your discretion.",
+      },
+      {
+        q: "Can the price be negotiated down?",
+        a: "As explained in this article, vehicle costs and fuel prices in Sri Lanka are genuinely high. Maintaining government-licensed drivers, well-serviced vehicles, and English-speaking support all carry real costs. Our rates are already among the most competitive for services of this standard, and further reductions are not possible without compromising quality.",
+      },
+      {
+        q: "Are there any additional charges after booking?",
+        a: "No. SLTCS fixes the total price for your full itinerary before you confirm your booking. If your plans change after booking, we will discuss any adjustment with you in advance.",
+      },
+      {
+        q: "What currency is payment made in?",
+        a: "Payment is made in USD, EUR, or GBP. Cash payment in local currency on arrival in Sri Lanka is also possible — please confirm your preferred method when enquiring.",
+      },
+    ],
   },
   // ─── Article 10: Van Hire with Driver for Families and Small Groups ───────────
   {
