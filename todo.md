@@ -112,4 +112,6 @@
 - [x] Article 4 CSS: .article-detail-body > h2 セレクタ追加（FAQアコーディオン後のH2スタイル修正）
 - [x] Article 4: Summary H2「Choose by Trust, Not Just by Price」が正しくH2スタイルで表示されることを確認
 - [x] Article 4: 2つのインフォグラフィック画像（5 Risks・SLTCS Quality）が正しく表示されることを確認
-- [x] 4記事にインフォグラフィック画像2枚ずつ挿入（計8枚）: Article 1（What Your Daily Rate Covers / Pre-Booking Checklist）・Article 6（3 Driver Types / SLTCS Plans）・Article 3（7-Point Safety Checklist / 5 Red Flags）・Article 10（7 Family Advantages / Family Travel Tips）
+- [x] 4記事にインフォグラフィック画像2枚ずつ挿入（計8枚）
+- [x] sitemap.xml更新: 全URLのlastmodを最新化（2026-06-05）、記事のpublishedAtと一致させる
+- [x] robots.txt作成: User-agent: * / Allow: / / Sitemap: https://en.srilanka-charter.com/sitemap.xml: Article 1（What Your Daily Rate Covers / Pre-Booking Checklist）・Article 6（3 Driver Types / SLTCS Plans）・Article 3（7-Point Safety Checklist / 5 Red Flags）・Article 10（7 Family Advantages / Family Travel Tips）
