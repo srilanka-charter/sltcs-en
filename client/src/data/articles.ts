@@ -993,6 +993,11 @@ export const ARTICLES: Article[] = [
   </p>
 
 
+  <figure class="article-infographic">
+    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article4_risks_infographic-kpVCUQ5Fv9BxYQJvN6esLU.webp" alt="5 Risks of Choosing a Cheap Driver Service in Sri Lanka: hidden mileage limits, old vehicles, no-shows, commission detours, no support" loading="lazy" />
+    <figcaption>The five most common problems travellers encounter when booking the cheapest option</figcaption>
+  </figure>
+
   <h2 id="five-risks">Five Risks Hidden Inside Cheap Driver Services</h2>
 
   <p>
@@ -1207,6 +1212,11 @@ export const ARTICLES: Article[] = [
 
   <!-- FAQ_ACCORDION -->
 
+
+  <figure class="article-infographic">
+    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/article4_sltcs_quality-BJHnHPcLYyBt7EfjYMdgCw.webp" alt="Why SLTCS Stands Behind Its Pricing: 4 quality guarantees including government-certified drivers, fixed pricing, clean vehicles, and English support" loading="lazy" />
+    <figcaption>SLTCS quality guarantees — what your daily rate actually covers</figcaption>
+  </figure>
 
   <h2 id="summary">Summary: Choose by Trust, Not Just by Price</h2>
 

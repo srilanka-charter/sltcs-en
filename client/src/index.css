@@ -2329,9 +2329,10 @@ footer {
 }
 .article-detail-main { min-width: 0; overflow: hidden; }
 .article-detail-body { color: #d0c8b8; font-size: 1rem; line-height: 1.85; max-width: 100%; overflow-x: hidden; word-wrap: break-word; overflow-wrap: break-word; }
-.article-body p { margin: 0 0 1.4em; }
+.article-body p, .article-detail-body > p { margin: 0 0 1.4em; }
 .article-body .article-lead { font-size: 1.1rem; color: #e8e0d0; line-height: 1.8; margin-bottom: 1.6em; }
-.article-body h2 {
+.article-body h2,
+.article-detail-body > h2 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   color: #fff;
@@ -2339,7 +2340,8 @@ footer {
   padding-bottom: 8px;
   border-bottom: 1px solid #2a2a2a;
 }
-.article-body h3 {
+.article-body h3,
+.article-detail-body > h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.25rem;
   color: #f0e8d8;
@@ -2350,11 +2352,12 @@ footer {
   border-radius: 0 6px 6px 0;
   line-height: 1.4;
 }
-.article-body ul, .article-body ol { margin: 0 0 1.4em 1.4em; padding: 0; }
-.article-body li { margin-bottom: 0.5em; color: #d0c8b8; }
-.article-body strong { color: #e8e0d0; font-weight: 600; }
-.article-body a { color: #c9a84c; text-decoration: underline; text-underline-offset: 3px; }
-.article-body a:hover { color: #e8c96a; }
+.article-body ul, .article-body ol,
+.article-detail-body > ul, .article-detail-body > ol { margin: 0 0 1.4em 1.4em; padding: 0; }
+.article-body li, .article-detail-body > ul li, .article-detail-body > ol li { margin-bottom: 0.5em; color: #d0c8b8; }
+.article-body strong, .article-detail-body > p strong { color: #e8e0d0; font-weight: 600; }
+.article-body a, .article-detail-body > p a { color: #c9a84c; text-decoration: underline; text-underline-offset: 3px; }
+.article-body a:hover, .article-detail-body > p a:hover { color: #e8c96a; }
 .article-table {
   width: 100%;
   border-collapse: separate;
@@ -3140,3 +3143,28 @@ footer {
 .a3-summary-list li { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.92rem; color: #c8b89a; line-height: 1.65; }
 .a3-summary-list li::before { content: "✓"; color: #c9a84c; font-weight: 700; flex-shrink: 0; margin-top: 0.1rem; }
 @media (max-width: 640px) { .a3-summary-box { padding: 1.25rem 1rem; } }
+
+/* ── Article Infographic (summary images) ──────────────────────────────────── */
+.article-infographic {
+  margin: 2.5rem 0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.article-infographic img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article-infographic figcaption {
+  background: rgba(201, 168, 76, 0.08);
+  border-top: 1px solid rgba(201, 168, 76, 0.2);
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+  text-align: center;
+  font-style: italic;
+}
