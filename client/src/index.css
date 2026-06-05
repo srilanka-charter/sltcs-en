@@ -3358,3 +3358,55 @@ footer {
     border-bottom: none;
   }
 }
+
+/* --- Article Itinerary Timeline --- */
+.itinerary-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 2rem 0;
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.itinerary-day {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 0;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+  transition: background 0.2s ease;
+}
+.itinerary-day:last-child { border-bottom: none; }
+.itinerary-day:hover { background: rgba(201, 168, 76, 0.04); }
+.itinerary-day-label {
+  padding: 1.25rem 1.5rem;
+  background: rgba(201, 168, 76, 0.08);
+  border-right: 1px solid rgba(201, 168, 76, 0.2);
+  font-family: 'Playfair Display', serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #c9a84c;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.itinerary-day-content {
+  padding: 1.25rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.85);
+}
+.itinerary-day-content strong { color: #c9a84c; font-weight: 600; }
+@media (max-width: 600px) {
+  .itinerary-day { grid-template-columns: 1fr; }
+  .itinerary-day-label {
+    border-right: none;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+    justify-content: flex-start;
+    padding: 0.75rem 1rem;
+  }
+  .itinerary-day-content { padding: 0.75rem 1rem; }
+}

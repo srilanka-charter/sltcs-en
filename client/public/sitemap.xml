@@ -127,6 +127,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- ── Honeymoon & Couples Article ───────────────────────────── -->
+  <url>
+    <loc>https://en.srilanka-charter.com/information/family-group-travel/sri-lanka-honeymoon-private-driver</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- ── Model Itinerary Articles ──────────────────────────────── -->
   <url>
     <loc>https://en.srilanka-charter.com/information/model-itinerary/sri-lanka-4-nights-5-days-itinerary</loc>
