@@ -3410,3 +3410,31 @@ footer {
   }
   .itinerary-day-content { padding: 0.75rem 1rem; }
 }
+
+
+/* --- Article Photo (real photos from trips) -------------------------------- */
+.article-body .article-photo,
+.article-detail-body .article-photo {
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(201, 168, 76, 0.25);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+.article-body .article-photo img,
+.article-detail-body .article-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 480px;
+}
+.article-body .article-photo figcaption,
+.article-detail-body .article-photo figcaption {
+  padding: 0.6rem 1rem;
+  font-size: 0.82rem;
+  color: rgba(201, 168, 76, 0.75);
+  font-style: italic;
+  background: rgba(0, 0, 0, 0.35);
+  letter-spacing: 0.02em;
+}

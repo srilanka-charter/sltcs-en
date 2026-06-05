@@ -3474,29 +3474,36 @@ export const ARTICLES: Article[] = [
 </p>
 
 
-<h3 id="ella">Ella \u2014 Mist, Tea, and Mountain Views</h3>
+<h3 id="ella">Ella — Mist, Tea, and Mountain Views</h3>
 
 <p>
-  Ella is perhaps Sri Lanka's most photographed destination, and justifiably so.
-  The Nine Arch Bridge at dawn, the ridge walk to Little Adam's Peak, and the tea plantations that cascade down every hillside make it a place of extraordinary visual beauty.
+  Ella is perhaps Sri Lanka’s most photographed destination, and justifiably so. The Nine Arch Bridge at dawn, the ridge walk to Little Adam’s Peak, and the tea plantations that cascade down every hillside make it a place of extraordinary visual beauty.
 </p>
 
 <p>
-  For couples who enjoy gentle hiking, cool weather, and the kind of scenery that makes you want to stay longer than planned, Ella is essential.
-  Your private driver can time the arrival to avoid the midday crowds and position you perfectly for the golden-hour light.
+  For couples who enjoy gentle hiking, cool weather, and the kind of scenery that makes you want to stay longer than planned, Ella is essential. Your private driver can time the arrival to avoid the midday crowds and position you perfectly for the golden-hour light.
 </p>
 
+<figure class="article-photo">
+  <img src="/manus-storage/honeymoon_ella_nine_arch_a5abcdbe.jpeg" alt="Guests with SLTCS driver at the Nine Arch Bridge in Ella, Sri Lanka" loading="lazy" />
+  <figcaption>At the Nine Arch Bridge in Ella — one of Sri Lanka’s most iconic viewpoints</figcaption>
+</figure>
 
-<h3 id="galle">Galle \u2014 Colonial Elegance by the Sea</h3>
+
+<h3 id="galle">Galle — Colonial Elegance by the Sea</h3>
 
 <p>
-  The Dutch-built Galle Fort is one of the finest examples of colonial architecture in South Asia, and the boutique hotels, art galleries, and candlelit restaurants within its walls make it one of Sri Lanka's most romantic overnight stops.
+  The Dutch-built Galle Fort is one of the finest examples of colonial architecture in South Asia, and the boutique hotels, art galleries, and candlelit restaurants within its walls make it one of Sri Lanka’s most romantic overnight stops.
 </p>
 
 <p>
-  Walking the fort ramparts at sunset, with the Indian Ocean stretching to the horizon on one side and the old town glowing on the other, is the kind of moment that defines a honeymoon.
-  The surrounding south coast \u2014 Unawatuna, Mirissa, Tangalle \u2014 offers some of the island's most beautiful beaches.
+  Walking the fort ramparts at sunset, with the Indian Ocean stretching to the horizon on one side and the old town glowing on the other, is the kind of moment that defines a honeymoon. The surrounding south coast — Unawatuna, Mirissa, Tangalle — offers some of the island’s most beautiful beaches.
 </p>
+
+<figure class="article-photo">
+  <img src="/manus-storage/honeymoon_galle_fort_a3aa8155.jpeg" alt="Guests with SLTCS driver at Galle Fort ramparts, Indian Ocean in the background" loading="lazy" />
+  <figcaption>At the Galle Fort ramparts — a favourite stop for couples visiting the south coast</figcaption>
+</figure>
 
 
 <h3 id="yala">Yala National Park \u2014 Wildlife and Wilderness</h3>
