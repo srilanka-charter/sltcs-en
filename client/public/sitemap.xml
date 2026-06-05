@@ -96,8 +96,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- ── Private Driver vs Package Tour Article ────────────── -->
+  <url>
+    <loc>https://en.srilanka-charter.com/information/private-driver-guide/sri-lanka-private-driver-vs-package-tour</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-  <!-- ── Cost & Booking Guide Articles ─────────────────────────── -->
+  <!-- ── Cost & Booking Guide Articles ─────────────────── -->
   <url>
     <loc>https://en.srilanka-charter.com/information/cost-booking-guide/driver-hire-sri-lanka-costs-safety-checklist</loc>
     <lastmod>2026-06-05</lastmod>

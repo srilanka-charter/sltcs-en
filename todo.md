@@ -115,3 +115,4 @@
 - [x] 4記事にインフォグラフィック画像2枚ずつ挿入（計8枚）
 - [x] sitemap.xml更新: 全URLのlastmodを最新化（2026-06-05）、記事のpublishedAtと一致させる
 - [x] robots.txt作成: User-agent: * / Allow: / / Sitemap: https://en.srilanka-charter.com/sitemap.xml: Article 1（What Your Daily Rate Covers / Pre-Booking Checklist）・Article 6（3 Driver Types / SLTCS Plans）・Article 3（7-Point Safety Checklist / 5 Red Flags）・Article 10（7 Family Advantages / Family Travel Tips）
+- [x] 記事②追加: "Private Driver vs Package Tour in Sri Lanka: Which Is Right for You?" (slug: sri-lanka-private-driver-vs-package-tour, private-driver-guide) - 比較表・6項目詳細・FAQ6問・インフォグラフィック2枚・sitemap.xml更新
