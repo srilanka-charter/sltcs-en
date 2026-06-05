@@ -3063,47 +3063,47 @@ export const ARTICLES: Article[] = [
   Before diving into the details, here is a side-by-side overview of the two options across the factors that matter most to travellers.
 </p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Factor</th>
-      <th>Private Driver Charter</th>
-      <th>Package Tour</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Itinerary flexibility</strong></td>
-      <td>Fully customisable — change plans any time</td>
-      <td>Fixed schedule set by the operator</td>
-    </tr>
-    <tr>
-      <td><strong>Privacy</strong></td>
-      <td>100% private — just your group</td>
-      <td>Shared with other travellers (group tours)</td>
-    </tr>
-    <tr>
-      <td><strong>Cost transparency</strong></td>
-      <td>Flat daily rate; accommodation booked separately</td>
-      <td>All-in price, but hidden extras are common</td>
-    </tr>
-    <tr>
-      <td><strong>Local knowledge</strong></td>
-      <td>Driver shares personal recommendations</td>
-      <td>Licensed guide covers standard highlights</td>
-    </tr>
-    <tr>
-      <td><strong>Planning effort</strong></td>
-      <td>You choose hotels and activities</td>
-      <td>Minimal — operator handles everything</td>
-    </tr>
-    <tr>
-      <td><strong>Best for</strong></td>
-      <td>Couples, families, slow travellers</td>
-      <td>First-timers who prefer zero planning</td>
-    </tr>
-  </tbody>
-</table>
+<div class="vs-comparison-table">
+  <div class="vs-comparison-header">
+    <div class="vs-col-factor">Factor</div>
+    <div class="vs-col-private">
+      <span class="vs-badge vs-badge-private">🚗 Private Driver Charter</span>
+    </div>
+    <div class="vs-col-package">
+      <span class="vs-badge vs-badge-package">🚌 Package Tour</span>
+    </div>
+  </div>
+  <div class="vs-comparison-row">
+    <div class="vs-col-factor"><span class="vs-factor-icon">🗺️</span><strong>Itinerary flexibility</strong></div>
+    <div class="vs-col-private"><span class="vs-check">✓</span> Fully customisable — change plans any time</div>
+    <div class="vs-col-package"><span class="vs-cross">✗</span> Fixed schedule set by the operator</div>
+  </div>
+  <div class="vs-comparison-row">
+    <div class="vs-col-factor"><span class="vs-factor-icon">🔒</span><strong>Privacy</strong></div>
+    <div class="vs-col-private"><span class="vs-check">✓</span> 100% private — just your group</div>
+    <div class="vs-col-package"><span class="vs-cross">✗</span> Shared with other travellers (group tours)</div>
+  </div>
+  <div class="vs-comparison-row">
+    <div class="vs-col-factor"><span class="vs-factor-icon">💰</span><strong>Cost transparency</strong></div>
+    <div class="vs-col-private"><span class="vs-check">✓</span> Flat daily rate; accommodation booked separately</div>
+    <div class="vs-col-package"><span class="vs-cross">✗</span> All-in price, but hidden extras are common</div>
+  </div>
+  <div class="vs-comparison-row">
+    <div class="vs-col-factor"><span class="vs-factor-icon">🧭</span><strong>Local knowledge</strong></div>
+    <div class="vs-col-private"><span class="vs-check">✓</span> Driver shares personal recommendations</div>
+    <div class="vs-col-package"><span class="vs-neutral">–</span> Licensed guide covers standard highlights</div>
+  </div>
+  <div class="vs-comparison-row">
+    <div class="vs-col-factor"><span class="vs-factor-icon">📋</span><strong>Planning effort</strong></div>
+    <div class="vs-col-private"><span class="vs-neutral">–</span> You choose hotels and activities</div>
+    <div class="vs-col-package"><span class="vs-check">✓</span> Minimal — operator handles everything</div>
+  </div>
+  <div class="vs-comparison-row vs-comparison-row-last">
+    <div class="vs-col-factor"><span class="vs-factor-icon">👥</span><strong>Best for</strong></div>
+    <div class="vs-col-private"><span class="vs-check">✓</span> Couples, families, slow travellers</div>
+    <div class="vs-col-package"><span class="vs-neutral">–</span> First-timers who prefer zero planning</div>
+  </div>
+</div>
 
 
 <h2 id="what-is-private-driver">What Is a Private Driver Charter?</h2>

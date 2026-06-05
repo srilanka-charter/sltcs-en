@@ -3168,3 +3168,178 @@ footer {
   text-align: center;
   font-style: italic;
 }
+
+/* ─── VS Comparison Table (Article 2: Private Driver vs Package Tour) ────────── */
+.vs-comparison-table {
+  margin: 2rem 0 2.5rem;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.4);
+}
+
+.vs-comparison-header {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1.6fr;
+  background: linear-gradient(135deg, #1a1610 0%, #221e14 100%);
+  border-bottom: 2px solid rgba(201, 168, 76, 0.4);
+  padding: 0;
+}
+
+.vs-comparison-header > div {
+  padding: 1rem 1.25rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.vs-comparison-header .vs-col-private,
+.vs-comparison-header .vs-col-package {
+  border-left: 1px solid rgba(201, 168, 76, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.vs-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+}
+
+.vs-badge-private {
+  background: rgba(201, 168, 76, 0.18);
+  color: #e8c96a;
+  border: 1px solid rgba(201, 168, 76, 0.45);
+}
+
+.vs-badge-package {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.vs-comparison-row {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1.6fr;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: background 0.15s;
+}
+
+.vs-comparison-row:hover {
+  background: rgba(201, 168, 76, 0.04);
+}
+
+.vs-comparison-row-last {
+  border-bottom: none;
+}
+
+.vs-comparison-row > div {
+  padding: 1rem 1.25rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vs-col-factor {
+  background: rgba(255, 255, 255, 0.02);
+  color: #e8dcc8;
+  font-weight: 600;
+  font-size: 0.85rem !important;
+  gap: 0.6rem !important;
+  border-right: 1px solid rgba(201, 168, 76, 0.15);
+}
+
+.vs-factor-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.vs-col-private {
+  color: #d4c4a0;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.vs-col-package {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.vs-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  min-width: 1.2rem;
+  background: rgba(201, 168, 76, 0.2);
+  color: #c9a84c;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.vs-cross {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  min-width: 1.2rem;
+  background: rgba(255, 80, 80, 0.12);
+  color: rgba(255, 100, 100, 0.7);
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.vs-neutral {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  min-width: 1.2rem;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .vs-comparison-header,
+  .vs-comparison-row {
+    grid-template-columns: 1fr;
+  }
+  .vs-comparison-header .vs-col-private,
+  .vs-comparison-header .vs-col-package {
+    border-left: none;
+    border-top: 1px solid rgba(201, 168, 76, 0.15);
+  }
+  .vs-comparison-row > div {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.7rem 1rem;
+  }
+  .vs-col-factor {
+    background: rgba(201, 168, 76, 0.06);
+    padding-top: 0.9rem !important;
+  }
+  .vs-comparison-row > div:last-child {
+    border-bottom: none;
+  }
+}
