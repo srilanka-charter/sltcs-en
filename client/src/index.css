@@ -3172,69 +3172,68 @@ footer {
 /* ─── VS Comparison Table (Article 2: Private Driver vs Package Tour) ────────── */
 .vs-comparison-table {
   margin: 2rem 0 2.5rem;
-  border-radius: 14px;
+  border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(201, 168, 76, 0.3);
-  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(201, 168, 76, 0.22);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  background: #0e0d0b;
 }
 
 .vs-comparison-header {
   display: grid;
-  grid-template-columns: 1fr 1.6fr 1.6fr;
-  background: linear-gradient(135deg, #1a1610 0%, #221e14 100%);
-  border-bottom: 2px solid rgba(201, 168, 76, 0.4);
-  padding: 0;
+  grid-template-columns: 1fr 1.7fr 1.7fr;
+  background: linear-gradient(180deg, #1c1810 0%, #161410 100%);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.3);
 }
 
 .vs-comparison-header > div {
-  padding: 1rem 1.25rem;
-  font-size: 0.78rem;
+  padding: 1.1rem 1.5rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.45);
-}
-
-.vs-comparison-header .vs-col-private,
-.vs-comparison-header .vs-col-package {
-  border-left: 1px solid rgba(201, 168, 76, 0.2);
+  color: rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
 }
 
+.vs-comparison-header .vs-col-private,
+.vs-comparison-header .vs-col-package {
+  border-left: 1px solid rgba(201, 168, 76, 0.15);
+}
+
 .vs-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.82rem;
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.88rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   text-transform: none;
-  padding: 0.35rem 0.85rem;
-  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
 }
 
 .vs-badge-private {
-  background: rgba(201, 168, 76, 0.18);
-  color: #e8c96a;
-  border: 1px solid rgba(201, 168, 76, 0.45);
+  background: rgba(201, 168, 76, 0.12);
+  color: #d4a94a;
+  border: 1px solid rgba(201, 168, 76, 0.35);
 }
 
 .vs-badge-package {
-  background: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.55);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .vs-comparison-row {
   display: grid;
-  grid-template-columns: 1fr 1.6fr 1.6fr;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  transition: background 0.15s;
+  grid-template-columns: 1fr 1.7fr 1.7fr;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.2s;
 }
 
 .vs-comparison-row:hover {
-  background: rgba(201, 168, 76, 0.04);
+  background: rgba(201, 168, 76, 0.03);
 }
 
 .vs-comparison-row-last {
@@ -3242,85 +3241,100 @@ footer {
 }
 
 .vs-comparison-row > div {
-  padding: 1rem 1.25rem;
-  font-size: 0.88rem;
-  line-height: 1.6;
-  vertical-align: middle;
+  padding: 1.1rem 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.65;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .vs-col-factor {
-  background: rgba(255, 255, 255, 0.02);
-  color: #e8dcc8;
+  background: rgba(255, 255, 255, 0.015);
+  color: #d8cdb8;
   font-weight: 600;
-  font-size: 0.85rem !important;
-  gap: 0.6rem !important;
-  border-right: 1px solid rgba(201, 168, 76, 0.15);
+  font-size: 0.84rem !important;
+  letter-spacing: 0.01em;
+  border-right: 1px solid rgba(201, 168, 76, 0.12);
+  gap: 0.65rem !important;
 }
 
-.vs-factor-icon {
-  font-size: 1rem;
+.vs-factor-svg {
+  width: 1.1rem;
+  height: 1.1rem;
   flex-shrink: 0;
-  opacity: 0.85;
+  color: rgba(201, 168, 76, 0.55);
+  stroke: rgba(201, 168, 76, 0.55);
 }
 
 .vs-col-private {
-  color: #d4c4a0;
-  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  color: #c8b898;
+  border-right: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .vs-col-package {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.38);
 }
 
-.vs-check {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.2rem;
-  height: 1.2rem;
-  min-width: 1.2rem;
-  background: rgba(201, 168, 76, 0.2);
-  color: #c9a84c;
-  border-radius: 50%;
-  font-size: 0.7rem;
-  font-weight: 900;
-  flex-shrink: 0;
-}
-
-.vs-cross {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.2rem;
-  height: 1.2rem;
-  min-width: 1.2rem;
-  background: rgba(255, 80, 80, 0.12);
-  color: rgba(255, 100, 100, 0.7);
-  border-radius: 50%;
-  font-size: 0.7rem;
-  font-weight: 900;
-  flex-shrink: 0;
-}
-
+/* Check / Cross / Neutral indicators — SVG-based, no text characters */
+.vs-check,
+.vs-cross,
 .vs-neutral {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.2rem;
-  height: 1.2rem;
-  min-width: 1.2rem;
-  background: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.35);
+  width: 1.25rem;
+  height: 1.25rem;
+  min-width: 1.25rem;
   border-radius: 50%;
-  font-size: 0.85rem;
-  font-weight: 700;
   flex-shrink: 0;
+  position: relative;
 }
 
-@media (max-width: 640px) {
+.vs-check {
+  background: rgba(201, 168, 76, 0.15);
+  border: 1px solid rgba(201, 168, 76, 0.4);
+}
+.vs-check::after {
+  content: '';
+  display: block;
+  width: 0.45rem;
+  height: 0.25rem;
+  border-left: 1.5px solid #c9a84c;
+  border-bottom: 1.5px solid #c9a84c;
+  transform: rotate(-45deg) translateY(-1px);
+}
+
+.vs-cross {
+  background: rgba(180, 60, 60, 0.1);
+  border: 1px solid rgba(180, 60, 60, 0.3);
+}
+.vs-cross::before,
+.vs-cross::after {
+  content: '';
+  position: absolute;
+  width: 0.5rem;
+  height: 1.5px;
+  background: rgba(200, 80, 80, 0.65);
+  border-radius: 1px;
+}
+.vs-cross::before { transform: rotate(45deg); }
+.vs-cross::after  { transform: rotate(-45deg); }
+
+.vs-neutral {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.vs-neutral::after {
+  content: '';
+  display: block;
+  width: 0.45rem;
+  height: 1.5px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
+}
+
+@media (max-width: 680px) {
   .vs-comparison-header,
   .vs-comparison-row {
     grid-template-columns: 1fr;
@@ -3328,16 +3342,17 @@ footer {
   .vs-comparison-header .vs-col-private,
   .vs-comparison-header .vs-col-package {
     border-left: none;
-    border-top: 1px solid rgba(201, 168, 76, 0.15);
+    border-top: 1px solid rgba(201, 168, 76, 0.12);
   }
   .vs-comparison-row > div {
     border-right: none !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 0.7rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 0.8rem 1.1rem;
   }
   .vs-col-factor {
-    background: rgba(201, 168, 76, 0.06);
-    padding-top: 0.9rem !important;
+    background: rgba(201, 168, 76, 0.05);
+    padding-top: 1rem !important;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.12) !important;
   }
   .vs-comparison-row > div:last-child {
     border-bottom: none;

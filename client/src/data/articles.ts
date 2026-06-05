@@ -3067,41 +3067,59 @@ export const ARTICLES: Article[] = [
   <div class="vs-comparison-header">
     <div class="vs-col-factor">Factor</div>
     <div class="vs-col-private">
-      <span class="vs-badge vs-badge-private">🚗 Private Driver Charter</span>
+      <span class="vs-badge vs-badge-private">Private Driver Charter</span>
     </div>
     <div class="vs-col-package">
-      <span class="vs-badge vs-badge-package">🚌 Package Tour</span>
+      <span class="vs-badge vs-badge-package">Package Tour</span>
     </div>
   </div>
   <div class="vs-comparison-row">
-    <div class="vs-col-factor"><span class="vs-factor-icon">🗺️</span><strong>Itinerary flexibility</strong></div>
-    <div class="vs-col-private"><span class="vs-check">✓</span> Fully customisable — change plans any time</div>
-    <div class="vs-col-package"><span class="vs-cross">✗</span> Fixed schedule set by the operator</div>
+    <div class="vs-col-factor">
+      <svg class="vs-factor-svg" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 10h14M10 3l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <strong>Itinerary flexibility</strong>
+    </div>
+    <div class="vs-col-private"><span class="vs-check"></span> Fully customisable — change plans any time</div>
+    <div class="vs-col-package"><span class="vs-cross"></span> Fixed schedule set by the operator</div>
   </div>
   <div class="vs-comparison-row">
-    <div class="vs-col-factor"><span class="vs-factor-icon">🔒</span><strong>Privacy</strong></div>
-    <div class="vs-col-private"><span class="vs-check">✓</span> 100% private — just your group</div>
-    <div class="vs-col-package"><span class="vs-cross">✗</span> Shared with other travellers (group tours)</div>
+    <div class="vs-col-factor">
+      <svg class="vs-factor-svg" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="9" width="10" height="8" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M7 9V6a3 3 0 016 0v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <strong>Privacy</strong>
+    </div>
+    <div class="vs-col-private"><span class="vs-check"></span> 100% private — just your group</div>
+    <div class="vs-col-package"><span class="vs-cross"></span> Shared with other travellers (group tours)</div>
   </div>
   <div class="vs-comparison-row">
-    <div class="vs-col-factor"><span class="vs-factor-icon">💰</span><strong>Cost transparency</strong></div>
-    <div class="vs-col-private"><span class="vs-check">✓</span> Flat daily rate; accommodation booked separately</div>
-    <div class="vs-col-package"><span class="vs-cross">✗</span> All-in price, but hidden extras are common</div>
+    <div class="vs-col-factor">
+      <svg class="vs-factor-svg" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M10 6v4l2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <strong>Cost transparency</strong>
+    </div>
+    <div class="vs-col-private"><span class="vs-check"></span> Flat daily rate; accommodation booked separately</div>
+    <div class="vs-col-package"><span class="vs-cross"></span> All-in price, but hidden extras are common</div>
   </div>
   <div class="vs-comparison-row">
-    <div class="vs-col-factor"><span class="vs-factor-icon">🧭</span><strong>Local knowledge</strong></div>
-    <div class="vs-col-private"><span class="vs-check">✓</span> Driver shares personal recommendations</div>
-    <div class="vs-col-package"><span class="vs-neutral">–</span> Licensed guide covers standard highlights</div>
+    <div class="vs-col-factor">
+      <svg class="vs-factor-svg" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M4 17c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <strong>Local knowledge</strong>
+    </div>
+    <div class="vs-col-private"><span class="vs-check"></span> Driver shares personal recommendations</div>
+    <div class="vs-col-package"><span class="vs-neutral"></span> Licensed guide covers standard highlights</div>
   </div>
   <div class="vs-comparison-row">
-    <div class="vs-col-factor"><span class="vs-factor-icon">📋</span><strong>Planning effort</strong></div>
-    <div class="vs-col-private"><span class="vs-neutral">–</span> You choose hotels and activities</div>
-    <div class="vs-col-package"><span class="vs-check">✓</span> Minimal — operator handles everything</div>
+    <div class="vs-col-factor">
+      <svg class="vs-factor-svg" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="3" width="12" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M7 7h6M7 10h6M7 13h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <strong>Planning effort</strong>
+    </div>
+    <div class="vs-col-private"><span class="vs-neutral"></span> You choose hotels and activities</div>
+    <div class="vs-col-package"><span class="vs-check"></span> Minimal — operator handles everything</div>
   </div>
   <div class="vs-comparison-row vs-comparison-row-last">
-    <div class="vs-col-factor"><span class="vs-factor-icon">👥</span><strong>Best for</strong></div>
-    <div class="vs-col-private"><span class="vs-check">✓</span> Couples, families, slow travellers</div>
-    <div class="vs-col-package"><span class="vs-neutral">–</span> First-timers who prefer zero planning</div>
+    <div class="vs-col-factor">
+      <svg class="vs-factor-svg" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="8" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="13" cy="8" r="2.5" stroke="currentColor" stroke-width="1.5"/><path d="M2 17c0-2.761 2.239-5 5-5M13 12c2.761 0 5 2.239 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <strong>Best for</strong>
+    </div>
+    <div class="vs-col-private"><span class="vs-check"></span> Couples, families, slow travellers</div>
+    <div class="vs-col-package"><span class="vs-neutral"></span> First-timers who prefer zero planning</div>
   </div>
 </div>
 
