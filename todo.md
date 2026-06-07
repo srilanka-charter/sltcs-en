@@ -116,3 +116,5 @@
 - [x] sitemap.xml更新: 全URLのlastmodを最新化（2026-06-05）、記事のpublishedAtと一致させる
 - [x] robots.txt作成: User-agent: * / Allow: / / Sitemap: https://en.srilanka-charter.com/sitemap.xml: Article 1（What Your Daily Rate Covers / Pre-Booking Checklist）・Article 6（3 Driver Types / SLTCS Plans）・Article 3（7-Point Safety Checklist / 5 Red Flags）・Article 10（7 Family Advantages / Family Travel Tips）
 - [x] 記事②追加: "Private Driver vs Package Tour in Sri Lanka: Which Is Right for You?" (slug: sri-lanka-private-driver-vs-package-tour, private-driver-guide) - 比較表・6項目詳細・FAQ6問・インフォグラフィック2枚・sitemap.xml更新
+- [x] 記事④追加: "Sri Lanka Honeymoon by Private Driver: A Complete Guide for Couples" (slug: sri-lanka-honeymoon-private-driver, family-group-travel) - 7泊イティネラリー・インフォグラフィック2枚・実写真2枚・FAQ6問・sitemap.xml更新
+- [x] コンタクトフォーム通知メール: contact@gohellolanka.com を srilanka.41032@gmail.com に加えて2つ目の送信先として追加
