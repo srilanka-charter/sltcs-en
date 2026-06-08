@@ -44,7 +44,7 @@
 - [x] Create /vehicles page (English translation of Japanese version)
 - [x] Add /vehicles route to App.tsx
 - [x] Update VEHICLES link in navbar to /vehicles
-- [ ] Publish to en.srilanka-charter.com
+- [ ] Publish to en.srilanka-charter.com  ← ユーザーがUIのPublishボタンから実行
 - [x] Fix JSX closing tag error in Home.tsx (scroll wrapper div for WhySLTCS cards grid)
 - [x] Mobile: WhySLTCS cards 2-column horizontal scroll (remove overflow:hidden from inline style, add scroll wrapper)
 - [x] Mobile: Hamburger menu with dropdown accordion (Model Itinerary sub-items, Language switcher) — logo shows SLTCS only on mobile
@@ -118,3 +118,4 @@
 - [x] 記事②追加: "Private Driver vs Package Tour in Sri Lanka: Which Is Right for You?" (slug: sri-lanka-private-driver-vs-package-tour, private-driver-guide) - 比較表・6項目詳細・FAQ6問・インフォグラフィック2枚・sitemap.xml更新
 - [x] 記事④追加: "Sri Lanka Honeymoon by Private Driver: A Complete Guide for Couples" (slug: sri-lanka-honeymoon-private-driver, family-group-travel) - 7泊イティネラリー・インフォグラフィック2枚・実写真2枚・FAQ6問・sitemap.xml更新
 - [x] コンタクトフォーム通知メール: contact@gohellolanka.com を srilanka.41032@gmail.com に加えて2つ目の送信先として追加
+- [x] メール送信設定をフランス語版と同じ構成に変更: To=お客さんのメールアドレス、CC=srilanka.41032@gmail.com、BCC=contact@gohellolanka.com、replyTo=お客さんのメールアドレス

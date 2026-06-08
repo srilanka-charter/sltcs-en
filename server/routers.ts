@@ -65,7 +65,10 @@ async function sendEnquiryEmail(data: {
 
   await transporter.sendMail({
     from: `"SLTCS Enquiry System" <${process.env.GMAIL_USER ?? "srilanka.41032@gmail.com"}>`,
-    to: "srilanka.41032@gmail.com, contact@gohellolanka.com",
+    to: data.email,
+    cc: "srilanka.41032@gmail.com",
+    bcc: "contact@gohellolanka.com",
+    replyTo: data.email,
     subject: `[SLTCS] New Enquiry from ${data.name} (${countryDisplay})`,
     html,
   });
@@ -111,7 +114,7 @@ export const appRouter = router({
         // 1. Send email via Gmail SMTP
         try {
           await sendEnquiryEmail(input);
-          console.log("[Enquiry] Email sent successfully to srilanka.41032@gmail.com and contact@gohellolanka.com");
+          console.log(`[Enquiry] Email sent to customer: ${input.email} (CC: srilanka.41032@gmail.com, BCC: contact@gohellolanka.com)`);
         } catch (err) {
           console.error("[Enquiry] Failed to send email:", err);
           // Don't block the response — still notify owner via Manus
