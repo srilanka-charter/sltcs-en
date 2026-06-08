@@ -65,9 +65,7 @@ async function sendEnquiryEmail(data: {
 
   await transporter.sendMail({
     from: `"SLTCS Enquiry System" <${process.env.GMAIL_USER ?? "srilanka.41032@gmail.com"}>`,
-    to: data.email,
-    cc: "srilanka.41032@gmail.com",
-    bcc: "contact@gohellolanka.com",
+    to: "srilanka.41032@gmail.com, contact@gohellolanka.com",
     replyTo: data.email,
     subject: `[SLTCS] New Enquiry from ${data.name} (${countryDisplay})`,
     html,
