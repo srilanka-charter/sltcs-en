@@ -2102,15 +2102,8 @@ export const ARTICLES: Article[] = [
   </div>
 
   <img
-    src="/manus-storage/itinerary_5n6d_sigiriya_top_24b584a1.jpg"
-    alt="Private jeep safari arranged by SLTCS — guests aboard a safari jeep in Sri Lanka"
-    class="article-inline-img"
-    loading="lazy"
-  />
-
-  <img
-    src="/manus-storage/safari_jeep_yala_group_08928221.jpeg"
-    alt="Group enjoying a private jeep safari in Yala National Park, Sri Lanka"
+    src="/manus-storage/safari_jeep_wilpatthu_9177d0dc.jpeg"
+    alt="Private jeep safari at Wilpatthu National Park, Sri Lanka — arranged by SLTCS"
     class="article-inline-img"
     loading="lazy"
   />
