@@ -125,3 +125,4 @@
 - [x] 全13記事のSEOメタデータ（metaTitle・metaDescription・keywords）を最適化（ロングテールキーワード追加・2026年号・価格情報追加）
 - [x] ArticleListページ（カテゴリ一覧5件）にSEO head注入追加（title・description・canonical・OGタグ・BreadcrumbList JSON-LD）
 - [x] index.htmlにデフォルトOGタグ・Twitter Cardタグを追加
+- [ ] 4言語版（en/fr/de/es）間で双方向hreflangを設定する

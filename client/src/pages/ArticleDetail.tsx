@@ -308,10 +308,15 @@ export default function ArticleDetail() {
     // hreflang: en (self)
     setLink('link[hreflang="en"]', { rel: "alternate", hreflang: "en", href: canonicalUrl });
 
-    // hreflang: fr (cross-link to FR version if available)
-    if ((article as any).hreflang) {
-      setLink('link[hreflang="fr"]', { rel: "alternate", hreflang: "fr", href: (article as any).hreflang });
-    }
+    // hreflang: fr / de / es (cross-links to other language versions if available)
+    const hreflangMap = article.hreflang ?? {};
+    const langs: Array<"fr" | "de" | "es"> = ["fr", "de", "es"];
+    langs.forEach((lang) => {
+      const url = hreflangMap[lang];
+      if (url) {
+        setLink(`link[hreflang="${lang}"]`, { rel: "alternate", hreflang: lang, href: url });
+      }
+    });
 
     // Resolve absolute image URL
     const ogImageUrl = article.coverImage
