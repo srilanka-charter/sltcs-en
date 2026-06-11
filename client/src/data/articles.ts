@@ -86,7 +86,7 @@ export const ARTICLES: Article[] = [
     seo: {
       metaTitle: "Sri Lanka Private Driver: How to Hire a Safe, Reliable Driver (2026) | SLTCS",
       metaDescription:
-        "Complete 2026 guide to hiring a private driver in Sri Lanka. Verify credentials, compare costs, and book a government-certified English-speaking driver. Trusted by UK, Australian & European travellers.",
+        "Complete 2026 guide to hiring a private driver in Sri Lanka. Verify government credentials, compare costs, and book a certified English-speaking driver. Trusted by UK, Australian & European travellers. Prices from $270 for 2 days.",
       keywords: [
         "sri lanka private driver",
         "hire private driver sri lanka",
@@ -95,6 +95,9 @@ export const ARTICLES: Article[] = [
         "reliable driver sri lanka",
         "sri lanka chauffeur hire",
         "government certified driver sri lanka",
+        "sri lanka driver hire 2026",
+        "english speaking driver sri lanka",
+        "sri lanka private car hire",
       ],
     },
     content: `
@@ -366,7 +369,7 @@ export const ARTICLES: Article[] = [
     seo: {
       metaTitle: "Sri Lanka Car Hire with Driver: Complete Guide for First-Time Visitors (2026) | SLTCS",
       metaDescription:
-        "Compare self-drive, taxis & private driver charters in Sri Lanka. Why car hire with a dedicated driver is the safest, most flexible option for UK, Australian & European first-time visitors in 2026.",
+        "Compare self-drive, taxis & private driver charters in Sri Lanka. Discover why car hire with a dedicated driver is the safest, most flexible option for UK, Australian & European first-time visitors in 2026. From $270.",
       keywords: [
         "sri lanka car hire with driver",
         "sri lanka car hire",
@@ -375,6 +378,9 @@ export const ARTICLES: Article[] = [
         "sri lanka transport options",
         "sri lanka taxi charter",
         "first time visitor sri lanka transport",
+        "sri lanka car rental with chauffeur",
+        "best way to get around sri lanka",
+        "sri lanka private car hire first time",
       ],
     },
     content: `
@@ -638,7 +644,7 @@ export const ARTICLES: Article[] = [
     seo: {
       metaTitle: "Driver Hire in Sri Lanka: Costs, Safety & Booking Checklist (2026) | SLTCS",
       metaDescription:
-        "Hiring a private driver in Sri Lanka? Check licences, insurance, English level & pricing before booking. Full 2026 cost breakdown: Bronze from $270, Silver from $310, Gold from $350 per 2 days.",
+        "Hiring a private driver in Sri Lanka? Check licences, insurance, English level & pricing before booking. Full 2026 cost breakdown: Bronze from $270, Silver from $310, Gold from $350 per 2 days. 7-point safety checklist included.",
       keywords: [
         "sri lanka driver hire",
         "hire driver sri lanka",
@@ -648,6 +654,9 @@ export const ARTICLES: Article[] = [
         "sri lanka car hire with driver price",
         "sri lanka driver hire 2026",
         "how much does a driver cost in sri lanka",
+        "sri lanka driver safety checklist",
+        "private driver sri lanka price per day",
+        "sri lanka driver licence verification",
       ],
     },
     content: `
@@ -908,15 +917,19 @@ export const ARTICLES: Article[] = [
       "private driver Sri Lanka",
     ],
     seo: {
-      metaTitle: "Sri Lanka Private Driver Costs Explained: What You Pay For and Why | SLTCS",
+      metaTitle: "Sri Lanka Private Driver Costs Explained: What You Pay For and Why (2026) | SLTCS",
       metaDescription:
-        "A transparent breakdown of private driver hire costs in Sri Lanka — import duties, fuel, vehicle loans, and support fees — plus five risks to avoid when choosing a cheap service.",
+        "Why does private driver hire in Sri Lanka cost what it does? Transparent breakdown of vehicle import duties, fuel, insurance & support fees — plus 5 hidden risks of cheap services. 2026 pricing guide.",
       keywords: [
-        "Sri Lanka private driver cost",
-        "Sri Lanka driver hire price",
-        "how much does a private driver cost in Sri Lanka",
-        "Sri Lanka taxi charter price",
-        "cheap driver Sri Lanka risks",
+        "sri lanka private driver cost",
+        "sri lanka driver hire price",
+        "how much does a private driver cost in sri lanka",
+        "sri lanka taxi charter price",
+        "cheap driver sri lanka risks",
+        "sri lanka driver hire cost breakdown",
+        "why is private driver expensive sri lanka",
+        "sri lanka car hire with driver price 2026",
+        "sri lanka driver daily rate",
       ],
     },
     content: `
@@ -1319,7 +1332,7 @@ export const ARTICLES: Article[] = [
     seo: {
       metaTitle: "Van Hire with Driver in Sri Lanka for Families & Small Groups (2026) | SLTCS",
       metaDescription:
-        "Best option for families & groups in Sri Lanka: private van hire with a dedicated driver. Child-safe vehicles, luggage space, flexible itineraries. Transparent pricing from $270. Book with SLTCS.",
+        "Best option for families & groups in Sri Lanka: private van hire with a dedicated driver. Child-safe vehicles, ample luggage space, flexible itineraries. Transparent pricing from $270. Book with SLTCS.",
       keywords: [
         "van hire sri lanka family",
         "sri lanka group travel private driver",
@@ -1329,6 +1342,10 @@ export const ARTICLES: Article[] = [
         "group charter sri lanka",
         "sri lanka minivan hire with driver",
         "sri lanka family tour private driver",
+        "sri lanka family holiday transport",
+        "sri lanka group tour private vehicle",
+        "sri lanka van hire with chauffeur",
+        "travelling sri lanka with kids",
       ],
     },
     content: `
@@ -1644,7 +1661,7 @@ export const ARTICLES: Article[] = [
     seo: {
       metaTitle: "Chauffeur Guide Sri Lanka: Tourist Driver vs National Guide Explained (2026) | SLTCS",
       metaDescription:
-        "What's the difference between a Tourist Driver, Chauffeur Guide Driver & National Guide in Sri Lanka? Qualifications, costs & which is right for your trip. Expert guide by SLTCS.",
+        "What is the difference between a Tourist Driver, Chauffeur Guide Driver & National Guide in Sri Lanka? Qualifications, costs & which is right for your trip. Complete 2026 guide by SLTCS.",
       keywords: [
         "chauffeur guide sri lanka",
         "sri lanka chauffeur driver",
@@ -1654,6 +1671,9 @@ export const ARTICLES: Article[] = [
         "sri lanka driver types",
         "sri lanka driver guide difference",
         "chauffeur guide driver sri lanka",
+        "sri lanka driver vs tour guide",
+        "certified chauffeur guide sri lanka",
+        "sri lanka tourist board licensed driver",
       ],
     },
     content: `
@@ -2006,7 +2026,7 @@ export const ARTICLES: Article[] = [
     tags: ["4 Nights 5 Days", "Sigiriya", "Kandy", "Galle", "Private Driver", "First-Time Visitors"],
     seo: {
       metaTitle: "Sri Lanka 4 Nights 5 Days Itinerary: Cultural Highlights by Private Driver (2026) | SLTCS",
-      metaDescription: "Explore Sri Lanka's best highlights in 5 days with a private driver. Sigiriya Rock, Kandy Temple, Nuwara Eliya tea country & Galle Fort — fully private, flexible charter from $270.",
+      metaDescription: "Explore Sri Lanka's top highlights in 5 days with a private driver. Sigiriya Rock Fortress, Kandy Temple, Nuwara Eliya tea country & Galle Fort — fully private, flexible charter from $270. Day-by-day itinerary included.",
       keywords: [
         "sri lanka 4 nights 5 days itinerary",
         "sri lanka 5 day tour private driver",
@@ -2014,6 +2034,10 @@ export const ARTICLES: Article[] = [
         "sigiriya kandy galle private driver",
         "sri lanka cultural highlights tour",
         "sri lanka 5 day private charter",
+        "sri lanka 4 night itinerary 2026",
+        "sigiriya kandy nuwara eliya galle tour",
+        "sri lanka first time visitor 5 days",
+        "compact sri lanka tour private driver",
       ],
     },
     content: `
@@ -2192,7 +2216,7 @@ export const ARTICLES: Article[] = [
     tags: ["5 Nights 6 Days", "Sigiriya", "Kandy", "Ella", "Yala", "Private Driver", "Couples"],
     seo: {
       metaTitle: "Sri Lanka 5 Nights 6 Days Itinerary: Culture + Nature by Private Driver (2026) | SLTCS",
-      metaDescription: "The perfect 6-day Sri Lanka itinerary with a private driver: Sigiriya, Kandy, Ella Nine Arches Bridge, Yala National Park safari & Galle Fort. Fully private charter from $270.",
+      metaDescription: "The perfect 6-day Sri Lanka itinerary with a private driver: Sigiriya, Kandy, Ella Nine Arches Bridge, Yala National Park safari & Galle Fort. Fully private charter from $270. Day-by-day plan included.",
       keywords: [
         "sri lanka 5 nights 6 days itinerary",
         "sri lanka 6 day tour private driver",
@@ -2200,6 +2224,10 @@ export const ARTICLES: Article[] = [
         "sri lanka culture nature tour",
         "sri lanka 6 day private charter",
         "sri lanka itinerary 2026",
+        "sri lanka 5 night 6 day tour",
+        "ella nine arches bridge private driver",
+        "yala safari sri lanka private driver",
+        "sri lanka 6 day itinerary couples",
       ],
     },
     content: `
@@ -2371,7 +2399,7 @@ export const ARTICLES: Article[] = [
     tags: ["6 Nights 7 Days", "Sigiriya", "Polonnaruwa", "Kandy", "Ella", "Yala", "Galle", "Families"],
     seo: {
       metaTitle: "Sri Lanka 6 Nights 7 Days Itinerary: Full Island Experience by Private Driver (2026) | SLTCS",
-      metaDescription: "The ultimate 7-day Sri Lanka private driver itinerary: Sigiriya, Polonnaruwa, Kandy, Nuwara Eliya tea highlands, Ella, Yala safari & Galle. Full island experience from $270.",
+      metaDescription: "The ultimate 7-day Sri Lanka private driver itinerary: Sigiriya, Polonnaruwa, Kandy, Nuwara Eliya tea highlands, Ella, Yala safari & Galle Fort. Full island experience from $270. Complete day-by-day plan.",
       keywords: [
         "sri lanka 6 nights 7 days itinerary",
         "sri lanka 7 day tour private driver",
@@ -2379,6 +2407,10 @@ export const ARTICLES: Article[] = [
         "sigiriya polonnaruwa kandy ella yala galle",
         "sri lanka 7 day private charter",
         "sri lanka itinerary 2026 private driver",
+        "sri lanka 6 night 7 day tour",
+        "sri lanka family itinerary 7 days",
+        "complete sri lanka tour private driver",
+        "sri lanka 7 day tour families",
       ],
     },
     content: `
@@ -2574,7 +2606,7 @@ export const ARTICLES: Article[] = [
     tags: ["Cultural Triangle", "UNESCO", "Sigiriya", "Anuradhapura", "Polonnaruwa", "Kandy", "History"],
     seo: {
       metaTitle: "Sri Lanka Cultural Triangle Itinerary 5–7 Days: UNESCO Heritage by Private Driver (2026) | SLTCS",
-      metaDescription: "Explore Sri Lanka's UNESCO World Heritage Cultural Triangle in 5–7 days with a private driver. Sigiriya, Anuradhapura, Polonnaruwa & Kandy — in-depth heritage focus. Fully private from $270.",
+      metaDescription: "Explore Sri Lanka's UNESCO World Heritage Cultural Triangle in 5–7 days with a private driver. Sigiriya Rock, Anuradhapura, Polonnaruwa & Kandy — in-depth heritage focus. Fully private from $270. Day-by-day plan included.",
       keywords: [
         "sri lanka cultural triangle itinerary",
         "sri lanka unesco heritage tour",
@@ -2582,6 +2614,10 @@ export const ARTICLES: Article[] = [
         "private driver cultural triangle sri lanka",
         "sri lanka 5 7 days cultural tour",
         "sri lanka world heritage sites private driver",
+        "cultural triangle sri lanka private car",
+        "anuradhapura polonnaruwa private driver",
+        "sri lanka ancient cities tour",
+        "sri lanka heritage tour 2026",
       ],
     },
     content: `
@@ -2767,7 +2803,7 @@ export const ARTICLES: Article[] = [
     tags: ["10 Days", "2 Weeks", "Classic Plan", "Sigiriya", "Kandy", "Ella", "Yala", "Galle", "Beach"],
     seo: {
       metaTitle: "Sri Lanka 10 Days to 2 Weeks Itinerary: Classic First-Timer Plan by Private Driver (2026) | SLTCS",
-      metaDescription: "The complete Sri Lanka private driver itinerary for first-timers: 10–14 days covering Sigiriya, Kandy, scenic tea train, Ella, Yala safari, Galle & beach. Fully private from $270.",
+      metaDescription: "The complete Sri Lanka private driver itinerary for first-timers: 10–14 days covering Sigiriya, Kandy, scenic tea train, Ella, Yala safari, Galle & beach. Fully private from $270. Detailed day-by-day plan included.",
       keywords: [
         "sri lanka 10 day itinerary",
         "sri lanka 2 weeks itinerary",
@@ -2776,6 +2812,10 @@ export const ARTICLES: Article[] = [
         "sri lanka first time visitor itinerary",
         "sri lanka private driver 10 days",
         "sri lanka complete tour 2026",
+        "sri lanka 10 days private charter",
+        "sri lanka 2 week holiday itinerary",
+        "best sri lanka itinerary 10 days",
+        "sri lanka grand tour private driver",
       ],
     },
     content: `
@@ -3024,9 +3064,9 @@ export const ARTICLES: Article[] = [
     ],
     seo: {
       metaTitle:
-        "Private Driver vs Package Tour in Sri Lanka: Which Is Right for You? | SLTCS",
+        "Private Driver vs Package Tour in Sri Lanka: Which Is Right for You? (2026) | SLTCS",
       metaDescription:
-        "Comparing a private driver charter vs a package tour in Sri Lanka? This guide covers flexibility, cost, privacy, and local knowledge to help you choose the right option for your trip.",
+        "Private driver charter vs package tour in Sri Lanka — which is better? Compare flexibility, cost, privacy & local knowledge. Expert 2026 guide to help you choose the right option for your trip.",
       keywords: [
         "sri lanka private driver vs package tour",
         "private driver or package tour sri lanka",
@@ -3035,6 +3075,9 @@ export const ARTICLES: Article[] = [
         "sri lanka tour package vs private car",
         "private driver sri lanka pros cons",
         "is it better to hire a driver or join a tour in sri lanka",
+        "sri lanka private charter vs group tour",
+        "advantages private driver sri lanka",
+        "sri lanka self planned trip vs package",
       ],
     },
     content: `
@@ -3376,9 +3419,9 @@ export const ARTICLES: Article[] = [
     readingTime: 9,
     tags: ["honeymoon", "couples", "romantic travel", "private driver", "sri lanka"],
     seo: {
-      metaTitle: "Sri Lanka Honeymoon by Private Driver | Romantic Couples Guide",
+      metaTitle: "Sri Lanka Honeymoon by Private Driver: Romantic Couples Guide (2026) | SLTCS",
       metaDescription:
-        "Plan the perfect Sri Lanka honeymoon with a private driver charter. Discover romantic destinations, a 7-night itinerary, and why couples choose SLTCS for a fully private, flexible journey.",
+        "Plan the perfect Sri Lanka honeymoon with a private driver charter. Romantic destinations, 7-night itinerary, and why couples choose SLTCS for a fully private, flexible journey. From $270.",
       keywords: [
         "sri lanka honeymoon private driver",
         "honeymoon in sri lanka",
@@ -3388,6 +3431,10 @@ export const ARTICLES: Article[] = [
         "best honeymoon destinations sri lanka",
         "sri lanka honeymoon itinerary",
         "kandy ella galle honeymoon",
+        "sri lanka honeymoon 2026",
+        "romantic tour sri lanka private car",
+        "sri lanka honeymoon package private driver",
+        "galle fort honeymoon sri lanka",
       ],
     },
     faqItems: [

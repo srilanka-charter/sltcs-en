@@ -119,3 +119,9 @@
 - [x] 記事④追加: "Sri Lanka Honeymoon by Private Driver: A Complete Guide for Couples" (slug: sri-lanka-honeymoon-private-driver, family-group-travel) - 7泊イティネラリー・インフォグラフィック2枚・実写真2枚・FAQ6問・sitemap.xml更新
 - [x] コンタクトフォーム通知メール: contact@gohellolanka.com を srilanka.41032@gmail.com に加えて2つ目の送信先として追加
 - [x] メール送信設定をフランス語版と同じ構成に変更: To=お客さんのメールアドレス、CC=srilanka.41032@gmail.com、BCC=contact@gohellolanka.com、replyTo=お客さんのメールアドレス
+- [x] CV通知メール設定変更: To=srilanka.41032@gmail.com + contact@gohellolanka.com、CC/BCC未設定、replyTo=お客さんのアドレス
+- [x] 4 Nights / 5 Days記事のjeep safari画像をサファリジープ（Leopard Den Wilpatthu）写真に入れ替え
+- [x] sitemap.xml再生成（全25件URL収録）
+- [x] 全13記事のSEOメタデータ（metaTitle・metaDescription・keywords）を最適化（ロングテールキーワード追加・2026年号・価格情報追加）
+- [x] ArticleListページ（カテゴリ一覧5件）にSEO head注入追加（title・description・canonical・OGタグ・BreadcrumbList JSON-LD）
+- [x] index.htmlにデフォルトOGタグ・Twitter Cardタグを追加

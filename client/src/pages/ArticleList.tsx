@@ -89,6 +89,80 @@ export default function ArticleList() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [categorySlug]);
 
+  // SEO head injection for category listing pages
+  useEffect(() => {
+    if (!categoryMeta) return;
+
+    const categoryTitles: Record<string, string> = {
+      "private-driver-guide": "Sri Lanka Private Driver Guide: Expert Tips & Advice (2026) | SLTCS",
+      "cost-booking-guide": "Sri Lanka Driver Hire Costs & Booking Guide (2026) | SLTCS",
+      "family-group-travel": "Sri Lanka Family & Group Travel Guide: Private Driver Tips (2026) | SLTCS",
+      "travel-tips-safety": "Sri Lanka Travel Tips & Safety Guide for Visitors (2026) | SLTCS",
+      "model-itinerary": "Sri Lanka Private Driver Itineraries: 4 Nights to 2 Weeks (2026) | SLTCS",
+    };
+    const categoryDescriptions: Record<string, string> = {
+      "private-driver-guide": "Expert guides to hiring a private driver in Sri Lanka — credentials, costs, chauffeur types, and how to book with confidence. Trusted by UK, Australian & European travellers.",
+      "cost-booking-guide": "Transparent pricing breakdowns and booking checklists for private driver hire in Sri Lanka. Bronze from $270, Silver from $310, Gold from $350 per 2 days.",
+      "family-group-travel": "Practical advice for families, groups & couples travelling Sri Lanka by private driver. Van hire, child-safe vehicles, honeymoon itineraries & more.",
+      "travel-tips-safety": "Honest, practical tips on road safety, transport options, and how to travel Sri Lanka with peace of mind.",
+      "model-itinerary": "Day-by-day private driver itineraries for Sri Lanka — from 4-night cultural highlights to 2-week classic tours. Fully private, flexible charters from $270.",
+    };
+
+    const title = categoryTitles[categorySlug] || `${categoryMeta.label} | SLTCS`;
+    const description = categoryDescriptions[categorySlug] || categoryMeta.description;
+    const canonicalUrl = `https://en.srilanka-charter.com${categoryMeta.path}`;
+
+    const prevTitle = document.title;
+    document.title = title;
+
+    const setMeta = (name: string, content: string) => {
+      let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
+      if (!el) { el = document.createElement("meta"); el.name = name; document.head.appendChild(el); }
+      el.content = content;
+    };
+    const setOg = (property: string, content: string) => {
+      let el = document.querySelector(`meta[property="${property}"]`) as HTMLMetaElement | null;
+      if (!el) { el = document.createElement("meta"); el.setAttribute("property", property); document.head.appendChild(el); }
+      el.content = content;
+    };
+
+    const prevDesc = (document.querySelector('meta[name="description"]') as HTMLMetaElement)?.content || "";
+    setMeta("description", description);
+    setOg("og:title", title);
+    setOg("og:description", description);
+    setOg("og:type", "website");
+    setOg("og:url", canonicalUrl);
+    setOg("og:site_name", "SLTCS | Sri Lanka Car Hire with Private Driver");
+    setOg("og:locale", "en_GB");
+
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    const prevCanonical = canonical?.href || "https://en.srilanka-charter.com/";
+    if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
+    canonical.href = canonicalUrl;
+
+    // BreadcrumbList JSON-LD
+    const breadcrumbJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://en.srilanka-charter.com/" },
+        { "@type": "ListItem", position: 2, name: categoryMeta.label, item: canonicalUrl },
+      ],
+    };
+    const breadcrumbScript = document.createElement("script");
+    breadcrumbScript.type = "application/ld+json";
+    breadcrumbScript.id = "category-breadcrumb-jsonld";
+    breadcrumbScript.textContent = JSON.stringify(breadcrumbJsonLd);
+    document.head.appendChild(breadcrumbScript);
+
+    return () => {
+      document.title = prevTitle;
+      (document.querySelector('meta[name="description"]') as HTMLMetaElement | null)?.setAttribute("content", prevDesc);
+      canonical!.href = prevCanonical;
+      document.getElementById("category-breadcrumb-jsonld")?.remove();
+    };
+  }, [categorySlug, categoryMeta]);
+
   if (!categoryMeta) {
     return (
       <div className="article-list-page">
