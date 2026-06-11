@@ -265,113 +265,120 @@ export default function ArticleDetail() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [params.slug]);
 
-  // Update document title and meta for SEO
+  // Update document title and meta for SEO (aligned with FR version)
   useEffect(() => {
     if (!article) return;
+
+    const canonicalUrl = `https://en.srilanka-charter.com/information/${article.category}/${article.slug}`;
+
+    // Page title
     document.title = article.seo.metaTitle;
 
-    // Update or create meta description
-    let metaDesc = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
-    if (!metaDesc) {
-      metaDesc = document.createElement("meta");
-      metaDesc.name = "description";
-      document.head.appendChild(metaDesc);
-    }
-    metaDesc.content = article.seo.metaDescription;
-
-    // Update or create meta keywords
-    let metaKw = document.querySelector('meta[name="keywords"]') as HTMLMetaElement | null;
-    if (!metaKw) {
-      metaKw = document.createElement("meta");
-      metaKw.name = "keywords";
-      document.head.appendChild(metaKw);
-    }
-    metaKw.content = article.seo.keywords.join(", ");
-
-    // OG tags
-    const setOg = (property: string, content: string) => {
-      let el = document.querySelector(`meta[property="${property}"]`) as HTMLMetaElement | null;
+    // Helper: upsert a <meta> tag by selector
+    const setMeta = (selector: string, attr: string, value: string) => {
+      let el = document.querySelector(selector) as HTMLMetaElement | null;
       if (!el) {
         el = document.createElement("meta");
-        el.setAttribute("property", property);
+        const [attrName, attrVal] = attr.split("=");
+        el.setAttribute(attrName, attrVal);
         document.head.appendChild(el);
       }
-      el.content = content;
+      el.content = value;
     };
-    setOg("og:title", article.seo.metaTitle);
-    setOg("og:description", article.seo.metaDescription);
-    setOg("og:image", article.coverImage);
-    setOg("og:type", "article");
-    setOg("og:url", `https://en.srilanka-charter.com/information/${article.category}/${article.slug}`);
-    setOg("og:site_name", "SLTCS | Sri Lanka Car Hire with Private Driver");
-    setOg("og:locale", "en_GB");
-    setOg("og:image:width", "1200");
-    setOg("og:image:height", "630");
 
-    // Twitter Card
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
+    // Helper: upsert a <link> tag by selector
+    const setLink = (selector: string, attrs: Record<string, string>) => {
+      let el = document.querySelector(selector) as HTMLLinkElement | null;
       if (!el) {
-        el = document.createElement("meta");
-        el.name = name;
+        el = document.createElement("link");
         document.head.appendChild(el);
       }
-      el.content = content;
+      Object.entries(attrs).forEach(([k, v]) => el!.setAttribute(k, v));
     };
-    setMeta("twitter:card", "summary_large_image");
-    setMeta("twitter:title", article.seo.metaTitle);
-    setMeta("twitter:description", article.seo.metaDescription);
-    setMeta("twitter:image", article.coverImage);
 
-    // Canonical URL
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    const prevCanonical = canonical?.href || "https://en.srilanka-charter.com/";
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
+    // Meta description
+    setMeta('meta[name="description"]', 'name=description', article.seo.metaDescription);
+
+    // Meta keywords
+    setMeta('meta[name="keywords"]', 'name=keywords', article.seo.keywords.join(", "));
+
+    // Canonical
+    setLink('link[rel="canonical"]', { rel: "canonical", href: canonicalUrl });
+
+    // hreflang: en (self)
+    setLink('link[hreflang="en"]', { rel: "alternate", hreflang: "en", href: canonicalUrl });
+
+    // hreflang: fr (cross-link to FR version if available)
+    if ((article as any).hreflang) {
+      setLink('link[hreflang="fr"]', { rel: "alternate", hreflang: "fr", href: (article as any).hreflang });
     }
-    canonical.href = `https://en.srilanka-charter.com/information/${article.category}/${article.slug}`;
 
-    // Article JSON-LD
-    const articleJsonLd = {
+    // Resolve absolute image URL
+    const ogImageUrl = article.coverImage
+      ? (article.coverImage.startsWith("http")
+          ? article.coverImage
+          : `https://en.srilanka-charter.com${article.coverImage}`)
+      : "https://en.srilanka-charter.com/favicon-192.png";
+
+    // Open Graph tags
+    setMeta('meta[property="og:type"]', 'property=og:type', 'article');
+    setMeta('meta[property="og:title"]', 'property=og:title', article.seo.metaTitle);
+    setMeta('meta[property="og:description"]', 'property=og:description', article.seo.metaDescription);
+    setMeta('meta[property="og:url"]', 'property=og:url', canonicalUrl);
+    setMeta('meta[property="og:locale"]', 'property=og:locale', 'en_GB');
+    setMeta('meta[property="og:site_name"]', 'property=og:site_name', 'SLTCS | Sri Lanka Car Hire with Private Driver');
+    setMeta('meta[property="og:image"]', 'property=og:image', ogImageUrl);
+    setMeta('meta[property="og:image:width"]', 'property=og:image:width', '1200');
+    setMeta('meta[property="og:image:height"]', 'property=og:image:height', '630');
+
+    // Twitter Card tags
+    setMeta('meta[name="twitter:card"]', 'name=twitter:card', 'summary_large_image');
+    setMeta('meta[name="twitter:title"]', 'name=twitter:title', article.seo.metaTitle);
+    setMeta('meta[name="twitter:description"]', 'name=twitter:description', article.seo.metaDescription);
+    setMeta('meta[name="twitter:image"]', 'name=twitter:image', ogImageUrl);
+
+    // JSON-LD structured data (Article schema)
+    const existingJsonLd = document.getElementById('article-json-ld');
+    if (existingJsonLd) existingJsonLd.remove();
+    const jsonLd = document.createElement('script');
+    jsonLd.id = 'article-json-ld';
+    jsonLd.type = 'application/ld+json';
+    jsonLd.textContent = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: article.title,
-      description: article.seo.metaDescription,
-      image: article.coverImage,
-      datePublished: article.publishedAt,
-      dateModified: article.publishedAt,
-      author: {
+      "headline": article.title,
+      "description": article.seo.metaDescription,
+      "image": ogImageUrl,
+      "datePublished": article.publishedAt,
+      "dateModified": article.publishedAt,
+      "author": {
         "@type": "Organization",
-        name: "SLTCS – Sri Lanka Car Hire with Private Driver",
-        url: "https://en.srilanka-charter.com/",
+        "name": "SLTCS — Sri Lanka Car Hire with Private Driver",
+        "url": "https://en.srilanka-charter.com"
       },
-      publisher: {
+      "publisher": {
         "@type": "Organization",
-        name: "SLTCS – Sri Lanka Car Hire with Private Driver",
-        url: "https://en.srilanka-charter.com/",
-        logo: {
+        "name": "SLTCS — Sri Lanka Car Hire with Private Driver",
+        "url": "https://en.srilanka-charter.com",
+        "logo": {
           "@type": "ImageObject",
-          url: "https://en.srilanka-charter.com/favicon-192.png",
-        },
+          "url": "https://en.srilanka-charter.com/favicon-192.png"
+        }
       },
-      mainEntityOfPage: {
+      "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": `https://en.srilanka-charter.com/information/${article.category}/${article.slug}`,
+        "@id": canonicalUrl
       },
-      keywords: article.seo.keywords.join(", "),
-    };
-    const articleScript = document.createElement("script");
-    articleScript.type = "application/ld+json";
-    articleScript.id = "article-jsonld";
-    articleScript.textContent = JSON.stringify(articleJsonLd);
-    document.head.appendChild(articleScript);
+      "keywords": article.seo.keywords.join(", "),
+      "inLanguage": "en"
+    });
+    document.head.appendChild(jsonLd);
 
     return () => {
       document.title = "SLTCS｜Sri Lanka Car Hire with Private Driver";
-      canonical!.href = prevCanonical;
-      document.getElementById("article-jsonld")?.remove();
+      // Clean up JSON-LD on unmount
+      const ldScript = document.getElementById('article-json-ld');
+      if (ldScript) ldScript.remove();
     };
   }, [article]);
 
