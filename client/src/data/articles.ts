@@ -3792,6 +3792,32 @@ export const ARTICLES: Article[] = [
       de: "https://de.srilanka-charter.com/information/reise-tipps-sicherheit/beste-reisezeit-sri-lanka",
       es: "https://es.srilanka-charter.com/information/guia-conductor-privado/mejor-epoca-visitar-sri-lanka",
     },
+    faqItems: [
+      {
+        q: "What is the absolute best month to visit Sri Lanka?",
+        a: "January and February are widely considered the best months overall. The west and south coasts are in peak dry season, the Cultural Triangle is at its most accessible, and the hill country is clear and cool. If you can only visit once, aim for January or February.",
+      },
+      {
+        q: "Is it worth visiting Sri Lanka during the monsoon season?",
+        a: "Yes — with the right planning. The Yala monsoon (May–September) affects the west and south, but the east coast is excellent during these months. Prices are lower, crowds are thinner, and the landscape is lush and green. Many experienced travellers prefer the shoulder and monsoon seasons precisely because of the quieter atmosphere.",
+      },
+      {
+        q: "Does it rain every day during the monsoon?",
+        a: "Not typically. Monsoon rain in Sri Lanka tends to fall in short, intense bursts — often in the late afternoon — rather than all-day drizzle. Most mornings are clear, and sightseeing is perfectly possible. A private driver can help you plan around the daily weather patterns.",
+      },
+      {
+        q: "When is the best time to see elephants in Sri Lanka?",
+        a: "The famous Elephant Gathering at Minneriya National Park takes place from June to September, when hundreds of elephants congregate around the reservoir. Yala National Park is best visited from February to July, when water sources dry up and elephants, leopards, and other wildlife concentrate around the remaining pools.",
+      },
+      {
+        q: "What is the best time to visit the Cultural Triangle (Sigiriya, Anuradhapura)?",
+        a: "The Cultural Triangle lies in Sri Lanka's dry zone and is accessible year-round, but the most comfortable conditions are from December to April. Temperatures can be very high from May to September, so early morning visits are recommended if you travel during these months.",
+      },
+      {
+        q: "Is December a good time to visit Sri Lanka?",
+        a: "Yes. December marks the start of peak season for the west and south coasts. The weather improves rapidly after the first week, and by mid-December conditions are excellent. It is also the start of the Adam's Peak pilgrimage season. Book accommodation well in advance as December is busy, particularly around Christmas and New Year.",
+      },
+    ],
     content: `
 <article class="article-body">
 
@@ -3924,11 +3950,18 @@ export const ARTICLES: Article[] = [
 
   <h2 id="month-by-month">Month-by-Month Summary</h2>
 
-  <div class="a3-table-wrap">
-    <table class="a3-table">
+  <div class="season-legend">
+    <span class="sl-badge sl-peak">● Peak Season</span>
+    <span class="sl-badge sl-shoulder">● Shoulder Season</span>
+    <span class="sl-badge sl-monsoon">● Monsoon / Low</span>
+    <span class="sl-badge sl-improving">● Improving</span>
+  </div>
+
+  <div class="season-table-wrap">
+    <table class="season-table">
       <thead>
         <tr>
-          <th>Month</th>
+          <th class="st-month-col">Month</th>
           <th>West &amp; South Coast</th>
           <th>East Coast</th>
           <th>Hill Country</th>
@@ -3936,18 +3969,90 @@ export const ARTICLES: Article[] = [
         </tr>
       </thead>
       <tbody>
-        <tr><td><strong>January</strong></td><td>★★★ Peak</td><td>Monsoon</td><td>★★★ Best</td><td>★★★ Best</td></tr>
-        <tr><td><strong>February</strong></td><td>★★★ Peak</td><td>Monsoon</td><td>★★★ Best</td><td>★★★ Best</td></tr>
-        <tr><td><strong>March</strong></td><td>★★★ Peak</td><td>Improving</td><td>★★★ Best</td><td>★★★ Best</td></tr>
-        <tr><td><strong>April</strong></td><td>★★ Shoulder</td><td>★★ Good</td><td>★★ Good</td><td>★★ Good</td></tr>
-        <tr><td><strong>May</strong></td><td>Monsoon</td><td>★★★ Peak</td><td>Monsoon</td><td>★★ Dry Zone OK</td></tr>
-        <tr><td><strong>June</strong></td><td>Monsoon</td><td>★★★ Peak</td><td>Monsoon</td><td>★★ Dry Zone OK</td></tr>
-        <tr><td><strong>July</strong></td><td>Monsoon</td><td>★★★ Peak</td><td>Monsoon</td><td>★★ Dry Zone OK</td></tr>
-        <tr><td><strong>August</strong></td><td>Improving</td><td>★★★ Peak</td><td>Monsoon</td><td>★★ Dry Zone OK</td></tr>
-        <tr><td><strong>September</strong></td><td>★★ Shoulder</td><td>★★★ Peak</td><td>Improving</td><td>★★ Good</td></tr>
-        <tr><td><strong>October</strong></td><td>★★ Shoulder</td><td>★★ Shoulder</td><td>★★ Mixed</td><td>★★ Mixed</td></tr>
-        <tr><td><strong>November</strong></td><td>★★ Shoulder</td><td>Monsoon</td><td>★★ Good</td><td>★★ Good</td></tr>
-        <tr><td><strong>December</strong></td><td>★★★ Peak</td><td>Monsoon</td><td>★★ Good</td><td>★★★ Best</td></tr>
+        <tr class="st-row">
+          <td class="st-month">Jan</td>
+          <td><span class="st-badge st-peak">Peak ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsoon</span></td>
+          <td><span class="st-badge st-peak">Best ★★★</span></td>
+          <td><span class="st-badge st-peak">Best ★★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Feb</td>
+          <td><span class="st-badge st-peak">Peak ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsoon</span></td>
+          <td><span class="st-badge st-peak">Best ★★★</span></td>
+          <td><span class="st-badge st-peak">Best ★★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Mar</td>
+          <td><span class="st-badge st-peak">Peak ★★★</span></td>
+          <td><span class="st-badge st-improving">Improving</span></td>
+          <td><span class="st-badge st-peak">Best ★★★</span></td>
+          <td><span class="st-badge st-peak">Best ★★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Apr</td>
+          <td><span class="st-badge st-shoulder">Shoulder ★★</span></td>
+          <td><span class="st-badge st-shoulder">Good ★★</span></td>
+          <td><span class="st-badge st-shoulder">Good ★★</span></td>
+          <td><span class="st-badge st-shoulder">Good ★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">May</td>
+          <td><span class="st-badge st-monsoon">Monsoon</span></td>
+          <td><span class="st-badge st-peak">Peak ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsoon</span></td>
+          <td><span class="st-badge st-shoulder">Dry Zone OK</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Jun</td>
+          <td><span class="st-badge st-monsoon">Monsoon</span></td>
+          <td><span class="st-badge st-peak">Peak ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsoon</span></td>
+          <td><span class="st-badge st-shoulder">Dry Zone OK</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Jul</td>
+          <td><span class="st-badge st-monsoon">Monsoon</span></td>
+          <td><span class="st-badge st-peak">Peak ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsoon</span></td>
+          <td><span class="st-badge st-shoulder">Dry Zone OK</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Aug</td>
+          <td><span class="st-badge st-improving">Improving</span></td>
+          <td><span class="st-badge st-peak">Peak ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsoon</span></td>
+          <td><span class="st-badge st-shoulder">Dry Zone OK</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Sep</td>
+          <td><span class="st-badge st-shoulder">Shoulder ★★</span></td>
+          <td><span class="st-badge st-peak">Peak ★★★</span></td>
+          <td><span class="st-badge st-improving">Improving</span></td>
+          <td><span class="st-badge st-shoulder">Good ★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Oct</td>
+          <td><span class="st-badge st-shoulder">Shoulder ★★</span></td>
+          <td><span class="st-badge st-shoulder">Shoulder ★★</span></td>
+          <td><span class="st-badge st-shoulder">Mixed ★★</span></td>
+          <td><span class="st-badge st-shoulder">Mixed ★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Nov</td>
+          <td><span class="st-badge st-shoulder">Shoulder ★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsoon</span></td>
+          <td><span class="st-badge st-shoulder">Good ★★</span></td>
+          <td><span class="st-badge st-shoulder">Good ★★</span></td>
+        </tr>
+        <tr class="st-row">
+          <td class="st-month">Dec</td>
+          <td><span class="st-badge st-peak">Peak ★★★</span></td>
+          <td><span class="st-badge st-monsoon">Monsoon</span></td>
+          <td><span class="st-badge st-shoulder">Good ★★</span></td>
+          <td><span class="st-badge st-peak">Best ★★★</span></td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -3977,34 +4082,7 @@ export const ARTICLES: Article[] = [
   </div>
 
 
-  <h2 id="faq">Frequently Asked Questions</h2>
-
-  <div class="a3-faq">
-    <div class="a3-faq-item">
-      <div class="a3-faq-q">What is the absolute best month to visit Sri Lanka?</div>
-      <div class="a3-faq-a">January and February are widely considered the best months overall. The west and south coasts are in peak dry season, the Cultural Triangle is at its most accessible, and the hill country is clear and cool. If you can only visit once, aim for January or February.</div>
-    </div>
-    <div class="a3-faq-item">
-      <div class="a3-faq-q">Is it worth visiting Sri Lanka during the monsoon season?</div>
-      <div class="a3-faq-a">Yes — with the right planning. The Yala monsoon (May–September) affects the west and south, but the east coast is excellent during these months. Prices are lower, crowds are thinner, and the landscape is lush and green. Many experienced travellers prefer the shoulder and monsoon seasons precisely because of the quieter atmosphere.</div>
-    </div>
-    <div class="a3-faq-item">
-      <div class="a3-faq-q">Does it rain every day during the monsoon?</div>
-      <div class="a3-faq-a">Not typically. Monsoon rain in Sri Lanka tends to fall in short, intense bursts — often in the late afternoon — rather than all-day drizzle. Most mornings are clear, and sightseeing is perfectly possible. A private driver can help you plan around the daily weather patterns.</div>
-    </div>
-    <div class="a3-faq-item">
-      <div class="a3-faq-q">When is the best time to see elephants in Sri Lanka?</div>
-      <div class="a3-faq-a">The famous Elephant Gathering at Minneriya National Park takes place from June to September, when hundreds of elephants congregate around the reservoir. Yala National Park is best visited from February to July, when water sources dry up and elephants, leopards, and other wildlife concentrate around the remaining pools.</div>
-    </div>
-    <div class="a3-faq-item">
-      <div class="a3-faq-q">What is the best time to visit the Cultural Triangle (Sigiriya, Anuradhapura)?</div>
-      <div class="a3-faq-a">The Cultural Triangle lies in Sri Lanka's dry zone and is accessible year-round, but the most comfortable conditions are from December to April. Temperatures can be very high from May to September, so early morning visits are recommended if you travel during these months.</div>
-    </div>
-    <div class="a3-faq-item">
-      <div class="a3-faq-q">Is December a good time to visit Sri Lanka?</div>
-      <div class="a3-faq-a">Yes. December marks the start of peak season for the west and south coasts. The weather improves rapidly after the first week, and by mid-December conditions are excellent. It is also the start of the Adam's Peak pilgrimage season. Book accommodation well in advance as December is busy, particularly around Christmas and New Year.</div>
-    </div>
-  </div>
+  <!-- FAQ_ACCORDION -->
 
 </article>
 `,

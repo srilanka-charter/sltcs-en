@@ -99,15 +99,16 @@ function ArticleFaqAccordion({ items }: { items: FaqItem[] }) {
             <span className="faq-q-text">{item.q}</span>
             <span className={`faq-chevron${openIndex === i ? " open" : ""}`}>›</span>
           </button>
-          {openIndex === i && (
-            <div className="faq-accordion-body">
-              <span className="faq-a-badge">A</span>
-              <div
-                className="faq-a-content"
-                dangerouslySetInnerHTML={{ __html: item.a }}
-              />
-            </div>
-          )}
+          <div
+            className={`faq-accordion-body${openIndex === i ? " open" : ""}`}
+            aria-hidden={openIndex !== i}
+          >
+            <span className="faq-a-badge">A</span>
+            <div
+              className="faq-a-content"
+              dangerouslySetInnerHTML={{ __html: item.a }}
+            />
+          </div>
         </div>
       ))}
     </div>
