@@ -1450,6 +1450,41 @@ function FloatingCTA() {
 
 // ─── Main Page ────────────────────────────────────────────────────────────────
 export default function Home() {
+  useEffect(() => {
+    // ─ Canonical ─────────────────────────────────────────────────────────────────
+    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    const prevCanonical = canonical?.href ?? '';
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = "https://en.srilanka-charter.com/";
+    // ─ hreflang ──────────────────────────────────────────────────────────────────
+    const hreflangData = [
+      { hreflang: "en", href: "https://en.srilanka-charter.com/" },
+      { hreflang: "fr", href: "https://fr.srilanka-charter.com/" },
+      { hreflang: "de", href: "https://de.srilanka-charter.com/" },
+      { hreflang: "es", href: "https://es.srilanka-charter.com/" },
+      { hreflang: "x-default", href: "https://en.srilanka-charter.com/" },
+    ];
+    const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
+    existingHreflangs.forEach((el) => el.remove());
+    const addedHreflangs: HTMLLinkElement[] = [];
+    hreflangData.forEach(({ hreflang, href }) => {
+      const link = document.createElement('link');
+      link.rel = 'alternate';
+      link.setAttribute('hreflang', hreflang);
+      link.href = href;
+      document.head.appendChild(link);
+      addedHreflangs.push(link);
+    });
+    return () => {
+      addedHreflangs.forEach((el) => el.remove());
+      if (canonical) canonical.href = prevCanonical;
+    };
+  }, []);
+
   return (
     <div style={{ margin: 0, padding: 0 }}>
       <Navbar />

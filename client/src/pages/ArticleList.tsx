@@ -80,6 +80,39 @@ function ArticleCard({
 
 // ─── Article List Page ────────────────────────────────────────────────────────
 
+// ─── Category-to-hreflang mapping ────────────────────────────────────────────
+const CATEGORY_HREFLANG: Record<string, Record<string, string>> = {
+  "private-driver-guide": {
+    en: "https://en.srilanka-charter.com/information/private-driver-guide",
+    fr: "https://fr.srilanka-charter.com/information/guide-chauffeur-prive",
+    de: "https://de.srilanka-charter.com/information/privater-fahrer-ratgeber",
+    es: "https://es.srilanka-charter.com/information/guia-conductor-privado",
+  },
+  "cost-booking-guide": {
+    en: "https://en.srilanka-charter.com/information/cost-booking-guide",
+    fr: "https://fr.srilanka-charter.com/information/guide-cout-reservation",
+    de: "https://de.srilanka-charter.com/information/kosten-buchungsratgeber",
+    es: "https://es.srilanka-charter.com/information/guia-costes-reserva",
+  },
+  "family-group-travel": {
+    en: "https://en.srilanka-charter.com/information/family-group-travel",
+    fr: "https://fr.srilanka-charter.com/information/voyage-famille-groupe",
+    de: "https://de.srilanka-charter.com/information/familien-gruppenreisen",
+    es: "https://es.srilanka-charter.com/information/viajes-familia-grupos",
+  },
+  "travel-tips-safety": {
+    en: "https://en.srilanka-charter.com/information/travel-tips-safety",
+    fr: "https://fr.srilanka-charter.com/information/conseils-securite",
+    de: "https://de.srilanka-charter.com/information/reise-tipps-sicherheit",
+  },
+  "model-itinerary": {
+    en: "https://en.srilanka-charter.com/information/model-itinerary",
+    fr: "https://fr.srilanka-charter.com/information/itineraires",
+    de: "https://de.srilanka-charter.com/information/beispielreiserouten",
+    es: "https://es.srilanka-charter.com/information/itinerarios",
+  },
+};
+
 export default function ArticleList() {
   const params = useParams<{ category: string }>();
   const categorySlug = params.category as ArticleCategory;
@@ -140,6 +173,24 @@ export default function ArticleList() {
     if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
     canonical.href = canonicalUrl;
 
+    // ─ hreflang ──────────────────────────────────────────────────────────────────
+    const hreflangMap = CATEGORY_HREFLANG[categorySlug] || {};
+    const hreflangData = Object.entries(hreflangMap).map(([lang, href]) => ({ hreflang: lang, href }));
+    if (hreflangData.length > 0) {
+      hreflangData.push({ hreflang: "x-default", href: hreflangMap["en"] || canonicalUrl });
+    }
+    const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
+    existingHreflangs.forEach((el) => el.remove());
+    const addedHreflangs: HTMLLinkElement[] = [];
+    hreflangData.forEach(({ hreflang, href }) => {
+      const link = document.createElement("link");
+      link.rel = "alternate";
+      link.setAttribute("hreflang", hreflang);
+      link.href = href;
+      document.head.appendChild(link);
+      addedHreflangs.push(link);
+    });
+
     // BreadcrumbList JSON-LD
     const breadcrumbJsonLd = {
       "@context": "https://schema.org",
@@ -160,6 +211,7 @@ export default function ArticleList() {
       (document.querySelector('meta[name="description"]') as HTMLMetaElement | null)?.setAttribute("content", prevDesc);
       canonical!.href = prevCanonical;
       document.getElementById("category-breadcrumb-jsonld")?.remove();
+      addedHreflangs.forEach((el) => el.remove());
     };
   }, [categorySlug, categoryMeta]);
 

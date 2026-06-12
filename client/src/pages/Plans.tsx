@@ -109,6 +109,35 @@ export default function Plans() {
         "Compare Bronze, Silver, and Gold plans for private driver hire in Sri Lanka. All plans include flat-rate pricing, English-speaking support, and government-certified drivers. Find the plan that suits your travel style."
       );
     }
+    // ─ Canonical ─────────────────────────────────────────────────────────────────
+    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    const prevCanonical = canonical?.href ?? '';
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = "https://en.srilanka-charter.com/plans";
+    // ─ hreflang ──────────────────────────────────────────────────────────────────
+    const hreflangData = [
+      { hreflang: "en", href: "https://en.srilanka-charter.com/plans" },
+      { hreflang: "x-default", href: "https://en.srilanka-charter.com/plans" },
+    ];
+    const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
+    existingHreflangs.forEach((el) => el.remove());
+    const addedHreflangs: HTMLLinkElement[] = [];
+    hreflangData.forEach(({ hreflang, href }) => {
+      const link = document.createElement('link');
+      link.rel = 'alternate';
+      link.setAttribute('hreflang', hreflang);
+      link.href = href;
+      document.head.appendChild(link);
+      addedHreflangs.push(link);
+    });
+    return () => {
+      addedHreflangs.forEach((el) => el.remove());
+      if (canonical) canonical.href = prevCanonical;
+    };
   }, []);
 
   return (

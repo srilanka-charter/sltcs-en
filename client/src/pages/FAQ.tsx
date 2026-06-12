@@ -354,6 +354,35 @@ export default function FAQ() {
     }
     (meta as HTMLMetaElement).content = PAGE_DESC;
 
+    // ─ Canonical ─────────────────────────────────────────────────────────────────
+    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    const prevCanonical = canonical?.href ?? '';
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = "https://en.srilanka-charter.com/faq";
+    // ─ hreflang ──────────────────────────────────────────────────────────────────
+    const hreflangData = [
+      { hreflang: "en", href: "https://en.srilanka-charter.com/faq" },
+      { hreflang: "fr", href: "https://fr.srilanka-charter.com/faq" },
+      { hreflang: "de", href: "https://de.srilanka-charter.com/faq" },
+      { hreflang: "es", href: "https://es.srilanka-charter.com/faq" },
+      { hreflang: "x-default", href: "https://en.srilanka-charter.com/faq" },
+    ];
+    const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
+    existingHreflangs.forEach((el) => el.remove());
+    const addedHreflangs: HTMLLinkElement[] = [];
+    hreflangData.forEach(({ hreflang, href }) => {
+      const link = document.createElement('link');
+      link.rel = 'alternate';
+      link.setAttribute('hreflang', hreflang);
+      link.href = href;
+      document.head.appendChild(link);
+      addedHreflangs.push(link);
+    });
+
     // JSON-LD: FAQPage schema for Google rich results
     const jsonLd = {
       "@context": "https://schema.org",
@@ -377,6 +406,8 @@ export default function FAQ() {
 
     return () => {
       document.querySelector('script[data-id="faq-jsonld"]')?.remove();
+      addedHreflangs.forEach((el) => el.remove());
+      if (canonical) canonical.href = prevCanonical;
     };
   }, []);
 

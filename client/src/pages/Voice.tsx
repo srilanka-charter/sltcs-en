@@ -4,6 +4,7 @@
  * All 8 driver reviews with 3-category 5-star ratings (Driver / Vehicle / Operator)
  */
 
+import { useEffect } from "react";
 import { Link } from "wouter";
 
 // ─── Star Rating Component ─────────────────────────────────────────────────────
@@ -284,6 +285,46 @@ function VoiceCard({ review }: { review: ReviewItem }) {
 
 // ─── Voice Page ────────────────────────────────────────────────────────────────
 export default function Voice() {
+  useEffect(() => {
+    const prevTitle = document.title;
+    document.title = "Sri Lanka Private Driver Reviews | Guest Voices | SLTCS";
+    let metaDesc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+    if (!metaDesc) { metaDesc = document.createElement("meta"); metaDesc.name = "description"; document.head.appendChild(metaDesc); }
+    const prevDesc = metaDesc.content;
+    metaDesc.content = "Real reviews from travellers who explored Sri Lanka with SLTCS private drivers. Ratings for Driver, Vehicle, and Operator service quality.";
+    // ─ Canonical ─────────────────────────────────────────────────────────────────
+    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    const prevCanonical = canonical?.href ?? '';
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = "https://en.srilanka-charter.com/voice";
+    // ─ hreflang ──────────────────────────────────────────────────────────────────
+    const hreflangData = [
+      { hreflang: "en", href: "https://en.srilanka-charter.com/voice" },
+      { hreflang: "x-default", href: "https://en.srilanka-charter.com/voice" },
+    ];
+    const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
+    existingHreflangs.forEach((el) => el.remove());
+    const addedHreflangs: HTMLLinkElement[] = [];
+    hreflangData.forEach(({ hreflang, href }) => {
+      const link = document.createElement('link');
+      link.rel = 'alternate';
+      link.setAttribute('hreflang', hreflang);
+      link.href = href;
+      document.head.appendChild(link);
+      addedHreflangs.push(link);
+    });
+    return () => {
+      document.title = prevTitle;
+      metaDesc!.content = prevDesc;
+      addedHreflangs.forEach((el) => el.remove());
+      if (canonical) canonical.href = prevCanonical;
+    };
+  }, []);
+
   const ALL_REVIEWS = [...VOICE_REVIEWS, ...HOME_REVIEWS];
   const avgOverall = (
     ALL_REVIEWS.reduce((sum, r) => sum + (r.ratings.driver + r.ratings.vehicle + r.ratings.operator) / 3, 0) /

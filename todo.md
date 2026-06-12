@@ -126,3 +126,4 @@
 - [x] ArticleListページ（カテゴリ一覧5件）にSEO head注入追加（title・description・canonical・OGタグ・BreadcrumbList JSON-LD）
 - [x] index.htmlにデフォルトOGタグ・Twitter Cardタグを追加
 - [x] 4言語版（en/fr/de/es）間で双方向hreflangを設定する
+- [x] カテゴリーページ・価格ページ・モデルコースページ等の全ページに4言語版（en/fr/de/es）間の双方向hreflangを設定する（EN: Pricing/FAQ/Plans/Vehicles/Voice/LowPriceRisk/Home/ArticleList、FR: Price/Faq/Home/ArticleList、DE: Home/ArticleList、ES: Pricing/FAQPage/Home/カテゴリーページ全件）
