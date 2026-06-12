@@ -3759,6 +3759,256 @@ export const ARTICLES: Article[] = [
 </article>
 `,
   },
+  {
+    id: "article-best-time-sri-lanka",
+    slug: "best-time-to-visit-sri-lanka",
+    category: "travel-tips-safety",
+    title: "Best Time to Visit Sri Lanka: Month-by-Month Weather Guide",
+    excerpt:
+      "Sri Lanka is a year-round destination — but the right time to visit depends on where you want to go. This guide breaks down the two monsoon seasons, the best months for beaches, wildlife safaris, and the Cultural Triangle, so you can plan with confidence.",
+    coverImage: "/manus-storage/best_time_beach_sunset_d71d947a.jpg",
+    publishedAt: "2026-06-13",
+    readingTime: 10,
+    tags: ["Sri Lanka", "Travel Planning", "Weather", "Best Time to Visit", "Monsoon"],
+    seo: {
+      metaTitle: "Best Time to Visit Sri Lanka: Month-by-Month Weather Guide (2026) | SLTCS",
+      metaDescription:
+        "When is the best time to visit Sri Lanka? This 2026 guide covers the two monsoon seasons, month-by-month weather, and the best time for beaches, safaris, and the Cultural Triangle. Plan your perfect trip with a private driver.",
+      keywords: [
+        "best time to visit sri lanka",
+        "sri lanka weather by month",
+        "sri lanka monsoon season",
+        "sri lanka rainy season",
+        "when to go to sri lanka",
+        "sri lanka peak season",
+        "sri lanka travel weather",
+        "sri lanka beach season",
+        "sri lanka yala safari best time",
+        "sri lanka cultural triangle weather",
+      ],
+    },
+    hreflang: {
+      fr: "https://fr.srilanka-charter.com/information/conseils-securite/meilleure-periode-visiter-sri-lanka",
+      de: "https://de.srilanka-charter.com/information/reise-tipps-sicherheit/beste-reisezeit-sri-lanka",
+      es: "https://es.srilanka-charter.com/information/guia-conductor-privado/mejor-epoca-visitar-sri-lanka",
+    },
+    content: `
+<article class="article-body">
+
+  <p class="article-lead">
+    Sri Lanka is one of the few destinations in Asia where the question "when should I go?" has no single answer — and that is actually good news.
+  </p>
+  <p class="article-lead">
+    Thanks to two distinct monsoon systems operating on opposite sides of the island, Sri Lanka offers excellent weather somewhere every month of the year. The key is knowing which coast and which region to prioritise depending on when you travel.
+  </p>
+
+  <p>
+    This guide breaks down Sri Lanka's climate by month, explains the two monsoon seasons, and helps you choose the best time for beaches, wildlife safaris, hill country trekking, and cultural sightseeing — whether you are planning a winter escape or a summer adventure.
+  </p>
+
+
+  <h2 id="two-monsoons">Understanding Sri Lanka's Two Monsoon Seasons</h2>
+
+  <p>
+    Sri Lanka's weather is governed by two monsoon systems that affect different parts of the island at different times of year. Understanding this is the foundation of planning any trip.
+  </p>
+
+  <h3>The Yala Monsoon (Southwest Monsoon): May to September</h3>
+
+  <p>
+    The Yala monsoon arrives from the southwest and brings heavy rainfall to the <strong>west coast, south coast, and hill country</strong> — including Colombo, Galle, Mirissa, Bentota, Ella, and Nuwara Eliya. This is the low season for these regions, with high humidity and frequent afternoon downpours.
+  </p>
+  <p>
+    However, the same monsoon leaves the <strong>east coast and north</strong> largely dry and sunny. Trincomalee, Arugam Bay, and Nilaveli enjoy their best weather during these months, making them ideal destinations for a May-to-September visit.
+  </p>
+
+  <h3>The Maha Monsoon (Northeast Monsoon): October to January</h3>
+
+  <p>
+    The Maha monsoon arrives from the northeast and reverses the pattern. It brings rain to the <strong>east coast and north</strong>, while the <strong>west and south coasts enter their dry season</strong>. By late November, the west coast beaches are at their best — clear skies, calm seas, and warm temperatures.
+  </p>
+  <p>
+    October is an inter-monsoonal month and can bring short, sharp showers across the whole island. By mid-November, conditions improve rapidly, and December through March is widely considered the peak season for Sri Lanka overall.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663529989815/6DaLAFXsm6QrASiQYZBXXj/best_time_climate_calendar-5oSzDGjYzEbGLQgCK4LJUi.webp"
+      alt="Sri Lanka weather calendar by month — West Coast vs East Coast peak and monsoon seasons"
+      class="article-img"
+      loading="lazy"
+    />
+    <figcaption>Sri Lanka's two monsoon systems mean that excellent weather is always available somewhere on the island.</figcaption>
+  </figure>
+
+
+  <h2 id="peak-season">Peak Season: December to March</h2>
+
+  <p>
+    The period from <strong>December to March</strong> is the most popular time to visit Sri Lanka, and for good reason. The west and south coasts enjoy their driest, sunniest weather. Temperatures on the coast average 28–32°C, the sea is calm and ideal for swimming, and the Cultural Triangle — Sigiriya, Dambulla, Anuradhapura — is at its most accessible.
+  </p>
+
+  <p>
+    This is also the best time for wildlife safaris at Yala and Udawalawe National Parks, as lower vegetation makes animal sightings easier and the dry conditions keep the roads passable.
+  </p>
+
+  <h3>What to Expect During Peak Season</h3>
+
+  <p>
+    Expect higher hotel rates, busier roads, and more competition for popular accommodation. Booking well in advance — particularly for December and January — is strongly recommended. A private driver charter is especially valuable during peak season, as it removes the stress of navigating crowded public transport and gives you the flexibility to start early and avoid the midday heat.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="/manus-storage/best_time_sigiriya_974757d9.jpg"
+      alt="Sigiriya Rock Fortress aerial view — best visited during Sri Lanka's dry season from December to April"
+      class="article-img"
+      loading="lazy"
+    />
+    <figcaption>Sigiriya Rock Fortress is best visited between December and April, when dry conditions make the climb comfortable and the views are at their clearest.</figcaption>
+  </figure>
+
+
+  <h2 id="shoulder-season">Shoulder Season: April and October–November</h2>
+
+  <p>
+    April is a transitional month. The Yala monsoon has not yet arrived, so the west and south coasts still enjoy reasonable weather — though humidity begins to build. It is a good time to visit if you want to avoid peak-season crowds and prices while still enjoying the south coast beaches and the Cultural Triangle.
+  </p>
+
+  <p>
+    October and November are similarly transitional. October can be unpredictable island-wide, but by mid-November the west coast is drying out and the atmosphere is noticeably fresher. Shoulder season travellers often find the best combination of good weather, lower prices, and fewer crowds.
+  </p>
+
+
+  <h2 id="east-coast">East Coast: Best from April to September</h2>
+
+  <p>
+    While the rest of Sri Lanka is managing the Yala monsoon, the <strong>east coast is at its absolute best</strong>. Trincomalee offers some of the finest beaches in Asia during June and July. Arugam Bay becomes a world-class surf destination from May onwards. Nilaveli and Passekudah are ideal for snorkelling and diving.
+  </p>
+
+  <p>
+    The east coast remains less developed than the south, which means fewer crowds, lower prices, and a more authentic experience. If you are travelling between May and September, building the east coast into your itinerary is highly recommended.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="/manus-storage/best_time_elephants_yala_b19ec358.jpg"
+      alt="Wild elephants at Minneriya National Park, Sri Lanka — best visited from June to September during the Gathering"
+      class="article-img"
+      loading="lazy"
+    />
+    <figcaption>The famous Elephant Gathering at Minneriya National Park takes place from June to September — one of the greatest wildlife spectacles in Asia.</figcaption>
+  </figure>
+
+
+  <h2 id="hill-country">Hill Country: Year-Round, but Best in January–March</h2>
+
+  <p>
+    Ella, Nuwara Eliya, and the tea highlands sit at altitude and have their own microclimate. Temperatures are cooler year-round (15–22°C), and the landscape is lush regardless of the season. However, the hill country is most pleasant from <strong>January to March</strong>, when rainfall is at its lowest and the mountain views are at their clearest.
+  </p>
+
+  <p>
+    The famous Kandy to Ella train journey — one of the most scenic rail routes in the world — can be enjoyed at any time of year, but the views across the tea plantations are most dramatic in the dry season when the mist lifts by mid-morning.
+  </p>
+
+  <figure class="article-figure">
+    <img
+      src="/manus-storage/best_time_tea_plantation_bee8af94.jpg"
+      alt="Nuwara Eliya tea plantation landscape — Sri Lanka hill country at its best from January to March"
+      class="article-img"
+      loading="lazy"
+    />
+    <figcaption>The tea highlands of Nuwara Eliya are at their most photogenic from January to March, when clear skies reveal the full sweep of the terraced plantations.</figcaption>
+  </figure>
+
+
+  <h2 id="month-by-month">Month-by-Month Summary</h2>
+
+  <div class="a3-table-wrap">
+    <table class="a3-table">
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>West &amp; South Coast</th>
+          <th>East Coast</th>
+          <th>Hill Country</th>
+          <th>Cultural Triangle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>January</strong></td><td>★★★ Peak</td><td>Monsoon</td><td>★★★ Best</td><td>★★★ Best</td></tr>
+        <tr><td><strong>February</strong></td><td>★★★ Peak</td><td>Monsoon</td><td>★★★ Best</td><td>★★★ Best</td></tr>
+        <tr><td><strong>March</strong></td><td>★★★ Peak</td><td>Improving</td><td>★★★ Best</td><td>★★★ Best</td></tr>
+        <tr><td><strong>April</strong></td><td>★★ Shoulder</td><td>★★ Good</td><td>★★ Good</td><td>★★ Good</td></tr>
+        <tr><td><strong>May</strong></td><td>Monsoon</td><td>★★★ Peak</td><td>Monsoon</td><td>★★ Dry Zone OK</td></tr>
+        <tr><td><strong>June</strong></td><td>Monsoon</td><td>★★★ Peak</td><td>Monsoon</td><td>★★ Dry Zone OK</td></tr>
+        <tr><td><strong>July</strong></td><td>Monsoon</td><td>★★★ Peak</td><td>Monsoon</td><td>★★ Dry Zone OK</td></tr>
+        <tr><td><strong>August</strong></td><td>Improving</td><td>★★★ Peak</td><td>Monsoon</td><td>★★ Dry Zone OK</td></tr>
+        <tr><td><strong>September</strong></td><td>★★ Shoulder</td><td>★★★ Peak</td><td>Improving</td><td>★★ Good</td></tr>
+        <tr><td><strong>October</strong></td><td>★★ Shoulder</td><td>★★ Shoulder</td><td>★★ Mixed</td><td>★★ Mixed</td></tr>
+        <tr><td><strong>November</strong></td><td>★★ Shoulder</td><td>Monsoon</td><td>★★ Good</td><td>★★ Good</td></tr>
+        <tr><td><strong>December</strong></td><td>★★★ Peak</td><td>Monsoon</td><td>★★ Good</td><td>★★★ Best</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <h2 id="private-driver-advantage">Why a Private Driver Makes Sense in Any Season</h2>
+
+  <p>
+    One of the most practical advantages of travelling Sri Lanka with a private driver is the ability to adapt your itinerary to the weather in real time. If a beach is experiencing unexpected rain, your driver can suggest an alternative inland destination. If a mountain road is clear and the light is perfect, you can stop for as long as you like.
+  </p>
+
+  <p>
+    Public transport in Sri Lanka — buses and trains — follows fixed routes and schedules. A private charter gives you the freedom to move between the west coast, the hill country, the Cultural Triangle, and the east coast in a sequence that makes geographic and meteorological sense for your travel dates.
+  </p>
+
+  <p>
+    SLTCS drivers are experienced in navigating all regions of the island in all seasons. Whether you are travelling in the height of peak season or exploring the east coast in July, your driver will know the roads, the conditions, and the best alternatives if plans need to change.
+  </p>
+
+  <div class="article-cta-box">
+    <div class="article-cta-icon">🗓️</div>
+    <div class="article-cta-content">
+      <div class="article-cta-title">Plan Your Trip Around the Best Weather</div>
+      <div class="article-cta-text">Tell us your travel dates and preferred regions, and we will suggest the ideal itinerary for the season. Free enquiry, no obligation.</div>
+      <a href="/#contact" class="article-cta-btn">Get a Free Itinerary Suggestion</a>
+    </div>
+  </div>
+
+
+  <h2 id="faq">Frequently Asked Questions</h2>
+
+  <div class="a3-faq">
+    <div class="a3-faq-item">
+      <div class="a3-faq-q">What is the absolute best month to visit Sri Lanka?</div>
+      <div class="a3-faq-a">January and February are widely considered the best months overall. The west and south coasts are in peak dry season, the Cultural Triangle is at its most accessible, and the hill country is clear and cool. If you can only visit once, aim for January or February.</div>
+    </div>
+    <div class="a3-faq-item">
+      <div class="a3-faq-q">Is it worth visiting Sri Lanka during the monsoon season?</div>
+      <div class="a3-faq-a">Yes — with the right planning. The Yala monsoon (May–September) affects the west and south, but the east coast is excellent during these months. Prices are lower, crowds are thinner, and the landscape is lush and green. Many experienced travellers prefer the shoulder and monsoon seasons precisely because of the quieter atmosphere.</div>
+    </div>
+    <div class="a3-faq-item">
+      <div class="a3-faq-q">Does it rain every day during the monsoon?</div>
+      <div class="a3-faq-a">Not typically. Monsoon rain in Sri Lanka tends to fall in short, intense bursts — often in the late afternoon — rather than all-day drizzle. Most mornings are clear, and sightseeing is perfectly possible. A private driver can help you plan around the daily weather patterns.</div>
+    </div>
+    <div class="a3-faq-item">
+      <div class="a3-faq-q">When is the best time to see elephants in Sri Lanka?</div>
+      <div class="a3-faq-a">The famous Elephant Gathering at Minneriya National Park takes place from June to September, when hundreds of elephants congregate around the reservoir. Yala National Park is best visited from February to July, when water sources dry up and elephants, leopards, and other wildlife concentrate around the remaining pools.</div>
+    </div>
+    <div class="a3-faq-item">
+      <div class="a3-faq-q">What is the best time to visit the Cultural Triangle (Sigiriya, Anuradhapura)?</div>
+      <div class="a3-faq-a">The Cultural Triangle lies in Sri Lanka's dry zone and is accessible year-round, but the most comfortable conditions are from December to April. Temperatures can be very high from May to September, so early morning visits are recommended if you travel during these months.</div>
+    </div>
+    <div class="a3-faq-item">
+      <div class="a3-faq-q">Is December a good time to visit Sri Lanka?</div>
+      <div class="a3-faq-a">Yes. December marks the start of peak season for the west and south coasts. The weather improves rapidly after the first week, and by mid-December conditions are excellent. It is also the start of the Adam's Peak pilgrimage season. Book accommodation well in advance as December is busy, particularly around Christmas and New Year.</div>
+    </div>
+  </div>
+
+</article>
+`,
+  },
 ];
 // ─── Helper Functions ─────────────────────────────────────────────────────────
 export function getArticlesByCategory(category: ArticleCategory): Article[] {
