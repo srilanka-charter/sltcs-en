@@ -242,7 +242,7 @@ export default function LowPriceRisk() {
         </h1>
         <p
           style={{
-            color: "rgba(255,255,255,0.65)",
+            color: "rgba(255,255,255,0.82)",
             fontSize: "1.05rem",
             maxWidth: "640px",
             margin: "0 auto",
@@ -406,7 +406,7 @@ export default function LowPriceRisk() {
           </h2>
           <p
             style={{
-              color: "rgba(255,255,255,0.65)",
+              color: "rgba(255,255,255,0.82)",
               fontSize: "0.93rem",
               lineHeight: 1.8,
               marginBottom: "28px",

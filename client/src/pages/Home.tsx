@@ -710,7 +710,7 @@ function Concerns() {
               onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(255,255,255,0.07)"; (e.currentTarget as HTMLDivElement).style.background = "rgba(255,255,255,0.03)"; }}
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="#c9a84c" style={{ flexShrink: 0, opacity: 0.8 }}><path d={c.svgPath} /></svg>
-              <span style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.4 }}>{c.label}</span>
+              <span style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.82)", lineHeight: 1.4 }}>{c.label}</span>
             </div>
           ))}
         </div>
@@ -723,7 +723,7 @@ function Concerns() {
             </div>
             <div>
               <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.25rem", fontWeight: 700, color: "#fff", margin: "0 0 8px" }}>SLTCS Solves Every One of These Concerns</h3>
-              <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.7, margin: 0, maxWidth: "560px" }}>Your dedicated private driver handles everything — navigation, communication, scheduling, and local expertise. All you need to do is sit back and enjoy the journey.</p>
+              <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.75)", lineHeight: 1.7, margin: 0, maxWidth: "560px" }}>Your dedicated private driver handles everything — navigation, communication, scheduling, and local expertise. All you need to do is sit back and enjoy the journey.</p>
             </div>
           </div>
           <button
@@ -1451,6 +1451,17 @@ function FloatingCTA() {
 // ─── Main Page ────────────────────────────────────────────────────────────────
 export default function Home() {
   useEffect(() => {
+    // ─ Title & Meta Description ───────────────────────────────────────────────────
+    const prevTitle = document.title;
+    document.title = 'SLTCS｜Sri Lanka Car Hire with Private Driver';
+    let metaDesc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+    const prevDesc = metaDesc?.content ?? '';
+    if (!metaDesc) {
+      metaDesc = document.createElement('meta');
+      metaDesc.name = 'description';
+      document.head.appendChild(metaDesc);
+    }
+    metaDesc.content = 'Sri Lanka car hire with a private driver. Fully private, flexible charter service for European & UK travellers. Government-certified chauffeur guides available.';
     // ─ Canonical ─────────────────────────────────────────────────────────────────
     let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     const prevCanonical = canonical?.href ?? '';
@@ -1479,9 +1490,69 @@ export default function Home() {
       document.head.appendChild(link);
       addedHreflangs.push(link);
     });
+    // ─ LocalBusiness / TravelAgency Structured Data ───────────────────────────────
+    const schemaData = {
+      "@context": "https://schema.org",
+      "@type": ["TravelAgency", "LocalBusiness"],
+      "name": "SLTCS – Sri Lanka Car Hire with Private Driver",
+      "description": "Sri Lanka car hire with a private driver. Fully private, flexible charter service for European & UK travellers. Government-certified chauffeur guides available.",
+      "url": "https://en.srilanka-charter.com/",
+      "logo": "https://en.srilanka-charter.com/favicon-192.png",
+      "image": "https://en.srilanka-charter.com/manus-storage/ogp_image_1200x630_481f875b.jpg",
+      "telephone": "+94-77-123-4567",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "LK",
+        "addressLocality": "Colombo"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Sri Lanka"
+      },
+      "priceRange": "$$",
+      "currenciesAccepted": "USD, EUR, GBP",
+      "paymentAccepted": "Cash, Bank Transfer",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "sameAs": [
+        "https://fr.srilanka-charter.com/",
+        "https://de.srilanka-charter.com/",
+        "https://es.srilanka-charter.com/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Sri Lanka Private Driver Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Private Driver Day Charter",
+              "description": "Full-day private driver hire across Sri Lanka"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Multi-Day Tour Package",
+              "description": "Multi-day private driver packages with flexible itineraries"
+            }
+          }
+        ]
+      }
+    };
+    const schemaScript = document.createElement('script');
+    schemaScript.type = 'application/ld+json';
+    schemaScript.id = 'schema-local-business';
+    schemaScript.textContent = JSON.stringify(schemaData);
+    document.head.appendChild(schemaScript);
     return () => {
       addedHreflangs.forEach((el) => el.remove());
       if (canonical) canonical.href = prevCanonical;
+      document.title = prevTitle;
+      if (metaDesc) metaDesc.content = prevDesc;
+      const schema = document.getElementById('schema-local-business');
+      if (schema) schema.remove();
     };
   }, []);
 

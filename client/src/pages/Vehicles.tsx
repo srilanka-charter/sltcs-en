@@ -322,7 +322,7 @@ function VehicleCard({ vehicle, index }: { vehicle: VehicleInfo; index: number }
                   <td
                     style={{
                       padding: "9px 12px 9px 0",
-                      color: "rgba(255,255,255,0.5)",
+                      color: "rgba(255,255,255,0.75)",
                       whiteSpace: "nowrap",
                       width: "48%",
                     }}
@@ -468,7 +468,7 @@ function Footer() {
             >
               SLTCS
             </div>
-            <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.82rem", maxWidth: "280px", lineHeight: 1.6 }}>
+            <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "0.82rem", maxWidth: "280px", lineHeight: 1.6 }}>
               Sri Lanka Car Hire with Private Driver. Fully private, fully flexible.
             </p>
           </div>
@@ -565,11 +565,42 @@ export default function Vehicles() {
       document.head.appendChild(link);
       addedHreflangs.push(link);
     });
+    // ─ Service Structured Data ───────────────────────────────────────────────────────────────
+    const vehiclesSchema = {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Sri Lanka Car Hire Vehicles",
+      "description": "Choose your vehicle for Sri Lanka private car hire — Sedan, Van, or Big Van. All vehicles include an English-speaking driver. Flat-rate pricing from $270.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "SLTCS – Sri Lanka Car Hire with Private Driver",
+        "url": "https://en.srilanka-charter.com/"
+      },
+      "areaServed": { "@type": "Country", "name": "Sri Lanka" },
+      "url": "https://en.srilanka-charter.com/vehicles",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Vehicle Options",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Sedan", "description": "Comfortable sedan for 1-3 passengers with private driver" },
+          { "@type": "Offer", "name": "Van", "description": "Spacious van for 4-8 passengers with private driver" },
+          { "@type": "Offer", "name": "Big Van", "description": "Large van for 9-13 passengers with private driver" }
+        ]
+      }
+    };
+    const existingVehiclesSchema = document.querySelector('script[data-id="vehicles-jsonld"]');
+    if (existingVehiclesSchema) existingVehiclesSchema.remove();
+    const vehiclesScript = document.createElement('script');
+    vehiclesScript.type = 'application/ld+json';
+    vehiclesScript.setAttribute('data-id', 'vehicles-jsonld');
+    vehiclesScript.textContent = JSON.stringify(vehiclesSchema);
+    document.head.appendChild(vehiclesScript);
     return () => {
       document.title = prevTitle;
       metaDesc!.content = prevDesc;
       addedHreflangs.forEach((el) => el.remove());
       if (canonical) canonical.href = prevCanonical;
+      document.querySelector('script[data-id="vehicles-jsonld"]')?.remove();
     };
   }, []);
 

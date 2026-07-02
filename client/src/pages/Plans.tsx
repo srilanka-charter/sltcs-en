@@ -134,9 +134,40 @@ export default function Plans() {
       document.head.appendChild(link);
       addedHreflangs.push(link);
     });
+    // ─ Service Structured Data ───────────────────────────────────────────────────────────────
+    const plansSchema = {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Sri Lanka Private Driver Hire Plans",
+      "description": "Compare Bronze, Silver, and Gold plans for private driver hire in Sri Lanka. All plans include flat-rate pricing, English-speaking support, and government-certified drivers.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "SLTCS – Sri Lanka Car Hire with Private Driver",
+        "url": "https://en.srilanka-charter.com/"
+      },
+      "areaServed": { "@type": "Country", "name": "Sri Lanka" },
+      "url": "https://en.srilanka-charter.com/plans",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Private Driver Plans",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Bronze Plan", "description": "Entry-level private driver plan for budget-conscious travellers" },
+          { "@type": "Offer", "name": "Silver Plan", "description": "Mid-range private driver plan with enhanced comfort" },
+          { "@type": "Offer", "name": "Gold Plan", "description": "Premium private driver plan with luxury vehicle and full concierge support" }
+        ]
+      }
+    };
+    const existingPlansSchema = document.querySelector('script[data-id="plans-jsonld"]');
+    if (existingPlansSchema) existingPlansSchema.remove();
+    const plansScript = document.createElement('script');
+    plansScript.type = 'application/ld+json';
+    plansScript.setAttribute('data-id', 'plans-jsonld');
+    plansScript.textContent = JSON.stringify(plansSchema);
+    document.head.appendChild(plansScript);
     return () => {
       addedHreflangs.forEach((el) => el.remove());
       if (canonical) canonical.href = prevCanonical;
+      document.querySelector('script[data-id="plans-jsonld"]')?.remove();
     };
   }, []);
 

@@ -493,7 +493,7 @@ export default function FAQ() {
       <section className="faq-hero">
         <div className="faq-hero-content">
           <div className="section-eyebrow">SLTCS – SRI LANKA CAR HIRE WITH PRIVATE DRIVER</div>
-          <h1>FAQ</h1>
+          <h1>Frequently Asked Questions – Sri Lanka Car Hire with Private Driver</h1>
           <p className="faq-hero-sub">
             Frequently Asked Questions about SLTCS (Sri Lanka Car Hire with Private Driver)
           </p>

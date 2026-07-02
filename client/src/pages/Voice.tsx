@@ -317,14 +317,48 @@ export default function Voice() {
       document.head.appendChild(link);
       addedHreflangs.push(link);
     });
+    // ─ Review Aggregate Structured Data ───────────────────────────────────────────────────────────────
+    const allReviews = [...VOICE_REVIEWS, ...HOME_REVIEWS];
+    const avgScore = (allReviews.reduce((sum, r) => sum + (r.ratings.driver + r.ratings.vehicle + r.ratings.operator) / 3, 0) / allReviews.length).toFixed(1);
+    const reviewSchema = {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SLTCS – Sri Lanka Car Hire with Private Driver",
+      "url": "https://en.srilanka-charter.com/",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": avgScore,
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": String(allReviews.length)
+      },
+      "review": allReviews.slice(0, 5).map((r) => ({
+        "@type": "Review",
+        "author": { "@type": "Person", "name": r.name },
+        "reviewBody": r.quote,
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": String(Math.round(((r.ratings.driver + r.ratings.vehicle + r.ratings.operator) / 3) * 10) / 10),
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }))
+    };
+    const existingReviewSchema = document.querySelector('script[data-id="voice-jsonld"]');
+    if (existingReviewSchema) existingReviewSchema.remove();
+    const reviewScript = document.createElement('script');
+    reviewScript.type = 'application/ld+json';
+    reviewScript.setAttribute('data-id', 'voice-jsonld');
+    reviewScript.textContent = JSON.stringify(reviewSchema);
+    document.head.appendChild(reviewScript);
     return () => {
       document.title = prevTitle;
       metaDesc!.content = prevDesc;
       addedHreflangs.forEach((el) => el.remove());
       if (canonical) canonical.href = prevCanonical;
+      document.querySelector('script[data-id="voice-jsonld"]')?.remove();
     };
   }, []);
-
   const ALL_REVIEWS = [...VOICE_REVIEWS, ...HOME_REVIEWS];
   const avgOverall = (
     ALL_REVIEWS.reduce((sum, r) => sum + (r.ratings.driver + r.ratings.vehicle + r.ratings.operator) / 3, 0) /

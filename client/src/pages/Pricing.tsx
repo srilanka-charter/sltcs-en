@@ -265,7 +265,7 @@ function PlanCard({
                 style={{
                   padding: "10px 16px",
                   textAlign: "left",
-                  color: "rgba(255,255,255,0.5)",
+                  color: "rgba(255,255,255,0.75)",
                   fontSize: "0.75rem",
                   fontWeight: 600,
                   letterSpacing: "0.05em",
@@ -281,7 +281,7 @@ function PlanCard({
                 style={{
                   padding: "10px 16px",
                   textAlign: "right",
-                  color: "rgba(255,255,255,0.5)",
+                  color: "rgba(255,255,255,0.75)",
                   fontSize: "0.75rem",
                   fontWeight: 600,
                   letterSpacing: "0.05em",
@@ -610,7 +610,7 @@ export default function Pricing() {
         </h1>
         <p
           style={{
-            color: "rgba(255,255,255,0.65)",
+            color: "rgba(255,255,255,0.82)",
             fontSize: "1.05rem",
             maxWidth: "600px",
             margin: "0 auto 0",
@@ -679,7 +679,7 @@ export default function Pricing() {
               </li>
             ))}
           </ul>
-          <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.85rem", lineHeight: 1.7, marginTop: "16px" }}>
+          <p style={{ color: "rgba(255,255,255,0.82)", fontSize: "0.85rem", lineHeight: 1.7, marginTop: "16px" }}>
             In particular, some seemingly low-cost services impose mileage limits and charge for overages. There have been cases where drivers reported inflated distances, resulting in bills far exceeding expectations.
           </p>
           <p style={{ marginTop: "10px" }}>
@@ -887,7 +887,7 @@ export default function Pricing() {
 
         {/* CTA */}
         <section style={{ textAlign: "center", marginTop: "0" }}>
-          <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.95rem", marginBottom: "24px" }}>
+          <p style={{ color: "rgba(255,255,255,0.82)", fontSize: "0.95rem", marginBottom: "24px" }}>
             Not sure which plan suits you? Feel free to contact us for a free, personalised estimate.
           </p>
           <button

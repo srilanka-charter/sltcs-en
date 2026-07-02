@@ -128,3 +128,12 @@
 - [x] 4言語版（en/fr/de/es）間で双方向hreflangを設定する
 - [x] カテゴリーページ・価格ページ・モデルコースページ等の全ページに4言語版（en/fr/de/es）間の双方向hreflangを設定する（EN: Pricing/FAQ/Plans/Vehicles/Voice/LowPriceRisk/Home/ArticleList、FR: Price/Faq/Home/ArticleList、DE: Home/ArticleList、ES: Pricing/FAQPage/Home/カテゴリーページ全件）
 - [x] 「Best Time to Visit Sri Lanka: Month-by-Month Weather Guide」記事をtravel-tips-safetyカテゴリーに追加（月別気候カレンダーインフォグラフィック・4画像・FAQアコーディオン・月別サマリーテーブル・CTA含む、sitemap.xml更新済み）
+- [x] SEO監査レポート対応: 指摘事項を整理し、実装可能な改善項目の優先順位を確定する
+- [x] SEO監査レポート対応: 全主要ページにH1の存在と見出し階層を見直す（全ページ確認済み）
+- [x] SEO監査レポート対応: ホーム・/faq・/plans・/vehicles・/voice に構造化データを拡充（LocalBusiness/TravelAgency/Service/AggregateRating/Review JSON-LD）
+- [x] SEO監査レポート対応: OGP画像を1200x630pxの高品質画像に更新（index.html）
+- [x] SEO監査レポート対応: カラーコントラスト改善（index.css 15箇所 + Pricing/Vehicles/LowPriceRisk/Home.tsx）
+- [x] SEO監査レポート対応: セキュリティヘッダー確認済み（X-Frame-Options/X-Content-Type-Options/HSTS/Referrer-Policy/Permissions-Policy）
+- [x] SEO監査レポート対応: sitemap.xml lastmodを2026-07-02に更新
+- [x] SEO監査レポート対応: 実装後に型チェック・チェックポイント保存を行う
+
