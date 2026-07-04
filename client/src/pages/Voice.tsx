@@ -326,6 +326,32 @@ const VOICE_REVIEWS = [
     quote: "Sanjeewa arranged experiences we never could have found ourselves — including a magical ox-cart ride.",
     body: "Sanjeewa is the kind of driver who transforms a holiday into a genuine cultural journey. During our time in the Cultural Triangle, he arranged a traditional ox-cart ride through a rural village that was completely off the tourist map. Sitting inside the beautifully decorated cart, framed by the ancient trees and surrounded by birdsong, was one of those rare travel moments that stays with you forever. Sanjeewa had clearly built real relationships with local families over the years, and their warmth towards him — and by extension towards us — was touching. His driving was equally impressive: smooth, safe, and always punctual. He anticipated our needs before we even expressed them, from adjusting the air conditioning to suggesting the perfect time to visit each site. Sanjeewa represents everything that makes private driver travel in Sri Lanka so special.",
   },
+  {
+    id: "ranjana-boat-group",
+    photo: "/manus-storage/voice_review_ranjana_boat_group_e98c1415.jpg",
+    photoPosition: "center 40%",
+    driver: "Ranjana",
+    name: "The S Group",
+    pax: "5 passengers",
+    period: "July 2026",
+    route: "Colombo – Wilpattu – Anuradhapura – Trincomalee",
+    ratings: { driver: 5.0, vehicle: 5.0, operator: 5.0 },
+    quote: "Ranjana joined us on the boat safari and made the whole experience feel completely effortless.",
+    body: "We were a group of five friends travelling together, and Ranjana was the perfect companion for every leg of the journey. He arranged a boat safari through a stunning wetland reserve that we would never have found on our own — gliding across the water surrounded by lotus flowers and birdlife was one of the most peaceful moments of the entire trip. What impressed us most was how Ranjana seemed to anticipate everything: he knew exactly when to suggest a stop, which local spots were worth visiting, and how to keep a group of five moving smoothly without anyone feeling rushed. His warmth and genuine enthusiasm for sharing the best of Sri Lanka made every day feel like an adventure. We couldn't have asked for a better guide.",
+  },
+  {
+    id: "chami-airport-group",
+    photo: "/manus-storage/voice_review_chami_airport_group_55b90413.jpg",
+    photoPosition: "center 35%",
+    driver: "Chami",
+    name: "The Y Group",
+    pax: "4 passengers",
+    period: "June 2026",
+    route: "Colombo – Sigiriya – Kandy – Mirissa – Galle",
+    ratings: { driver: 5.0, vehicle: 5.0, operator: 5.0 },
+    quote: "Chami greeted us at the airport with flower garlands — and the warmth never stopped from that moment on.",
+    body: "From the very first moment at Colombo Airport, Chami set the tone for an extraordinary trip. He was waiting for us with traditional flower garlands, which immediately made us feel welcomed and special. Over the following days, he guided us through Sigiriya, Kandy, and the southern coast with the expertise of someone who genuinely loves his country and takes pride in sharing it. His English was excellent, his driving was smooth and safe, and his restaurant recommendations were consistently outstanding. He was always one step ahead — arranging early starts to beat the crowds at popular sites, and finding quiet corners that most tourists never discover. Chami is a truly exceptional driver and a wonderful human being. We will absolutely return to Sri Lanka and request him again.",
+  },
 ];
 
 // ─── Voice Review Card ────────────────────────────────────────────────────────────────────────────────
