@@ -44,7 +44,7 @@
 - [x] Create /vehicles page (English translation of Japanese version)
 - [x] Add /vehicles route to App.tsx
 - [x] Update VEHICLES link in navbar to /vehicles
-- [ ] Publish to en.srilanka-charter.com  ← ユーザーがUIのPublishボタンから実行
+- [ ] Publish to en.srilanka-charter.com  ← UIのPublishボタンから実行（ユーザー操作必須）
 - [x] Fix JSX closing tag error in Home.tsx (scroll wrapper div for WhySLTCS cards grid)
 - [x] Mobile: WhySLTCS cards 2-column horizontal scroll (remove overflow:hidden from inline style, add scroll wrapper)
 - [x] Mobile: Hamburger menu with dropdown accordion (Model Itinerary sub-items, Language switcher) — logo shows SLTCS only on mobile
@@ -137,3 +137,4 @@
 - [x] SEO監査レポート対応: sitemap.xml lastmodを2026-07-02に更新
 - [x] SEO監査レポート対応: 実装後に型チェック・チェックポイント保存を行う
 
+- [x] /voice ページに6件の新しいレビューを追加（Chamara/Pradeep/Nuwan/Kasun/Dilshan/Sanjeewa）6枚の写真をmanus-storageにアップロードして使用
