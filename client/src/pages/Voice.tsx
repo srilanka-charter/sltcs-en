@@ -438,10 +438,9 @@ export default function Voice() {
     };
   }, []);
   const ALL_REVIEWS = [...VOICE_REVIEWS, ...HOME_REVIEWS];
-  const avgOverall = (
-    ALL_REVIEWS.reduce((sum, r) => sum + (r.ratings.driver + r.ratings.vehicle + r.ratings.operator) / 3, 0) /
-    ALL_REVIEWS.length
-  ).toFixed(1);
+  const avgDriver = (ALL_REVIEWS.reduce((sum, r) => sum + r.ratings.driver, 0) / ALL_REVIEWS.length).toFixed(1);
+  const avgVehicle = (ALL_REVIEWS.reduce((sum, r) => sum + r.ratings.vehicle, 0) / ALL_REVIEWS.length).toFixed(1);
+  const avgOperator = (ALL_REVIEWS.reduce((sum, r) => sum + r.ratings.operator, 0) / ALL_REVIEWS.length).toFixed(1);
 
   return (
     <div className="voice-page">
@@ -463,18 +462,18 @@ export default function Voice() {
           </p>
           <div className="voice-summary-bar">
             <div className="voice-summary-item">
-              <span className="voice-summary-num">{ALL_REVIEWS.length}</span>
-              <span className="voice-summary-label">Reviews</span>
+              <span className="voice-summary-num">{avgDriver}</span>
+              <span className="voice-summary-label">Driver</span>
             </div>
             <div className="voice-summary-divider" />
             <div className="voice-summary-item">
-              <span className="voice-summary-num">{avgOverall}</span>
-              <span className="voice-summary-label">Overall Rating</span>
+              <span className="voice-summary-num">{avgVehicle}</span>
+              <span className="voice-summary-label">Vehicle</span>
             </div>
             <div className="voice-summary-divider" />
             <div className="voice-summary-item">
-              <span className="voice-summary-num">14</span>
-              <span className="voice-summary-label">Drivers</span>
+              <span className="voice-summary-num">{avgOperator}</span>
+              <span className="voice-summary-label">Operator</span>
             </div>
           </div>
         </section>
