@@ -441,6 +441,10 @@ export default function Voice() {
   const avgDriver = (ALL_REVIEWS.reduce((sum, r) => sum + r.ratings.driver, 0) / ALL_REVIEWS.length).toFixed(1);
   const avgVehicle = (ALL_REVIEWS.reduce((sum, r) => sum + r.ratings.vehicle, 0) / ALL_REVIEWS.length).toFixed(1);
   const avgOperator = (ALL_REVIEWS.reduce((sum, r) => sum + r.ratings.operator, 0) / ALL_REVIEWS.length).toFixed(1);
+  const avgOverall = (
+    ALL_REVIEWS.reduce((sum, r) => sum + (r.ratings.driver + r.ratings.vehicle + r.ratings.operator) / 3, 0) /
+    ALL_REVIEWS.length
+  ).toFixed(1);
 
   return (
     <div className="voice-page">
@@ -460,20 +464,28 @@ export default function Voice() {
           <p className="voice-hero-sub">
             Real reviews from travellers who have explored Sri Lanka with SLTCS private drivers.
           </p>
-          <div className="voice-summary-bar">
-            <div className="voice-summary-item">
-              <span className="voice-summary-num">{avgDriver}</span>
-              <span className="voice-summary-label">Driver</span>
+          <div className="voice-summary-bar" style={{ flexDirection: "column", gap: "1rem" }}>
+            {/* Overall – top row */}
+            <div className="voice-summary-item" style={{ justifyContent: "center" }}>
+              <span className="voice-summary-num" style={{ fontSize: "2.6rem" }}>{avgOverall}</span>
+              <span className="voice-summary-label" style={{ fontSize: "0.85rem", letterSpacing: "0.12em" }}>Overall</span>
             </div>
-            <div className="voice-summary-divider" />
-            <div className="voice-summary-item">
-              <span className="voice-summary-num">{avgVehicle}</span>
-              <span className="voice-summary-label">Vehicle</span>
-            </div>
-            <div className="voice-summary-divider" />
-            <div className="voice-summary-item">
-              <span className="voice-summary-num">{avgOperator}</span>
-              <span className="voice-summary-label">Operator</span>
+            {/* Driver / Vehicle / Operator – bottom row */}
+            <div style={{ display: "flex", width: "100%", justifyContent: "center", gap: "0" }}>
+              <div className="voice-summary-item">
+                <span className="voice-summary-num">{avgDriver}</span>
+                <span className="voice-summary-label">Driver</span>
+              </div>
+              <div className="voice-summary-divider" />
+              <div className="voice-summary-item">
+                <span className="voice-summary-num">{avgVehicle}</span>
+                <span className="voice-summary-label">Vehicle</span>
+              </div>
+              <div className="voice-summary-divider" />
+              <div className="voice-summary-item">
+                <span className="voice-summary-num">{avgOperator}</span>
+                <span className="voice-summary-label">Operator</span>
+              </div>
             </div>
           </div>
         </section>
