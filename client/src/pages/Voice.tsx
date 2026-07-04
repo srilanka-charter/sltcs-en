@@ -408,6 +408,10 @@ export default function Voice() {
     // ─ hreflang ──────────────────────────────────────────────────────────────────
     const hreflangData = [
       { hreflang: "en", href: "https://en.srilanka-charter.com/voice" },
+      { hreflang: "fr", href: "https://fr.srilanka-charter.com/voice" },
+      { hreflang: "de", href: "https://de.srilanka-charter.com/voice" },
+      { hreflang: "es", href: "https://es.srilanka-charter.com/voice" },
+      { hreflang: "nl", href: "https://nl.srilanka-charter.com/voice" },
       { hreflang: "x-default", href: "https://en.srilanka-charter.com/voice" },
     ];
     const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
@@ -479,6 +483,20 @@ export default function Voice() {
         <div className="voice-header-inner">
           <Link href="/" className="voice-back-link">← Back to Home</Link>
           <a href="/" className="voice-site-title">SLTCS｜Sri Lanka Car Hire with Private Driver</a>
+          <div className="voice-lang-switcher">
+            <select
+              aria-label="Select language"
+              defaultValue="en"
+              onChange={(e) => { window.location.href = e.target.value; }}
+              className="voice-lang-select"
+            >
+              <option value="https://en.srilanka-charter.com/voice">English</option>
+              <option value="https://fr.srilanka-charter.com/voice">French</option>
+              <option value="https://de.srilanka-charter.com/voice">German</option>
+              <option value="https://es.srilanka-charter.com/voice">Spanish</option>
+              <option value="https://nl.srilanka-charter.com/voice">Dutch</option>
+            </select>
+          </div>
         </div>
       </header>
 
