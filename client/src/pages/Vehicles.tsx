@@ -552,6 +552,11 @@ export default function Vehicles() {
     // ─ hreflang ──────────────────────────────────────────────────────────────────
     const hreflangData = [
       { hreflang: "en", href: "https://en.srilanka-charter.com/vehicles" },
+      { hreflang: "fr", href: "https://fr.srilanka-charter.com/vehicles" },
+      { hreflang: "de", href: "https://de.srilanka-charter.com/vehicles" },
+      { hreflang: "es", href: "https://es.srilanka-charter.com/vehicles" },
+      { hreflang: "nl", href: "https://nl.srilanka-charter.com/vehicles" },
+      { hreflang: "ko", href: "https://ko.srilanka-charter.com/vehicles" },
       { hreflang: "x-default", href: "https://en.srilanka-charter.com/vehicles" },
     ];
     const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');

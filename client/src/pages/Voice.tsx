@@ -412,6 +412,7 @@ export default function Voice() {
       { hreflang: "de", href: "https://de.srilanka-charter.com/voice" },
       { hreflang: "es", href: "https://es.srilanka-charter.com/voice" },
       { hreflang: "nl", href: "https://nl.srilanka-charter.com/voice" },
+      { hreflang: "ko", href: "https://ko.srilanka-charter.com/voice" },
       { hreflang: "x-default", href: "https://en.srilanka-charter.com/voice" },
     ];
     const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');

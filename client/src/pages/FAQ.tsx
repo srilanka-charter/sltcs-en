@@ -369,6 +369,8 @@ export default function FAQ() {
       { hreflang: "fr", href: "https://fr.srilanka-charter.com/faq" },
       { hreflang: "de", href: "https://de.srilanka-charter.com/faq" },
       { hreflang: "es", href: "https://es.srilanka-charter.com/faq" },
+      { hreflang: "nl", href: "https://nl.srilanka-charter.com/faq" },
+      { hreflang: "ko", href: "https://ko.srilanka-charter.com/faq" },
       { hreflang: "x-default", href: "https://en.srilanka-charter.com/faq" },
     ];
     const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');

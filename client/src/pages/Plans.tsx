@@ -121,6 +121,11 @@ export default function Plans() {
     // ─ hreflang ──────────────────────────────────────────────────────────────────
     const hreflangData = [
       { hreflang: "en", href: "https://en.srilanka-charter.com/plans" },
+      { hreflang: "fr", href: "https://fr.srilanka-charter.com/plans" },
+      { hreflang: "de", href: "https://de.srilanka-charter.com/plans" },
+      { hreflang: "es", href: "https://es.srilanka-charter.com/plans" },
+      { hreflang: "nl", href: "https://nl.srilanka-charter.com/plans" },
+      { hreflang: "ko", href: "https://ko.srilanka-charter.com/plans" },
       { hreflang: "x-default", href: "https://en.srilanka-charter.com/plans" },
     ];
     const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');

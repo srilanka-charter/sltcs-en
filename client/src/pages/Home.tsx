@@ -131,6 +131,7 @@ function Navbar() {
     { label: "Malay", url: "https://ms.srilanka-charter.com/" },
     { label: "Swedish", url: "https://sv.srilanka-charter.com/" },
     { label: "Japanese", url: "https://sltcs.srilanka-charter.com/" },
+    { label: "Korean", url: "https://ko.srilanka-charter.com/" },
   ];
 
   useEffect(() => {
@@ -264,7 +265,7 @@ function Navbar() {
             </button>
             {mobileLangOpen && (
               <div className="mobile-accordion-body">
-                {[{label:"French",url:"https://fr.srilanka-charter.com/"},{label:"Spanish",url:"https://es.srilanka-charter.com/"},{label:"German",url:"https://de.srilanka-charter.com/"},{label:"Dutch",url:"https://nl.srilanka-charter.com/"},{label:"Russian",url:"https://ru.srilanka-charter.com/"},{label:"Malay",url:"https://ms.srilanka-charter.com/"},{label:"Swedish",url:"https://sv.srilanka-charter.com/"},{label:"Japanese",url:"https://sltcs.srilanka-charter.com/"}].map((lang) => (
+                {[{label:"French",url:"https://fr.srilanka-charter.com/"},{label:"Spanish",url:"https://es.srilanka-charter.com/"},{label:"German",url:"https://de.srilanka-charter.com/"},{label:"Dutch",url:"https://nl.srilanka-charter.com/"},{label:"Russian",url:"https://ru.srilanka-charter.com/"},{label:"Malay",url:"https://ms.srilanka-charter.com/"},{label:"Swedish",url:"https://sv.srilanka-charter.com/"},{label:"Japanese",url:"https://sltcs.srilanka-charter.com/"},{label:"Korean",url:"https://ko.srilanka-charter.com/"}].map((lang) => (
                   <a key={lang.label} href={lang.url}>{lang.label}</a>
                 ))}
               </div>
@@ -1477,6 +1478,8 @@ export default function Home() {
       { hreflang: "fr", href: "https://fr.srilanka-charter.com/" },
       { hreflang: "de", href: "https://de.srilanka-charter.com/" },
       { hreflang: "es", href: "https://es.srilanka-charter.com/" },
+      { hreflang: "nl", href: "https://nl.srilanka-charter.com/" },
+      { hreflang: "ko", href: "https://ko.srilanka-charter.com/" },
       { hreflang: "x-default", href: "https://en.srilanka-charter.com/" },
     ];
     const existingHreflangs = document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]');
